@@ -1,0 +1,1391 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML" xmi:id="_qwLLoPOTEemufas-XlTWhA" name="project343.del2">
+  <eAnnotations xmi:id="_qwLysPOTEemufas-XlTWhA" source="Objing">
+    <contents xmi:type="uml:Property" xmi:id="_qwLysfOTEemufas-XlTWhA" name="exporterVersion">
+      <defaultValue xmi:type="uml:LiteralString" xmi:id="_qwLysvOTEemufas-XlTWhA" value="3.0.0"/>
+    </contents>
+    <contents xmi:type="uml:Property" xmi:id="_qwLys_OTEemufas-XlTWhA" name="isRoundTrip"/>
+    <contents xmi:type="uml:Property" xmi:id="_qwLytPOTEemufas-XlTWhA" name="Visibility">
+      <defaultValue xmi:type="uml:LiteralString" xmi:id="_qwLytfOTEemufas-XlTWhA" value="0"/>
+    </contents>
+  </eAnnotations>
+  <packagedElement xmi:type="uml:Actor" xmi:id="_qwLytvOTEemufas-XlTWhA" name="User">
+    <eAnnotations xmi:id="_qwLyt_OTEemufas-XlTWhA" source="Objing">
+      <contents xmi:type="uml:Property" xmi:id="_qwLyuPOTEemufas-XlTWhA" name="Visibility">
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_qwLyufOTEemufas-XlTWhA" value="0"/>
+      </contents>
+    </eAnnotations>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_qwLyuvOTEemufas-XlTWhA" memberEnd="_qwLyu_OTEemufas-XlTWhA _qwLyxvOTEemufas-XlTWhA" navigableOwnedEnd="_qwLyu_OTEemufas-XlTWhA">
+    <ownedEnd xmi:id="_qwLyu_OTEemufas-XlTWhA" visibility="public" type="_qwLzFvOTEemufas-XlTWhA" association="_qwLyuvOTEemufas-XlTWhA">
+      <eAnnotations xmi:id="_qwLyvPOTEemufas-XlTWhA" source="Objing">
+        <contents xmi:type="uml:Property" xmi:id="_qwLyvfOTEemufas-XlTWhA" name="Visibility">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_qwLyvvOTEemufas-XlTWhA" value="0"/>
+        </contents>
+        <contents xmi:type="uml:Property" xmi:id="_qwLyv_OTEemufas-XlTWhA" name="MultiMin">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_qwLywPOTEemufas-XlTWhA" value="0"/>
+        </contents>
+        <contents xmi:type="uml:Property" xmi:id="_qwLywfOTEemufas-XlTWhA" name="MultiMax">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_qwLywvOTEemufas-XlTWhA" value="1"/>
+        </contents>
+        <contents xmi:type="uml:Property" xmi:id="_qwLyw_OTEemufas-XlTWhA" name="AccessMode">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_qwLyxPOTEemufas-XlTWhA" value="read_write"/>
+        </contents>
+      </eAnnotations>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_qwLyxfOTEemufas-XlTWhA"/>
+    </ownedEnd>
+    <ownedEnd xmi:id="_qwLyxvOTEemufas-XlTWhA" visibility="public" type="_qwLytvOTEemufas-XlTWhA" association="_qwLyuvOTEemufas-XlTWhA">
+      <eAnnotations xmi:id="_qwLyx_OTEemufas-XlTWhA" source="Objing">
+        <contents xmi:type="uml:Property" xmi:id="_qwLyyPOTEemufas-XlTWhA" name="Visibility">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_qwLyyfOTEemufas-XlTWhA" value="0"/>
+        </contents>
+        <contents xmi:type="uml:Property" xmi:id="_qwLyyvOTEemufas-XlTWhA" name="MultiMin">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_qwLyy_OTEemufas-XlTWhA" value="0"/>
+        </contents>
+        <contents xmi:type="uml:Property" xmi:id="_qwLyzPOTEemufas-XlTWhA" name="MultiMax">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_qwLyzfOTEemufas-XlTWhA" value="1"/>
+        </contents>
+        <contents xmi:type="uml:Property" xmi:id="_qwLyzvOTEemufas-XlTWhA" name="AccessMode">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_qwLyz_OTEemufas-XlTWhA" value="read_write"/>
+        </contents>
+      </eAnnotations>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_qwLy0POTEemufas-XlTWhA"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_qwLy0fOTEemufas-XlTWhA" memberEnd="_qwLy0vOTEemufas-XlTWhA _qwLy3fOTEemufas-XlTWhA" navigableOwnedEnd="_qwLy0vOTEemufas-XlTWhA">
+    <ownedEnd xmi:id="_qwLy0vOTEemufas-XlTWhA" visibility="public" type="_qwLzLvOTEemufas-XlTWhA" association="_qwLy0fOTEemufas-XlTWhA">
+      <eAnnotations xmi:id="_qwLy0_OTEemufas-XlTWhA" source="Objing">
+        <contents xmi:type="uml:Property" xmi:id="_qwLy1POTEemufas-XlTWhA" name="Visibility">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_qwLy1fOTEemufas-XlTWhA" value="0"/>
+        </contents>
+        <contents xmi:type="uml:Property" xmi:id="_qwLy1vOTEemufas-XlTWhA" name="MultiMin">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_qwLy1_OTEemufas-XlTWhA" value="0"/>
+        </contents>
+        <contents xmi:type="uml:Property" xmi:id="_qwLy2POTEemufas-XlTWhA" name="MultiMax">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_qwLy2fOTEemufas-XlTWhA" value="1"/>
+        </contents>
+        <contents xmi:type="uml:Property" xmi:id="_qwLy2vOTEemufas-XlTWhA" name="AccessMode">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_qwLy2_OTEemufas-XlTWhA" value="read_write"/>
+        </contents>
+      </eAnnotations>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_qwLy3POTEemufas-XlTWhA"/>
+    </ownedEnd>
+    <ownedEnd xmi:id="_qwLy3fOTEemufas-XlTWhA" visibility="public" type="_qwLytvOTEemufas-XlTWhA" association="_qwLy0fOTEemufas-XlTWhA">
+      <eAnnotations xmi:id="_qwLy3vOTEemufas-XlTWhA" source="Objing">
+        <contents xmi:type="uml:Property" xmi:id="_qwLy3_OTEemufas-XlTWhA" name="Visibility">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_qwLy4POTEemufas-XlTWhA" value="0"/>
+        </contents>
+        <contents xmi:type="uml:Property" xmi:id="_qwLy4fOTEemufas-XlTWhA" name="MultiMin">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_qwLy4vOTEemufas-XlTWhA" value="0"/>
+        </contents>
+        <contents xmi:type="uml:Property" xmi:id="_qwLy4_OTEemufas-XlTWhA" name="MultiMax">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_qwLy5POTEemufas-XlTWhA" value="1"/>
+        </contents>
+        <contents xmi:type="uml:Property" xmi:id="_qwLy5fOTEemufas-XlTWhA" name="AccessMode">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_qwLy5vOTEemufas-XlTWhA" value="read_write"/>
+        </contents>
+      </eAnnotations>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_qwLy5_OTEemufas-XlTWhA"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_qwLy6POTEemufas-XlTWhA" memberEnd="_qwLy6fOTEemufas-XlTWhA _qwLy9POTEemufas-XlTWhA" navigableOwnedEnd="_qwLy6fOTEemufas-XlTWhA">
+    <ownedEnd xmi:id="_qwLy6fOTEemufas-XlTWhA" visibility="public" type="_qwLzR_OTEemufas-XlTWhA" association="_qwLy6POTEemufas-XlTWhA">
+      <eAnnotations xmi:id="_qwLy6vOTEemufas-XlTWhA" source="Objing">
+        <contents xmi:type="uml:Property" xmi:id="_qwLy6_OTEemufas-XlTWhA" name="Visibility">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_qwLy7POTEemufas-XlTWhA" value="0"/>
+        </contents>
+        <contents xmi:type="uml:Property" xmi:id="_qwLy7fOTEemufas-XlTWhA" name="MultiMin">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_qwLy7vOTEemufas-XlTWhA" value="0"/>
+        </contents>
+        <contents xmi:type="uml:Property" xmi:id="_qwLy7_OTEemufas-XlTWhA" name="MultiMax">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_qwLy8POTEemufas-XlTWhA" value="1"/>
+        </contents>
+        <contents xmi:type="uml:Property" xmi:id="_qwLy8fOTEemufas-XlTWhA" name="AccessMode">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_qwLy8vOTEemufas-XlTWhA" value="read_write"/>
+        </contents>
+      </eAnnotations>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_qwLy8_OTEemufas-XlTWhA"/>
+    </ownedEnd>
+    <ownedEnd xmi:id="_qwLy9POTEemufas-XlTWhA" visibility="public" type="_qwLytvOTEemufas-XlTWhA" association="_qwLy6POTEemufas-XlTWhA">
+      <eAnnotations xmi:id="_qwLy9fOTEemufas-XlTWhA" source="Objing">
+        <contents xmi:type="uml:Property" xmi:id="_qwLy9vOTEemufas-XlTWhA" name="Visibility">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_qwLy9_OTEemufas-XlTWhA" value="0"/>
+        </contents>
+        <contents xmi:type="uml:Property" xmi:id="_qwLy-POTEemufas-XlTWhA" name="MultiMin">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_qwLy-fOTEemufas-XlTWhA" value="0"/>
+        </contents>
+        <contents xmi:type="uml:Property" xmi:id="_qwLy-vOTEemufas-XlTWhA" name="MultiMax">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_qwLy-_OTEemufas-XlTWhA" value="1"/>
+        </contents>
+        <contents xmi:type="uml:Property" xmi:id="_qwLy_POTEemufas-XlTWhA" name="AccessMode">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_qwLy_fOTEemufas-XlTWhA" value="read_write"/>
+        </contents>
+      </eAnnotations>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_qwLy_vOTEemufas-XlTWhA"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_qwLy__OTEemufas-XlTWhA" memberEnd="_qwLzAPOTEemufas-XlTWhA _qwLzC_OTEemufas-XlTWhA" navigableOwnedEnd="_qwLzAPOTEemufas-XlTWhA">
+    <ownedEnd xmi:id="_qwLzAPOTEemufas-XlTWhA" visibility="public" type="_qwLzZPOTEemufas-XlTWhA" association="_qwLy__OTEemufas-XlTWhA">
+      <eAnnotations xmi:id="_qwLzAfOTEemufas-XlTWhA" source="Objing">
+        <contents xmi:type="uml:Property" xmi:id="_qwLzAvOTEemufas-XlTWhA" name="Visibility">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_qwLzA_OTEemufas-XlTWhA" value="0"/>
+        </contents>
+        <contents xmi:type="uml:Property" xmi:id="_qwLzBPOTEemufas-XlTWhA" name="MultiMin">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_qwLzBfOTEemufas-XlTWhA" value="0"/>
+        </contents>
+        <contents xmi:type="uml:Property" xmi:id="_qwLzBvOTEemufas-XlTWhA" name="MultiMax">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_qwLzB_OTEemufas-XlTWhA" value="1"/>
+        </contents>
+        <contents xmi:type="uml:Property" xmi:id="_qwLzCPOTEemufas-XlTWhA" name="AccessMode">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_qwLzCfOTEemufas-XlTWhA" value="read_write"/>
+        </contents>
+      </eAnnotations>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_qwLzCvOTEemufas-XlTWhA"/>
+    </ownedEnd>
+    <ownedEnd xmi:id="_qwLzC_OTEemufas-XlTWhA" visibility="public" type="_qwLytvOTEemufas-XlTWhA" association="_qwLy__OTEemufas-XlTWhA">
+      <eAnnotations xmi:id="_qwLzDPOTEemufas-XlTWhA" source="Objing">
+        <contents xmi:type="uml:Property" xmi:id="_qwLzDfOTEemufas-XlTWhA" name="Visibility">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_qwLzDvOTEemufas-XlTWhA" value="0"/>
+        </contents>
+        <contents xmi:type="uml:Property" xmi:id="_qwLzD_OTEemufas-XlTWhA" name="MultiMin">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_qwLzEPOTEemufas-XlTWhA" value="0"/>
+        </contents>
+        <contents xmi:type="uml:Property" xmi:id="_qwLzEfOTEemufas-XlTWhA" name="MultiMax">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_qwLzEvOTEemufas-XlTWhA" value="1"/>
+        </contents>
+        <contents xmi:type="uml:Property" xmi:id="_qwLzE_OTEemufas-XlTWhA" name="AccessMode">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_qwLzFPOTEemufas-XlTWhA" value="read_write"/>
+        </contents>
+      </eAnnotations>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_qwLzFfOTEemufas-XlTWhA"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_qwLzFvOTEemufas-XlTWhA" name="View Dislikes">
+    <eAnnotations xmi:id="_qwLzF_OTEemufas-XlTWhA" source="Objing">
+      <contents xmi:type="uml:Property" xmi:id="_qwLzGPOTEemufas-XlTWhA" name="Visibility">
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_qwLzGfOTEemufas-XlTWhA" value="0"/>
+      </contents>
+    </eAnnotations>
+    <ownedComment xmi:id="_qwLzGvOTEemufas-XlTWhA">
+      <eAnnotations xmi:id="_qwLzG_OTEemufas-XlTWhA" source="Objing">
+        <contents xmi:type="uml:Property" xmi:id="_qwLzHPOTEemufas-XlTWhA" name="NoteType_Name">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_qwLzHfOTEemufas-XlTWhA" value="constraint"/>
+        </contents>
+      </eAnnotations>
+      <body>...</body>
+    </ownedComment>
+    <ownedComment xmi:id="_qwLzHvOTEemufas-XlTWhA">
+      <eAnnotations xmi:id="_qwLzH_OTEemufas-XlTWhA" source="Objing">
+        <contents xmi:type="uml:Property" xmi:id="_qwLzIPOTEemufas-XlTWhA" name="NoteType_Name">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_qwLzIfOTEemufas-XlTWhA" value="non-functional constraint"/>
+        </contents>
+      </eAnnotations>
+      <body>...</body>
+    </ownedComment>
+    <ownedComment xmi:id="_qwLzIvOTEemufas-XlTWhA">
+      <eAnnotations xmi:id="_qwLzI_OTEemufas-XlTWhA" source="Objing">
+        <contents xmi:type="uml:Property" xmi:id="_qwLzJPOTEemufas-XlTWhA" name="NoteType_Name">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_qwLzJfOTEemufas-XlTWhA" value="exception"/>
+        </contents>
+      </eAnnotations>
+      <body>...</body>
+    </ownedComment>
+    <ownedComment xmi:id="_qwLzJvOTEemufas-XlTWhA">
+      <eAnnotations xmi:id="_qwLzJ_OTEemufas-XlTWhA" source="Objing">
+        <contents xmi:type="uml:Property" xmi:id="_qwLzKPOTEemufas-XlTWhA" name="NoteType_Name">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_qwLzKfOTEemufas-XlTWhA" value="precondition"/>
+        </contents>
+      </eAnnotations>
+      <body>...</body>
+    </ownedComment>
+    <ownedComment xmi:id="_qwLzKvOTEemufas-XlTWhA">
+      <eAnnotations xmi:id="_qwLzK_OTEemufas-XlTWhA" source="Objing">
+        <contents xmi:type="uml:Property" xmi:id="_qwLzLPOTEemufas-XlTWhA" name="NoteType_Name">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_qwLzLfOTEemufas-XlTWhA" value="postcondition"/>
+        </contents>
+      </eAnnotations>
+      <body>...</body>
+    </ownedComment>
+  </packagedElement>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_qwLzLvOTEemufas-XlTWhA" name="View Likes">
+    <eAnnotations xmi:id="_qwLzL_OTEemufas-XlTWhA" source="Objing">
+      <contents xmi:type="uml:Property" xmi:id="_qwLzMPOTEemufas-XlTWhA" name="Visibility">
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_qwLzMfOTEemufas-XlTWhA" value="0"/>
+      </contents>
+    </eAnnotations>
+    <ownedComment xmi:id="_qwLzMvOTEemufas-XlTWhA">
+      <eAnnotations xmi:id="_qwLzM_OTEemufas-XlTWhA" source="Objing">
+        <contents xmi:type="uml:Property" xmi:id="_qwLzNPOTEemufas-XlTWhA" name="NoteType_Name">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_qwLzNfOTEemufas-XlTWhA" value="constraint"/>
+        </contents>
+      </eAnnotations>
+      <body>...</body>
+    </ownedComment>
+    <ownedComment xmi:id="_qwLzNvOTEemufas-XlTWhA">
+      <eAnnotations xmi:id="_qwLzN_OTEemufas-XlTWhA" source="Objing">
+        <contents xmi:type="uml:Property" xmi:id="_qwLzOPOTEemufas-XlTWhA" name="NoteType_Name">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_qwLzOfOTEemufas-XlTWhA" value="non-functional constraint"/>
+        </contents>
+      </eAnnotations>
+      <body>...</body>
+    </ownedComment>
+    <ownedComment xmi:id="_qwLzOvOTEemufas-XlTWhA">
+      <eAnnotations xmi:id="_qwLzO_OTEemufas-XlTWhA" source="Objing">
+        <contents xmi:type="uml:Property" xmi:id="_qwLzPPOTEemufas-XlTWhA" name="NoteType_Name">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_qwLzPfOTEemufas-XlTWhA" value="exception"/>
+        </contents>
+      </eAnnotations>
+      <body>...</body>
+    </ownedComment>
+    <ownedComment xmi:id="_qwLzPvOTEemufas-XlTWhA">
+      <eAnnotations xmi:id="_qwLzP_OTEemufas-XlTWhA" source="Objing">
+        <contents xmi:type="uml:Property" xmi:id="_qwLzQPOTEemufas-XlTWhA" name="NoteType_Name">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_qwLzQfOTEemufas-XlTWhA" value="precondition"/>
+        </contents>
+      </eAnnotations>
+      <body>...</body>
+    </ownedComment>
+    <ownedComment xmi:id="_qwLzQvOTEemufas-XlTWhA">
+      <eAnnotations xmi:id="_qwLzQ_OTEemufas-XlTWhA" source="Objing">
+        <contents xmi:type="uml:Property" xmi:id="_qwLzRPOTEemufas-XlTWhA" name="NoteType_Name">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_qwLzRfOTEemufas-XlTWhA" value="postcondition"/>
+        </contents>
+      </eAnnotations>
+      <body>...</body>
+    </ownedComment>
+    <include xmi:id="_qwLzRvOTEemufas-XlTWhA" name="UseCaseDependency" addition="_qwLzs_OTEemufas-XlTWhA"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_qwLzR_OTEemufas-XlTWhA" name="View Journey">
+    <eAnnotations xmi:id="_qwLzSPOTEemufas-XlTWhA" source="Objing">
+      <contents xmi:type="uml:Property" xmi:id="_qwLzSfOTEemufas-XlTWhA" name="Visibility">
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_qwLzSvOTEemufas-XlTWhA" value="0"/>
+      </contents>
+    </eAnnotations>
+    <ownedComment xmi:id="_qwLzS_OTEemufas-XlTWhA">
+      <eAnnotations xmi:id="_qwLzTPOTEemufas-XlTWhA" source="Objing">
+        <contents xmi:type="uml:Property" xmi:id="_qwLzTfOTEemufas-XlTWhA" name="NoteType_Name">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_qwLzTvOTEemufas-XlTWhA" value="constraint"/>
+        </contents>
+      </eAnnotations>
+      <body>...</body>
+    </ownedComment>
+    <ownedComment xmi:id="_qwLzT_OTEemufas-XlTWhA">
+      <eAnnotations xmi:id="_qwLzUPOTEemufas-XlTWhA" source="Objing">
+        <contents xmi:type="uml:Property" xmi:id="_qwLzUfOTEemufas-XlTWhA" name="NoteType_Name">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_qwLzUvOTEemufas-XlTWhA" value="non-functional constraint"/>
+        </contents>
+      </eAnnotations>
+      <body>...</body>
+    </ownedComment>
+    <ownedComment xmi:id="_qwLzU_OTEemufas-XlTWhA">
+      <eAnnotations xmi:id="_qwLzVPOTEemufas-XlTWhA" source="Objing">
+        <contents xmi:type="uml:Property" xmi:id="_qwLzVfOTEemufas-XlTWhA" name="NoteType_Name">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_qwLzVvOTEemufas-XlTWhA" value="exception"/>
+        </contents>
+      </eAnnotations>
+      <body>...</body>
+    </ownedComment>
+    <ownedComment xmi:id="_qwLzV_OTEemufas-XlTWhA">
+      <eAnnotations xmi:id="_qwLzWPOTEemufas-XlTWhA" source="Objing">
+        <contents xmi:type="uml:Property" xmi:id="_qwLzWfOTEemufas-XlTWhA" name="NoteType_Name">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_qwLzWvOTEemufas-XlTWhA" value="precondition"/>
+        </contents>
+      </eAnnotations>
+      <body>...</body>
+    </ownedComment>
+    <ownedComment xmi:id="_qwLzW_OTEemufas-XlTWhA">
+      <eAnnotations xmi:id="_qwLzXPOTEemufas-XlTWhA" source="Objing">
+        <contents xmi:type="uml:Property" xmi:id="_qwLzXfOTEemufas-XlTWhA" name="NoteType_Name">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_qwLzXvOTEemufas-XlTWhA" value="postcondition"/>
+        </contents>
+      </eAnnotations>
+      <body>...</body>
+    </ownedComment>
+    <ownedComment xmi:id="_qwLzX_OTEemufas-XlTWhA">
+      <eAnnotations xmi:id="_qwLzYPOTEemufas-XlTWhA" source="Objing">
+        <contents xmi:type="uml:Property" xmi:id="_qwLzYfOTEemufas-XlTWhA" name="NoteType_Name">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_qwLzYvOTEemufas-XlTWhA" value="description"/>
+        </contents>
+      </eAnnotations>
+      <body></body>
+    </ownedComment>
+    <extend xmi:id="_qwLzY_OTEemufas-XlTWhA" name="UseCaseDependency" extendedCase="_qwL0BfOTEemufas-XlTWhA"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_qwLzZPOTEemufas-XlTWhA" name="Create Journey">
+    <eAnnotations xmi:id="_qwLzZfOTEemufas-XlTWhA" source="Objing">
+      <contents xmi:type="uml:Property" xmi:id="_qwLzZvOTEemufas-XlTWhA" name="Visibility">
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_qwLzZ_OTEemufas-XlTWhA" value="0"/>
+      </contents>
+    </eAnnotations>
+    <ownedComment xmi:id="_qwLzaPOTEemufas-XlTWhA">
+      <eAnnotations xmi:id="_qwLzafOTEemufas-XlTWhA" source="Objing">
+        <contents xmi:type="uml:Property" xmi:id="_qwLzavOTEemufas-XlTWhA" name="NoteType_Name">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_qwLza_OTEemufas-XlTWhA" value="constraint"/>
+        </contents>
+      </eAnnotations>
+      <body>...</body>
+    </ownedComment>
+    <ownedComment xmi:id="_qwLzbPOTEemufas-XlTWhA">
+      <eAnnotations xmi:id="_qwLzbfOTEemufas-XlTWhA" source="Objing">
+        <contents xmi:type="uml:Property" xmi:id="_qwLzbvOTEemufas-XlTWhA" name="NoteType_Name">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_qwLzb_OTEemufas-XlTWhA" value="non-functional constraint"/>
+        </contents>
+      </eAnnotations>
+      <body>...</body>
+    </ownedComment>
+    <ownedComment xmi:id="_qwLzcPOTEemufas-XlTWhA">
+      <eAnnotations xmi:id="_qwLzcfOTEemufas-XlTWhA" source="Objing">
+        <contents xmi:type="uml:Property" xmi:id="_qwLzcvOTEemufas-XlTWhA" name="NoteType_Name">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_qwLzc_OTEemufas-XlTWhA" value="exception"/>
+        </contents>
+      </eAnnotations>
+      <body>...</body>
+    </ownedComment>
+    <ownedComment xmi:id="_qwLzdPOTEemufas-XlTWhA">
+      <eAnnotations xmi:id="_qwLzdfOTEemufas-XlTWhA" source="Objing">
+        <contents xmi:type="uml:Property" xmi:id="_qwLzdvOTEemufas-XlTWhA" name="NoteType_Name">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_qwLzd_OTEemufas-XlTWhA" value="precondition"/>
+        </contents>
+      </eAnnotations>
+      <body>...</body>
+    </ownedComment>
+    <ownedComment xmi:id="_qwLzePOTEemufas-XlTWhA">
+      <eAnnotations xmi:id="_qwLzefOTEemufas-XlTWhA" source="Objing">
+        <contents xmi:type="uml:Property" xmi:id="_qwLzevOTEemufas-XlTWhA" name="NoteType_Name">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_qwLze_OTEemufas-XlTWhA" value="postcondition"/>
+        </contents>
+      </eAnnotations>
+      <body>...</body>
+    </ownedComment>
+    <ownedComment xmi:id="_qwLzfPOTEemufas-XlTWhA">
+      <eAnnotations xmi:id="_qwLzffOTEemufas-XlTWhA" source="Objing">
+        <contents xmi:type="uml:Property" xmi:id="_qwLzfvOTEemufas-XlTWhA" name="NoteType_Name">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_qwLzf_OTEemufas-XlTWhA" value="description"/>
+        </contents>
+      </eAnnotations>
+      <body></body>
+    </ownedComment>
+    <include xmi:id="_qwLzgPOTEemufas-XlTWhA" name="UseCaseDependency" addition="_qwL0BfOTEemufas-XlTWhA"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_qwLzgfOTEemufas-XlTWhA" name="Modify Dislikes">
+    <eAnnotations xmi:id="_qwLzgvOTEemufas-XlTWhA" source="Objing">
+      <contents xmi:type="uml:Property" xmi:id="_qwLzg_OTEemufas-XlTWhA" name="Visibility">
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_qwLzhPOTEemufas-XlTWhA" value="0"/>
+      </contents>
+    </eAnnotations>
+    <ownedComment xmi:id="_qwLzhfOTEemufas-XlTWhA">
+      <eAnnotations xmi:id="_qwLzhvOTEemufas-XlTWhA" source="Objing">
+        <contents xmi:type="uml:Property" xmi:id="_qwLzh_OTEemufas-XlTWhA" name="NoteType_Name">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_qwLziPOTEemufas-XlTWhA" value="constraint"/>
+        </contents>
+      </eAnnotations>
+      <body>...</body>
+    </ownedComment>
+    <ownedComment xmi:id="_qwLzifOTEemufas-XlTWhA">
+      <eAnnotations xmi:id="_qwLzivOTEemufas-XlTWhA" source="Objing">
+        <contents xmi:type="uml:Property" xmi:id="_qwLzi_OTEemufas-XlTWhA" name="NoteType_Name">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_qwLzjPOTEemufas-XlTWhA" value="non-functional constraint"/>
+        </contents>
+      </eAnnotations>
+      <body>...</body>
+    </ownedComment>
+    <ownedComment xmi:id="_qwLzjfOTEemufas-XlTWhA">
+      <eAnnotations xmi:id="_qwLzjvOTEemufas-XlTWhA" source="Objing">
+        <contents xmi:type="uml:Property" xmi:id="_qwLzj_OTEemufas-XlTWhA" name="NoteType_Name">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_qwLzkPOTEemufas-XlTWhA" value="exception"/>
+        </contents>
+      </eAnnotations>
+      <body>...</body>
+    </ownedComment>
+    <ownedComment xmi:id="_qwLzkfOTEemufas-XlTWhA">
+      <eAnnotations xmi:id="_qwLzkvOTEemufas-XlTWhA" source="Objing">
+        <contents xmi:type="uml:Property" xmi:id="_qwLzk_OTEemufas-XlTWhA" name="NoteType_Name">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_qwLzlPOTEemufas-XlTWhA" value="precondition"/>
+        </contents>
+      </eAnnotations>
+      <body>...</body>
+    </ownedComment>
+    <ownedComment xmi:id="_qwLzlfOTEemufas-XlTWhA">
+      <eAnnotations xmi:id="_qwLzlvOTEemufas-XlTWhA" source="Objing">
+        <contents xmi:type="uml:Property" xmi:id="_qwLzl_OTEemufas-XlTWhA" name="NoteType_Name">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_qwLzmPOTEemufas-XlTWhA" value="postcondition"/>
+        </contents>
+      </eAnnotations>
+      <body>...</body>
+    </ownedComment>
+    <extend xmi:id="_qwLzmfOTEemufas-XlTWhA" name="UseCaseDependency" extendedCase="_qwLzFvOTEemufas-XlTWhA"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_qwLzmvOTEemufas-XlTWhA" name="Modify Likes">
+    <eAnnotations xmi:id="_qwLzm_OTEemufas-XlTWhA" source="Objing">
+      <contents xmi:type="uml:Property" xmi:id="_qwLznPOTEemufas-XlTWhA" name="Visibility">
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_qwLznfOTEemufas-XlTWhA" value="0"/>
+      </contents>
+    </eAnnotations>
+    <ownedComment xmi:id="_qwLznvOTEemufas-XlTWhA">
+      <eAnnotations xmi:id="_qwLzn_OTEemufas-XlTWhA" source="Objing">
+        <contents xmi:type="uml:Property" xmi:id="_qwLzoPOTEemufas-XlTWhA" name="NoteType_Name">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_qwLzofOTEemufas-XlTWhA" value="constraint"/>
+        </contents>
+      </eAnnotations>
+      <body>...</body>
+    </ownedComment>
+    <ownedComment xmi:id="_qwLzovOTEemufas-XlTWhA">
+      <eAnnotations xmi:id="_qwLzo_OTEemufas-XlTWhA" source="Objing">
+        <contents xmi:type="uml:Property" xmi:id="_qwLzpPOTEemufas-XlTWhA" name="NoteType_Name">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_qwLzpfOTEemufas-XlTWhA" value="non-functional constraint"/>
+        </contents>
+      </eAnnotations>
+      <body>...</body>
+    </ownedComment>
+    <ownedComment xmi:id="_qwLzpvOTEemufas-XlTWhA">
+      <eAnnotations xmi:id="_qwLzp_OTEemufas-XlTWhA" source="Objing">
+        <contents xmi:type="uml:Property" xmi:id="_qwLzqPOTEemufas-XlTWhA" name="NoteType_Name">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_qwLzqfOTEemufas-XlTWhA" value="exception"/>
+        </contents>
+      </eAnnotations>
+      <body>...</body>
+    </ownedComment>
+    <ownedComment xmi:id="_qwLzqvOTEemufas-XlTWhA">
+      <eAnnotations xmi:id="_qwLzq_OTEemufas-XlTWhA" source="Objing">
+        <contents xmi:type="uml:Property" xmi:id="_qwLzrPOTEemufas-XlTWhA" name="NoteType_Name">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_qwLzrfOTEemufas-XlTWhA" value="precondition"/>
+        </contents>
+      </eAnnotations>
+      <body>...</body>
+    </ownedComment>
+    <ownedComment xmi:id="_qwLzrvOTEemufas-XlTWhA">
+      <eAnnotations xmi:id="_qwLzr_OTEemufas-XlTWhA" source="Objing">
+        <contents xmi:type="uml:Property" xmi:id="_qwLzsPOTEemufas-XlTWhA" name="NoteType_Name">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_qwLzsfOTEemufas-XlTWhA" value="postcondition"/>
+        </contents>
+      </eAnnotations>
+      <body>...</body>
+    </ownedComment>
+    <extend xmi:id="_qwLzsvOTEemufas-XlTWhA" name="UseCaseDependency" extendedCase="_qwLzLvOTEemufas-XlTWhA"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_qwLzs_OTEemufas-XlTWhA" name="Add Likes">
+    <eAnnotations xmi:id="_qwLztPOTEemufas-XlTWhA" source="Objing">
+      <contents xmi:type="uml:Property" xmi:id="_qwLztfOTEemufas-XlTWhA" name="Visibility">
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_qwLztvOTEemufas-XlTWhA" value="0"/>
+      </contents>
+    </eAnnotations>
+    <ownedComment xmi:id="_qwLzt_OTEemufas-XlTWhA">
+      <eAnnotations xmi:id="_qwLzuPOTEemufas-XlTWhA" source="Objing">
+        <contents xmi:type="uml:Property" xmi:id="_qwLzufOTEemufas-XlTWhA" name="NoteType_Name">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_qwLzuvOTEemufas-XlTWhA" value="constraint"/>
+        </contents>
+      </eAnnotations>
+      <body>...</body>
+    </ownedComment>
+    <ownedComment xmi:id="_qwLzu_OTEemufas-XlTWhA">
+      <eAnnotations xmi:id="_qwLzvPOTEemufas-XlTWhA" source="Objing">
+        <contents xmi:type="uml:Property" xmi:id="_qwLzvfOTEemufas-XlTWhA" name="NoteType_Name">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_qwLzvvOTEemufas-XlTWhA" value="non-functional constraint"/>
+        </contents>
+      </eAnnotations>
+      <body>...</body>
+    </ownedComment>
+    <ownedComment xmi:id="_qwLzv_OTEemufas-XlTWhA">
+      <eAnnotations xmi:id="_qwLzwPOTEemufas-XlTWhA" source="Objing">
+        <contents xmi:type="uml:Property" xmi:id="_qwLzwfOTEemufas-XlTWhA" name="NoteType_Name">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_qwLzwvOTEemufas-XlTWhA" value="exception"/>
+        </contents>
+      </eAnnotations>
+      <body>...</body>
+    </ownedComment>
+    <ownedComment xmi:id="_qwLzw_OTEemufas-XlTWhA">
+      <eAnnotations xmi:id="_qwLzxPOTEemufas-XlTWhA" source="Objing">
+        <contents xmi:type="uml:Property" xmi:id="_qwLzxfOTEemufas-XlTWhA" name="NoteType_Name">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_qwLzxvOTEemufas-XlTWhA" value="precondition"/>
+        </contents>
+      </eAnnotations>
+      <body>...</body>
+    </ownedComment>
+    <ownedComment xmi:id="_qwLzx_OTEemufas-XlTWhA">
+      <eAnnotations xmi:id="_qwLzyPOTEemufas-XlTWhA" source="Objing">
+        <contents xmi:type="uml:Property" xmi:id="_qwLzyfOTEemufas-XlTWhA" name="NoteType_Name">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_qwLzyvOTEemufas-XlTWhA" value="postcondition"/>
+        </contents>
+      </eAnnotations>
+      <body>...</body>
+    </ownedComment>
+    <extend xmi:id="_qwLzy_OTEemufas-XlTWhA" name="UseCaseDependency" extendedCase="_qwLzzfOTEemufas-XlTWhA"/>
+    <extend xmi:id="_qwLzzPOTEemufas-XlTWhA" name="UseCaseDependency" extendedCase="_qwLzZPOTEemufas-XlTWhA"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_qwLzzfOTEemufas-XlTWhA" name="Modify Journey">
+    <eAnnotations xmi:id="_qwLzzvOTEemufas-XlTWhA" source="Objing">
+      <contents xmi:type="uml:Property" xmi:id="_qwLzz_OTEemufas-XlTWhA" name="Visibility">
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_qwLz0POTEemufas-XlTWhA" value="0"/>
+      </contents>
+    </eAnnotations>
+    <ownedComment xmi:id="_qwLz0fOTEemufas-XlTWhA">
+      <eAnnotations xmi:id="_qwLz0vOTEemufas-XlTWhA" source="Objing">
+        <contents xmi:type="uml:Property" xmi:id="_qwLz0_OTEemufas-XlTWhA" name="NoteType_Name">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_qwLz1POTEemufas-XlTWhA" value="constraint"/>
+        </contents>
+      </eAnnotations>
+      <body>...</body>
+    </ownedComment>
+    <ownedComment xmi:id="_qwLz1fOTEemufas-XlTWhA">
+      <eAnnotations xmi:id="_qwLz1vOTEemufas-XlTWhA" source="Objing">
+        <contents xmi:type="uml:Property" xmi:id="_qwLz1_OTEemufas-XlTWhA" name="NoteType_Name">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_qwLz2POTEemufas-XlTWhA" value="non-functional constraint"/>
+        </contents>
+      </eAnnotations>
+      <body>...</body>
+    </ownedComment>
+    <ownedComment xmi:id="_qwLz2fOTEemufas-XlTWhA">
+      <eAnnotations xmi:id="_qwLz2vOTEemufas-XlTWhA" source="Objing">
+        <contents xmi:type="uml:Property" xmi:id="_qwLz2_OTEemufas-XlTWhA" name="NoteType_Name">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_qwLz3POTEemufas-XlTWhA" value="exception"/>
+        </contents>
+      </eAnnotations>
+      <body>...</body>
+    </ownedComment>
+    <ownedComment xmi:id="_qwLz3fOTEemufas-XlTWhA">
+      <eAnnotations xmi:id="_qwLz3vOTEemufas-XlTWhA" source="Objing">
+        <contents xmi:type="uml:Property" xmi:id="_qwLz3_OTEemufas-XlTWhA" name="NoteType_Name">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_qwLz4POTEemufas-XlTWhA" value="precondition"/>
+        </contents>
+      </eAnnotations>
+      <body>...</body>
+    </ownedComment>
+    <ownedComment xmi:id="_qwLz4fOTEemufas-XlTWhA">
+      <eAnnotations xmi:id="_qwLz4vOTEemufas-XlTWhA" source="Objing">
+        <contents xmi:type="uml:Property" xmi:id="_qwLz4_OTEemufas-XlTWhA" name="NoteType_Name">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_qwLz5POTEemufas-XlTWhA" value="postcondition"/>
+        </contents>
+      </eAnnotations>
+      <body>...</body>
+    </ownedComment>
+    <ownedComment xmi:id="_qwLz5fOTEemufas-XlTWhA">
+      <eAnnotations xmi:id="_qwLz5vOTEemufas-XlTWhA" source="Objing">
+        <contents xmi:type="uml:Property" xmi:id="_qwLz5_OTEemufas-XlTWhA" name="NoteType_Name">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_qwLz6POTEemufas-XlTWhA" value="description"/>
+        </contents>
+      </eAnnotations>
+      <body></body>
+    </ownedComment>
+    <include xmi:id="_qwLz6fOTEemufas-XlTWhA" name="UseCaseDependency" addition="_qwL0BfOTEemufas-XlTWhA"/>
+    <extend xmi:id="_qwLz6vOTEemufas-XlTWhA" name="UseCaseDependency" extendedCase="_qwLzR_OTEemufas-XlTWhA"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_qwLz6_OTEemufas-XlTWhA" name="Add Dislikes">
+    <eAnnotations xmi:id="_qwLz7POTEemufas-XlTWhA" source="Objing">
+      <contents xmi:type="uml:Property" xmi:id="_qwLz7fOTEemufas-XlTWhA" name="Visibility">
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_qwLz7vOTEemufas-XlTWhA" value="0"/>
+      </contents>
+    </eAnnotations>
+    <ownedComment xmi:id="_qwLz7_OTEemufas-XlTWhA">
+      <eAnnotations xmi:id="_qwLz8POTEemufas-XlTWhA" source="Objing">
+        <contents xmi:type="uml:Property" xmi:id="_qwLz8fOTEemufas-XlTWhA" name="NoteType_Name">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_qwLz8vOTEemufas-XlTWhA" value="constraint"/>
+        </contents>
+      </eAnnotations>
+      <body>...</body>
+    </ownedComment>
+    <ownedComment xmi:id="_qwLz8_OTEemufas-XlTWhA">
+      <eAnnotations xmi:id="_qwLz9POTEemufas-XlTWhA" source="Objing">
+        <contents xmi:type="uml:Property" xmi:id="_qwLz9fOTEemufas-XlTWhA" name="NoteType_Name">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_qwLz9vOTEemufas-XlTWhA" value="non-functional constraint"/>
+        </contents>
+      </eAnnotations>
+      <body>...</body>
+    </ownedComment>
+    <ownedComment xmi:id="_qwLz9_OTEemufas-XlTWhA">
+      <eAnnotations xmi:id="_qwLz-POTEemufas-XlTWhA" source="Objing">
+        <contents xmi:type="uml:Property" xmi:id="_qwLz-fOTEemufas-XlTWhA" name="NoteType_Name">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_qwLz-vOTEemufas-XlTWhA" value="exception"/>
+        </contents>
+      </eAnnotations>
+      <body>...</body>
+    </ownedComment>
+    <ownedComment xmi:id="_qwLz-_OTEemufas-XlTWhA">
+      <eAnnotations xmi:id="_qwLz_POTEemufas-XlTWhA" source="Objing">
+        <contents xmi:type="uml:Property" xmi:id="_qwLz_fOTEemufas-XlTWhA" name="NoteType_Name">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_qwLz_vOTEemufas-XlTWhA" value="precondition"/>
+        </contents>
+      </eAnnotations>
+      <body>...</body>
+    </ownedComment>
+    <ownedComment xmi:id="_qwLz__OTEemufas-XlTWhA">
+      <eAnnotations xmi:id="_qwL0APOTEemufas-XlTWhA" source="Objing">
+        <contents xmi:type="uml:Property" xmi:id="_qwL0AfOTEemufas-XlTWhA" name="NoteType_Name">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_qwL0AvOTEemufas-XlTWhA" value="postcondition"/>
+        </contents>
+      </eAnnotations>
+      <body>...</body>
+    </ownedComment>
+    <extend xmi:id="_qwL0A_OTEemufas-XlTWhA" name="UseCaseDependency" extendedCase="_qwLzzfOTEemufas-XlTWhA"/>
+    <extend xmi:id="_qwL0BPOTEemufas-XlTWhA" name="UseCaseDependency" extendedCase="_qwLzZPOTEemufas-XlTWhA"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_qwL0BfOTEemufas-XlTWhA" name="Save Journey">
+    <eAnnotations xmi:id="_qwL0BvOTEemufas-XlTWhA" source="Objing">
+      <contents xmi:type="uml:Property" xmi:id="_qwL0B_OTEemufas-XlTWhA" name="Visibility">
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_qwL0CPOTEemufas-XlTWhA" value="0"/>
+      </contents>
+    </eAnnotations>
+    <ownedComment xmi:id="_qwL0CfOTEemufas-XlTWhA">
+      <eAnnotations xmi:id="_qwL0CvOTEemufas-XlTWhA" source="Objing">
+        <contents xmi:type="uml:Property" xmi:id="_qwL0C_OTEemufas-XlTWhA" name="NoteType_Name">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_qwL0DPOTEemufas-XlTWhA" value="constraint"/>
+        </contents>
+      </eAnnotations>
+      <body>...</body>
+    </ownedComment>
+    <ownedComment xmi:id="_qwL0DfOTEemufas-XlTWhA">
+      <eAnnotations xmi:id="_qwL0DvOTEemufas-XlTWhA" source="Objing">
+        <contents xmi:type="uml:Property" xmi:id="_qwL0D_OTEemufas-XlTWhA" name="NoteType_Name">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_qwL0EPOTEemufas-XlTWhA" value="non-functional constraint"/>
+        </contents>
+      </eAnnotations>
+      <body>...</body>
+    </ownedComment>
+    <ownedComment xmi:id="_qwL0EfOTEemufas-XlTWhA">
+      <eAnnotations xmi:id="_qwL0EvOTEemufas-XlTWhA" source="Objing">
+        <contents xmi:type="uml:Property" xmi:id="_qwL0E_OTEemufas-XlTWhA" name="NoteType_Name">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_qwL0FPOTEemufas-XlTWhA" value="exception"/>
+        </contents>
+      </eAnnotations>
+      <body>...</body>
+    </ownedComment>
+    <ownedComment xmi:id="_qwL0FfOTEemufas-XlTWhA">
+      <eAnnotations xmi:id="_qwL0FvOTEemufas-XlTWhA" source="Objing">
+        <contents xmi:type="uml:Property" xmi:id="_qwL0F_OTEemufas-XlTWhA" name="NoteType_Name">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_qwL0GPOTEemufas-XlTWhA" value="precondition"/>
+        </contents>
+      </eAnnotations>
+      <body>...</body>
+    </ownedComment>
+    <ownedComment xmi:id="_qwL0GfOTEemufas-XlTWhA">
+      <eAnnotations xmi:id="_qwL0GvOTEemufas-XlTWhA" source="Objing">
+        <contents xmi:type="uml:Property" xmi:id="_qwL0G_OTEemufas-XlTWhA" name="NoteType_Name">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_qwL0HPOTEemufas-XlTWhA" value="postcondition"/>
+        </contents>
+      </eAnnotations>
+      <body>...</body>
+    </ownedComment>
+  </packagedElement>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_qwL0HfOTEemufas-XlTWhA" name="Delete Journey">
+    <eAnnotations xmi:id="_qwL0HvOTEemufas-XlTWhA" source="Objing">
+      <contents xmi:type="uml:Property" xmi:id="_qwL0H_OTEemufas-XlTWhA" name="Visibility">
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_qwL0IPOTEemufas-XlTWhA" value="0"/>
+      </contents>
+    </eAnnotations>
+    <ownedComment xmi:id="_qwL0IfOTEemufas-XlTWhA">
+      <eAnnotations xmi:id="_qwL0IvOTEemufas-XlTWhA" source="Objing">
+        <contents xmi:type="uml:Property" xmi:id="_qwL0I_OTEemufas-XlTWhA" name="NoteType_Name">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_qwL0JPOTEemufas-XlTWhA" value="constraint"/>
+        </contents>
+      </eAnnotations>
+      <body>...</body>
+    </ownedComment>
+    <ownedComment xmi:id="_qwL0JfOTEemufas-XlTWhA">
+      <eAnnotations xmi:id="_qwL0JvOTEemufas-XlTWhA" source="Objing">
+        <contents xmi:type="uml:Property" xmi:id="_qwL0J_OTEemufas-XlTWhA" name="NoteType_Name">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_qwL0KPOTEemufas-XlTWhA" value="non-functional constraint"/>
+        </contents>
+      </eAnnotations>
+      <body>...</body>
+    </ownedComment>
+    <ownedComment xmi:id="_qwL0KfOTEemufas-XlTWhA">
+      <eAnnotations xmi:id="_qwL0KvOTEemufas-XlTWhA" source="Objing">
+        <contents xmi:type="uml:Property" xmi:id="_qwL0K_OTEemufas-XlTWhA" name="NoteType_Name">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_qwL0LPOTEemufas-XlTWhA" value="exception"/>
+        </contents>
+      </eAnnotations>
+      <body>...</body>
+    </ownedComment>
+    <ownedComment xmi:id="_qwL0LfOTEemufas-XlTWhA">
+      <eAnnotations xmi:id="_qwL0LvOTEemufas-XlTWhA" source="Objing">
+        <contents xmi:type="uml:Property" xmi:id="_qwL0L_OTEemufas-XlTWhA" name="NoteType_Name">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_qwMZwPOTEemufas-XlTWhA" value="precondition"/>
+        </contents>
+      </eAnnotations>
+      <body>...</body>
+    </ownedComment>
+    <ownedComment xmi:id="_qwMZwfOTEemufas-XlTWhA">
+      <eAnnotations xmi:id="_qwMZwvOTEemufas-XlTWhA" source="Objing">
+        <contents xmi:type="uml:Property" xmi:id="_qwMZw_OTEemufas-XlTWhA" name="NoteType_Name">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_qwMZxPOTEemufas-XlTWhA" value="postcondition"/>
+        </contents>
+      </eAnnotations>
+      <body>...</body>
+    </ownedComment>
+    <extend xmi:id="_qwMZxfOTEemufas-XlTWhA" name="UseCaseDependency" extendedCase="_qwL0BfOTEemufas-XlTWhA"/>
+    <extend xmi:id="_qwMZxvOTEemufas-XlTWhA" name="UseCaseDependency" extendedCase="_qwLzzfOTEemufas-XlTWhA"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Actor" xmi:id="_qwMZx_OTEemufas-XlTWhA" name="Foody  Recommendation Agent">
+    <eAnnotations xmi:id="_qwMZyPOTEemufas-XlTWhA" source="Objing">
+      <contents xmi:type="uml:Property" xmi:id="_qwMZyfOTEemufas-XlTWhA" name="Visibility">
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_qwMZyvOTEemufas-XlTWhA" value="0"/>
+      </contents>
+    </eAnnotations>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_qwMZy_OTEemufas-XlTWhA" memberEnd="_qwMZzPOTEemufas-XlTWhA _qwMZ2_OTEemufas-XlTWhA" navigableOwnedEnd="_qwMZzPOTEemufas-XlTWhA">
+    <ownedEnd xmi:id="_qwMZzPOTEemufas-XlTWhA" visibility="public" type="_qwMaK_OTEemufas-XlTWhA" association="_qwMZy_OTEemufas-XlTWhA">
+      <eAnnotations xmi:id="_qwMZzfOTEemufas-XlTWhA" source="Objing">
+        <contents xmi:type="uml:Property" xmi:id="_qwMZzvOTEemufas-XlTWhA" name="Visibility">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_qwMZz_OTEemufas-XlTWhA" value="0"/>
+        </contents>
+        <contents xmi:type="uml:Property" xmi:id="_qwMZ0POTEemufas-XlTWhA" name="MultiMin">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_qwMZ0fOTEemufas-XlTWhA" value="0"/>
+        </contents>
+        <contents xmi:type="uml:Property" xmi:id="_qwMZ0vOTEemufas-XlTWhA" name="MultiMax">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_qwMZ0_OTEemufas-XlTWhA" value="1"/>
+        </contents>
+        <contents xmi:type="uml:Property" xmi:id="_qwMZ1POTEemufas-XlTWhA" name="AccessMode">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_qwMZ1fOTEemufas-XlTWhA" value="read_write"/>
+        </contents>
+      </eAnnotations>
+      <ownedComment xmi:id="_qwMZ1vOTEemufas-XlTWhA">
+        <eAnnotations xmi:id="_qwMZ1_OTEemufas-XlTWhA" source="Objing">
+          <contents xmi:type="uml:Property" xmi:id="_qwMZ2POTEemufas-XlTWhA" name="NoteType_Name">
+            <defaultValue xmi:type="uml:LiteralString" xmi:id="_qwMZ2fOTEemufas-XlTWhA" value="description"/>
+          </contents>
+        </eAnnotations>
+        <body>&lt;Enter note text here></body>
+      </ownedComment>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_qwMZ2vOTEemufas-XlTWhA"/>
+    </ownedEnd>
+    <ownedEnd xmi:id="_qwMZ2_OTEemufas-XlTWhA" visibility="public" type="_qwMZx_OTEemufas-XlTWhA" association="_qwMZy_OTEemufas-XlTWhA">
+      <eAnnotations xmi:id="_qwMZ3POTEemufas-XlTWhA" source="Objing">
+        <contents xmi:type="uml:Property" xmi:id="_qwMZ3fOTEemufas-XlTWhA" name="Visibility">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_qwMZ3vOTEemufas-XlTWhA" value="0"/>
+        </contents>
+        <contents xmi:type="uml:Property" xmi:id="_qwMZ3_OTEemufas-XlTWhA" name="MultiMin">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_qwMZ4POTEemufas-XlTWhA" value="0"/>
+        </contents>
+        <contents xmi:type="uml:Property" xmi:id="_qwMZ4fOTEemufas-XlTWhA" name="MultiMax">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_qwMZ4vOTEemufas-XlTWhA" value="1"/>
+        </contents>
+        <contents xmi:type="uml:Property" xmi:id="_qwMZ4_OTEemufas-XlTWhA" name="AccessMode">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_qwMZ5POTEemufas-XlTWhA" value="read_write"/>
+        </contents>
+      </eAnnotations>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_qwMZ5fOTEemufas-XlTWhA"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_qwMZ5vOTEemufas-XlTWhA" memberEnd="_qwMZ5_OTEemufas-XlTWhA _qwMZ8vOTEemufas-XlTWhA" navigableOwnedEnd="_qwMZ5_OTEemufas-XlTWhA">
+    <ownedEnd xmi:id="_qwMZ5_OTEemufas-XlTWhA" visibility="public" type="_qwMaSPOTEemufas-XlTWhA" association="_qwMZ5vOTEemufas-XlTWhA">
+      <eAnnotations xmi:id="_qwMZ6POTEemufas-XlTWhA" source="Objing">
+        <contents xmi:type="uml:Property" xmi:id="_qwMZ6fOTEemufas-XlTWhA" name="Visibility">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_qwMZ6vOTEemufas-XlTWhA" value="0"/>
+        </contents>
+        <contents xmi:type="uml:Property" xmi:id="_qwMZ6_OTEemufas-XlTWhA" name="MultiMin">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_qwMZ7POTEemufas-XlTWhA" value="0"/>
+        </contents>
+        <contents xmi:type="uml:Property" xmi:id="_qwMZ7fOTEemufas-XlTWhA" name="MultiMax">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_qwMZ7vOTEemufas-XlTWhA" value="1"/>
+        </contents>
+        <contents xmi:type="uml:Property" xmi:id="_qwMZ7_OTEemufas-XlTWhA" name="AccessMode">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_qwMZ8POTEemufas-XlTWhA" value="read_write"/>
+        </contents>
+      </eAnnotations>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_qwMZ8fOTEemufas-XlTWhA"/>
+    </ownedEnd>
+    <ownedEnd xmi:id="_qwMZ8vOTEemufas-XlTWhA" visibility="public" type="_qwMZx_OTEemufas-XlTWhA" association="_qwMZ5vOTEemufas-XlTWhA">
+      <eAnnotations xmi:id="_qwMZ8_OTEemufas-XlTWhA" source="Objing">
+        <contents xmi:type="uml:Property" xmi:id="_qwMZ9POTEemufas-XlTWhA" name="Visibility">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_qwMZ9fOTEemufas-XlTWhA" value="0"/>
+        </contents>
+        <contents xmi:type="uml:Property" xmi:id="_qwMZ9vOTEemufas-XlTWhA" name="MultiMin">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_qwMZ9_OTEemufas-XlTWhA" value="0"/>
+        </contents>
+        <contents xmi:type="uml:Property" xmi:id="_qwMZ-POTEemufas-XlTWhA" name="MultiMax">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_qwMZ-fOTEemufas-XlTWhA" value="1"/>
+        </contents>
+        <contents xmi:type="uml:Property" xmi:id="_qwMZ-vOTEemufas-XlTWhA" name="AccessMode">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_qwMZ-_OTEemufas-XlTWhA" value="read_write"/>
+        </contents>
+      </eAnnotations>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_qwMZ_POTEemufas-XlTWhA"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_qwMZ_fOTEemufas-XlTWhA" memberEnd="_qwMZ_vOTEemufas-XlTWhA _qwMaCfOTEemufas-XlTWhA" navigableOwnedEnd="_qwMZ_vOTEemufas-XlTWhA">
+    <ownedEnd xmi:id="_qwMZ_vOTEemufas-XlTWhA" visibility="public" type="_qwMaZfOTEemufas-XlTWhA" association="_qwMZ_fOTEemufas-XlTWhA">
+      <eAnnotations xmi:id="_qwMZ__OTEemufas-XlTWhA" source="Objing">
+        <contents xmi:type="uml:Property" xmi:id="_qwMaAPOTEemufas-XlTWhA" name="Visibility">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_qwMaAfOTEemufas-XlTWhA" value="0"/>
+        </contents>
+        <contents xmi:type="uml:Property" xmi:id="_qwMaAvOTEemufas-XlTWhA" name="MultiMin">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_qwMaA_OTEemufas-XlTWhA" value="0"/>
+        </contents>
+        <contents xmi:type="uml:Property" xmi:id="_qwMaBPOTEemufas-XlTWhA" name="MultiMax">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_qwMaBfOTEemufas-XlTWhA" value="1"/>
+        </contents>
+        <contents xmi:type="uml:Property" xmi:id="_qwMaBvOTEemufas-XlTWhA" name="AccessMode">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_qwMaB_OTEemufas-XlTWhA" value="read_write"/>
+        </contents>
+      </eAnnotations>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_qwMaCPOTEemufas-XlTWhA"/>
+    </ownedEnd>
+    <ownedEnd xmi:id="_qwMaCfOTEemufas-XlTWhA" visibility="public" type="_qwMZx_OTEemufas-XlTWhA" association="_qwMZ_fOTEemufas-XlTWhA">
+      <eAnnotations xmi:id="_qwMaCvOTEemufas-XlTWhA" source="Objing">
+        <contents xmi:type="uml:Property" xmi:id="_qwMaC_OTEemufas-XlTWhA" name="Visibility">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_qwMaDPOTEemufas-XlTWhA" value="0"/>
+        </contents>
+        <contents xmi:type="uml:Property" xmi:id="_qwMaDfOTEemufas-XlTWhA" name="MultiMin">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_qwMaDvOTEemufas-XlTWhA" value="0"/>
+        </contents>
+        <contents xmi:type="uml:Property" xmi:id="_qwMaD_OTEemufas-XlTWhA" name="MultiMax">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_qwMaEPOTEemufas-XlTWhA" value="1"/>
+        </contents>
+        <contents xmi:type="uml:Property" xmi:id="_qwMaEfOTEemufas-XlTWhA" name="AccessMode">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_qwMaEvOTEemufas-XlTWhA" value="read_write"/>
+        </contents>
+      </eAnnotations>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_qwMaE_OTEemufas-XlTWhA"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_qwMaFPOTEemufas-XlTWhA" memberEnd="_qwMaFfOTEemufas-XlTWhA _qwMaIPOTEemufas-XlTWhA" navigableOwnedEnd="_qwMaFfOTEemufas-XlTWhA">
+    <ownedEnd xmi:id="_qwMaFfOTEemufas-XlTWhA" visibility="public" type="_qwMagvOTEemufas-XlTWhA" association="_qwMaFPOTEemufas-XlTWhA">
+      <eAnnotations xmi:id="_qwMaFvOTEemufas-XlTWhA" source="Objing">
+        <contents xmi:type="uml:Property" xmi:id="_qwMaF_OTEemufas-XlTWhA" name="Visibility">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_qwMaGPOTEemufas-XlTWhA" value="0"/>
+        </contents>
+        <contents xmi:type="uml:Property" xmi:id="_qwMaGfOTEemufas-XlTWhA" name="MultiMin">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_qwMaGvOTEemufas-XlTWhA" value="0"/>
+        </contents>
+        <contents xmi:type="uml:Property" xmi:id="_qwMaG_OTEemufas-XlTWhA" name="MultiMax">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_qwMaHPOTEemufas-XlTWhA" value="1"/>
+        </contents>
+        <contents xmi:type="uml:Property" xmi:id="_qwMaHfOTEemufas-XlTWhA" name="AccessMode">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_qwMaHvOTEemufas-XlTWhA" value="read_write"/>
+        </contents>
+      </eAnnotations>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_qwMaH_OTEemufas-XlTWhA"/>
+    </ownedEnd>
+    <ownedEnd xmi:id="_qwMaIPOTEemufas-XlTWhA" visibility="public" type="_qwMZx_OTEemufas-XlTWhA" association="_qwMaFPOTEemufas-XlTWhA">
+      <eAnnotations xmi:id="_qwMaIfOTEemufas-XlTWhA" source="Objing">
+        <contents xmi:type="uml:Property" xmi:id="_qwMaIvOTEemufas-XlTWhA" name="Visibility">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_qwMaI_OTEemufas-XlTWhA" value="0"/>
+        </contents>
+        <contents xmi:type="uml:Property" xmi:id="_qwMaJPOTEemufas-XlTWhA" name="MultiMin">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_qwMaJfOTEemufas-XlTWhA" value="0"/>
+        </contents>
+        <contents xmi:type="uml:Property" xmi:id="_qwMaJvOTEemufas-XlTWhA" name="MultiMax">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_qwMaJ_OTEemufas-XlTWhA" value="1"/>
+        </contents>
+        <contents xmi:type="uml:Property" xmi:id="_qwMaKPOTEemufas-XlTWhA" name="AccessMode">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_qwMaKfOTEemufas-XlTWhA" value="read_write"/>
+        </contents>
+      </eAnnotations>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_qwMaKvOTEemufas-XlTWhA"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_qwMaK_OTEemufas-XlTWhA" name="Get User's Journeys">
+    <eAnnotations xmi:id="_qwMaLPOTEemufas-XlTWhA" source="Objing">
+      <contents xmi:type="uml:Property" xmi:id="_qwMaLfOTEemufas-XlTWhA" name="Visibility">
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_qwMaLvOTEemufas-XlTWhA" value="0"/>
+      </contents>
+    </eAnnotations>
+    <ownedComment xmi:id="_qwMaL_OTEemufas-XlTWhA">
+      <eAnnotations xmi:id="_qwMaMPOTEemufas-XlTWhA" source="Objing">
+        <contents xmi:type="uml:Property" xmi:id="_qwMaMfOTEemufas-XlTWhA" name="NoteType_Name">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_qwMaMvOTEemufas-XlTWhA" value="constraint"/>
+        </contents>
+      </eAnnotations>
+      <body>...</body>
+    </ownedComment>
+    <ownedComment xmi:id="_qwMaM_OTEemufas-XlTWhA">
+      <eAnnotations xmi:id="_qwMaNPOTEemufas-XlTWhA" source="Objing">
+        <contents xmi:type="uml:Property" xmi:id="_qwMaNfOTEemufas-XlTWhA" name="NoteType_Name">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_qwMaNvOTEemufas-XlTWhA" value="non-functional constraint"/>
+        </contents>
+      </eAnnotations>
+      <body>...</body>
+    </ownedComment>
+    <ownedComment xmi:id="_qwMaN_OTEemufas-XlTWhA">
+      <eAnnotations xmi:id="_qwMaOPOTEemufas-XlTWhA" source="Objing">
+        <contents xmi:type="uml:Property" xmi:id="_qwMaOfOTEemufas-XlTWhA" name="NoteType_Name">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_qwMaOvOTEemufas-XlTWhA" value="exception"/>
+        </contents>
+      </eAnnotations>
+      <body>...</body>
+    </ownedComment>
+    <ownedComment xmi:id="_qwMaO_OTEemufas-XlTWhA">
+      <eAnnotations xmi:id="_qwMaPPOTEemufas-XlTWhA" source="Objing">
+        <contents xmi:type="uml:Property" xmi:id="_qwMaPfOTEemufas-XlTWhA" name="NoteType_Name">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_qwMaPvOTEemufas-XlTWhA" value="precondition"/>
+        </contents>
+      </eAnnotations>
+      <body>...</body>
+    </ownedComment>
+    <ownedComment xmi:id="_qwMaP_OTEemufas-XlTWhA">
+      <eAnnotations xmi:id="_qwMaQPOTEemufas-XlTWhA" source="Objing">
+        <contents xmi:type="uml:Property" xmi:id="_qwMaQfOTEemufas-XlTWhA" name="NoteType_Name">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_qwMaQvOTEemufas-XlTWhA" value="postcondition"/>
+        </contents>
+      </eAnnotations>
+      <body>...</body>
+    </ownedComment>
+    <ownedComment xmi:id="_qwMaQ_OTEemufas-XlTWhA">
+      <eAnnotations xmi:id="_qwMaRPOTEemufas-XlTWhA" source="Objing">
+        <contents xmi:type="uml:Property" xmi:id="_qwMaRfOTEemufas-XlTWhA" name="NoteType_Name">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_qwMaRvOTEemufas-XlTWhA" value="description"/>
+        </contents>
+      </eAnnotations>
+      <body></body>
+    </ownedComment>
+    <extend xmi:id="_qwMaR_OTEemufas-XlTWhA" name="UseCaseDependency" extendedCase="_qwL0BfOTEemufas-XlTWhA"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_qwMaSPOTEemufas-XlTWhA" name="Get User's Likes">
+    <eAnnotations xmi:id="_qwMaSfOTEemufas-XlTWhA" source="Objing">
+      <contents xmi:type="uml:Property" xmi:id="_qwMaSvOTEemufas-XlTWhA" name="Visibility">
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_qwMaS_OTEemufas-XlTWhA" value="0"/>
+      </contents>
+    </eAnnotations>
+    <ownedComment xmi:id="_qwMaTPOTEemufas-XlTWhA">
+      <eAnnotations xmi:id="_qwMaTfOTEemufas-XlTWhA" source="Objing">
+        <contents xmi:type="uml:Property" xmi:id="_qwMaTvOTEemufas-XlTWhA" name="NoteType_Name">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_qwMaT_OTEemufas-XlTWhA" value="constraint"/>
+        </contents>
+      </eAnnotations>
+      <body>...</body>
+    </ownedComment>
+    <ownedComment xmi:id="_qwMaUPOTEemufas-XlTWhA">
+      <eAnnotations xmi:id="_qwMaUfOTEemufas-XlTWhA" source="Objing">
+        <contents xmi:type="uml:Property" xmi:id="_qwMaUvOTEemufas-XlTWhA" name="NoteType_Name">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_qwMaU_OTEemufas-XlTWhA" value="non-functional constraint"/>
+        </contents>
+      </eAnnotations>
+      <body>...</body>
+    </ownedComment>
+    <ownedComment xmi:id="_qwMaVPOTEemufas-XlTWhA">
+      <eAnnotations xmi:id="_qwMaVfOTEemufas-XlTWhA" source="Objing">
+        <contents xmi:type="uml:Property" xmi:id="_qwMaVvOTEemufas-XlTWhA" name="NoteType_Name">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_qwMaV_OTEemufas-XlTWhA" value="exception"/>
+        </contents>
+      </eAnnotations>
+      <body>...</body>
+    </ownedComment>
+    <ownedComment xmi:id="_qwMaWPOTEemufas-XlTWhA">
+      <eAnnotations xmi:id="_qwMaWfOTEemufas-XlTWhA" source="Objing">
+        <contents xmi:type="uml:Property" xmi:id="_qwMaWvOTEemufas-XlTWhA" name="NoteType_Name">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_qwMaW_OTEemufas-XlTWhA" value="precondition"/>
+        </contents>
+      </eAnnotations>
+      <body>...</body>
+    </ownedComment>
+    <ownedComment xmi:id="_qwMaXPOTEemufas-XlTWhA">
+      <eAnnotations xmi:id="_qwMaXfOTEemufas-XlTWhA" source="Objing">
+        <contents xmi:type="uml:Property" xmi:id="_qwMaXvOTEemufas-XlTWhA" name="NoteType_Name">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_qwMaX_OTEemufas-XlTWhA" value="postcondition"/>
+        </contents>
+      </eAnnotations>
+      <body>...</body>
+    </ownedComment>
+    <ownedComment xmi:id="_qwMaYPOTEemufas-XlTWhA">
+      <eAnnotations xmi:id="_qwMaYfOTEemufas-XlTWhA" source="Objing">
+        <contents xmi:type="uml:Property" xmi:id="_qwMaYvOTEemufas-XlTWhA" name="NoteType_Name">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_qwMaY_OTEemufas-XlTWhA" value="description"/>
+        </contents>
+      </eAnnotations>
+      <body></body>
+    </ownedComment>
+    <extend xmi:id="_qwMaZPOTEemufas-XlTWhA" name="UseCaseDependency" extendedCase="_qwLzs_OTEemufas-XlTWhA"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_qwMaZfOTEemufas-XlTWhA" name="Get User's Dislikes">
+    <eAnnotations xmi:id="_qwMaZvOTEemufas-XlTWhA" source="Objing">
+      <contents xmi:type="uml:Property" xmi:id="_qwMaZ_OTEemufas-XlTWhA" name="Visibility">
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_qwMaaPOTEemufas-XlTWhA" value="0"/>
+      </contents>
+    </eAnnotations>
+    <ownedComment xmi:id="_qwMaafOTEemufas-XlTWhA">
+      <eAnnotations xmi:id="_qwMaavOTEemufas-XlTWhA" source="Objing">
+        <contents xmi:type="uml:Property" xmi:id="_qwMaa_OTEemufas-XlTWhA" name="NoteType_Name">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_qwMabPOTEemufas-XlTWhA" value="constraint"/>
+        </contents>
+      </eAnnotations>
+      <body>...</body>
+    </ownedComment>
+    <ownedComment xmi:id="_qwMabfOTEemufas-XlTWhA">
+      <eAnnotations xmi:id="_qwMabvOTEemufas-XlTWhA" source="Objing">
+        <contents xmi:type="uml:Property" xmi:id="_qwMab_OTEemufas-XlTWhA" name="NoteType_Name">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_qwMacPOTEemufas-XlTWhA" value="non-functional constraint"/>
+        </contents>
+      </eAnnotations>
+      <body>...</body>
+    </ownedComment>
+    <ownedComment xmi:id="_qwMacfOTEemufas-XlTWhA">
+      <eAnnotations xmi:id="_qwMacvOTEemufas-XlTWhA" source="Objing">
+        <contents xmi:type="uml:Property" xmi:id="_qwMac_OTEemufas-XlTWhA" name="NoteType_Name">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_qwMadPOTEemufas-XlTWhA" value="exception"/>
+        </contents>
+      </eAnnotations>
+      <body>...</body>
+    </ownedComment>
+    <ownedComment xmi:id="_qwMadfOTEemufas-XlTWhA">
+      <eAnnotations xmi:id="_qwMadvOTEemufas-XlTWhA" source="Objing">
+        <contents xmi:type="uml:Property" xmi:id="_qwMad_OTEemufas-XlTWhA" name="NoteType_Name">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_qwMaePOTEemufas-XlTWhA" value="precondition"/>
+        </contents>
+      </eAnnotations>
+      <body>...</body>
+    </ownedComment>
+    <ownedComment xmi:id="_qwMaefOTEemufas-XlTWhA">
+      <eAnnotations xmi:id="_qwMaevOTEemufas-XlTWhA" source="Objing">
+        <contents xmi:type="uml:Property" xmi:id="_qwMae_OTEemufas-XlTWhA" name="NoteType_Name">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_qwMafPOTEemufas-XlTWhA" value="postcondition"/>
+        </contents>
+      </eAnnotations>
+      <body>...</body>
+    </ownedComment>
+    <ownedComment xmi:id="_qwMaffOTEemufas-XlTWhA">
+      <eAnnotations xmi:id="_qwMafvOTEemufas-XlTWhA" source="Objing">
+        <contents xmi:type="uml:Property" xmi:id="_qwMaf_OTEemufas-XlTWhA" name="NoteType_Name">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_qwMagPOTEemufas-XlTWhA" value="description"/>
+        </contents>
+      </eAnnotations>
+      <body></body>
+    </ownedComment>
+    <extend xmi:id="_qwMagfOTEemufas-XlTWhA" name="UseCaseDependency" extendedCase="_qwLz6_OTEemufas-XlTWhA"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_qwMagvOTEemufas-XlTWhA" name="Get User's Recommendation Attributes">
+    <eAnnotations xmi:id="_qwMag_OTEemufas-XlTWhA" source="Objing">
+      <contents xmi:type="uml:Property" xmi:id="_qwMahPOTEemufas-XlTWhA" name="Visibility">
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_qwMahfOTEemufas-XlTWhA" value="0"/>
+      </contents>
+    </eAnnotations>
+    <ownedComment xmi:id="_qwMahvOTEemufas-XlTWhA">
+      <eAnnotations xmi:id="_qwMah_OTEemufas-XlTWhA" source="Objing">
+        <contents xmi:type="uml:Property" xmi:id="_qwMaiPOTEemufas-XlTWhA" name="NoteType_Name">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_qwMaifOTEemufas-XlTWhA" value="constraint"/>
+        </contents>
+      </eAnnotations>
+      <body>...</body>
+    </ownedComment>
+    <ownedComment xmi:id="_qwMaivOTEemufas-XlTWhA">
+      <eAnnotations xmi:id="_qwMai_OTEemufas-XlTWhA" source="Objing">
+        <contents xmi:type="uml:Property" xmi:id="_qwMajPOTEemufas-XlTWhA" name="NoteType_Name">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_qwMajfOTEemufas-XlTWhA" value="non-functional constraint"/>
+        </contents>
+      </eAnnotations>
+      <body>...</body>
+    </ownedComment>
+    <ownedComment xmi:id="_qwMajvOTEemufas-XlTWhA">
+      <eAnnotations xmi:id="_qwMaj_OTEemufas-XlTWhA" source="Objing">
+        <contents xmi:type="uml:Property" xmi:id="_qwMakPOTEemufas-XlTWhA" name="NoteType_Name">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_qwMakfOTEemufas-XlTWhA" value="exception"/>
+        </contents>
+      </eAnnotations>
+      <body>...</body>
+    </ownedComment>
+    <ownedComment xmi:id="_qwMakvOTEemufas-XlTWhA">
+      <eAnnotations xmi:id="_qwMak_OTEemufas-XlTWhA" source="Objing">
+        <contents xmi:type="uml:Property" xmi:id="_qwMalPOTEemufas-XlTWhA" name="NoteType_Name">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_qwMalfOTEemufas-XlTWhA" value="precondition"/>
+        </contents>
+      </eAnnotations>
+      <body>...</body>
+    </ownedComment>
+    <ownedComment xmi:id="_qwMalvOTEemufas-XlTWhA">
+      <eAnnotations xmi:id="_qwMal_OTEemufas-XlTWhA" source="Objing">
+        <contents xmi:type="uml:Property" xmi:id="_qwMamPOTEemufas-XlTWhA" name="NoteType_Name">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_qwMamfOTEemufas-XlTWhA" value="postcondition"/>
+        </contents>
+      </eAnnotations>
+      <body>...</body>
+    </ownedComment>
+    <ownedComment xmi:id="_qwMamvOTEemufas-XlTWhA">
+      <eAnnotations xmi:id="_qwMam_OTEemufas-XlTWhA" source="Objing">
+        <contents xmi:type="uml:Property" xmi:id="_qwManPOTEemufas-XlTWhA" name="NoteType_Name">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_qwManfOTEemufas-XlTWhA" value="description"/>
+        </contents>
+      </eAnnotations>
+      <body></body>
+    </ownedComment>
+    <extend xmi:id="_qwManvOTEemufas-XlTWhA" name="UseCaseDependency" extendedCase="_qwMauvOTEemufas-XlTWhA"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Actor" xmi:id="_qwMan_OTEemufas-XlTWhA" name="Recommender System">
+    <eAnnotations xmi:id="_qwMaoPOTEemufas-XlTWhA" source="Objing">
+      <contents xmi:type="uml:Property" xmi:id="_qwMaofOTEemufas-XlTWhA" name="Visibility">
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_qwMaovOTEemufas-XlTWhA" value="0"/>
+      </contents>
+    </eAnnotations>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_qwMao_OTEemufas-XlTWhA" memberEnd="_qwMapPOTEemufas-XlTWhA _qwMar_OTEemufas-XlTWhA" navigableOwnedEnd="_qwMapPOTEemufas-XlTWhA">
+    <ownedEnd xmi:id="_qwMapPOTEemufas-XlTWhA" visibility="public" type="_qwMauvOTEemufas-XlTWhA" association="_qwMao_OTEemufas-XlTWhA">
+      <eAnnotations xmi:id="_qwMapfOTEemufas-XlTWhA" source="Objing">
+        <contents xmi:type="uml:Property" xmi:id="_qwMapvOTEemufas-XlTWhA" name="Visibility">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_qwMap_OTEemufas-XlTWhA" value="0"/>
+        </contents>
+        <contents xmi:type="uml:Property" xmi:id="_qwMaqPOTEemufas-XlTWhA" name="MultiMin">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_qwMaqfOTEemufas-XlTWhA" value="0"/>
+        </contents>
+        <contents xmi:type="uml:Property" xmi:id="_qwMaqvOTEemufas-XlTWhA" name="MultiMax">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_qwMaq_OTEemufas-XlTWhA" value="1"/>
+        </contents>
+        <contents xmi:type="uml:Property" xmi:id="_qwMarPOTEemufas-XlTWhA" name="AccessMode">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_qwMarfOTEemufas-XlTWhA" value="read_write"/>
+        </contents>
+      </eAnnotations>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_qwMarvOTEemufas-XlTWhA"/>
+    </ownedEnd>
+    <ownedEnd xmi:id="_qwMar_OTEemufas-XlTWhA" visibility="public" type="_qwMan_OTEemufas-XlTWhA" association="_qwMao_OTEemufas-XlTWhA">
+      <eAnnotations xmi:id="_qwMasPOTEemufas-XlTWhA" source="Objing">
+        <contents xmi:type="uml:Property" xmi:id="_qwMasfOTEemufas-XlTWhA" name="Visibility">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_qwMasvOTEemufas-XlTWhA" value="0"/>
+        </contents>
+        <contents xmi:type="uml:Property" xmi:id="_qwMas_OTEemufas-XlTWhA" name="MultiMin">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_qwMatPOTEemufas-XlTWhA" value="0"/>
+        </contents>
+        <contents xmi:type="uml:Property" xmi:id="_qwMatfOTEemufas-XlTWhA" name="MultiMax">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_qwMatvOTEemufas-XlTWhA" value="1"/>
+        </contents>
+        <contents xmi:type="uml:Property" xmi:id="_qwMat_OTEemufas-XlTWhA" name="AccessMode">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_qwMauPOTEemufas-XlTWhA" value="read_write"/>
+        </contents>
+      </eAnnotations>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_qwMaufOTEemufas-XlTWhA"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_qwMauvOTEemufas-XlTWhA" name="Calculate User's Recommendation Attributes">
+    <eAnnotations xmi:id="_qwMau_OTEemufas-XlTWhA" source="Objing">
+      <contents xmi:type="uml:Property" xmi:id="_qwMavPOTEemufas-XlTWhA" name="Visibility">
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_qwMavfOTEemufas-XlTWhA" value="0"/>
+      </contents>
+    </eAnnotations>
+    <ownedComment xmi:id="_qwMavvOTEemufas-XlTWhA">
+      <eAnnotations xmi:id="_qwMav_OTEemufas-XlTWhA" source="Objing">
+        <contents xmi:type="uml:Property" xmi:id="_qwMawPOTEemufas-XlTWhA" name="NoteType_Name">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_qwMawfOTEemufas-XlTWhA" value="constraint"/>
+        </contents>
+      </eAnnotations>
+      <body>...</body>
+    </ownedComment>
+    <ownedComment xmi:id="_qwMawvOTEemufas-XlTWhA">
+      <eAnnotations xmi:id="_qwMaw_OTEemufas-XlTWhA" source="Objing">
+        <contents xmi:type="uml:Property" xmi:id="_qwMaxPOTEemufas-XlTWhA" name="NoteType_Name">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_qwMaxfOTEemufas-XlTWhA" value="non-functional constraint"/>
+        </contents>
+      </eAnnotations>
+      <body>...</body>
+    </ownedComment>
+    <ownedComment xmi:id="_qwMaxvOTEemufas-XlTWhA">
+      <eAnnotations xmi:id="_qwMax_OTEemufas-XlTWhA" source="Objing">
+        <contents xmi:type="uml:Property" xmi:id="_qwMayPOTEemufas-XlTWhA" name="NoteType_Name">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_qwMayfOTEemufas-XlTWhA" value="exception"/>
+        </contents>
+      </eAnnotations>
+      <body>...</body>
+    </ownedComment>
+    <ownedComment xmi:id="_qwMayvOTEemufas-XlTWhA">
+      <eAnnotations xmi:id="_qwMay_OTEemufas-XlTWhA" source="Objing">
+        <contents xmi:type="uml:Property" xmi:id="_qwMazPOTEemufas-XlTWhA" name="NoteType_Name">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_qwMazfOTEemufas-XlTWhA" value="precondition"/>
+        </contents>
+      </eAnnotations>
+      <body>...</body>
+    </ownedComment>
+    <ownedComment xmi:id="_qwMazvOTEemufas-XlTWhA">
+      <eAnnotations xmi:id="_qwMaz_OTEemufas-XlTWhA" source="Objing">
+        <contents xmi:type="uml:Property" xmi:id="_qwMa0POTEemufas-XlTWhA" name="NoteType_Name">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_qwMa0fOTEemufas-XlTWhA" value="postcondition"/>
+        </contents>
+      </eAnnotations>
+      <body>...</body>
+    </ownedComment>
+    <ownedComment xmi:id="_qwMa0vOTEemufas-XlTWhA">
+      <eAnnotations xmi:id="_qwMa0_OTEemufas-XlTWhA" source="Objing">
+        <contents xmi:type="uml:Property" xmi:id="_qwMa1POTEemufas-XlTWhA" name="NoteType_Name">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_qwMa1fOTEemufas-XlTWhA" value="description"/>
+        </contents>
+      </eAnnotations>
+      <body></body>
+    </ownedComment>
+    <include xmi:id="_qwMa1vOTEemufas-XlTWhA" name="UseCaseDependency" addition="_qwMaSPOTEemufas-XlTWhA"/>
+    <include xmi:id="_qwMa1_OTEemufas-XlTWhA" name="UseCaseDependency" addition="_qwMaZfOTEemufas-XlTWhA"/>
+    <include xmi:id="_qwNA0POTEemufas-XlTWhA" name="UseCaseDependency" addition="_qwNBBPOTEemufas-XlTWhA"/>
+    <include xmi:id="_qwNA0fOTEemufas-XlTWhA" name="UseCaseDependency" addition="_qwNBIPOTEemufas-XlTWhA"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Actor" xmi:id="_qwNA0vOTEemufas-XlTWhA" name="Foody's Data Provider">
+    <eAnnotations xmi:id="_qwNA0_OTEemufas-XlTWhA" source="Objing">
+      <contents xmi:type="uml:Property" xmi:id="_qwNA1POTEemufas-XlTWhA" name="Visibility">
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_qwNA1fOTEemufas-XlTWhA" value="0"/>
+      </contents>
+    </eAnnotations>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_qwNA1vOTEemufas-XlTWhA" memberEnd="_qwNA1_OTEemufas-XlTWhA _qwNA4vOTEemufas-XlTWhA" navigableOwnedEnd="_qwNA1_OTEemufas-XlTWhA">
+    <ownedEnd xmi:id="_qwNA1_OTEemufas-XlTWhA" visibility="public" type="_qwNBBPOTEemufas-XlTWhA" association="_qwNA1vOTEemufas-XlTWhA">
+      <eAnnotations xmi:id="_qwNA2POTEemufas-XlTWhA" source="Objing">
+        <contents xmi:type="uml:Property" xmi:id="_qwNA2fOTEemufas-XlTWhA" name="Visibility">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_qwNA2vOTEemufas-XlTWhA" value="0"/>
+        </contents>
+        <contents xmi:type="uml:Property" xmi:id="_qwNA2_OTEemufas-XlTWhA" name="MultiMin">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_qwNA3POTEemufas-XlTWhA" value="0"/>
+        </contents>
+        <contents xmi:type="uml:Property" xmi:id="_qwNA3fOTEemufas-XlTWhA" name="MultiMax">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_qwNA3vOTEemufas-XlTWhA" value="1"/>
+        </contents>
+        <contents xmi:type="uml:Property" xmi:id="_qwNA3_OTEemufas-XlTWhA" name="AccessMode">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_qwNA4POTEemufas-XlTWhA" value="read_write"/>
+        </contents>
+      </eAnnotations>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_qwNA4fOTEemufas-XlTWhA"/>
+    </ownedEnd>
+    <ownedEnd xmi:id="_qwNA4vOTEemufas-XlTWhA" visibility="public" type="_qwNA0vOTEemufas-XlTWhA" association="_qwNA1vOTEemufas-XlTWhA">
+      <eAnnotations xmi:id="_qwNA4_OTEemufas-XlTWhA" source="Objing">
+        <contents xmi:type="uml:Property" xmi:id="_qwNA5POTEemufas-XlTWhA" name="Visibility">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_qwNA5fOTEemufas-XlTWhA" value="0"/>
+        </contents>
+        <contents xmi:type="uml:Property" xmi:id="_qwNA5vOTEemufas-XlTWhA" name="MultiMin">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_qwNA5_OTEemufas-XlTWhA" value="0"/>
+        </contents>
+        <contents xmi:type="uml:Property" xmi:id="_qwNA6POTEemufas-XlTWhA" name="MultiMax">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_qwNA6fOTEemufas-XlTWhA" value="1"/>
+        </contents>
+        <contents xmi:type="uml:Property" xmi:id="_qwNA6vOTEemufas-XlTWhA" name="AccessMode">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_qwNA6_OTEemufas-XlTWhA" value="read_write"/>
+        </contents>
+      </eAnnotations>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_qwNA7POTEemufas-XlTWhA"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_qwNA7fOTEemufas-XlTWhA" memberEnd="_qwNA7vOTEemufas-XlTWhA _qwNA-fOTEemufas-XlTWhA" navigableOwnedEnd="_qwNA7vOTEemufas-XlTWhA">
+    <ownedEnd xmi:id="_qwNA7vOTEemufas-XlTWhA" visibility="public" type="_qwNBIPOTEemufas-XlTWhA" association="_qwNA7fOTEemufas-XlTWhA">
+      <eAnnotations xmi:id="_qwNA7_OTEemufas-XlTWhA" source="Objing">
+        <contents xmi:type="uml:Property" xmi:id="_qwNA8POTEemufas-XlTWhA" name="Visibility">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_qwNA8fOTEemufas-XlTWhA" value="0"/>
+        </contents>
+        <contents xmi:type="uml:Property" xmi:id="_qwNA8vOTEemufas-XlTWhA" name="MultiMin">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_qwNA8_OTEemufas-XlTWhA" value="0"/>
+        </contents>
+        <contents xmi:type="uml:Property" xmi:id="_qwNA9POTEemufas-XlTWhA" name="MultiMax">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_qwNA9fOTEemufas-XlTWhA" value="1"/>
+        </contents>
+        <contents xmi:type="uml:Property" xmi:id="_qwNA9vOTEemufas-XlTWhA" name="AccessMode">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_qwNA9_OTEemufas-XlTWhA" value="read_write"/>
+        </contents>
+      </eAnnotations>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_qwNA-POTEemufas-XlTWhA"/>
+    </ownedEnd>
+    <ownedEnd xmi:id="_qwNA-fOTEemufas-XlTWhA" visibility="public" type="_qwNA0vOTEemufas-XlTWhA" association="_qwNA7fOTEemufas-XlTWhA">
+      <eAnnotations xmi:id="_qwNA-vOTEemufas-XlTWhA" source="Objing">
+        <contents xmi:type="uml:Property" xmi:id="_qwNA-_OTEemufas-XlTWhA" name="Visibility">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_qwNA_POTEemufas-XlTWhA" value="0"/>
+        </contents>
+        <contents xmi:type="uml:Property" xmi:id="_qwNA_fOTEemufas-XlTWhA" name="MultiMin">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_qwNA_vOTEemufas-XlTWhA" value="0"/>
+        </contents>
+        <contents xmi:type="uml:Property" xmi:id="_qwNA__OTEemufas-XlTWhA" name="MultiMax">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_qwNBAPOTEemufas-XlTWhA" value="1"/>
+        </contents>
+        <contents xmi:type="uml:Property" xmi:id="_qwNBAfOTEemufas-XlTWhA" name="AccessMode">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_qwNBAvOTEemufas-XlTWhA" value="read_write"/>
+        </contents>
+      </eAnnotations>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_qwNBA_OTEemufas-XlTWhA"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_qwNBBPOTEemufas-XlTWhA" name="Get User's Ratings">
+    <eAnnotations xmi:id="_qwNBBfOTEemufas-XlTWhA" source="Objing">
+      <contents xmi:type="uml:Property" xmi:id="_qwNBBvOTEemufas-XlTWhA" name="Visibility">
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_qwNBB_OTEemufas-XlTWhA" value="0"/>
+      </contents>
+    </eAnnotations>
+    <ownedComment xmi:id="_qwNBCPOTEemufas-XlTWhA">
+      <eAnnotations xmi:id="_qwNBCfOTEemufas-XlTWhA" source="Objing">
+        <contents xmi:type="uml:Property" xmi:id="_qwNBCvOTEemufas-XlTWhA" name="NoteType_Name">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_qwNBC_OTEemufas-XlTWhA" value="constraint"/>
+        </contents>
+      </eAnnotations>
+      <body>...</body>
+    </ownedComment>
+    <ownedComment xmi:id="_qwNBDPOTEemufas-XlTWhA">
+      <eAnnotations xmi:id="_qwNBDfOTEemufas-XlTWhA" source="Objing">
+        <contents xmi:type="uml:Property" xmi:id="_qwNBDvOTEemufas-XlTWhA" name="NoteType_Name">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_qwNBD_OTEemufas-XlTWhA" value="non-functional constraint"/>
+        </contents>
+      </eAnnotations>
+      <body>...</body>
+    </ownedComment>
+    <ownedComment xmi:id="_qwNBEPOTEemufas-XlTWhA">
+      <eAnnotations xmi:id="_qwNBEfOTEemufas-XlTWhA" source="Objing">
+        <contents xmi:type="uml:Property" xmi:id="_qwNBEvOTEemufas-XlTWhA" name="NoteType_Name">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_qwNBE_OTEemufas-XlTWhA" value="exception"/>
+        </contents>
+      </eAnnotations>
+      <body>...</body>
+    </ownedComment>
+    <ownedComment xmi:id="_qwNBFPOTEemufas-XlTWhA">
+      <eAnnotations xmi:id="_qwNBFfOTEemufas-XlTWhA" source="Objing">
+        <contents xmi:type="uml:Property" xmi:id="_qwNBFvOTEemufas-XlTWhA" name="NoteType_Name">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_qwNBF_OTEemufas-XlTWhA" value="precondition"/>
+        </contents>
+      </eAnnotations>
+      <body>...</body>
+    </ownedComment>
+    <ownedComment xmi:id="_qwNBGPOTEemufas-XlTWhA">
+      <eAnnotations xmi:id="_qwNBGfOTEemufas-XlTWhA" source="Objing">
+        <contents xmi:type="uml:Property" xmi:id="_qwNBGvOTEemufas-XlTWhA" name="NoteType_Name">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_qwNBG_OTEemufas-XlTWhA" value="postcondition"/>
+        </contents>
+      </eAnnotations>
+      <body>...</body>
+    </ownedComment>
+    <ownedComment xmi:id="_qwNBHPOTEemufas-XlTWhA">
+      <eAnnotations xmi:id="_qwNBHfOTEemufas-XlTWhA" source="Objing">
+        <contents xmi:type="uml:Property" xmi:id="_qwNBHvOTEemufas-XlTWhA" name="NoteType_Name">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_qwNBH_OTEemufas-XlTWhA" value="description"/>
+        </contents>
+      </eAnnotations>
+      <body></body>
+    </ownedComment>
+  </packagedElement>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_qwNBIPOTEemufas-XlTWhA" name="Get User's Orders History">
+    <eAnnotations xmi:id="_qwNBIfOTEemufas-XlTWhA" source="Objing">
+      <contents xmi:type="uml:Property" xmi:id="_qwNBIvOTEemufas-XlTWhA" name="Visibility">
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_qwNBI_OTEemufas-XlTWhA" value="0"/>
+      </contents>
+    </eAnnotations>
+    <ownedComment xmi:id="_qwNBJPOTEemufas-XlTWhA">
+      <eAnnotations xmi:id="_qwNBJfOTEemufas-XlTWhA" source="Objing">
+        <contents xmi:type="uml:Property" xmi:id="_qwNBJvOTEemufas-XlTWhA" name="NoteType_Name">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_qwNBJ_OTEemufas-XlTWhA" value="constraint"/>
+        </contents>
+      </eAnnotations>
+      <body>...</body>
+    </ownedComment>
+    <ownedComment xmi:id="_qwNBKPOTEemufas-XlTWhA">
+      <eAnnotations xmi:id="_qwNBKfOTEemufas-XlTWhA" source="Objing">
+        <contents xmi:type="uml:Property" xmi:id="_qwNBKvOTEemufas-XlTWhA" name="NoteType_Name">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_qwNBK_OTEemufas-XlTWhA" value="non-functional constraint"/>
+        </contents>
+      </eAnnotations>
+      <body>...</body>
+    </ownedComment>
+    <ownedComment xmi:id="_qwNBLPOTEemufas-XlTWhA">
+      <eAnnotations xmi:id="_qwNBLfOTEemufas-XlTWhA" source="Objing">
+        <contents xmi:type="uml:Property" xmi:id="_qwNBLvOTEemufas-XlTWhA" name="NoteType_Name">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_qwNBL_OTEemufas-XlTWhA" value="exception"/>
+        </contents>
+      </eAnnotations>
+      <body>...</body>
+    </ownedComment>
+    <ownedComment xmi:id="_qwNBMPOTEemufas-XlTWhA">
+      <eAnnotations xmi:id="_qwNBMfOTEemufas-XlTWhA" source="Objing">
+        <contents xmi:type="uml:Property" xmi:id="_qwNBMvOTEemufas-XlTWhA" name="NoteType_Name">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_qwNBM_OTEemufas-XlTWhA" value="precondition"/>
+        </contents>
+      </eAnnotations>
+      <body>...</body>
+    </ownedComment>
+    <ownedComment xmi:id="_qwNBNPOTEemufas-XlTWhA">
+      <eAnnotations xmi:id="_qwNBNfOTEemufas-XlTWhA" source="Objing">
+        <contents xmi:type="uml:Property" xmi:id="_qwNBNvOTEemufas-XlTWhA" name="NoteType_Name">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_qwNBN_OTEemufas-XlTWhA" value="postcondition"/>
+        </contents>
+      </eAnnotations>
+      <body>...</body>
+    </ownedComment>
+    <ownedComment xmi:id="_qwNBOPOTEemufas-XlTWhA">
+      <eAnnotations xmi:id="_qwNBOfOTEemufas-XlTWhA" source="Objing">
+        <contents xmi:type="uml:Property" xmi:id="_qwNBOvOTEemufas-XlTWhA" name="NoteType_Name">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_qwNBO_OTEemufas-XlTWhA" value="description"/>
+        </contents>
+      </eAnnotations>
+      <body></body>
+    </ownedComment>
+  </packagedElement>
+</uml:Model>

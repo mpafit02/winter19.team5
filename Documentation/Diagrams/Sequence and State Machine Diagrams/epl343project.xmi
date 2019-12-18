@@ -1,0 +1,1964 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML" xmi:id="_0k9U4ASpEeqQTZudrxSJFQ" name="epl343project">
+  <eAnnotations xmi:id="_0k9U4QSpEeqQTZudrxSJFQ" source="Objing">
+    <contents xmi:type="uml:Property" xmi:id="_0k9U4gSpEeqQTZudrxSJFQ" name="exporterVersion">
+      <defaultValue xmi:type="uml:LiteralString" xmi:id="_0k9U4wSpEeqQTZudrxSJFQ" value="3.0.0"/>
+    </contents>
+  </eAnnotations>
+  <packagedElement xmi:type="uml:Class" xmi:id="_0k9U5ASpEeqQTZudrxSJFQ" name="DatabaseAPI" clientDependency="_0k9WYASpEeqQTZudrxSJFQ _0k9WYQSpEeqQTZudrxSJFQ _0k9WYgSpEeqQTZudrxSJFQ _0k9WYwSpEeqQTZudrxSJFQ _0k9WZASpEeqQTZudrxSJFQ _0k9WZQSpEeqQTZudrxSJFQ">
+    <ownedOperation xmi:id="_0k9U5QSpEeqQTZudrxSJFQ" name="addConsumableProductInDatabase" visibility="public">
+      <ownedParameter xmi:id="_0k9U5gSpEeqQTZudrxSJFQ" name="product" type="_0k-jeQSpEeqQTZudrxSJFQ" isUnique="false">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_0k9U5wSpEeqQTZudrxSJFQ" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_0k9U6ASpEeqQTZudrxSJFQ" value="1"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_0k9U6QSpEeqQTZudrxSJFQ" value=""/>
+      </ownedParameter>
+      <ownedParameter xmi:id="_0k9U6gSpEeqQTZudrxSJFQ" isUnique="false" direction="return">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_0k9U6wSpEeqQTZudrxSJFQ" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_0k9U7ASpEeqQTZudrxSJFQ" value="1"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_0k9U7QSpEeqQTZudrxSJFQ" value=""/>
+      </ownedParameter>
+    </ownedOperation>
+    <ownedOperation xmi:id="_0k9U7gSpEeqQTZudrxSJFQ" name="getConsumableProducts" visibility="public">
+      <ownedParameter xmi:id="_0k9U7wSpEeqQTZudrxSJFQ" name="consumableProductsIDs" isUnique="false">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_0k9U8ASpEeqQTZudrxSJFQ" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_0k9U8QSpEeqQTZudrxSJFQ"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_0k9U8gSpEeqQTZudrxSJFQ" value=""/>
+      </ownedParameter>
+      <ownedParameter xmi:id="_0k9U8wSpEeqQTZudrxSJFQ" type="_0k-jeQSpEeqQTZudrxSJFQ" isUnique="false" direction="return">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_0k9U9ASpEeqQTZudrxSJFQ" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_0k9U9QSpEeqQTZudrxSJFQ"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_0k9U9gSpEeqQTZudrxSJFQ" value=""/>
+      </ownedParameter>
+    </ownedOperation>
+    <ownedOperation xmi:id="_0k9U9wSpEeqQTZudrxSJFQ" name="getProductTypes" visibility="public">
+      <ownedParameter xmi:id="_0k9U-ASpEeqQTZudrxSJFQ" name="productTypesIDs" isUnique="false">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_0k9U-QSpEeqQTZudrxSJFQ" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_0k9U-gSpEeqQTZudrxSJFQ"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_0k9U-wSpEeqQTZudrxSJFQ" value=""/>
+      </ownedParameter>
+      <ownedParameter xmi:id="_0k9U_ASpEeqQTZudrxSJFQ" type="_0k-kMgSpEeqQTZudrxSJFQ" isUnique="false" direction="return">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_0k9U_QSpEeqQTZudrxSJFQ" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_0k9U_gSpEeqQTZudrxSJFQ"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_0k9U_wSpEeqQTZudrxSJFQ" value=""/>
+      </ownedParameter>
+    </ownedOperation>
+    <ownedOperation xmi:id="_0k9VAASpEeqQTZudrxSJFQ" name="getProductGeneralCategories" visibility="public">
+      <ownedComment xmi:id="_0k9VAQSpEeqQTZudrxSJFQ">
+        <body>&lt;Enter note text here></body>
+      </ownedComment>
+      <ownedParameter xmi:id="_0k9VAgSpEeqQTZudrxSJFQ" name="generalCategoriesIDs" isUnique="false">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_0k9VAwSpEeqQTZudrxSJFQ" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_0k9VBASpEeqQTZudrxSJFQ"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_0k9VBQSpEeqQTZudrxSJFQ" value=""/>
+      </ownedParameter>
+      <ownedParameter xmi:id="_0k9VBgSpEeqQTZudrxSJFQ" type="_0k-kRQSpEeqQTZudrxSJFQ" isUnique="false" direction="return">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_0k9VBwSpEeqQTZudrxSJFQ" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_0k9VCASpEeqQTZudrxSJFQ"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_0k9VCQSpEeqQTZudrxSJFQ" value=""/>
+      </ownedParameter>
+    </ownedOperation>
+    <ownedOperation xmi:id="_0k9VCgSpEeqQTZudrxSJFQ" name="addNewUser" visibility="public">
+      <ownedParameter xmi:id="_0k9VCwSpEeqQTZudrxSJFQ" name="newUserID" isUnique="false">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_0k9VDASpEeqQTZudrxSJFQ" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_0k9VDQSpEeqQTZudrxSJFQ" value="1"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_0k9VDgSpEeqQTZudrxSJFQ" value=""/>
+      </ownedParameter>
+      <ownedParameter xmi:id="_0k9VDwSpEeqQTZudrxSJFQ" isUnique="false" direction="return">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_0k9VEASpEeqQTZudrxSJFQ" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_0k9VEQSpEeqQTZudrxSJFQ" value="1"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_0k9VEgSpEeqQTZudrxSJFQ" value=""/>
+      </ownedParameter>
+    </ownedOperation>
+    <ownedOperation xmi:id="_0k9VEwSpEeqQTZudrxSJFQ" name="deleteUserInformationCompletelyFromDatabase" visibility="public">
+      <ownedParameter xmi:id="_0k9VFASpEeqQTZudrxSJFQ" name="userID" isUnique="false">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_0k9VFQSpEeqQTZudrxSJFQ" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_0k9VFgSpEeqQTZudrxSJFQ" value="1"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_0k9VFwSpEeqQTZudrxSJFQ" value=""/>
+      </ownedParameter>
+      <ownedParameter xmi:id="_0k9VGASpEeqQTZudrxSJFQ" isUnique="false" direction="return">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_0k9VGQSpEeqQTZudrxSJFQ" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_0k9VGgSpEeqQTZudrxSJFQ" value="1"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_0k9VGwSpEeqQTZudrxSJFQ" value=""/>
+      </ownedParameter>
+    </ownedOperation>
+    <ownedOperation xmi:id="_0k9VHASpEeqQTZudrxSJFQ" name="getGeneralInformationUsers" visibility="public">
+      <ownedComment xmi:id="_0k9VHQSpEeqQTZudrxSJFQ">
+        <body>&lt;Enter note text here></body>
+      </ownedComment>
+      <ownedParameter xmi:id="_0k9VHgSpEeqQTZudrxSJFQ" name="fromUserID" isUnique="false">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_0k9VHwSpEeqQTZudrxSJFQ" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_0k9VIASpEeqQTZudrxSJFQ" value="1"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_0k9VIQSpEeqQTZudrxSJFQ" value=""/>
+      </ownedParameter>
+      <ownedParameter xmi:id="_0k9VIgSpEeqQTZudrxSJFQ" name="untilUserID" isUnique="false">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_0k9VIwSpEeqQTZudrxSJFQ" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_0k9VJASpEeqQTZudrxSJFQ" value="1"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_0k9VJQSpEeqQTZudrxSJFQ" value=""/>
+      </ownedParameter>
+      <ownedParameter xmi:id="_0k9VJgSpEeqQTZudrxSJFQ" type="_0k-jowSpEeqQTZudrxSJFQ" isUnique="false" direction="return">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_0k9VJwSpEeqQTZudrxSJFQ" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_0k9VKASpEeqQTZudrxSJFQ"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_0k9VKQSpEeqQTZudrxSJFQ" value=""/>
+      </ownedParameter>
+    </ownedOperation>
+    <ownedOperation xmi:id="_0k9VKgSpEeqQTZudrxSJFQ" name="countNumberOfUsers" visibility="public">
+      <ownedParameter xmi:id="_0k9VKwSpEeqQTZudrxSJFQ" name="fromUserID" isUnique="false">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_0k9VLASpEeqQTZudrxSJFQ" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_0k9VLQSpEeqQTZudrxSJFQ" value="1"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_0k9VLgSpEeqQTZudrxSJFQ" value=""/>
+      </ownedParameter>
+      <ownedParameter xmi:id="_0k9VLwSpEeqQTZudrxSJFQ" name="untilUserID" isUnique="false">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_0k9VMASpEeqQTZudrxSJFQ" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_0k9VMQSpEeqQTZudrxSJFQ" value="1"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_0k9VMgSpEeqQTZudrxSJFQ" value=""/>
+      </ownedParameter>
+      <ownedParameter xmi:id="_0k9VMwSpEeqQTZudrxSJFQ" isUnique="false" direction="return">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_0k9VNASpEeqQTZudrxSJFQ" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_0k9VNQSpEeqQTZudrxSJFQ" value="1"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_0k9VNgSpEeqQTZudrxSJFQ" value=""/>
+      </ownedParameter>
+    </ownedOperation>
+    <ownedOperation xmi:id="_0k9VNwSpEeqQTZudrxSJFQ" name="getConsumableProducts" visibility="public">
+      <ownedComment xmi:id="_0k9VOASpEeqQTZudrxSJFQ">
+        <body>&lt;Enter note text here></body>
+      </ownedComment>
+      <ownedParameter xmi:id="_0k9VOQSpEeqQTZudrxSJFQ" name="fromConsumableID" isUnique="false">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_0k9VOgSpEeqQTZudrxSJFQ" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_0k9VOwSpEeqQTZudrxSJFQ" value="1"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_0k9VPASpEeqQTZudrxSJFQ" value=""/>
+      </ownedParameter>
+      <ownedParameter xmi:id="_0k9VPQSpEeqQTZudrxSJFQ" name="untilConsumableProduct" isUnique="false">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_0k9VPgSpEeqQTZudrxSJFQ" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_0k9VPwSpEeqQTZudrxSJFQ" value="1"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_0k9VQASpEeqQTZudrxSJFQ" value=""/>
+      </ownedParameter>
+      <ownedParameter xmi:id="_0k9VQQSpEeqQTZudrxSJFQ" type="_0k-jeQSpEeqQTZudrxSJFQ" isUnique="false" direction="return">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_0k9VQgSpEeqQTZudrxSJFQ" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_0k9VQwSpEeqQTZudrxSJFQ"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_0k9VRASpEeqQTZudrxSJFQ" value=""/>
+      </ownedParameter>
+    </ownedOperation>
+    <ownedOperation xmi:id="_0k9VRQSpEeqQTZudrxSJFQ" name="countNumberOfConsumableProducts" visibility="public">
+      <ownedParameter xmi:id="_0k9VRgSpEeqQTZudrxSJFQ" name="fromConsumableID" isUnique="false">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_0k9VRwSpEeqQTZudrxSJFQ" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_0k9VSASpEeqQTZudrxSJFQ" value="1"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_0k9VSQSpEeqQTZudrxSJFQ" value=""/>
+      </ownedParameter>
+      <ownedParameter xmi:id="_0k9VSgSpEeqQTZudrxSJFQ" name="untilConsumableID" isUnique="false">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_0k9VSwSpEeqQTZudrxSJFQ" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_0k9VTASpEeqQTZudrxSJFQ" value="1"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_0k9VTQSpEeqQTZudrxSJFQ" value=""/>
+      </ownedParameter>
+      <ownedParameter xmi:id="_0k9VTgSpEeqQTZudrxSJFQ" isUnique="false" direction="return">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_0k9VTwSpEeqQTZudrxSJFQ" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_0k9VUASpEeqQTZudrxSJFQ" value="1"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_0k9VUQSpEeqQTZudrxSJFQ" value=""/>
+      </ownedParameter>
+    </ownedOperation>
+    <ownedOperation xmi:id="_0k9VUgSpEeqQTZudrxSJFQ" name="getProductTypes" visibility="public">
+      <ownedParameter xmi:id="_0k9VUwSpEeqQTZudrxSJFQ" name="fromProductTypeID" isUnique="false">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_0k9VVASpEeqQTZudrxSJFQ" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_0k9VVQSpEeqQTZudrxSJFQ" value="1"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_0k9VVgSpEeqQTZudrxSJFQ" value=""/>
+      </ownedParameter>
+      <ownedParameter xmi:id="_0k9VVwSpEeqQTZudrxSJFQ" name="untilProductTypeID" isUnique="false">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_0k9VWASpEeqQTZudrxSJFQ" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_0k9VWQSpEeqQTZudrxSJFQ" value="1"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_0k9VWgSpEeqQTZudrxSJFQ" value=""/>
+      </ownedParameter>
+      <ownedParameter xmi:id="_0k9VWwSpEeqQTZudrxSJFQ" type="_0k-kMgSpEeqQTZudrxSJFQ" isUnique="false" direction="return">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_0k9VXASpEeqQTZudrxSJFQ" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_0k9VXQSpEeqQTZudrxSJFQ"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_0k9VXgSpEeqQTZudrxSJFQ" value=""/>
+      </ownedParameter>
+    </ownedOperation>
+    <ownedOperation xmi:id="_0k9VXwSpEeqQTZudrxSJFQ" name="countProductTypes" visibility="public">
+      <ownedParameter xmi:id="_0k9VYASpEeqQTZudrxSJFQ" name="fromProductTypeID" isUnique="false">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_0k9VYQSpEeqQTZudrxSJFQ" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_0k9VYgSpEeqQTZudrxSJFQ" value="1"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_0k9VYwSpEeqQTZudrxSJFQ" value=""/>
+      </ownedParameter>
+      <ownedParameter xmi:id="_0k9VZASpEeqQTZudrxSJFQ" name="untilProductTypeID" isUnique="false">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_0k9VZQSpEeqQTZudrxSJFQ" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_0k9VZgSpEeqQTZudrxSJFQ" value="1"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_0k9VZwSpEeqQTZudrxSJFQ" value=""/>
+      </ownedParameter>
+      <ownedParameter xmi:id="_0k9VaASpEeqQTZudrxSJFQ" isUnique="false" direction="return">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_0k9VaQSpEeqQTZudrxSJFQ" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_0k9VagSpEeqQTZudrxSJFQ" value="1"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_0k9VawSpEeqQTZudrxSJFQ" value=""/>
+      </ownedParameter>
+    </ownedOperation>
+    <ownedOperation xmi:id="_0k9VbASpEeqQTZudrxSJFQ" name="getGeneralCategories" visibility="public">
+      <ownedParameter xmi:id="_0k9VbQSpEeqQTZudrxSJFQ" name="fromGeneralCategoryID" isUnique="false">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_0k9VbgSpEeqQTZudrxSJFQ" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_0k9VbwSpEeqQTZudrxSJFQ" value="1"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_0k9VcASpEeqQTZudrxSJFQ" value=""/>
+      </ownedParameter>
+      <ownedParameter xmi:id="_0k9VcQSpEeqQTZudrxSJFQ" name="untilGeneralCategoryID" isUnique="false">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_0k9VcgSpEeqQTZudrxSJFQ" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_0k9VcwSpEeqQTZudrxSJFQ" value="1"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_0k9VdASpEeqQTZudrxSJFQ" value=""/>
+      </ownedParameter>
+      <ownedParameter xmi:id="_0k9VdQSpEeqQTZudrxSJFQ" type="_0k-kRQSpEeqQTZudrxSJFQ" isUnique="false" direction="return">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_0k9VdgSpEeqQTZudrxSJFQ" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_0k9VdwSpEeqQTZudrxSJFQ"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_0k9VeASpEeqQTZudrxSJFQ" value=""/>
+      </ownedParameter>
+    </ownedOperation>
+    <ownedOperation xmi:id="_0k9VeQSpEeqQTZudrxSJFQ" name="countGeneralCategories" visibility="public">
+      <ownedComment xmi:id="_0k9VegSpEeqQTZudrxSJFQ">
+        <body>&lt;Enter note text here></body>
+      </ownedComment>
+      <ownedParameter xmi:id="_0k9VewSpEeqQTZudrxSJFQ" name="fromGeneralCategoryID" isUnique="false">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_0k9VfASpEeqQTZudrxSJFQ" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_0k9VfQSpEeqQTZudrxSJFQ" value="1"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_0k9VfgSpEeqQTZudrxSJFQ" value=""/>
+      </ownedParameter>
+      <ownedParameter xmi:id="_0k9VfwSpEeqQTZudrxSJFQ" name="untilGeneralCategoryID" isUnique="false">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_0k9VgASpEeqQTZudrxSJFQ" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_0k9VgQSpEeqQTZudrxSJFQ" value="1"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_0k9VggSpEeqQTZudrxSJFQ" value=""/>
+      </ownedParameter>
+      <ownedParameter xmi:id="_0k9VgwSpEeqQTZudrxSJFQ" isUnique="false" direction="return">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_0k9VhASpEeqQTZudrxSJFQ" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_0k9VhQSpEeqQTZudrxSJFQ" value="1"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_0k9VhgSpEeqQTZudrxSJFQ" value=""/>
+      </ownedParameter>
+    </ownedOperation>
+    <ownedOperation xmi:id="_0k9VhwSpEeqQTZudrxSJFQ" name="getConsumableProductsFromProductType" visibility="public">
+      <ownedParameter xmi:id="_0k9ViASpEeqQTZudrxSJFQ" name="productTypeID" isUnique="false">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_0k9ViQSpEeqQTZudrxSJFQ" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_0k9VigSpEeqQTZudrxSJFQ" value="1"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_0k9ViwSpEeqQTZudrxSJFQ" value=""/>
+      </ownedParameter>
+      <ownedParameter xmi:id="_0k9VjASpEeqQTZudrxSJFQ" type="_0k-jeQSpEeqQTZudrxSJFQ" isUnique="false" direction="return">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_0k9VjQSpEeqQTZudrxSJFQ" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_0k9VjgSpEeqQTZudrxSJFQ"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_0k9VjwSpEeqQTZudrxSJFQ" value=""/>
+      </ownedParameter>
+    </ownedOperation>
+    <ownedOperation xmi:id="_0k9VkASpEeqQTZudrxSJFQ" name="getJourneysOfUser" visibility="public">
+      <ownedParameter xmi:id="_0k9VkQSpEeqQTZudrxSJFQ" name="journeyID" isUnique="false">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_0k9VkgSpEeqQTZudrxSJFQ" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_0k9VkwSpEeqQTZudrxSJFQ"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_0k9VlASpEeqQTZudrxSJFQ" value=""/>
+      </ownedParameter>
+      <ownedParameter xmi:id="_0k9VlQSpEeqQTZudrxSJFQ" name="userSystemID" isUnique="false">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_0k9VlgSpEeqQTZudrxSJFQ" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_0k9VlwSpEeqQTZudrxSJFQ" value="1"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_0k9VmASpEeqQTZudrxSJFQ" value=""/>
+      </ownedParameter>
+      <ownedParameter xmi:id="_0k9VmQSpEeqQTZudrxSJFQ" type="_0k-jyASpEeqQTZudrxSJFQ" isUnique="false" direction="return">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_0k9VmgSpEeqQTZudrxSJFQ" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_0k9VmwSpEeqQTZudrxSJFQ"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_0k9VnASpEeqQTZudrxSJFQ" value=""/>
+      </ownedParameter>
+    </ownedOperation>
+    <ownedOperation xmi:id="_0k9VnQSpEeqQTZudrxSJFQ" name="getUserJourneys" visibility="public">
+      <ownedParameter xmi:id="_0k9VngSpEeqQTZudrxSJFQ" name="userSystemID" isUnique="false">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_0k9VnwSpEeqQTZudrxSJFQ" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_0k9VoASpEeqQTZudrxSJFQ" value="1"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_0k9VoQSpEeqQTZudrxSJFQ" value=""/>
+      </ownedParameter>
+      <ownedParameter xmi:id="_0k9VogSpEeqQTZudrxSJFQ" type="_0k-jyASpEeqQTZudrxSJFQ" isUnique="false" direction="return">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_0k9VowSpEeqQTZudrxSJFQ" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_0k9VpASpEeqQTZudrxSJFQ"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_0k9VpQSpEeqQTZudrxSJFQ" value=""/>
+      </ownedParameter>
+    </ownedOperation>
+    <ownedOperation xmi:id="_0k9VpgSpEeqQTZudrxSJFQ" name="createNewJourneyForUser" visibility="public">
+      <ownedParameter xmi:id="_0k9VpwSpEeqQTZudrxSJFQ" name="userSystemID" isUnique="false">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_0k9VqASpEeqQTZudrxSJFQ" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_0k9VqQSpEeqQTZudrxSJFQ" value="1"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_0k9VqgSpEeqQTZudrxSJFQ" value=""/>
+      </ownedParameter>
+      <ownedParameter xmi:id="_0k9VqwSpEeqQTZudrxSJFQ" isUnique="false" direction="return">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_0k9VrASpEeqQTZudrxSJFQ" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_0k9VrQSpEeqQTZudrxSJFQ" value="1"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_0k9VrgSpEeqQTZudrxSJFQ" value=""/>
+      </ownedParameter>
+    </ownedOperation>
+    <ownedOperation xmi:id="_0k9VrwSpEeqQTZudrxSJFQ" name="updateJourneyOfUserInDatabase" visibility="public">
+      <ownedParameter xmi:id="_0k9VsASpEeqQTZudrxSJFQ" name="aJourney" type="_0k-jyASpEeqQTZudrxSJFQ" isUnique="false">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_0k9VsQSpEeqQTZudrxSJFQ" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_0k9VsgSpEeqQTZudrxSJFQ" value="1"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_0k9VswSpEeqQTZudrxSJFQ" value=""/>
+      </ownedParameter>
+      <ownedParameter xmi:id="_0k9VtASpEeqQTZudrxSJFQ" name="userSystemID" isUnique="false">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_0k9VtQSpEeqQTZudrxSJFQ" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_0k9VtgSpEeqQTZudrxSJFQ" value="1"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_0k9VtwSpEeqQTZudrxSJFQ" value=""/>
+      </ownedParameter>
+      <ownedParameter xmi:id="_0k9VuASpEeqQTZudrxSJFQ" isUnique="false" direction="return">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_0k9VuQSpEeqQTZudrxSJFQ" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_0k9VugSpEeqQTZudrxSJFQ" value="1"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_0k9VuwSpEeqQTZudrxSJFQ" value=""/>
+      </ownedParameter>
+    </ownedOperation>
+    <ownedOperation xmi:id="_0k9VvASpEeqQTZudrxSJFQ" name="minConsumableProductID" visibility="public">
+      <ownedParameter xmi:id="_0k9VvQSpEeqQTZudrxSJFQ" isUnique="false" direction="return">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_0k9VvgSpEeqQTZudrxSJFQ" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_0k9VvwSpEeqQTZudrxSJFQ" value="1"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_0k9VwASpEeqQTZudrxSJFQ" value=""/>
+      </ownedParameter>
+    </ownedOperation>
+    <ownedOperation xmi:id="_0k9VwQSpEeqQTZudrxSJFQ" name="maxConsumableProductID" visibility="public">
+      <ownedParameter xmi:id="_0k9VwgSpEeqQTZudrxSJFQ" isUnique="false" direction="return">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_0k9VwwSpEeqQTZudrxSJFQ" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_0k9VxASpEeqQTZudrxSJFQ" value="1"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_0k9VxQSpEeqQTZudrxSJFQ" value=""/>
+      </ownedParameter>
+    </ownedOperation>
+    <ownedOperation xmi:id="_0k9VxgSpEeqQTZudrxSJFQ" name="maxProductTypeID" visibility="public">
+      <ownedParameter xmi:id="_0k9VxwSpEeqQTZudrxSJFQ" isUnique="false" direction="return">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_0k9VyASpEeqQTZudrxSJFQ" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_0k9VyQSpEeqQTZudrxSJFQ" value="1"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_0k9VygSpEeqQTZudrxSJFQ" value=""/>
+      </ownedParameter>
+    </ownedOperation>
+    <ownedOperation xmi:id="_0k9VywSpEeqQTZudrxSJFQ" name="minProductTypeID" visibility="public">
+      <ownedParameter xmi:id="_0k9VzASpEeqQTZudrxSJFQ" isUnique="false" direction="return">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_0k9VzQSpEeqQTZudrxSJFQ" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_0k9VzgSpEeqQTZudrxSJFQ" value="1"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_0k9VzwSpEeqQTZudrxSJFQ" value=""/>
+      </ownedParameter>
+    </ownedOperation>
+    <ownedOperation xmi:id="_0k9V0ASpEeqQTZudrxSJFQ" name="maxGeneralCategoryID" visibility="public">
+      <ownedParameter xmi:id="_0k9V0QSpEeqQTZudrxSJFQ" isUnique="false" direction="return">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_0k9V0gSpEeqQTZudrxSJFQ" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_0k9V0wSpEeqQTZudrxSJFQ" value="1"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_0k9V1ASpEeqQTZudrxSJFQ" value=""/>
+      </ownedParameter>
+    </ownedOperation>
+    <ownedOperation xmi:id="_0k9V1QSpEeqQTZudrxSJFQ" name="minGeneralCategoryID" visibility="public">
+      <ownedParameter xmi:id="_0k9V1gSpEeqQTZudrxSJFQ" isUnique="false" direction="return">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_0k9V1wSpEeqQTZudrxSJFQ" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_0k9V2ASpEeqQTZudrxSJFQ" value="1"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_0k9V2QSpEeqQTZudrxSJFQ" value=""/>
+      </ownedParameter>
+    </ownedOperation>
+    <ownedOperation xmi:id="_0k9V2gSpEeqQTZudrxSJFQ" name="deleteJourney" visibility="public">
+      <ownedParameter xmi:id="_0k9V2wSpEeqQTZudrxSJFQ" name="journeyID" isUnique="false">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_0k9V3ASpEeqQTZudrxSJFQ" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_0k9V3QSpEeqQTZudrxSJFQ" value="1"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_0k9V3gSpEeqQTZudrxSJFQ" value=""/>
+      </ownedParameter>
+      <ownedParameter xmi:id="_0k9V3wSpEeqQTZudrxSJFQ" name="userSystemID" isUnique="false">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_0k9V4ASpEeqQTZudrxSJFQ" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_0k9V4QSpEeqQTZudrxSJFQ" value="1"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_0k9V4gSpEeqQTZudrxSJFQ" value=""/>
+      </ownedParameter>
+      <ownedParameter xmi:id="_0k9V4wSpEeqQTZudrxSJFQ" isUnique="false" direction="return">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_0k9V5ASpEeqQTZudrxSJFQ" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_0k9V5QSpEeqQTZudrxSJFQ" value="1"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_0k9V5gSpEeqQTZudrxSJFQ" value=""/>
+      </ownedParameter>
+    </ownedOperation>
+    <ownedOperation xmi:id="_0k9V5wSpEeqQTZudrxSJFQ" name="updateLikeOrDislike" visibility="public">
+      <ownedParameter xmi:id="_0k9V6ASpEeqQTZudrxSJFQ" name="like_DislikeEntry" type="_0k-j7ASpEeqQTZudrxSJFQ" isUnique="false">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_0k9V6QSpEeqQTZudrxSJFQ" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_0k9V6gSpEeqQTZudrxSJFQ" value="1"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_0k9V6wSpEeqQTZudrxSJFQ" value=""/>
+      </ownedParameter>
+      <ownedParameter xmi:id="_0k9V7ASpEeqQTZudrxSJFQ" name="userSystemID" isUnique="false">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_0k9V7QSpEeqQTZudrxSJFQ" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_0k9V7gSpEeqQTZudrxSJFQ" value="1"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_0k9V7wSpEeqQTZudrxSJFQ" value=""/>
+      </ownedParameter>
+      <ownedParameter xmi:id="_0k9V8ASpEeqQTZudrxSJFQ" isUnique="false" direction="return">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_0k9V8QSpEeqQTZudrxSJFQ" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_0k9V8gSpEeqQTZudrxSJFQ" value="1"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_0k9V8wSpEeqQTZudrxSJFQ" value=""/>
+      </ownedParameter>
+    </ownedOperation>
+    <ownedOperation xmi:id="_0k9V9ASpEeqQTZudrxSJFQ" name="deleteLikeOrDislike" visibility="public">
+      <ownedParameter xmi:id="_0k9V9QSpEeqQTZudrxSJFQ" name="userSystemID" isUnique="false">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_0k9V9gSpEeqQTZudrxSJFQ" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_0k9V9wSpEeqQTZudrxSJFQ" value="1"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_0k9V-ASpEeqQTZudrxSJFQ" value=""/>
+      </ownedParameter>
+      <ownedParameter xmi:id="_0k9V-QSpEeqQTZudrxSJFQ" name="consumableProductID" isUnique="false">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_0k9V-gSpEeqQTZudrxSJFQ" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_0k9V-wSpEeqQTZudrxSJFQ" value="1"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_0k9V_ASpEeqQTZudrxSJFQ" value=""/>
+      </ownedParameter>
+      <ownedParameter xmi:id="_0k9V_QSpEeqQTZudrxSJFQ" isUnique="false" direction="return">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_0k9V_gSpEeqQTZudrxSJFQ" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_0k9V_wSpEeqQTZudrxSJFQ" value="1"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_0k9WAASpEeqQTZudrxSJFQ" value=""/>
+      </ownedParameter>
+    </ownedOperation>
+    <ownedOperation xmi:id="_0k9WAQSpEeqQTZudrxSJFQ" name="getLikeDislikeEntries" visibility="public">
+      <ownedParameter xmi:id="_0k9WAgSpEeqQTZudrxSJFQ" name="userSystemID" isUnique="false">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_0k9WAwSpEeqQTZudrxSJFQ" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_0k9WBASpEeqQTZudrxSJFQ" value="1"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_0k9WBQSpEeqQTZudrxSJFQ" value=""/>
+      </ownedParameter>
+      <ownedParameter xmi:id="_0k9WBgSpEeqQTZudrxSJFQ" type="_0k-j7ASpEeqQTZudrxSJFQ" isUnique="false" direction="return">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_0k9WBwSpEeqQTZudrxSJFQ" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_0k9WCASpEeqQTZudrxSJFQ"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_0k9WCQSpEeqQTZudrxSJFQ" value=""/>
+      </ownedParameter>
+    </ownedOperation>
+    <ownedOperation xmi:id="_0k9WCgSpEeqQTZudrxSJFQ" name="deleteGeneralCategoryOfConsumableProduct" visibility="public">
+      <ownedParameter xmi:id="_0k9WCwSpEeqQTZudrxSJFQ" name="generalCategoryID" isUnique="false">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_0k9WDASpEeqQTZudrxSJFQ" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_0k9WDQSpEeqQTZudrxSJFQ" value="1"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_0k9WDgSpEeqQTZudrxSJFQ" value=""/>
+      </ownedParameter>
+      <ownedParameter xmi:id="_0k9WDwSpEeqQTZudrxSJFQ" isUnique="false" direction="return">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_0k9WEASpEeqQTZudrxSJFQ" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_0k9WEQSpEeqQTZudrxSJFQ" value="1"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_0k9WEgSpEeqQTZudrxSJFQ" value=""/>
+      </ownedParameter>
+    </ownedOperation>
+    <ownedOperation xmi:id="_0k9WEwSpEeqQTZudrxSJFQ" name="addGeneralCategoryTypeOfConsumableProduct" visibility="public">
+      <ownedComment xmi:id="_0k9WFASpEeqQTZudrxSJFQ">
+        <body>&lt;Enter note text here></body>
+      </ownedComment>
+      <ownedParameter xmi:id="_0k9WFQSpEeqQTZudrxSJFQ" name="category" type="_0k-kRQSpEeqQTZudrxSJFQ" isUnique="false">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_0k9WFgSpEeqQTZudrxSJFQ" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_0k9WFwSpEeqQTZudrxSJFQ" value="1"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_0k9WGASpEeqQTZudrxSJFQ" value=""/>
+      </ownedParameter>
+      <ownedParameter xmi:id="_0k9WGQSpEeqQTZudrxSJFQ" isUnique="false" direction="return">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_0k9WGgSpEeqQTZudrxSJFQ" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_0k9WGwSpEeqQTZudrxSJFQ" value="1"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_0k9WHASpEeqQTZudrxSJFQ" value=""/>
+      </ownedParameter>
+    </ownedOperation>
+    <ownedOperation xmi:id="_0k9WHQSpEeqQTZudrxSJFQ" name="addProductType" visibility="public">
+      <ownedParameter xmi:id="_0k9WHgSpEeqQTZudrxSJFQ" name="newProductType" type="_0k-kMgSpEeqQTZudrxSJFQ" isUnique="false">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_0k9WHwSpEeqQTZudrxSJFQ" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_0k9WIASpEeqQTZudrxSJFQ" value="1"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_0k9WIQSpEeqQTZudrxSJFQ" value=""/>
+      </ownedParameter>
+      <ownedParameter xmi:id="_0k9WIgSpEeqQTZudrxSJFQ" isUnique="false" direction="return">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_0k9WIwSpEeqQTZudrxSJFQ" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_0k9WJASpEeqQTZudrxSJFQ" value="1"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_0k9WJQSpEeqQTZudrxSJFQ" value=""/>
+      </ownedParameter>
+    </ownedOperation>
+    <ownedOperation xmi:id="_0k9WJgSpEeqQTZudrxSJFQ" name="deleteProductType" visibility="public">
+      <ownedParameter xmi:id="_0k9WJwSpEeqQTZudrxSJFQ" name="productTypeID" isUnique="false">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_0k9WKASpEeqQTZudrxSJFQ" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_0k9WKQSpEeqQTZudrxSJFQ" value="1"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_0k9WKgSpEeqQTZudrxSJFQ" value=""/>
+      </ownedParameter>
+      <ownedParameter xmi:id="_0k9WKwSpEeqQTZudrxSJFQ" isUnique="false" direction="return">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_0k9WLASpEeqQTZudrxSJFQ" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_0k9WLQSpEeqQTZudrxSJFQ" value="1"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_0k9WLgSpEeqQTZudrxSJFQ" value=""/>
+      </ownedParameter>
+    </ownedOperation>
+    <ownedOperation xmi:id="_0k9WLwSpEeqQTZudrxSJFQ" name="deleteConsumableProduct" visibility="public">
+      <ownedParameter xmi:id="_0k9WMASpEeqQTZudrxSJFQ" name="consumableProductID" isUnique="false">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_0k9WMQSpEeqQTZudrxSJFQ" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_0k9WMgSpEeqQTZudrxSJFQ" value="1"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_0k9WMwSpEeqQTZudrxSJFQ" value=""/>
+      </ownedParameter>
+      <ownedParameter xmi:id="_0k9WNASpEeqQTZudrxSJFQ" isUnique="false" direction="return">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_0k9WNQSpEeqQTZudrxSJFQ" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_0k9WNgSpEeqQTZudrxSJFQ" value="1"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_0k9WNwSpEeqQTZudrxSJFQ" value=""/>
+      </ownedParameter>
+    </ownedOperation>
+    <ownedOperation xmi:id="_0k9WOASpEeqQTZudrxSJFQ" name="getRecommendationAttributesOfUser" visibility="public">
+      <ownedParameter xmi:id="_0k9WOQSpEeqQTZudrxSJFQ" name="userSystemID" isUnique="false">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_0k9WOgSpEeqQTZudrxSJFQ" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_0k9WOwSpEeqQTZudrxSJFQ"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_0k9WPASpEeqQTZudrxSJFQ" value=""/>
+      </ownedParameter>
+      <ownedParameter xmi:id="_0k9WPQSpEeqQTZudrxSJFQ" isUnique="false" direction="return">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EDouble"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_0k9WPgSpEeqQTZudrxSJFQ" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_0k9WPwSpEeqQTZudrxSJFQ" value="1"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_0k9WQASpEeqQTZudrxSJFQ" value=""/>
+      </ownedParameter>
+    </ownedOperation>
+    <ownedOperation xmi:id="_0k9WQQSpEeqQTZudrxSJFQ" name="getUsersAsGeneralInformationUsers" visibility="public">
+      <ownedParameter xmi:id="_0k9WQgSpEeqQTZudrxSJFQ" name="udersIDs" isUnique="false">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_0k9WQwSpEeqQTZudrxSJFQ" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_0k9WRASpEeqQTZudrxSJFQ"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_0k9WRQSpEeqQTZudrxSJFQ" value=""/>
+      </ownedParameter>
+      <ownedParameter xmi:id="_0k9WRgSpEeqQTZudrxSJFQ" type="_0k-jowSpEeqQTZudrxSJFQ" isUnique="false" direction="return">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_0k9WRwSpEeqQTZudrxSJFQ" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_0k9WSASpEeqQTZudrxSJFQ"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_0k9WSQSpEeqQTZudrxSJFQ" value=""/>
+      </ownedParameter>
+    </ownedOperation>
+    <ownedOperation xmi:id="_0k9WSgSpEeqQTZudrxSJFQ" name="getConsumableProductDescription" visibility="public">
+      <ownedParameter xmi:id="_0k9WSwSpEeqQTZudrxSJFQ" name="consumableProductID" isUnique="false">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_0k9WTASpEeqQTZudrxSJFQ" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_0k9WTQSpEeqQTZudrxSJFQ" value="1"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_0k9WTgSpEeqQTZudrxSJFQ" value=""/>
+      </ownedParameter>
+      <ownedParameter xmi:id="_0k9WTwSpEeqQTZudrxSJFQ" isUnique="false" direction="return">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_0k9WUASpEeqQTZudrxSJFQ" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_0k9WUQSpEeqQTZudrxSJFQ" value="1"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_0k9WUgSpEeqQTZudrxSJFQ" value=""/>
+      </ownedParameter>
+    </ownedOperation>
+    <ownedOperation xmi:id="_0k9WUwSpEeqQTZudrxSJFQ" name="setConsumableProductDescription" visibility="public">
+      <ownedParameter xmi:id="_0k9WVASpEeqQTZudrxSJFQ" name="consumableProductID" isUnique="false">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_0k9WVQSpEeqQTZudrxSJFQ" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_0k9WVgSpEeqQTZudrxSJFQ" value="1"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_0k9WVwSpEeqQTZudrxSJFQ" value=""/>
+      </ownedParameter>
+      <ownedParameter xmi:id="_0k9WWASpEeqQTZudrxSJFQ" name="consumableProductDescription" isUnique="false">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_0k9WWQSpEeqQTZudrxSJFQ" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_0k9WWgSpEeqQTZudrxSJFQ" value="1"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_0k9WWwSpEeqQTZudrxSJFQ" value=""/>
+      </ownedParameter>
+      <ownedParameter xmi:id="_0k9WXASpEeqQTZudrxSJFQ" isUnique="false" direction="return">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_0k9WXQSpEeqQTZudrxSJFQ" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_0k9WXgSpEeqQTZudrxSJFQ" value="1"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_0k9WXwSpEeqQTZudrxSJFQ" value=""/>
+      </ownedParameter>
+    </ownedOperation>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Usage" xmi:id="_0k9WYASpEeqQTZudrxSJFQ" supplier="_0k-kRQSpEeqQTZudrxSJFQ" client="_0k9U5ASpEeqQTZudrxSJFQ"/>
+  <packagedElement xmi:type="uml:Usage" xmi:id="_0k9WYQSpEeqQTZudrxSJFQ" supplier="_0k-kMgSpEeqQTZudrxSJFQ" client="_0k9U5ASpEeqQTZudrxSJFQ"/>
+  <packagedElement xmi:type="uml:Usage" xmi:id="_0k9WYgSpEeqQTZudrxSJFQ" supplier="_0k-jyASpEeqQTZudrxSJFQ" client="_0k9U5ASpEeqQTZudrxSJFQ"/>
+  <packagedElement xmi:type="uml:Usage" xmi:id="_0k9WYwSpEeqQTZudrxSJFQ" supplier="_0k-j7ASpEeqQTZudrxSJFQ" client="_0k9U5ASpEeqQTZudrxSJFQ"/>
+  <packagedElement xmi:type="uml:Usage" xmi:id="_0k9WZASpEeqQTZudrxSJFQ" supplier="_0k-jowSpEeqQTZudrxSJFQ" client="_0k9U5ASpEeqQTZudrxSJFQ"/>
+  <packagedElement xmi:type="uml:Usage" xmi:id="_0k9WZQSpEeqQTZudrxSJFQ" supplier="_0k-jeQSpEeqQTZudrxSJFQ" client="_0k9U5ASpEeqQTZudrxSJFQ"/>
+  <packagedElement xmi:type="uml:Class" xmi:id="_0k9WZgSpEeqQTZudrxSJFQ" name="RecommenderSystem" clientDependency="_0k-jPwSpEeqQTZudrxSJFQ _0k-jQASpEeqQTZudrxSJFQ _0k-jQQSpEeqQTZudrxSJFQ _0k-jQgSpEeqQTZudrxSJFQ _0k-jQwSpEeqQTZudrxSJFQ _0k-jRASpEeqQTZudrxSJFQ _0k-jRgSpEeqQTZudrxSJFQ _0k-jRwSpEeqQTZudrxSJFQ _0k-jSASpEeqQTZudrxSJFQ _0k-jSQSpEeqQTZudrxSJFQ _0k-jSgSpEeqQTZudrxSJFQ">
+    <ownedAttribute xmi:id="_0k-jAASpEeqQTZudrxSJFQ" name="learningParameters" visibility="private" isUnique="false">
+      <ownedComment xmi:id="_0k-jAQSpEeqQTZudrxSJFQ">
+        <body>&lt;Enter note text here></body>
+      </ownedComment>
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EDouble"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_0k-jAgSpEeqQTZudrxSJFQ" value="*"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_0k-jAwSpEeqQTZudrxSJFQ"/>
+    </ownedAttribute>
+    <ownedOperation xmi:id="_0k-jBASpEeqQTZudrxSJFQ" name="calculateAttributes" visibility="private">
+      <ownedComment xmi:id="_0k-jBQSpEeqQTZudrxSJFQ">
+        <body>&lt;Enter note text here></body>
+      </ownedComment>
+      <ownedParameter xmi:id="_0k-jBgSpEeqQTZudrxSJFQ" name="user" type="_0k-j3gSpEeqQTZudrxSJFQ" isUnique="false">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_0k-jBwSpEeqQTZudrxSJFQ" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_0k-jCASpEeqQTZudrxSJFQ" value="1"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_0k-jCQSpEeqQTZudrxSJFQ" value=""/>
+      </ownedParameter>
+      <ownedParameter xmi:id="_0k-jCgSpEeqQTZudrxSJFQ" isUnique="false" direction="return">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_0k-jCwSpEeqQTZudrxSJFQ" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_0k-jDASpEeqQTZudrxSJFQ" value="1"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_0k-jDQSpEeqQTZudrxSJFQ" value=""/>
+      </ownedParameter>
+    </ownedOperation>
+    <ownedOperation xmi:id="_0k-jDgSpEeqQTZudrxSJFQ" name="updateUsersRecommendationAttributes" visibility="public" method="_0lC1yQSpEeqQTZudrxSJFQ _0lC13wSpEeqQTZudrxSJFQ">
+      <ownedParameter xmi:id="_0k-jDwSpEeqQTZudrxSJFQ" isUnique="false" direction="return">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_0k-jEASpEeqQTZudrxSJFQ" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_0k-jEQSpEeqQTZudrxSJFQ" value="1"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_0k-jEgSpEeqQTZudrxSJFQ" value=""/>
+      </ownedParameter>
+    </ownedOperation>
+    <ownedOperation xmi:id="_0k-jEwSpEeqQTZudrxSJFQ" name="predictUserPreferenceOnConsumableProducts" visibility="public">
+      <ownedParameter xmi:id="_0k-jFASpEeqQTZudrxSJFQ" name="userRecommendationAttributes" isUnique="false">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EDouble"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_0k-jFQSpEeqQTZudrxSJFQ" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_0k-jFgSpEeqQTZudrxSJFQ"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_0k-jFwSpEeqQTZudrxSJFQ" value=""/>
+      </ownedParameter>
+      <ownedParameter xmi:id="_0k-jGASpEeqQTZudrxSJFQ" name="consumableProducts" type="_0k-jeQSpEeqQTZudrxSJFQ" isUnique="false">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_0k-jGQSpEeqQTZudrxSJFQ" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_0k-jGgSpEeqQTZudrxSJFQ"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_0k-jGwSpEeqQTZudrxSJFQ" value=""/>
+      </ownedParameter>
+      <ownedParameter xmi:id="_0k-jHASpEeqQTZudrxSJFQ" isUnique="false" direction="return">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EDouble"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_0k-jHQSpEeqQTZudrxSJFQ" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_0k-jHgSpEeqQTZudrxSJFQ"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_0k-jHwSpEeqQTZudrxSJFQ" value=""/>
+      </ownedParameter>
+    </ownedOperation>
+    <ownedOperation xmi:id="_0k-jIASpEeqQTZudrxSJFQ" name="changeLearningParameters" visibility="public">
+      <ownedParameter xmi:id="_0k-jIQSpEeqQTZudrxSJFQ" name="newLearningParameters" isUnique="false">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EDouble"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_0k-jIgSpEeqQTZudrxSJFQ" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_0k-jIwSpEeqQTZudrxSJFQ"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_0k-jJASpEeqQTZudrxSJFQ" value=""/>
+      </ownedParameter>
+      <ownedParameter xmi:id="_0k-jJQSpEeqQTZudrxSJFQ" isUnique="false" direction="return">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_0k-jJgSpEeqQTZudrxSJFQ" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_0k-jJwSpEeqQTZudrxSJFQ" value="1"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_0k-jKASpEeqQTZudrxSJFQ" value=""/>
+      </ownedParameter>
+    </ownedOperation>
+    <ownedOperation xmi:id="_0k-jKQSpEeqQTZudrxSJFQ" name="main" visibility="public" isStatic="true">
+      <ownedParameter xmi:id="_0k-jKgSpEeqQTZudrxSJFQ" name="args" isUnique="false">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_0k-jKwSpEeqQTZudrxSJFQ" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_0k-jLASpEeqQTZudrxSJFQ"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_0k-jLQSpEeqQTZudrxSJFQ" value=""/>
+      </ownedParameter>
+      <ownedParameter xmi:id="_0k-jLgSpEeqQTZudrxSJFQ" isUnique="false" direction="return">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_0k-jLwSpEeqQTZudrxSJFQ" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_0k-jMASpEeqQTZudrxSJFQ" value="1"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_0k-jMQSpEeqQTZudrxSJFQ" value=""/>
+      </ownedParameter>
+    </ownedOperation>
+    <ownedOperation xmi:id="_0k-jMgSpEeqQTZudrxSJFQ" name="predictUserPreferenceOnRestaurants" visibility="public">
+      <ownedParameter xmi:id="_0k-jMwSpEeqQTZudrxSJFQ" name="restaurants" type="_0k-kWgSpEeqQTZudrxSJFQ" isUnique="false">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_0k-jNASpEeqQTZudrxSJFQ" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_0k-jNQSpEeqQTZudrxSJFQ"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_0k-jNgSpEeqQTZudrxSJFQ" value=""/>
+      </ownedParameter>
+      <ownedParameter xmi:id="_0k-jNwSpEeqQTZudrxSJFQ" name="userRecommendationAttributes" isUnique="false">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EDouble"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_0k-jOASpEeqQTZudrxSJFQ" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_0k-jOQSpEeqQTZudrxSJFQ"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_0k-jOgSpEeqQTZudrxSJFQ" value=""/>
+      </ownedParameter>
+      <ownedParameter xmi:id="_0k-jOwSpEeqQTZudrxSJFQ" isUnique="false" direction="return">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EDouble"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_0k-jPASpEeqQTZudrxSJFQ" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_0k-jPQSpEeqQTZudrxSJFQ"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_0k-jPgSpEeqQTZudrxSJFQ" value=""/>
+      </ownedParameter>
+    </ownedOperation>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Usage" xmi:id="_0k-jPwSpEeqQTZudrxSJFQ" supplier="_0k-kIwSpEeqQTZudrxSJFQ" client="_0k9WZgSpEeqQTZudrxSJFQ"/>
+  <packagedElement xmi:type="uml:Usage" xmi:id="_0k-jQASpEeqQTZudrxSJFQ" supplier="_0k-jeQSpEeqQTZudrxSJFQ" client="_0k9WZgSpEeqQTZudrxSJFQ"/>
+  <packagedElement xmi:type="uml:Usage" xmi:id="_0k-jQQSpEeqQTZudrxSJFQ" supplier="_0k-kRQSpEeqQTZudrxSJFQ" client="_0k9WZgSpEeqQTZudrxSJFQ"/>
+  <packagedElement xmi:type="uml:Usage" xmi:id="_0k-jQgSpEeqQTZudrxSJFQ" supplier="_0k-kMgSpEeqQTZudrxSJFQ" client="_0k9WZgSpEeqQTZudrxSJFQ"/>
+  <packagedElement xmi:type="uml:Usage" xmi:id="_0k-jQwSpEeqQTZudrxSJFQ" supplier="_0k-j_wSpEeqQTZudrxSJFQ" client="_0k9WZgSpEeqQTZudrxSJFQ"/>
+  <packagedElement xmi:type="uml:Usage" xmi:id="_0k-jRASpEeqQTZudrxSJFQ" supplier="_0k-kDQSpEeqQTZudrxSJFQ" client="_0k9WZgSpEeqQTZudrxSJFQ">
+    <ownedComment xmi:id="_0k-jRQSpEeqQTZudrxSJFQ">
+      <body>&lt;Enter note text here></body>
+    </ownedComment>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Usage" xmi:id="_0k-jRgSpEeqQTZudrxSJFQ" supplier="_0k-j3gSpEeqQTZudrxSJFQ" client="_0k9WZgSpEeqQTZudrxSJFQ"/>
+  <packagedElement xmi:type="uml:Usage" xmi:id="_0k-jRwSpEeqQTZudrxSJFQ" supplier="_0k-jyASpEeqQTZudrxSJFQ" client="_0k9WZgSpEeqQTZudrxSJFQ"/>
+  <packagedElement xmi:type="uml:Usage" xmi:id="_0k-jSASpEeqQTZudrxSJFQ" supplier="_0k-kWgSpEeqQTZudrxSJFQ" client="_0k9WZgSpEeqQTZudrxSJFQ"/>
+  <packagedElement xmi:type="uml:Usage" xmi:id="_0k-jSQSpEeqQTZudrxSJFQ" supplier="_0k-jSwSpEeqQTZudrxSJFQ" client="_0k9WZgSpEeqQTZudrxSJFQ"/>
+  <packagedElement xmi:type="uml:Usage" xmi:id="_0k-jSgSpEeqQTZudrxSJFQ" supplier="_0k-j7ASpEeqQTZudrxSJFQ" client="_0k9WZgSpEeqQTZudrxSJFQ"/>
+  <packagedElement xmi:type="uml:Class" xmi:id="_0k-jSwSpEeqQTZudrxSJFQ" name="InputControllerFromFoodyOrderSystem" clientDependency="_0k-jdASpEeqQTZudrxSJFQ _0k-jdQSpEeqQTZudrxSJFQ _0k-jdgSpEeqQTZudrxSJFQ _0k-jdwSpEeqQTZudrxSJFQ _0k-jeASpEeqQTZudrxSJFQ">
+    <ownedOperation xmi:id="_0k-jTASpEeqQTZudrxSJFQ" name="getCompleteDataForUsers" visibility="public">
+      <ownedParameter xmi:id="_0k-jTQSpEeqQTZudrxSJFQ" name="users" type="_0k-jowSpEeqQTZudrxSJFQ" isUnique="false">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_0k-jTgSpEeqQTZudrxSJFQ" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_0k-jTwSpEeqQTZudrxSJFQ"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_0k-jUASpEeqQTZudrxSJFQ" value=""/>
+      </ownedParameter>
+      <ownedParameter xmi:id="_0k-jUQSpEeqQTZudrxSJFQ" type="_0k-j3gSpEeqQTZudrxSJFQ" isUnique="false" direction="return">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_0k-jUgSpEeqQTZudrxSJFQ" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_0k-jUwSpEeqQTZudrxSJFQ"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_0k-jVASpEeqQTZudrxSJFQ" value=""/>
+      </ownedParameter>
+    </ownedOperation>
+    <ownedOperation xmi:id="_0k-jVQSpEeqQTZudrxSJFQ" name="getUserHistoryOrders" visibility="public">
+      <ownedParameter xmi:id="_0k-jVgSpEeqQTZudrxSJFQ" name="userSystemID" isUnique="false">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_0k-jVwSpEeqQTZudrxSJFQ" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_0k-jWASpEeqQTZudrxSJFQ" value="1"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_0k-jWQSpEeqQTZudrxSJFQ" value=""/>
+      </ownedParameter>
+      <ownedParameter xmi:id="_0k-jWgSpEeqQTZudrxSJFQ" name="numberOfLastOrdersRequested" isUnique="false">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_0k-jWwSpEeqQTZudrxSJFQ" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_0k-jXASpEeqQTZudrxSJFQ" value="1"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_0k-jXQSpEeqQTZudrxSJFQ" value=""/>
+      </ownedParameter>
+      <ownedParameter xmi:id="_0k-jXgSpEeqQTZudrxSJFQ" type="_0k-kDQSpEeqQTZudrxSJFQ" isUnique="false" direction="return">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_0k-jXwSpEeqQTZudrxSJFQ" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_0k-jYASpEeqQTZudrxSJFQ"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_0k-jYQSpEeqQTZudrxSJFQ" value=""/>
+      </ownedParameter>
+    </ownedOperation>
+    <ownedOperation xmi:id="_0k-jYgSpEeqQTZudrxSJFQ" name="getUserRatings" visibility="public">
+      <ownedParameter xmi:id="_0k-jYwSpEeqQTZudrxSJFQ" name="userSystemID" isUnique="false">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_0k-jZASpEeqQTZudrxSJFQ" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_0k-jZQSpEeqQTZudrxSJFQ" value="1"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_0k-jZgSpEeqQTZudrxSJFQ" value=""/>
+      </ownedParameter>
+      <ownedParameter xmi:id="_0k-jZwSpEeqQTZudrxSJFQ" type="_0k-j_wSpEeqQTZudrxSJFQ" isUnique="false" direction="return">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_0k-jaASpEeqQTZudrxSJFQ" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_0k-jaQSpEeqQTZudrxSJFQ"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_0k-jagSpEeqQTZudrxSJFQ" value=""/>
+      </ownedParameter>
+    </ownedOperation>
+    <ownedOperation xmi:id="_0k-jawSpEeqQTZudrxSJFQ" name="getRestaurantInformation" visibility="public">
+      <ownedParameter xmi:id="_0k-jbASpEeqQTZudrxSJFQ" name="restaurantsIDs" isUnique="false">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_0k-jbQSpEeqQTZudrxSJFQ" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_0k-jbgSpEeqQTZudrxSJFQ"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_0k-jbwSpEeqQTZudrxSJFQ" value=""/>
+      </ownedParameter>
+      <ownedParameter xmi:id="_0k-jcASpEeqQTZudrxSJFQ" type="_0k-kWgSpEeqQTZudrxSJFQ" isUnique="false" direction="return">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_0k-jcQSpEeqQTZudrxSJFQ" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_0k-jcgSpEeqQTZudrxSJFQ"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_0k-jcwSpEeqQTZudrxSJFQ" value=""/>
+      </ownedParameter>
+    </ownedOperation>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Usage" xmi:id="_0k-jdASpEeqQTZudrxSJFQ" supplier="_0k-kWgSpEeqQTZudrxSJFQ" client="_0k-jSwSpEeqQTZudrxSJFQ"/>
+  <packagedElement xmi:type="uml:Usage" xmi:id="_0k-jdQSpEeqQTZudrxSJFQ" supplier="_0k-jowSpEeqQTZudrxSJFQ" client="_0k-jSwSpEeqQTZudrxSJFQ"/>
+  <packagedElement xmi:type="uml:Usage" xmi:id="_0k-jdgSpEeqQTZudrxSJFQ" supplier="_0k-j3gSpEeqQTZudrxSJFQ" client="_0k-jSwSpEeqQTZudrxSJFQ"/>
+  <packagedElement xmi:type="uml:Usage" xmi:id="_0k-jdwSpEeqQTZudrxSJFQ" supplier="_0k-kDQSpEeqQTZudrxSJFQ" client="_0k-jSwSpEeqQTZudrxSJFQ"/>
+  <packagedElement xmi:type="uml:Usage" xmi:id="_0k-jeASpEeqQTZudrxSJFQ" supplier="_0k-j_wSpEeqQTZudrxSJFQ" client="_0k-jSwSpEeqQTZudrxSJFQ"/>
+  <packagedElement xmi:type="uml:Class" xmi:id="_0k-jeQSpEeqQTZudrxSJFQ" name="ConsumableProduct">
+    <ownedAttribute xmi:id="_0k-jegSpEeqQTZudrxSJFQ" name="productType" visibility="public" type="_0k-kMgSpEeqQTZudrxSJFQ" aggregation="shared" association="_0k-jnQSpEeqQTZudrxSJFQ"/>
+    <ownedAttribute xmi:id="_0k-jewSpEeqQTZudrxSJFQ" name="generalCategory" visibility="public" type="_0k-kRQSpEeqQTZudrxSJFQ" aggregation="shared" association="_0k-joASpEeqQTZudrxSJFQ"/>
+    <ownedAttribute xmi:id="_0k-jfASpEeqQTZudrxSJFQ" name="productID" visibility="private" isUnique="false">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_0k-jfQSpEeqQTZudrxSJFQ" name="title" visibility="private" isUnique="false">
+      <ownedComment xmi:id="_0k-jfgSpEeqQTZudrxSJFQ">
+        <body>&lt;Enter note text here></body>
+      </ownedComment>
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_0k-jfwSpEeqQTZudrxSJFQ" name="consumableProductImagePath" visibility="private" isUnique="false">
+      <ownedComment xmi:id="_0k-jgASpEeqQTZudrxSJFQ">
+        <body>&lt;Enter note text here></body>
+      </ownedComment>
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_0k-jgQSpEeqQTZudrxSJFQ" name="isFoodOrDrink" visibility="private" isUnique="false">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+    </ownedAttribute>
+    <ownedOperation xmi:id="_0k-jggSpEeqQTZudrxSJFQ" name="getConsumableProductImagePath" visibility="public">
+      <ownedComment xmi:id="_0k-jgwSpEeqQTZudrxSJFQ">
+        <body>&lt;Enter note text here></body>
+      </ownedComment>
+      <ownedParameter xmi:id="_0k-jhASpEeqQTZudrxSJFQ" isUnique="false" direction="return">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_0k-jhQSpEeqQTZudrxSJFQ" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_0k-jhgSpEeqQTZudrxSJFQ" value="1"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_0k-jhwSpEeqQTZudrxSJFQ" value=""/>
+      </ownedParameter>
+    </ownedOperation>
+    <ownedOperation xmi:id="_0k-jiASpEeqQTZudrxSJFQ" name="getTitle" visibility="public">
+      <ownedParameter xmi:id="_0k-jiQSpEeqQTZudrxSJFQ" isUnique="false" direction="return">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_0k-jigSpEeqQTZudrxSJFQ" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_0k-jiwSpEeqQTZudrxSJFQ" value="1"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_0k-jjASpEeqQTZudrxSJFQ" value=""/>
+      </ownedParameter>
+    </ownedOperation>
+    <ownedOperation xmi:id="_0k-jjQSpEeqQTZudrxSJFQ" name="getIdentificationCode" visibility="public">
+      <ownedParameter xmi:id="_0k-jjgSpEeqQTZudrxSJFQ" isUnique="false" direction="return">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_0k-jjwSpEeqQTZudrxSJFQ" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_0k-jkASpEeqQTZudrxSJFQ" value="1"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_0k-jkQSpEeqQTZudrxSJFQ" value=""/>
+      </ownedParameter>
+    </ownedOperation>
+    <ownedOperation xmi:id="_0k-jkgSpEeqQTZudrxSJFQ" name="isFood" visibility="public">
+      <ownedComment xmi:id="_0k-jkwSpEeqQTZudrxSJFQ">
+        <body>&lt;Enter note text here></body>
+      </ownedComment>
+      <ownedParameter xmi:id="_0k-jlASpEeqQTZudrxSJFQ" isUnique="false" direction="return">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_0k-jlQSpEeqQTZudrxSJFQ" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_0k-jlgSpEeqQTZudrxSJFQ" value="1"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_0k-jlwSpEeqQTZudrxSJFQ" value=""/>
+      </ownedParameter>
+    </ownedOperation>
+    <ownedOperation xmi:id="_0k-jmASpEeqQTZudrxSJFQ" name="isDrink" visibility="public">
+      <ownedParameter xmi:id="_0k-jmQSpEeqQTZudrxSJFQ" isUnique="false" direction="return">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_0k-jmgSpEeqQTZudrxSJFQ" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_0k-jmwSpEeqQTZudrxSJFQ" value="1"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_0k-jnASpEeqQTZudrxSJFQ" value=""/>
+      </ownedParameter>
+    </ownedOperation>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_0k-jnQSpEeqQTZudrxSJFQ" memberEnd="_0k-jegSpEeqQTZudrxSJFQ _0k-jngSpEeqQTZudrxSJFQ">
+    <ownedEnd xmi:id="_0k-jngSpEeqQTZudrxSJFQ" visibility="public" type="_0k-jeQSpEeqQTZudrxSJFQ" association="_0k-jnQSpEeqQTZudrxSJFQ">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_0k-jnwSpEeqQTZudrxSJFQ"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_0k-joASpEeqQTZudrxSJFQ" memberEnd="_0k-jewSpEeqQTZudrxSJFQ _0k-joQSpEeqQTZudrxSJFQ">
+    <ownedEnd xmi:id="_0k-joQSpEeqQTZudrxSJFQ" visibility="public" type="_0k-jeQSpEeqQTZudrxSJFQ" association="_0k-joASpEeqQTZudrxSJFQ">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_0k-jogSpEeqQTZudrxSJFQ"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_0k-jowSpEeqQTZudrxSJFQ" name="GeneralInformationUser">
+    <ownedAttribute xmi:id="_0k-jpASpEeqQTZudrxSJFQ" name="journey" visibility="public" type="_0k-jyASpEeqQTZudrxSJFQ" aggregation="composite" association="_0k-jxASpEeqQTZudrxSJFQ">
+      <ownedComment xmi:id="_0k-jpQSpEeqQTZudrxSJFQ">
+        <body>&lt;Enter note text here></body>
+      </ownedComment>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_0k-jpgSpEeqQTZudrxSJFQ" value="25"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_0k-jpwSpEeqQTZudrxSJFQ"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_0k-jqASpEeqQTZudrxSJFQ" name="likedOrDislikedProduct" visibility="public" type="_0k-j7ASpEeqQTZudrxSJFQ" aggregation="shared" association="_0k-jxgSpEeqQTZudrxSJFQ">
+      <ownedComment xmi:id="_0k-jqQSpEeqQTZudrxSJFQ">
+        <body>&lt;Enter note text here></body>
+      </ownedComment>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_0k-jqgSpEeqQTZudrxSJFQ" value="*"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_0k-jqwSpEeqQTZudrxSJFQ"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_0k-jrASpEeqQTZudrxSJFQ" name="userSystemID" visibility="private" isUnique="false">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_0k-jrQSpEeqQTZudrxSJFQ" name="userRecommendationAttributes" visibility="private" isUnique="false">
+      <ownedComment xmi:id="_0k-jrgSpEeqQTZudrxSJFQ">
+        <body>&lt;Enter note text here></body>
+      </ownedComment>
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EDouble"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_0k-jrwSpEeqQTZudrxSJFQ" value="*"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_0k-jsASpEeqQTZudrxSJFQ"/>
+    </ownedAttribute>
+    <ownedOperation xmi:id="_0k-jsQSpEeqQTZudrxSJFQ" name="getUserSystemID" visibility="public">
+      <ownedParameter xmi:id="_0k-jsgSpEeqQTZudrxSJFQ" isUnique="false" direction="return">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_0k-jswSpEeqQTZudrxSJFQ" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_0k-jtASpEeqQTZudrxSJFQ" value="1"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_0k-jtQSpEeqQTZudrxSJFQ" value=""/>
+      </ownedParameter>
+    </ownedOperation>
+    <ownedOperation xmi:id="_0k-jtgSpEeqQTZudrxSJFQ" name="setUserRecommendationAttributes" visibility="public" isLeaf="true">
+      <ownedParameter xmi:id="_0k-jtwSpEeqQTZudrxSJFQ" name="newUserRecommendationAttributes" isUnique="false">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EDouble"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_0k-juASpEeqQTZudrxSJFQ" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_0k-juQSpEeqQTZudrxSJFQ"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_0k-jugSpEeqQTZudrxSJFQ" value=""/>
+      </ownedParameter>
+      <ownedParameter xmi:id="_0k-juwSpEeqQTZudrxSJFQ" isUnique="false" direction="return">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_0k-jvASpEeqQTZudrxSJFQ" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_0k-jvQSpEeqQTZudrxSJFQ" value="1"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_0k-jvgSpEeqQTZudrxSJFQ" value=""/>
+      </ownedParameter>
+    </ownedOperation>
+    <ownedOperation xmi:id="_0k-jvwSpEeqQTZudrxSJFQ" name="getUserRecommendationAttributes" visibility="public">
+      <ownedParameter xmi:id="_0k-jwASpEeqQTZudrxSJFQ" isUnique="false" direction="return">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EDouble"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_0k-jwQSpEeqQTZudrxSJFQ" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_0k-jwgSpEeqQTZudrxSJFQ"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_0k-jwwSpEeqQTZudrxSJFQ" value=""/>
+      </ownedParameter>
+    </ownedOperation>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_0k-jxASpEeqQTZudrxSJFQ" memberEnd="_0k-jpASpEeqQTZudrxSJFQ _0k-jxQSpEeqQTZudrxSJFQ">
+    <ownedEnd xmi:id="_0k-jxQSpEeqQTZudrxSJFQ" visibility="public" type="_0k-jowSpEeqQTZudrxSJFQ" association="_0k-jxASpEeqQTZudrxSJFQ"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_0k-jxgSpEeqQTZudrxSJFQ" memberEnd="_0k-jqASpEeqQTZudrxSJFQ _0k-jxwSpEeqQTZudrxSJFQ">
+    <ownedEnd xmi:id="_0k-jxwSpEeqQTZudrxSJFQ" visibility="public" type="_0k-jowSpEeqQTZudrxSJFQ" association="_0k-jxgSpEeqQTZudrxSJFQ"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_0k-jyASpEeqQTZudrxSJFQ" name="Journey">
+    <ownedAttribute xmi:id="_0k-jyQSpEeqQTZudrxSJFQ" name="journeyID" visibility="private" isUnique="false">
+      <ownedComment xmi:id="_0k-jygSpEeqQTZudrxSJFQ">
+        <body>&lt;Enter note text here></body>
+      </ownedComment>
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_0k-jywSpEeqQTZudrxSJFQ" name="journeyName" visibility="private" isUnique="false">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_0k-jzASpEeqQTZudrxSJFQ" name="consumableProductsIDs" visibility="private" isUnique="false">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_0k-jzQSpEeqQTZudrxSJFQ" value="*"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_0k-jzgSpEeqQTZudrxSJFQ"/>
+    </ownedAttribute>
+    <ownedOperation xmi:id="_0k-jzwSpEeqQTZudrxSJFQ" name="getJourneyID" visibility="public">
+      <ownedParameter xmi:id="_0k-j0ASpEeqQTZudrxSJFQ" isUnique="false" direction="return">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_0k-j0QSpEeqQTZudrxSJFQ" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_0k-j0gSpEeqQTZudrxSJFQ" value="1"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_0k-j0wSpEeqQTZudrxSJFQ" value=""/>
+      </ownedParameter>
+    </ownedOperation>
+    <ownedOperation xmi:id="_0k-j1ASpEeqQTZudrxSJFQ" name="getJourneyName" visibility="public">
+      <ownedParameter xmi:id="_0k-j1QSpEeqQTZudrxSJFQ" isUnique="false" direction="return">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_0k-j1gSpEeqQTZudrxSJFQ" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_0k-j1wSpEeqQTZudrxSJFQ" value="1"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_0k-j2ASpEeqQTZudrxSJFQ" value=""/>
+      </ownedParameter>
+    </ownedOperation>
+    <ownedOperation xmi:id="_0k-j2QSpEeqQTZudrxSJFQ" name="getConsumableProductIDs" visibility="public">
+      <ownedParameter xmi:id="_0k-j2gSpEeqQTZudrxSJFQ" isUnique="false" direction="return">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_0k-j2wSpEeqQTZudrxSJFQ" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_0k-j3ASpEeqQTZudrxSJFQ"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_0k-j3QSpEeqQTZudrxSJFQ" value=""/>
+      </ownedParameter>
+    </ownedOperation>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_0k-j3gSpEeqQTZudrxSJFQ" name="CompleteInformationUser">
+    <generalization xmi:id="_0k-j3wSpEeqQTZudrxSJFQ" general="_0k-jowSpEeqQTZudrxSJFQ"/>
+    <ownedAttribute xmi:id="_0k-j4ASpEeqQTZudrxSJFQ" name="restaurantRating" visibility="public" type="_0k-j_wSpEeqQTZudrxSJFQ" aggregation="composite" association="_0k-j6ASpEeqQTZudrxSJFQ">
+      <ownedComment xmi:id="_0k-j4QSpEeqQTZudrxSJFQ">
+        <body>&lt;Enter note text here></body>
+      </ownedComment>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_0k-j4gSpEeqQTZudrxSJFQ" value="*"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_0k-j4wSpEeqQTZudrxSJFQ"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_0k-j5ASpEeqQTZudrxSJFQ" name="order" visibility="public" type="_0k-kDQSpEeqQTZudrxSJFQ" aggregation="composite" association="_0k-j6gSpEeqQTZudrxSJFQ">
+      <ownedComment xmi:id="_0k-j5QSpEeqQTZudrxSJFQ">
+        <body>&lt;Enter note text here></body>
+      </ownedComment>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_0k-j5gSpEeqQTZudrxSJFQ" value="100"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_0k-j5wSpEeqQTZudrxSJFQ"/>
+    </ownedAttribute>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_0k-j6ASpEeqQTZudrxSJFQ" memberEnd="_0k-j4ASpEeqQTZudrxSJFQ _0k-j6QSpEeqQTZudrxSJFQ">
+    <ownedEnd xmi:id="_0k-j6QSpEeqQTZudrxSJFQ" visibility="public" type="_0k-j3gSpEeqQTZudrxSJFQ" association="_0k-j6ASpEeqQTZudrxSJFQ"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_0k-j6gSpEeqQTZudrxSJFQ" memberEnd="_0k-j5ASpEeqQTZudrxSJFQ _0k-j6wSpEeqQTZudrxSJFQ">
+    <ownedEnd xmi:id="_0k-j6wSpEeqQTZudrxSJFQ" visibility="public" type="_0k-j3gSpEeqQTZudrxSJFQ" association="_0k-j6gSpEeqQTZudrxSJFQ"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_0k-j7ASpEeqQTZudrxSJFQ" name="LikedOrDislikedProduct">
+    <ownedAttribute xmi:id="_0k-j7QSpEeqQTZudrxSJFQ" name="isLiked" visibility="private" isUnique="false">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_0k-j7gSpEeqQTZudrxSJFQ" name="consumableProductID" visibility="private" isUnique="false">
+      <ownedComment xmi:id="_0k-j7wSpEeqQTZudrxSJFQ">
+        <body>&lt;Enter note text here></body>
+      </ownedComment>
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+    </ownedAttribute>
+    <ownedOperation xmi:id="_0k-j8ASpEeqQTZudrxSJFQ" name="isLiked" visibility="public">
+      <ownedParameter xmi:id="_0k-j8QSpEeqQTZudrxSJFQ" isUnique="false" direction="return">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_0k-j8gSpEeqQTZudrxSJFQ" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_0k-j8wSpEeqQTZudrxSJFQ" value="1"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_0k-j9ASpEeqQTZudrxSJFQ" value=""/>
+      </ownedParameter>
+    </ownedOperation>
+    <ownedOperation xmi:id="_0k-j9QSpEeqQTZudrxSJFQ" name="isDisliked" visibility="public" isLeaf="true">
+      <ownedParameter xmi:id="_0k-j9gSpEeqQTZudrxSJFQ" isUnique="false" direction="return">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_0k-j9wSpEeqQTZudrxSJFQ" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_0k-j-ASpEeqQTZudrxSJFQ" value="1"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_0k-j-QSpEeqQTZudrxSJFQ" value=""/>
+      </ownedParameter>
+    </ownedOperation>
+    <ownedOperation xmi:id="_0k-j-gSpEeqQTZudrxSJFQ" name="getConsumableProductID" visibility="public">
+      <ownedParameter xmi:id="_0k-j-wSpEeqQTZudrxSJFQ" isUnique="false" direction="return">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_0k-j_ASpEeqQTZudrxSJFQ" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_0k-j_QSpEeqQTZudrxSJFQ" value="1"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_0k-j_gSpEeqQTZudrxSJFQ" value=""/>
+      </ownedParameter>
+    </ownedOperation>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_0k-j_wSpEeqQTZudrxSJFQ" name="RestaurantRating">
+    <ownedAttribute xmi:id="_0k-kAASpEeqQTZudrxSJFQ" name="restaurantID" visibility="private" isUnique="false">
+      <ownedComment xmi:id="_0k-kAQSpEeqQTZudrxSJFQ">
+        <body>&lt;Enter note text here></body>
+      </ownedComment>
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_0k-kAgSpEeqQTZudrxSJFQ" name="rating" visibility="private" isUnique="false">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EByte"/>
+    </ownedAttribute>
+    <ownedOperation xmi:id="_0k-kAwSpEeqQTZudrxSJFQ" name="getRatedRestaurantID" visibility="public">
+      <ownedParameter xmi:id="_0k-kBASpEeqQTZudrxSJFQ" isUnique="false" direction="return">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_0k-kBQSpEeqQTZudrxSJFQ" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_0k-kBgSpEeqQTZudrxSJFQ" value="1"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_0k-kBwSpEeqQTZudrxSJFQ" value=""/>
+      </ownedParameter>
+    </ownedOperation>
+    <ownedOperation xmi:id="_0k-kCASpEeqQTZudrxSJFQ" name="getRating" visibility="public">
+      <ownedParameter xmi:id="_0k-kCQSpEeqQTZudrxSJFQ" isUnique="false" direction="return">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EByte"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_0k-kCgSpEeqQTZudrxSJFQ" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_0k-kCwSpEeqQTZudrxSJFQ" value="1"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_0k-kDASpEeqQTZudrxSJFQ" value=""/>
+      </ownedParameter>
+    </ownedOperation>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_0k-kDQSpEeqQTZudrxSJFQ" name="Order">
+    <ownedAttribute xmi:id="_0k-kDgSpEeqQTZudrxSJFQ" name="orderID" visibility="private" isUnique="false">
+      <ownedComment xmi:id="_0k-kDwSpEeqQTZudrxSJFQ">
+        <body>&lt;Enter note text here></body>
+      </ownedComment>
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_0k-kEASpEeqQTZudrxSJFQ" name="restaurantID" visibility="private" isUnique="false">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_0k-kEQSpEeqQTZudrxSJFQ" name="consumableProductsIDs" visibility="private" isUnique="false">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_0k-kEgSpEeqQTZudrxSJFQ" value="*"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_0k-kEwSpEeqQTZudrxSJFQ"/>
+    </ownedAttribute>
+    <ownedOperation xmi:id="_0k-kFASpEeqQTZudrxSJFQ" name="getOrderID" visibility="public">
+      <ownedParameter xmi:id="_0k-kFQSpEeqQTZudrxSJFQ" isUnique="false" direction="return">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_0k-kFgSpEeqQTZudrxSJFQ" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_0k-kFwSpEeqQTZudrxSJFQ" value="1"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_0k-kGASpEeqQTZudrxSJFQ" value=""/>
+      </ownedParameter>
+    </ownedOperation>
+    <ownedOperation xmi:id="_0k-kGQSpEeqQTZudrxSJFQ" name="getRestaurantIDOfOrder" visibility="public">
+      <ownedParameter xmi:id="_0k-kGgSpEeqQTZudrxSJFQ" isUnique="false" direction="return">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_0k-kGwSpEeqQTZudrxSJFQ" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_0k-kHASpEeqQTZudrxSJFQ" value="1"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_0k-kHQSpEeqQTZudrxSJFQ" value=""/>
+      </ownedParameter>
+    </ownedOperation>
+    <ownedOperation xmi:id="_0k-kHgSpEeqQTZudrxSJFQ" name="getConsumableProductIDsOfOrder" visibility="public">
+      <ownedParameter xmi:id="_0k-kHwSpEeqQTZudrxSJFQ" isUnique="false" direction="return">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_0k-kIASpEeqQTZudrxSJFQ" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_0k-kIQSpEeqQTZudrxSJFQ"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_0k-kIgSpEeqQTZudrxSJFQ" value=""/>
+      </ownedParameter>
+    </ownedOperation>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_0k-kIwSpEeqQTZudrxSJFQ" name="ExtendedDatabaseAPI">
+    <generalization xmi:id="_0k-kJASpEeqQTZudrxSJFQ" general="_0k9U5ASpEeqQTZudrxSJFQ"/>
+    <ownedOperation xmi:id="_0k-kJQSpEeqQTZudrxSJFQ" name="updateUserAttributes" visibility="public">
+      <ownedParameter xmi:id="_0k-kJgSpEeqQTZudrxSJFQ" name="userSystemID" isUnique="false">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_0k-kJwSpEeqQTZudrxSJFQ" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_0k-kKASpEeqQTZudrxSJFQ" value="1"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_0k-kKQSpEeqQTZudrxSJFQ" value=""/>
+      </ownedParameter>
+      <ownedParameter xmi:id="_0k-kKgSpEeqQTZudrxSJFQ" name="userNewRecommendationAttributes" isUnique="false">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EDouble"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_0k-kKwSpEeqQTZudrxSJFQ" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_0k-kLASpEeqQTZudrxSJFQ"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_0k-kLQSpEeqQTZudrxSJFQ" value=""/>
+      </ownedParameter>
+      <ownedParameter xmi:id="_0k-kLgSpEeqQTZudrxSJFQ" isUnique="false" direction="return">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_0k-kLwSpEeqQTZudrxSJFQ" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_0k-kMASpEeqQTZudrxSJFQ" value="1"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_0k-kMQSpEeqQTZudrxSJFQ" value=""/>
+      </ownedParameter>
+    </ownedOperation>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_0k-kMgSpEeqQTZudrxSJFQ" name="ProductType">
+    <ownedAttribute xmi:id="_0k-kMwSpEeqQTZudrxSJFQ" name="productTypeID" visibility="private" isUnique="false">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_0k-kNASpEeqQTZudrxSJFQ" name="productTypeName" visibility="private" isUnique="false">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_0k-kNQSpEeqQTZudrxSJFQ" name="productTypeFolderImagesPath" visibility="private" isUnique="false">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedAttribute>
+    <ownedOperation xmi:id="_0k-kNgSpEeqQTZudrxSJFQ" name="getProductTypeID" visibility="public">
+      <ownedParameter xmi:id="_0k-kNwSpEeqQTZudrxSJFQ" isUnique="false" direction="return">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_0k-kOASpEeqQTZudrxSJFQ" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_0k-kOQSpEeqQTZudrxSJFQ" value="1"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_0k-kOgSpEeqQTZudrxSJFQ" value=""/>
+      </ownedParameter>
+    </ownedOperation>
+    <ownedOperation xmi:id="_0k-kOwSpEeqQTZudrxSJFQ" name="getProductTypeName" visibility="public">
+      <ownedParameter xmi:id="_0k-kPASpEeqQTZudrxSJFQ" isUnique="false" direction="return">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_0k-kPQSpEeqQTZudrxSJFQ" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_0k-kPgSpEeqQTZudrxSJFQ" value="1"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_0k-kPwSpEeqQTZudrxSJFQ" value=""/>
+      </ownedParameter>
+    </ownedOperation>
+    <ownedOperation xmi:id="_0k-kQASpEeqQTZudrxSJFQ" name="getPoductTypeFolderImagesPath" visibility="public">
+      <ownedParameter xmi:id="_0k-kQQSpEeqQTZudrxSJFQ" isUnique="false" direction="return">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_0k-kQgSpEeqQTZudrxSJFQ" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_0k-kQwSpEeqQTZudrxSJFQ" value="1"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_0k-kRASpEeqQTZudrxSJFQ" value=""/>
+      </ownedParameter>
+    </ownedOperation>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_0k-kRQSpEeqQTZudrxSJFQ" name="GeneralCategory">
+    <ownedAttribute xmi:id="_0k-kRgSpEeqQTZudrxSJFQ" name="categoryName" visibility="private" isUnique="false">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_0k-kRwSpEeqQTZudrxSJFQ" name="categoryID" visibility="private" isUnique="false">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_0k-kSASpEeqQTZudrxSJFQ" name="categoryFolderImagesPath" visibility="private" isUnique="false">
+      <ownedComment xmi:id="_0k-kSQSpEeqQTZudrxSJFQ">
+        <body>&lt;Enter note text here></body>
+      </ownedComment>
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedAttribute>
+    <ownedOperation xmi:id="_0k-kSgSpEeqQTZudrxSJFQ" name="getCategoryName" visibility="public">
+      <ownedParameter xmi:id="_0k-kSwSpEeqQTZudrxSJFQ" isUnique="false" direction="return">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_0k-kTASpEeqQTZudrxSJFQ" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_0k-kTQSpEeqQTZudrxSJFQ" value="1"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_0k-kTgSpEeqQTZudrxSJFQ" value=""/>
+      </ownedParameter>
+    </ownedOperation>
+    <ownedOperation xmi:id="_0k-kTwSpEeqQTZudrxSJFQ" name="getCategoryID" visibility="public">
+      <ownedParameter xmi:id="_0k-kUASpEeqQTZudrxSJFQ" isUnique="false" direction="return">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_0k-kUQSpEeqQTZudrxSJFQ" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_0k-kUgSpEeqQTZudrxSJFQ" value="1"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_0k-kUwSpEeqQTZudrxSJFQ" value=""/>
+      </ownedParameter>
+    </ownedOperation>
+    <ownedOperation xmi:id="_0k-kVASpEeqQTZudrxSJFQ" name="getCategoryFolderImagesPath" visibility="public">
+      <ownedComment xmi:id="_0k-kVQSpEeqQTZudrxSJFQ">
+        <body>&lt;Enter note text here></body>
+      </ownedComment>
+      <ownedParameter xmi:id="_0k-kVgSpEeqQTZudrxSJFQ" isUnique="false" direction="return">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_0k-kVwSpEeqQTZudrxSJFQ" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_0k-kWASpEeqQTZudrxSJFQ" value="1"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_0k-kWQSpEeqQTZudrxSJFQ" value=""/>
+      </ownedParameter>
+    </ownedOperation>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_0k-kWgSpEeqQTZudrxSJFQ" name="Restaurant">
+    <ownedAttribute xmi:id="_0k-kWwSpEeqQTZudrxSJFQ" name="restaurantAttributes" visibility="private" isUnique="false">
+      <ownedComment xmi:id="_0k-kXASpEeqQTZudrxSJFQ">
+        <body>&lt;Enter note text here></body>
+      </ownedComment>
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EDouble"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_0k-kXQSpEeqQTZudrxSJFQ" value="*"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_0k-kXgSpEeqQTZudrxSJFQ"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_0k-kXwSpEeqQTZudrxSJFQ" name="restaurantID" visibility="private" isUnique="false">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+    </ownedAttribute>
+    <ownedOperation xmi:id="_0k-kYASpEeqQTZudrxSJFQ" name="getReastaurantID" visibility="public">
+      <ownedParameter xmi:id="_0k-kYQSpEeqQTZudrxSJFQ" isUnique="false" direction="return">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_0k-kYgSpEeqQTZudrxSJFQ" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_0lA_QASpEeqQTZudrxSJFQ" value="1"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_0lA_QQSpEeqQTZudrxSJFQ" value=""/>
+      </ownedParameter>
+    </ownedOperation>
+    <ownedOperation xmi:id="_0lA_QgSpEeqQTZudrxSJFQ" name="getRestaurantName" visibility="public">
+      <ownedParameter xmi:id="_0lA_QwSpEeqQTZudrxSJFQ" isUnique="false" direction="return">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_0lA_RASpEeqQTZudrxSJFQ" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_0lA_RQSpEeqQTZudrxSJFQ" value="1"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_0lA_RgSpEeqQTZudrxSJFQ" value=""/>
+      </ownedParameter>
+    </ownedOperation>
+    <ownedOperation xmi:id="_0lA_RwSpEeqQTZudrxSJFQ" name="getRestarauntAttributes" visibility="public">
+      <ownedParameter xmi:id="_0lA_SASpEeqQTZudrxSJFQ" isUnique="false" direction="return">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EDouble"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_0lA_SQSpEeqQTZudrxSJFQ" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_0lA_SgSpEeqQTZudrxSJFQ"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_0lA_SwSpEeqQTZudrxSJFQ" value=""/>
+      </ownedParameter>
+    </ownedOperation>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_0lA_TASpEeqQTZudrxSJFQ" name="Recommendendations" clientDependency="_0lA_ZwSpEeqQTZudrxSJFQ _0lA_aASpEeqQTZudrxSJFQ _0lA_aQSpEeqQTZudrxSJFQ _0lA_agSpEeqQTZudrxSJFQ">
+    <ownedOperation xmi:id="_0lA_TQSpEeqQTZudrxSJFQ" name="preferenceOfUserOnConsumableProductsInPercentage" visibility="public">
+      <ownedParameter xmi:id="_0lA_TgSpEeqQTZudrxSJFQ" name="userSystemID" isUnique="false">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_0lA_TwSpEeqQTZudrxSJFQ" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_0lA_UASpEeqQTZudrxSJFQ" value="1"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_0lA_UQSpEeqQTZudrxSJFQ" value=""/>
+      </ownedParameter>
+      <ownedParameter xmi:id="_0lA_UgSpEeqQTZudrxSJFQ" name="consumableIDs" isUnique="false">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_0lA_UwSpEeqQTZudrxSJFQ" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_0lA_VASpEeqQTZudrxSJFQ"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_0lA_VQSpEeqQTZudrxSJFQ" value=""/>
+      </ownedParameter>
+      <ownedParameter xmi:id="_0lA_VgSpEeqQTZudrxSJFQ" isUnique="false" direction="return">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EDouble"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_0lA_VwSpEeqQTZudrxSJFQ" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_0lA_WASpEeqQTZudrxSJFQ"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_0lA_WQSpEeqQTZudrxSJFQ" value=""/>
+      </ownedParameter>
+    </ownedOperation>
+    <ownedOperation xmi:id="_0lA_WgSpEeqQTZudrxSJFQ" name="preferenceOfUserOnReastaurantsInPercentage" visibility="public">
+      <ownedParameter xmi:id="_0lA_WwSpEeqQTZudrxSJFQ" name="restaurants" type="_0k-kWgSpEeqQTZudrxSJFQ" isUnique="false">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_0lA_XASpEeqQTZudrxSJFQ" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_0lA_XQSpEeqQTZudrxSJFQ"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_0lA_XgSpEeqQTZudrxSJFQ" value=""/>
+      </ownedParameter>
+      <ownedParameter xmi:id="_0lA_XwSpEeqQTZudrxSJFQ" name="userSystemID" isUnique="false">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_0lA_YASpEeqQTZudrxSJFQ" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_0lA_YQSpEeqQTZudrxSJFQ" value="1"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_0lA_YgSpEeqQTZudrxSJFQ" value=""/>
+      </ownedParameter>
+      <ownedParameter xmi:id="_0lA_YwSpEeqQTZudrxSJFQ" isUnique="false" direction="return">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EDouble"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_0lA_ZASpEeqQTZudrxSJFQ" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_0lA_ZQSpEeqQTZudrxSJFQ"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_0lA_ZgSpEeqQTZudrxSJFQ" value=""/>
+      </ownedParameter>
+    </ownedOperation>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Usage" xmi:id="_0lA_ZwSpEeqQTZudrxSJFQ" supplier="_0k9U5ASpEeqQTZudrxSJFQ" client="_0lA_TASpEeqQTZudrxSJFQ"/>
+  <packagedElement xmi:type="uml:Usage" xmi:id="_0lA_aASpEeqQTZudrxSJFQ" supplier="_0k-jSwSpEeqQTZudrxSJFQ" client="_0lA_TASpEeqQTZudrxSJFQ"/>
+  <packagedElement xmi:type="uml:Usage" xmi:id="_0lA_aQSpEeqQTZudrxSJFQ" supplier="_0k9WZgSpEeqQTZudrxSJFQ" client="_0lA_TASpEeqQTZudrxSJFQ"/>
+  <packagedElement xmi:type="uml:Usage" xmi:id="_0lA_agSpEeqQTZudrxSJFQ" supplier="_0k-kWgSpEeqQTZudrxSJFQ" client="_0lA_TASpEeqQTZudrxSJFQ"/>
+  <packagedElement xmi:type="uml:Interaction" xmi:id="_0lCNYASpEeqQTZudrxSJFQ" name="Interaction">
+    <nestedClassifier xmi:type="uml:Collaboration" xmi:id="_0lCNYQSpEeqQTZudrxSJFQ" name="locals"/>
+    <lifeline xmi:id="_0lCNYgSpEeqQTZudrxSJFQ" name="RecommenderSystem" coveredBy="_0lCNcASpEeqQTZudrxSJFQ _0lCNcQSpEeqQTZudrxSJFQ _0lCNeQSpEeqQTZudrxSJFQ _0lCNegSpEeqQTZudrxSJFQ _0lCNewSpEeqQTZudrxSJFQ _0lCNgwSpEeqQTZudrxSJFQ _0lCNlgSpEeqQTZudrxSJFQ _0lCNlwSpEeqQTZudrxSJFQ _0lCNtQSpEeqQTZudrxSJFQ _0lCNugSpEeqQTZudrxSJFQ _0lCNuwSpEeqQTZudrxSJFQ _0lCNvASpEeqQTZudrxSJFQ _0lCNvQSpEeqQTZudrxSJFQ _0lCNxwSpEeqQTZudrxSJFQ _0lCNyASpEeqQTZudrxSJFQ _0lCN1gSpEeqQTZudrxSJFQ _0lCN1wSpEeqQTZudrxSJFQ _0lCN2wSpEeqQTZudrxSJFQ _0lCN4ASpEeqQTZudrxSJFQ _0lCN4gSpEeqQTZudrxSJFQ _0lCN5ASpEeqQTZudrxSJFQ _0lCN6gSpEeqQTZudrxSJFQ _0lCN8ASpEeqQTZudrxSJFQ _0lCN9gSpEeqQTZudrxSJFQ _0lCN_ASpEeqQTZudrxSJFQ _0lCOAgSpEeqQTZudrxSJFQ _0lCOBASpEeqQTZudrxSJFQ _0lCOBgSpEeqQTZudrxSJFQ _0lCOBwSpEeqQTZudrxSJFQ _0lCODQSpEeqQTZudrxSJFQ _0lCODgSpEeqQTZudrxSJFQ _0lCODwSpEeqQTZudrxSJFQ _0lCOEASpEeqQTZudrxSJFQ _0lCOEQSpEeqQTZudrxSJFQ _0lCOEgSpEeqQTZudrxSJFQ _0lCOEwSpEeqQTZudrxSJFQ _0lC0cASpEeqQTZudrxSJFQ _0lC0cQSpEeqQTZudrxSJFQ">
+      <ownedComment xmi:id="_0lCNYwSpEeqQTZudrxSJFQ">
+        <body>&lt;Enter note text here></body>
+      </ownedComment>
+    </lifeline>
+    <lifeline xmi:id="_0lCNZASpEeqQTZudrxSJFQ" name="ExtendedDatabaseAPI" coveredBy="_0lCNhASpEeqQTZudrxSJFQ _0lCNhQSpEeqQTZudrxSJFQ _0lCNigSpEeqQTZudrxSJFQ _0lCNkQSpEeqQTZudrxSJFQ _0lCNkwSpEeqQTZudrxSJFQ _0lCNlQSpEeqQTZudrxSJFQ _0lCNyQSpEeqQTZudrxSJFQ _0lCNygSpEeqQTZudrxSJFQ _0lCNzwSpEeqQTZudrxSJFQ _0lCN0QSpEeqQTZudrxSJFQ _0lCN0wSpEeqQTZudrxSJFQ _0lCN1QSpEeqQTZudrxSJFQ _0lCN2ASpEeqQTZudrxSJFQ _0lCN2QSpEeqQTZudrxSJFQ _0lCN2gSpEeqQTZudrxSJFQ"/>
+    <lifeline xmi:id="_0lCNZQSpEeqQTZudrxSJFQ" name="InputControllerFromFoodyOrderSystem" coveredBy="_0lCNmASpEeqQTZudrxSJFQ _0lCNmQSpEeqQTZudrxSJFQ _0lCNmgSpEeqQTZudrxSJFQ _0lCNmwSpEeqQTZudrxSJFQ _0lCNnASpEeqQTZudrxSJFQ _0lCNoQSpEeqQTZudrxSJFQ _0lCNowSpEeqQTZudrxSJFQ _0lCNpASpEeqQTZudrxSJFQ _0lCNpQSpEeqQTZudrxSJFQ _0lCNpgSpEeqQTZudrxSJFQ _0lCNpwSpEeqQTZudrxSJFQ _0lCNqASpEeqQTZudrxSJFQ _0lCNrQSpEeqQTZudrxSJFQ _0lCNrwSpEeqQTZudrxSJFQ _0lCNsASpEeqQTZudrxSJFQ _0lCNsQSpEeqQTZudrxSJFQ _0lCNsgSpEeqQTZudrxSJFQ _0lCNtASpEeqQTZudrxSJFQ _0lCNvgSpEeqQTZudrxSJFQ _0lCNvwSpEeqQTZudrxSJFQ _0lCNxASpEeqQTZudrxSJFQ _0lCNxgSpEeqQTZudrxSJFQ"/>
+    <lifeline xmi:id="_0lCNZgSpEeqQTZudrxSJFQ" name="GeneralInformationUser" coveredBy="_0lCNlASpEeqQTZudrxSJFQ _0lCOCASpEeqQTZudrxSJFQ"/>
+    <lifeline xmi:id="_0lCNZwSpEeqQTZudrxSJFQ" name="Journey" coveredBy="_0lCNiwSpEeqQTZudrxSJFQ _0lCN8QSpEeqQTZudrxSJFQ"/>
+    <lifeline xmi:id="_0lCNaASpEeqQTZudrxSJFQ" name="LikedOrDislikedProduct" coveredBy="_0lCNkgSpEeqQTZudrxSJFQ _0lCN9wSpEeqQTZudrxSJFQ"/>
+    <lifeline xmi:id="_0lCNaQSpEeqQTZudrxSJFQ" name="Order" coveredBy="_0lCNogSpEeqQTZudrxSJFQ _0lCN_QSpEeqQTZudrxSJFQ"/>
+    <lifeline xmi:id="_0lCNagSpEeqQTZudrxSJFQ" name="RestaurantRating" coveredBy="_0lCNrgSpEeqQTZudrxSJFQ _0lCOAwSpEeqQTZudrxSJFQ"/>
+    <lifeline xmi:id="_0lCNawSpEeqQTZudrxSJFQ" name="CompleteInformationUser" coveredBy="_0lCNswSpEeqQTZudrxSJFQ _0lCOBQSpEeqQTZudrxSJFQ"/>
+    <lifeline xmi:id="_0lCNbASpEeqQTZudrxSJFQ" name="Restaurant" coveredBy="_0lCNxQSpEeqQTZudrxSJFQ _0lCN6wSpEeqQTZudrxSJFQ"/>
+    <lifeline xmi:id="_0lCNbQSpEeqQTZudrxSJFQ" name="ProductType" coveredBy="_0lCN0ASpEeqQTZudrxSJFQ _0lCN4wSpEeqQTZudrxSJFQ"/>
+    <lifeline xmi:id="_0lCNbgSpEeqQTZudrxSJFQ" name="GeneralCategory" coveredBy="_0lCN0gSpEeqQTZudrxSJFQ _0lCN4QSpEeqQTZudrxSJFQ"/>
+    <lifeline xmi:id="_0lCNbwSpEeqQTZudrxSJFQ" name="ConsumableProduct" coveredBy="_0lCN1ASpEeqQTZudrxSJFQ _0lCN5QSpEeqQTZudrxSJFQ"/>
+    <fragment xmi:type="uml:ExecutionOccurrenceSpecification" xmi:id="_0lCNcASpEeqQTZudrxSJFQ" covered="_0lCNYgSpEeqQTZudrxSJFQ"/>
+    <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="_0lCNcQSpEeqQTZudrxSJFQ" covered="_0lCNYgSpEeqQTZudrxSJFQ" start="_0lCNcASpEeqQTZudrxSJFQ" finish="_0lC0cQSpEeqQTZudrxSJFQ"/>
+    <fragment xmi:type="uml:ExecutionOccurrenceSpecification" xmi:id="_0lCNcgSpEeqQTZudrxSJFQ"/>
+    <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="_0lCNcwSpEeqQTZudrxSJFQ" start="_0lCNcgSpEeqQTZudrxSJFQ" finish="_0lCNjASpEeqQTZudrxSJFQ"/>
+    <fragment xmi:type="uml:CombinedFragment" xmi:id="_0lCNdASpEeqQTZudrxSJFQ" name="CombinedFragment" interactionOperator="loop">
+      <ownedComment xmi:id="_0lCNdQSpEeqQTZudrxSJFQ">
+        <body>&lt;Enter note text here></body>
+      </ownedComment>
+      <operand xmi:id="_0lCNdgSpEeqQTZudrxSJFQ">
+        <guard xmi:id="_0lCNdwSpEeqQTZudrxSJFQ">
+          <specification xmi:type="uml:LiteralString" xmi:id="_0lCNeASpEeqQTZudrxSJFQ" value="Every 24 hours : At 11:00 a.m do"/>
+        </guard>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_0lCNeQSpEeqQTZudrxSJFQ" covered="_0lCNYgSpEeqQTZudrxSJFQ" message="_0lC0cgSpEeqQTZudrxSJFQ"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_0lCNegSpEeqQTZudrxSJFQ" covered="_0lCNYgSpEeqQTZudrxSJFQ" message="_0lC0cgSpEeqQTZudrxSJFQ"/>
+        <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="_0lCNewSpEeqQTZudrxSJFQ" covered="_0lCNYgSpEeqQTZudrxSJFQ" start="_0lCNegSpEeqQTZudrxSJFQ" finish="_0lCOEwSpEeqQTZudrxSJFQ"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_0lCNfASpEeqQTZudrxSJFQ" message="_0lC0cwSpEeqQTZudrxSJFQ"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_0lCNfQSpEeqQTZudrxSJFQ" message="_0lC0cwSpEeqQTZudrxSJFQ"/>
+        <fragment xmi:type="uml:CombinedFragment" xmi:id="_0lCNfgSpEeqQTZudrxSJFQ" name="CombinedFragment" interactionOperator="loop">
+          <ownedComment xmi:id="_0lCNfwSpEeqQTZudrxSJFQ">
+            <body>&lt;Enter note text here></body>
+          </ownedComment>
+          <operand xmi:id="_0lCNgASpEeqQTZudrxSJFQ">
+            <guard xmi:id="_0lCNgQSpEeqQTZudrxSJFQ">
+              <specification xmi:type="uml:LiteralString" xmi:id="_0lCNggSpEeqQTZudrxSJFQ" value="Take up to n users each loop until you have traversed them all"/>
+            </guard>
+            <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_0lCNgwSpEeqQTZudrxSJFQ" covered="_0lCNYgSpEeqQTZudrxSJFQ" message="_0lC0dASpEeqQTZudrxSJFQ"/>
+            <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_0lCNhASpEeqQTZudrxSJFQ" covered="_0lCNZASpEeqQTZudrxSJFQ" message="_0lC0dASpEeqQTZudrxSJFQ"/>
+            <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="_0lCNhQSpEeqQTZudrxSJFQ" covered="_0lCNZASpEeqQTZudrxSJFQ" start="_0lCNhASpEeqQTZudrxSJFQ" finish="_0lCNlQSpEeqQTZudrxSJFQ"/>
+            <fragment xmi:type="uml:CombinedFragment" xmi:id="_0lCNhgSpEeqQTZudrxSJFQ" name="CombinedFragment" interactionOperator="loop">
+              <operand xmi:id="_0lCNhwSpEeqQTZudrxSJFQ">
+                <guard xmi:id="_0lCNiASpEeqQTZudrxSJFQ">
+                  <specification xmi:type="uml:LiteralString" xmi:id="_0lCNiQSpEeqQTZudrxSJFQ" value="For evey Journey that user has"/>
+                </guard>
+                <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_0lCNigSpEeqQTZudrxSJFQ" covered="_0lCNZASpEeqQTZudrxSJFQ" message="_0lC0dQSpEeqQTZudrxSJFQ"/>
+                <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_0lCNiwSpEeqQTZudrxSJFQ" covered="_0lCNZwSpEeqQTZudrxSJFQ" message="_0lC0dQSpEeqQTZudrxSJFQ"/>
+              </operand>
+            </fragment>
+            <fragment xmi:type="uml:ExecutionOccurrenceSpecification" xmi:id="_0lCNjASpEeqQTZudrxSJFQ"/>
+            <fragment xmi:type="uml:CombinedFragment" xmi:id="_0lCNjQSpEeqQTZudrxSJFQ" name="CombinedFragment" interactionOperator="loop">
+              <operand xmi:id="_0lCNjgSpEeqQTZudrxSJFQ">
+                <guard xmi:id="_0lCNjwSpEeqQTZudrxSJFQ">
+                  <specification xmi:type="uml:LiteralString" xmi:id="_0lCNkASpEeqQTZudrxSJFQ" value="For evey Liked or Disliked Product of Current User"/>
+                </guard>
+                <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_0lCNkQSpEeqQTZudrxSJFQ" covered="_0lCNZASpEeqQTZudrxSJFQ" message="_0lC0dgSpEeqQTZudrxSJFQ"/>
+                <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_0lCNkgSpEeqQTZudrxSJFQ" covered="_0lCNaASpEeqQTZudrxSJFQ" message="_0lC0dgSpEeqQTZudrxSJFQ"/>
+              </operand>
+            </fragment>
+            <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_0lCNkwSpEeqQTZudrxSJFQ" covered="_0lCNZASpEeqQTZudrxSJFQ" message="_0lC0dwSpEeqQTZudrxSJFQ"/>
+            <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_0lCNlASpEeqQTZudrxSJFQ" covered="_0lCNZgSpEeqQTZudrxSJFQ" message="_0lC0dwSpEeqQTZudrxSJFQ"/>
+            <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_0lCNlQSpEeqQTZudrxSJFQ" covered="_0lCNZASpEeqQTZudrxSJFQ" message="_0lC0eASpEeqQTZudrxSJFQ"/>
+            <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_0lCNlgSpEeqQTZudrxSJFQ" covered="_0lCNYgSpEeqQTZudrxSJFQ" message="_0lC0eASpEeqQTZudrxSJFQ"/>
+            <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_0lCNlwSpEeqQTZudrxSJFQ" covered="_0lCNYgSpEeqQTZudrxSJFQ" message="_0lC0eQSpEeqQTZudrxSJFQ"/>
+            <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_0lCNmASpEeqQTZudrxSJFQ" covered="_0lCNZQSpEeqQTZudrxSJFQ" message="_0lC0eQSpEeqQTZudrxSJFQ"/>
+            <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="_0lCNmQSpEeqQTZudrxSJFQ" covered="_0lCNZQSpEeqQTZudrxSJFQ" start="_0lCNmASpEeqQTZudrxSJFQ" finish="_0lCNtASpEeqQTZudrxSJFQ"/>
+            <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_0lCNmgSpEeqQTZudrxSJFQ" covered="_0lCNZQSpEeqQTZudrxSJFQ" message="_0lC0egSpEeqQTZudrxSJFQ"/>
+            <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_0lCNmwSpEeqQTZudrxSJFQ" covered="_0lCNZQSpEeqQTZudrxSJFQ" message="_0lC0egSpEeqQTZudrxSJFQ"/>
+            <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="_0lCNnASpEeqQTZudrxSJFQ" covered="_0lCNZQSpEeqQTZudrxSJFQ" start="_0lCNmwSpEeqQTZudrxSJFQ" finish="_0lCNpASpEeqQTZudrxSJFQ"/>
+            <fragment xmi:type="uml:CombinedFragment" xmi:id="_0lCNnQSpEeqQTZudrxSJFQ" name="CombinedFragment" interactionOperator="loop">
+              <operand xmi:id="_0lCNngSpEeqQTZudrxSJFQ">
+                <guard xmi:id="_0lCNnwSpEeqQTZudrxSJFQ">
+                  <specification xmi:type="uml:LiteralString" xmi:id="_0lCNoASpEeqQTZudrxSJFQ" value="For every order of the current user"/>
+                </guard>
+                <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_0lCNoQSpEeqQTZudrxSJFQ" covered="_0lCNZQSpEeqQTZudrxSJFQ" message="_0lC0ewSpEeqQTZudrxSJFQ"/>
+                <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_0lCNogSpEeqQTZudrxSJFQ" covered="_0lCNaQSpEeqQTZudrxSJFQ" message="_0lC0ewSpEeqQTZudrxSJFQ"/>
+              </operand>
+            </fragment>
+            <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_0lCNowSpEeqQTZudrxSJFQ" covered="_0lCNZQSpEeqQTZudrxSJFQ" message="_0lC0fASpEeqQTZudrxSJFQ"/>
+            <fragment xmi:type="uml:ExecutionOccurrenceSpecification" xmi:id="_0lCNpASpEeqQTZudrxSJFQ" covered="_0lCNZQSpEeqQTZudrxSJFQ"/>
+            <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_0lCNpQSpEeqQTZudrxSJFQ" covered="_0lCNZQSpEeqQTZudrxSJFQ" message="_0lC0fASpEeqQTZudrxSJFQ"/>
+            <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_0lCNpgSpEeqQTZudrxSJFQ" covered="_0lCNZQSpEeqQTZudrxSJFQ" message="_0lC0fQSpEeqQTZudrxSJFQ"/>
+            <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_0lCNpwSpEeqQTZudrxSJFQ" covered="_0lCNZQSpEeqQTZudrxSJFQ" message="_0lC0fQSpEeqQTZudrxSJFQ"/>
+            <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="_0lCNqASpEeqQTZudrxSJFQ" covered="_0lCNZQSpEeqQTZudrxSJFQ" start="_0lCNpwSpEeqQTZudrxSJFQ" finish="_0lCNsASpEeqQTZudrxSJFQ"/>
+            <fragment xmi:type="uml:CombinedFragment" xmi:id="_0lCNqQSpEeqQTZudrxSJFQ" name="CombinedFragment" interactionOperator="loop">
+              <operand xmi:id="_0lCNqgSpEeqQTZudrxSJFQ">
+                <guard xmi:id="_0lCNqwSpEeqQTZudrxSJFQ">
+                  <specification xmi:type="uml:LiteralString" xmi:id="_0lCNrASpEeqQTZudrxSJFQ" value="For every restaurant rating of the user"/>
+                </guard>
+                <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_0lCNrQSpEeqQTZudrxSJFQ" covered="_0lCNZQSpEeqQTZudrxSJFQ" message="_0lC0fgSpEeqQTZudrxSJFQ"/>
+                <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_0lCNrgSpEeqQTZudrxSJFQ" covered="_0lCNagSpEeqQTZudrxSJFQ" message="_0lC0fgSpEeqQTZudrxSJFQ"/>
+              </operand>
+            </fragment>
+            <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_0lCNrwSpEeqQTZudrxSJFQ" covered="_0lCNZQSpEeqQTZudrxSJFQ" message="_0lC0fwSpEeqQTZudrxSJFQ"/>
+            <fragment xmi:type="uml:ExecutionOccurrenceSpecification" xmi:id="_0lCNsASpEeqQTZudrxSJFQ" covered="_0lCNZQSpEeqQTZudrxSJFQ"/>
+            <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_0lCNsQSpEeqQTZudrxSJFQ" covered="_0lCNZQSpEeqQTZudrxSJFQ" message="_0lC0fwSpEeqQTZudrxSJFQ"/>
+            <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_0lCNsgSpEeqQTZudrxSJFQ" covered="_0lCNZQSpEeqQTZudrxSJFQ" message="_0lC0gASpEeqQTZudrxSJFQ"/>
+            <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_0lCNswSpEeqQTZudrxSJFQ" covered="_0lCNawSpEeqQTZudrxSJFQ" message="_0lC0gASpEeqQTZudrxSJFQ"/>
+            <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_0lCNtASpEeqQTZudrxSJFQ" covered="_0lCNZQSpEeqQTZudrxSJFQ" message="_0lC0gQSpEeqQTZudrxSJFQ"/>
+            <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_0lCNtQSpEeqQTZudrxSJFQ" covered="_0lCNYgSpEeqQTZudrxSJFQ" message="_0lC0gQSpEeqQTZudrxSJFQ"/>
+            <fragment xmi:type="uml:CombinedFragment" xmi:id="_0lCNtgSpEeqQTZudrxSJFQ" name="CombinedFragment" interactionOperator="loop">
+              <operand xmi:id="_0lCNtwSpEeqQTZudrxSJFQ">
+                <guard xmi:id="_0lCNuASpEeqQTZudrxSJFQ">
+                  <specification xmi:type="uml:LiteralString" xmi:id="_0lCNuQSpEeqQTZudrxSJFQ" value="For every user from the up to n selected users"/>
+                </guard>
+                <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_0lCNugSpEeqQTZudrxSJFQ" covered="_0lCNYgSpEeqQTZudrxSJFQ" message="_0lC0ggSpEeqQTZudrxSJFQ"/>
+                <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_0lCNuwSpEeqQTZudrxSJFQ" covered="_0lCNYgSpEeqQTZudrxSJFQ" message="_0lC0ggSpEeqQTZudrxSJFQ"/>
+                <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="_0lCNvASpEeqQTZudrxSJFQ" covered="_0lCNYgSpEeqQTZudrxSJFQ" start="_0lCNuwSpEeqQTZudrxSJFQ" finish="_0lCOBgSpEeqQTZudrxSJFQ"/>
+                <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_0lCNvQSpEeqQTZudrxSJFQ" covered="_0lCNYgSpEeqQTZudrxSJFQ" message="_0lC0gwSpEeqQTZudrxSJFQ"/>
+                <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_0lCNvgSpEeqQTZudrxSJFQ" covered="_0lCNZQSpEeqQTZudrxSJFQ" message="_0lC0gwSpEeqQTZudrxSJFQ"/>
+                <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="_0lCNvwSpEeqQTZudrxSJFQ" covered="_0lCNZQSpEeqQTZudrxSJFQ" start="_0lCNvgSpEeqQTZudrxSJFQ" finish="_0lCNxgSpEeqQTZudrxSJFQ"/>
+                <fragment xmi:type="uml:CombinedFragment" xmi:id="_0lCNwASpEeqQTZudrxSJFQ" name="CombinedFragment" interactionOperator="loop">
+                  <operand xmi:id="_0lCNwQSpEeqQTZudrxSJFQ">
+                    <guard xmi:id="_0lCNwgSpEeqQTZudrxSJFQ">
+                      <specification xmi:type="uml:LiteralString" xmi:id="_0lCNwwSpEeqQTZudrxSJFQ" value="For every restaurant with ID taken from the array restaurantsIDs"/>
+                    </guard>
+                    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_0lCNxASpEeqQTZudrxSJFQ" covered="_0lCNZQSpEeqQTZudrxSJFQ" message="_0lC0hASpEeqQTZudrxSJFQ"/>
+                    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_0lCNxQSpEeqQTZudrxSJFQ" covered="_0lCNbASpEeqQTZudrxSJFQ" message="_0lC0hASpEeqQTZudrxSJFQ"/>
+                  </operand>
+                </fragment>
+                <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_0lCNxgSpEeqQTZudrxSJFQ" covered="_0lCNZQSpEeqQTZudrxSJFQ" message="_0lC0hQSpEeqQTZudrxSJFQ"/>
+                <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_0lCNxwSpEeqQTZudrxSJFQ" covered="_0lCNYgSpEeqQTZudrxSJFQ" message="_0lC0hQSpEeqQTZudrxSJFQ"/>
+                <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_0lCNyASpEeqQTZudrxSJFQ" covered="_0lCNYgSpEeqQTZudrxSJFQ" message="_0lC0hgSpEeqQTZudrxSJFQ"/>
+                <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_0lCNyQSpEeqQTZudrxSJFQ" covered="_0lCNZASpEeqQTZudrxSJFQ" message="_0lC0hgSpEeqQTZudrxSJFQ"/>
+                <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="_0lCNygSpEeqQTZudrxSJFQ" covered="_0lCNZASpEeqQTZudrxSJFQ" start="_0lCNyQSpEeqQTZudrxSJFQ" finish="_0lCN1QSpEeqQTZudrxSJFQ"/>
+                <fragment xmi:type="uml:CombinedFragment" xmi:id="_0lCNywSpEeqQTZudrxSJFQ" name="CombinedFragment" interactionOperator="loop">
+                  <operand xmi:id="_0lCNzASpEeqQTZudrxSJFQ">
+                    <guard xmi:id="_0lCNzQSpEeqQTZudrxSJFQ">
+                      <specification xmi:type="uml:LiteralString" xmi:id="_0lCNzgSpEeqQTZudrxSJFQ" value="For every Consumable product with ID from the array consumableProductsIDs "/>
+                    </guard>
+                    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_0lCNzwSpEeqQTZudrxSJFQ" covered="_0lCNZASpEeqQTZudrxSJFQ" message="_0lC0hwSpEeqQTZudrxSJFQ"/>
+                    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_0lCN0ASpEeqQTZudrxSJFQ" covered="_0lCNbQSpEeqQTZudrxSJFQ" message="_0lC0hwSpEeqQTZudrxSJFQ"/>
+                    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_0lCN0QSpEeqQTZudrxSJFQ" covered="_0lCNZASpEeqQTZudrxSJFQ" message="_0lC0iASpEeqQTZudrxSJFQ"/>
+                    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_0lCN0gSpEeqQTZudrxSJFQ" covered="_0lCNbgSpEeqQTZudrxSJFQ" message="_0lC0iASpEeqQTZudrxSJFQ"/>
+                    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_0lCN0wSpEeqQTZudrxSJFQ" covered="_0lCNZASpEeqQTZudrxSJFQ" message="_0lC0iQSpEeqQTZudrxSJFQ"/>
+                    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_0lCN1ASpEeqQTZudrxSJFQ" covered="_0lCNbwSpEeqQTZudrxSJFQ" message="_0lC0iQSpEeqQTZudrxSJFQ"/>
+                  </operand>
+                </fragment>
+                <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_0lCN1QSpEeqQTZudrxSJFQ" covered="_0lCNZASpEeqQTZudrxSJFQ" message="_0lC0igSpEeqQTZudrxSJFQ"/>
+                <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_0lCN1gSpEeqQTZudrxSJFQ" covered="_0lCNYgSpEeqQTZudrxSJFQ" message="_0lC0igSpEeqQTZudrxSJFQ"/>
+                <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_0lCN1wSpEeqQTZudrxSJFQ" covered="_0lCNYgSpEeqQTZudrxSJFQ" message="_0lC0iwSpEeqQTZudrxSJFQ"/>
+                <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_0lCN2ASpEeqQTZudrxSJFQ" covered="_0lCNZASpEeqQTZudrxSJFQ" message="_0lC0iwSpEeqQTZudrxSJFQ"/>
+                <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="_0lCN2QSpEeqQTZudrxSJFQ" covered="_0lCNZASpEeqQTZudrxSJFQ" start="_0lCN2ASpEeqQTZudrxSJFQ" finish="_0lCN2gSpEeqQTZudrxSJFQ"/>
+                <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_0lCN2gSpEeqQTZudrxSJFQ" covered="_0lCNZASpEeqQTZudrxSJFQ" message="_0lC0jASpEeqQTZudrxSJFQ"/>
+                <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_0lCN2wSpEeqQTZudrxSJFQ" covered="_0lCNYgSpEeqQTZudrxSJFQ" message="_0lC0jASpEeqQTZudrxSJFQ"/>
+                <fragment xmi:type="uml:CombinedFragment" xmi:id="_0lCN3ASpEeqQTZudrxSJFQ" name="CombinedFragment" interactionOperator="loop">
+                  <operand xmi:id="_0lCN3QSpEeqQTZudrxSJFQ">
+                    <guard xmi:id="_0lCN3gSpEeqQTZudrxSJFQ">
+                      <specification xmi:type="uml:LiteralString" xmi:id="_0lCN3wSpEeqQTZudrxSJFQ" value="For every ConsumableProduct object in the array requestedConsumableProducts"/>
+                    </guard>
+                    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_0lCN4ASpEeqQTZudrxSJFQ" covered="_0lCNYgSpEeqQTZudrxSJFQ" message="_0lC0jQSpEeqQTZudrxSJFQ"/>
+                    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_0lCN4QSpEeqQTZudrxSJFQ" covered="_0lCNbgSpEeqQTZudrxSJFQ" message="_0lC0jQSpEeqQTZudrxSJFQ"/>
+                    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_0lCN4gSpEeqQTZudrxSJFQ" covered="_0lCNYgSpEeqQTZudrxSJFQ" message="_0lC0jgSpEeqQTZudrxSJFQ"/>
+                    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_0lCN4wSpEeqQTZudrxSJFQ" covered="_0lCNbQSpEeqQTZudrxSJFQ" message="_0lC0jgSpEeqQTZudrxSJFQ"/>
+                    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_0lCN5ASpEeqQTZudrxSJFQ" covered="_0lCNYgSpEeqQTZudrxSJFQ" message="_0lC0jwSpEeqQTZudrxSJFQ"/>
+                    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_0lCN5QSpEeqQTZudrxSJFQ" covered="_0lCNbwSpEeqQTZudrxSJFQ" message="_0lC0jwSpEeqQTZudrxSJFQ"/>
+                  </operand>
+                </fragment>
+                <fragment xmi:type="uml:CombinedFragment" xmi:id="_0lCN5gSpEeqQTZudrxSJFQ" name="CombinedFragment" interactionOperator="loop">
+                  <operand xmi:id="_0lCN5wSpEeqQTZudrxSJFQ">
+                    <guard xmi:id="_0lCN6ASpEeqQTZudrxSJFQ">
+                      <specification xmi:type="uml:LiteralString" xmi:id="_0lCN6QSpEeqQTZudrxSJFQ" value="For every Restaurant object in the array requestedRestaurants"/>
+                    </guard>
+                    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_0lCN6gSpEeqQTZudrxSJFQ" covered="_0lCNYgSpEeqQTZudrxSJFQ" message="_0lC0kASpEeqQTZudrxSJFQ"/>
+                    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_0lCN6wSpEeqQTZudrxSJFQ" covered="_0lCNbASpEeqQTZudrxSJFQ" message="_0lC0kASpEeqQTZudrxSJFQ"/>
+                  </operand>
+                </fragment>
+                <fragment xmi:type="uml:CombinedFragment" xmi:id="_0lCN7ASpEeqQTZudrxSJFQ" name="CombinedFragment" interactionOperator="loop">
+                  <operand xmi:id="_0lCN7QSpEeqQTZudrxSJFQ">
+                    <guard xmi:id="_0lCN7gSpEeqQTZudrxSJFQ">
+                      <specification xmi:type="uml:LiteralString" xmi:id="_0lCN7wSpEeqQTZudrxSJFQ" value="For every Journey Object of the user referred to the CompleteInformationUser object user"/>
+                    </guard>
+                    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_0lCN8ASpEeqQTZudrxSJFQ" covered="_0lCNYgSpEeqQTZudrxSJFQ" message="_0lC0kQSpEeqQTZudrxSJFQ"/>
+                    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_0lCN8QSpEeqQTZudrxSJFQ" covered="_0lCNZwSpEeqQTZudrxSJFQ" message="_0lC0kQSpEeqQTZudrxSJFQ"/>
+                  </operand>
+                </fragment>
+                <fragment xmi:type="uml:CombinedFragment" xmi:id="_0lCN8gSpEeqQTZudrxSJFQ" name="CombinedFragment" interactionOperator="loop">
+                  <operand xmi:id="_0lCN8wSpEeqQTZudrxSJFQ">
+                    <guard xmi:id="_0lCN9ASpEeqQTZudrxSJFQ">
+                      <specification xmi:type="uml:LiteralString" xmi:id="_0lCN9QSpEeqQTZudrxSJFQ" value="For every LikedDislikedProduct Object of the user referred to the CompleteInformationUser object user"/>
+                    </guard>
+                    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_0lCN9gSpEeqQTZudrxSJFQ" covered="_0lCNYgSpEeqQTZudrxSJFQ" message="_0lC0kgSpEeqQTZudrxSJFQ"/>
+                    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_0lCN9wSpEeqQTZudrxSJFQ" covered="_0lCNaASpEeqQTZudrxSJFQ" message="_0lC0kgSpEeqQTZudrxSJFQ"/>
+                  </operand>
+                </fragment>
+                <fragment xmi:type="uml:CombinedFragment" xmi:id="_0lCN-ASpEeqQTZudrxSJFQ" name="CombinedFragment" interactionOperator="loop">
+                  <operand xmi:id="_0lCN-QSpEeqQTZudrxSJFQ">
+                    <guard xmi:id="_0lCN-gSpEeqQTZudrxSJFQ">
+                      <specification xmi:type="uml:LiteralString" xmi:id="_0lCN-wSpEeqQTZudrxSJFQ" value="For every object Order from the array orders which was created before from the retrieved orders of the user"/>
+                    </guard>
+                    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_0lCN_ASpEeqQTZudrxSJFQ" covered="_0lCNYgSpEeqQTZudrxSJFQ" message="_0lC0kwSpEeqQTZudrxSJFQ"/>
+                    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_0lCN_QSpEeqQTZudrxSJFQ" covered="_0lCNaQSpEeqQTZudrxSJFQ" message="_0lC0kwSpEeqQTZudrxSJFQ"/>
+                  </operand>
+                </fragment>
+                <fragment xmi:type="uml:CombinedFragment" xmi:id="_0lCN_gSpEeqQTZudrxSJFQ" name="CombinedFragment" interactionOperator="loop">
+                  <operand xmi:id="_0lCN_wSpEeqQTZudrxSJFQ">
+                    <guard xmi:id="_0lCOAASpEeqQTZudrxSJFQ">
+                      <specification xmi:type="uml:LiteralString" xmi:id="_0lCOAQSpEeqQTZudrxSJFQ" value="For every object RestaurantRating from the array ratings which was created before from the retrieved restaurant ratings of the user"/>
+                    </guard>
+                    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_0lCOAgSpEeqQTZudrxSJFQ" covered="_0lCNYgSpEeqQTZudrxSJFQ" message="_0lC0lASpEeqQTZudrxSJFQ"/>
+                    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_0lCOAwSpEeqQTZudrxSJFQ" covered="_0lCNagSpEeqQTZudrxSJFQ" message="_0lC0lASpEeqQTZudrxSJFQ"/>
+                  </operand>
+                </fragment>
+                <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_0lCOBASpEeqQTZudrxSJFQ" covered="_0lCNYgSpEeqQTZudrxSJFQ" message="_0lC0lQSpEeqQTZudrxSJFQ"/>
+                <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_0lCOBQSpEeqQTZudrxSJFQ" covered="_0lCNawSpEeqQTZudrxSJFQ" message="_0lC0lQSpEeqQTZudrxSJFQ"/>
+                <fragment xmi:type="uml:ExecutionOccurrenceSpecification" xmi:id="_0lCOBgSpEeqQTZudrxSJFQ" covered="_0lCNYgSpEeqQTZudrxSJFQ"/>
+                <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_0lCOBwSpEeqQTZudrxSJFQ" covered="_0lCNYgSpEeqQTZudrxSJFQ" message="_0lC0lgSpEeqQTZudrxSJFQ"/>
+                <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_0lCOCASpEeqQTZudrxSJFQ" covered="_0lCNZgSpEeqQTZudrxSJFQ" message="_0lC0lgSpEeqQTZudrxSJFQ"/>
+              </operand>
+            </fragment>
+          </operand>
+        </fragment>
+        <fragment xmi:type="uml:CombinedFragment" xmi:id="_0lCOCQSpEeqQTZudrxSJFQ" name="CombinedFragment" interactionOperator="opt">
+          <operand xmi:id="_0lCOCgSpEeqQTZudrxSJFQ">
+            <guard xmi:id="_0lCOCwSpEeqQTZudrxSJFQ">
+              <specification xmi:type="uml:LiteralString" xmi:id="_0lCODASpEeqQTZudrxSJFQ" value="If the learning parameters of the RecommenderSystem need to be updated for better calculations the next time"/>
+            </guard>
+            <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_0lCODQSpEeqQTZudrxSJFQ" covered="_0lCNYgSpEeqQTZudrxSJFQ" message="_0lC0lwSpEeqQTZudrxSJFQ"/>
+            <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_0lCODgSpEeqQTZudrxSJFQ" covered="_0lCNYgSpEeqQTZudrxSJFQ" message="_0lC0lwSpEeqQTZudrxSJFQ"/>
+            <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="_0lCODwSpEeqQTZudrxSJFQ" covered="_0lCNYgSpEeqQTZudrxSJFQ" start="_0lCODgSpEeqQTZudrxSJFQ" finish="_0lCOEQSpEeqQTZudrxSJFQ"/>
+            <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_0lCOEASpEeqQTZudrxSJFQ" covered="_0lCNYgSpEeqQTZudrxSJFQ" message="_0lC0mASpEeqQTZudrxSJFQ"/>
+            <fragment xmi:type="uml:ExecutionOccurrenceSpecification" xmi:id="_0lCOEQSpEeqQTZudrxSJFQ" covered="_0lCNYgSpEeqQTZudrxSJFQ"/>
+            <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_0lCOEgSpEeqQTZudrxSJFQ" covered="_0lCNYgSpEeqQTZudrxSJFQ" message="_0lC0mASpEeqQTZudrxSJFQ"/>
+          </operand>
+        </fragment>
+      </operand>
+    </fragment>
+    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_0lCOEwSpEeqQTZudrxSJFQ" covered="_0lCNYgSpEeqQTZudrxSJFQ" message="_0lC0mQSpEeqQTZudrxSJFQ"/>
+    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_0lC0cASpEeqQTZudrxSJFQ" covered="_0lCNYgSpEeqQTZudrxSJFQ" message="_0lC0mQSpEeqQTZudrxSJFQ"/>
+    <fragment xmi:type="uml:ExecutionOccurrenceSpecification" xmi:id="_0lC0cQSpEeqQTZudrxSJFQ" covered="_0lCNYgSpEeqQTZudrxSJFQ"/>
+    <message xmi:id="_0lC0cgSpEeqQTZudrxSJFQ" name="updateUsersrRecommendationAttributes()" receiveEvent="_0lCNegSpEeqQTZudrxSJFQ" sendEvent="_0lCNeQSpEeqQTZudrxSJFQ"/>
+    <message xmi:id="_0lC0cwSpEeqQTZudrxSJFQ" name="destroy" messageSort="deleteMessage" receiveEvent="_0lCNfQSpEeqQTZudrxSJFQ" sendEvent="_0lCNfASpEeqQTZudrxSJFQ"/>
+    <message xmi:id="_0lC0dASpEeqQTZudrxSJFQ" name="getGeneralInformationUsers(integer fromUserID,integer untilUserID)" receiveEvent="_0lCNhASpEeqQTZudrxSJFQ" sendEvent="_0lCNgwSpEeqQTZudrxSJFQ"/>
+    <message xmi:id="_0lC0dQSpEeqQTZudrxSJFQ" name="create Journey Object" messageSort="createMessage" receiveEvent="_0lCNiwSpEeqQTZudrxSJFQ" sendEvent="_0lCNigSpEeqQTZudrxSJFQ"/>
+    <message xmi:id="_0lC0dgSpEeqQTZudrxSJFQ" name="create LikedOrDislikedProduct Object" messageSort="createMessage" receiveEvent="_0lCNkgSpEeqQTZudrxSJFQ" sendEvent="_0lCNkQSpEeqQTZudrxSJFQ"/>
+    <message xmi:id="_0lC0dwSpEeqQTZudrxSJFQ" name="create GeneralInformationUser Object" messageSort="createMessage" receiveEvent="_0lCNlASpEeqQTZudrxSJFQ" sendEvent="_0lCNkwSpEeqQTZudrxSJFQ"/>
+    <message xmi:id="_0lC0eASpEeqQTZudrxSJFQ" name="GeneralInformationUser users[]" messageSort="reply" receiveEvent="_0lCNlgSpEeqQTZudrxSJFQ" sendEvent="_0lCNlQSpEeqQTZudrxSJFQ"/>
+    <message xmi:id="_0lC0eQSpEeqQTZudrxSJFQ" name="getCompleteDataForUsers(GeneralInformationUser users[])" receiveEvent="_0lCNmASpEeqQTZudrxSJFQ" sendEvent="_0lCNlwSpEeqQTZudrxSJFQ"/>
+    <message xmi:id="_0lC0egSpEeqQTZudrxSJFQ" name="getUserHistoryOrders(integer userSystemID,100)" receiveEvent="_0lCNmwSpEeqQTZudrxSJFQ" sendEvent="_0lCNmgSpEeqQTZudrxSJFQ"/>
+    <message xmi:id="_0lC0ewSpEeqQTZudrxSJFQ" name="create Order  Object" messageSort="createMessage" receiveEvent="_0lCNogSpEeqQTZudrxSJFQ" sendEvent="_0lCNoQSpEeqQTZudrxSJFQ"/>
+    <message xmi:id="_0lC0fASpEeqQTZudrxSJFQ" name="Order orders[]" messageSort="reply" receiveEvent="_0lCNpQSpEeqQTZudrxSJFQ" sendEvent="_0lCNowSpEeqQTZudrxSJFQ"/>
+    <message xmi:id="_0lC0fQSpEeqQTZudrxSJFQ" name="getUserRatings(integer userSystemID)" receiveEvent="_0lCNpwSpEeqQTZudrxSJFQ" sendEvent="_0lCNpgSpEeqQTZudrxSJFQ"/>
+    <message xmi:id="_0lC0fgSpEeqQTZudrxSJFQ" name="create RestaurantRating Object" messageSort="createMessage" receiveEvent="_0lCNrgSpEeqQTZudrxSJFQ" sendEvent="_0lCNrQSpEeqQTZudrxSJFQ"/>
+    <message xmi:id="_0lC0fwSpEeqQTZudrxSJFQ" name="RestaurantRating ratings[]" messageSort="reply" receiveEvent="_0lCNsQSpEeqQTZudrxSJFQ" sendEvent="_0lCNrwSpEeqQTZudrxSJFQ"/>
+    <message xmi:id="_0lC0gASpEeqQTZudrxSJFQ" name="create CompleteInformationUser Object" messageSort="createMessage" receiveEvent="_0lCNswSpEeqQTZudrxSJFQ" sendEvent="_0lCNsgSpEeqQTZudrxSJFQ"/>
+    <message xmi:id="_0lC0gQSpEeqQTZudrxSJFQ" name="CompleteInfrmationUser  completeUsers[] " messageSort="reply" receiveEvent="_0lCNtQSpEeqQTZudrxSJFQ" sendEvent="_0lCNtASpEeqQTZudrxSJFQ"/>
+    <message xmi:id="_0lC0ggSpEeqQTZudrxSJFQ" name="calculateAttributes(CompleteInformationUser user)" messageSort="asynchCall" receiveEvent="_0lCNuwSpEeqQTZudrxSJFQ" sendEvent="_0lCNugSpEeqQTZudrxSJFQ"/>
+    <message xmi:id="_0lC0gwSpEeqQTZudrxSJFQ" name="getRestaurantInformation(integer restaurantsIDs[])" receiveEvent="_0lCNvgSpEeqQTZudrxSJFQ" sendEvent="_0lCNvQSpEeqQTZudrxSJFQ"/>
+    <message xmi:id="_0lC0hASpEeqQTZudrxSJFQ" name="create Restaurant Object" messageSort="createMessage" receiveEvent="_0lCNxQSpEeqQTZudrxSJFQ" sendEvent="_0lCNxASpEeqQTZudrxSJFQ"/>
+    <message xmi:id="_0lC0hQSpEeqQTZudrxSJFQ" name="Restaurant requestedRestaurants[]" messageSort="reply" receiveEvent="_0lCNxwSpEeqQTZudrxSJFQ" sendEvent="_0lCNxgSpEeqQTZudrxSJFQ"/>
+    <message xmi:id="_0lC0hgSpEeqQTZudrxSJFQ" name="getConsumableProducts(integer consumableProductsIDs[])" receiveEvent="_0lCNyQSpEeqQTZudrxSJFQ" sendEvent="_0lCNyASpEeqQTZudrxSJFQ"/>
+    <message xmi:id="_0lC0hwSpEeqQTZudrxSJFQ" name="create  ProductType Object" messageSort="createMessage" receiveEvent="_0lCN0ASpEeqQTZudrxSJFQ" sendEvent="_0lCNzwSpEeqQTZudrxSJFQ"/>
+    <message xmi:id="_0lC0iASpEeqQTZudrxSJFQ" name="create GeneralCategory Object" messageSort="createMessage" receiveEvent="_0lCN0gSpEeqQTZudrxSJFQ" sendEvent="_0lCN0QSpEeqQTZudrxSJFQ"/>
+    <message xmi:id="_0lC0iQSpEeqQTZudrxSJFQ" name="create ConsumableProduct Object" messageSort="createMessage" receiveEvent="_0lCN1ASpEeqQTZudrxSJFQ" sendEvent="_0lCN0wSpEeqQTZudrxSJFQ"/>
+    <message xmi:id="_0lC0igSpEeqQTZudrxSJFQ" name="ConsumableProduct requestedConsumableProducts[]" messageSort="reply" receiveEvent="_0lCN1gSpEeqQTZudrxSJFQ" sendEvent="_0lCN1QSpEeqQTZudrxSJFQ"/>
+    <message xmi:id="_0lC0iwSpEeqQTZudrxSJFQ" name="updateUserAttributes(integer userSystemID,double userNewRecommendationAttributes[])" receiveEvent="_0lCN2ASpEeqQTZudrxSJFQ" sendEvent="_0lCN1wSpEeqQTZudrxSJFQ"/>
+    <message xmi:id="_0lC0jASpEeqQTZudrxSJFQ" name="Was the update of the attributes succesfull" messageSort="reply" receiveEvent="_0lCN2wSpEeqQTZudrxSJFQ" sendEvent="_0lCN2gSpEeqQTZudrxSJFQ"/>
+    <message xmi:id="_0lC0jQSpEeqQTZudrxSJFQ" name="destructor called __del__ (GeneralCategory Object)" messageSort="deleteMessage" receiveEvent="_0lCN4QSpEeqQTZudrxSJFQ" sendEvent="_0lCN4ASpEeqQTZudrxSJFQ"/>
+    <message xmi:id="_0lC0jgSpEeqQTZudrxSJFQ" name="destructor called __del__ (ProductType Object)" messageSort="deleteMessage" receiveEvent="_0lCN4wSpEeqQTZudrxSJFQ" sendEvent="_0lCN4gSpEeqQTZudrxSJFQ"/>
+    <message xmi:id="_0lC0jwSpEeqQTZudrxSJFQ" name="destructor called __del__(ConsumableProduct Object) " messageSort="deleteMessage" receiveEvent="_0lCN5QSpEeqQTZudrxSJFQ" sendEvent="_0lCN5ASpEeqQTZudrxSJFQ"/>
+    <message xmi:id="_0lC0kASpEeqQTZudrxSJFQ" name="destructor called __del__ (Restaurant Object)" messageSort="deleteMessage" receiveEvent="_0lCN6wSpEeqQTZudrxSJFQ" sendEvent="_0lCN6gSpEeqQTZudrxSJFQ"/>
+    <message xmi:id="_0lC0kQSpEeqQTZudrxSJFQ" name="destructor called __del__ (Journey Object)" messageSort="deleteMessage" receiveEvent="_0lCN8QSpEeqQTZudrxSJFQ" sendEvent="_0lCN8ASpEeqQTZudrxSJFQ"/>
+    <message xmi:id="_0lC0kgSpEeqQTZudrxSJFQ" name="destructor called __del__(LikedOrDislikedProduct Object)" messageSort="deleteMessage" receiveEvent="_0lCN9wSpEeqQTZudrxSJFQ" sendEvent="_0lCN9gSpEeqQTZudrxSJFQ"/>
+    <message xmi:id="_0lC0kwSpEeqQTZudrxSJFQ" name="destructor called __del__ (Order Object)" messageSort="deleteMessage" receiveEvent="_0lCN_QSpEeqQTZudrxSJFQ" sendEvent="_0lCN_ASpEeqQTZudrxSJFQ"/>
+    <message xmi:id="_0lC0lASpEeqQTZudrxSJFQ" name="destructor called __del__ (RestaurantRating Object)" messageSort="deleteMessage" receiveEvent="_0lCOAwSpEeqQTZudrxSJFQ" sendEvent="_0lCOAgSpEeqQTZudrxSJFQ"/>
+    <message xmi:id="_0lC0lQSpEeqQTZudrxSJFQ" name="destructor called __del__ (CompleteInformation Object)" messageSort="deleteMessage" receiveEvent="_0lCOBQSpEeqQTZudrxSJFQ" sendEvent="_0lCOBASpEeqQTZudrxSJFQ"/>
+    <message xmi:id="_0lC0lgSpEeqQTZudrxSJFQ" name="destructor called __del__ (GeneralInformationUser Object) -- Not explicitly but with the help of Garbage Collector in Python" messageSort="deleteMessage" receiveEvent="_0lCOCASpEeqQTZudrxSJFQ" sendEvent="_0lCOBwSpEeqQTZudrxSJFQ"/>
+    <message xmi:id="_0lC0lwSpEeqQTZudrxSJFQ" name="changeLearningParameters(double newLearningParameters[])" receiveEvent="_0lCODgSpEeqQTZudrxSJFQ" sendEvent="_0lCODQSpEeqQTZudrxSJFQ"/>
+    <message xmi:id="_0lC0mASpEeqQTZudrxSJFQ" name="Learning Parameters Update Status" messageSort="reply" receiveEvent="_0lCOEgSpEeqQTZudrxSJFQ" sendEvent="_0lCOEASpEeqQTZudrxSJFQ"/>
+    <message xmi:id="_0lC0mQSpEeqQTZudrxSJFQ" name="Update of Attributes Status" messageSort="reply" receiveEvent="_0lC0cASpEeqQTZudrxSJFQ" sendEvent="_0lCOEwSpEeqQTZudrxSJFQ"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Interaction" xmi:id="_0lC0mgSpEeqQTZudrxSJFQ" name="Interaction1">
+    <nestedClassifier xmi:type="uml:Collaboration" xmi:id="_0lC0mwSpEeqQTZudrxSJFQ" name="locals"/>
+    <lifeline xmi:id="_0lC0nASpEeqQTZudrxSJFQ" name="User" coveredBy="_0lC0rQSpEeqQTZudrxSJFQ _0lC0rgSpEeqQTZudrxSJFQ _0lC0sASpEeqQTZudrxSJFQ _0lC0ugSpEeqQTZudrxSJFQ _0lC0uwSpEeqQTZudrxSJFQ _0lC0ygSpEeqQTZudrxSJFQ _0lC0ywSpEeqQTZudrxSJFQ _0lC0zwSpEeqQTZudrxSJFQ _0lC01ASpEeqQTZudrxSJFQ _0lC02gSpEeqQTZudrxSJFQ _0lC04wSpEeqQTZudrxSJFQ _0lC08QSpEeqQTZudrxSJFQ _0lC09gSpEeqQTZudrxSJFQ _0lC0-ASpEeqQTZudrxSJFQ _0lC0_ASpEeqQTZudrxSJFQ _0lC1AQSpEeqQTZudrxSJFQ _0lC1CwSpEeqQTZudrxSJFQ _0lC1FASpEeqQTZudrxSJFQ _0lC1IgSpEeqQTZudrxSJFQ _0lC1JwSpEeqQTZudrxSJFQ _0lC1KQSpEeqQTZudrxSJFQ _0lC1LQSpEeqQTZudrxSJFQ _0lC1LgSpEeqQTZudrxSJFQ _0lC1MASpEeqQTZudrxSJFQ _0lC1MgSpEeqQTZudrxSJFQ _0lC1NASpEeqQTZudrxSJFQ _0lC1NgSpEeqQTZudrxSJFQ _0lC1QwSpEeqQTZudrxSJFQ _0lC1SASpEeqQTZudrxSJFQ _0lC1SgSpEeqQTZudrxSJFQ _0lC1TASpEeqQTZudrxSJFQ _0lC1UASpEeqQTZudrxSJFQ _0lC1VQSpEeqQTZudrxSJFQ _0lC1WQSpEeqQTZudrxSJFQ _0lC1XwSpEeqQTZudrxSJFQ _0lC1ZASpEeqQTZudrxSJFQ _0lC1ZgSpEeqQTZudrxSJFQ _0lC1aASpEeqQTZudrxSJFQ _0lC1agSpEeqQTZudrxSJFQ _0lC1bASpEeqQTZudrxSJFQ _0lC1bgSpEeqQTZudrxSJFQ _0lC1cASpEeqQTZudrxSJFQ _0lC1cgSpEeqQTZudrxSJFQ _0lC1eASpEeqQTZudrxSJFQ _0lC1fgSpEeqQTZudrxSJFQ _0lC1gASpEeqQTZudrxSJFQ _0lC1ggSpEeqQTZudrxSJFQ"/>
+    <lifeline xmi:id="_0lC0nQSpEeqQTZudrxSJFQ" name="DatabaseAPI" coveredBy="_0lC0rwSpEeqQTZudrxSJFQ _0lC0sQSpEeqQTZudrxSJFQ _0lC0tgSpEeqQTZudrxSJFQ _0lC0twSpEeqQTZudrxSJFQ _0lC0uQSpEeqQTZudrxSJFQ _0lC0vASpEeqQTZudrxSJFQ _0lC0vQSpEeqQTZudrxSJFQ _0lC0wgSpEeqQTZudrxSJFQ _0lC0wwSpEeqQTZudrxSJFQ _0lC0xQSpEeqQTZudrxSJFQ _0lC0xwSpEeqQTZudrxSJFQ _0lC0yQSpEeqQTZudrxSJFQ _0lC0zASpEeqQTZudrxSJFQ _0lC0zQSpEeqQTZudrxSJFQ _0lC0zgSpEeqQTZudrxSJFQ _0lC01QSpEeqQTZudrxSJFQ _0lC01gSpEeqQTZudrxSJFQ _0lC01wSpEeqQTZudrxSJFQ _0lC02QSpEeqQTZudrxSJFQ _0lC05ASpEeqQTZudrxSJFQ _0lC05QSpEeqQTZudrxSJFQ _0lC06gSpEeqQTZudrxSJFQ _0lC07ASpEeqQTZudrxSJFQ _0lC07gSpEeqQTZudrxSJFQ _0lC08ASpEeqQTZudrxSJFQ _0lC0-QSpEeqQTZudrxSJFQ _0lC0-gSpEeqQTZudrxSJFQ _0lC0-wSpEeqQTZudrxSJFQ _0lC1AgSpEeqQTZudrxSJFQ _0lC1AwSpEeqQTZudrxSJFQ _0lC1CASpEeqQTZudrxSJFQ _0lC1CgSpEeqQTZudrxSJFQ _0lC1FQSpEeqQTZudrxSJFQ _0lC1FgSpEeqQTZudrxSJFQ _0lC1GwSpEeqQTZudrxSJFQ _0lC1HQSpEeqQTZudrxSJFQ _0lC1HwSpEeqQTZudrxSJFQ _0lC1IQSpEeqQTZudrxSJFQ _0lC1KgSpEeqQTZudrxSJFQ _0lC1KwSpEeqQTZudrxSJFQ _0lC1LASpEeqQTZudrxSJFQ _0lC1TQSpEeqQTZudrxSJFQ _0lC1TgSpEeqQTZudrxSJFQ _0lC1TwSpEeqQTZudrxSJFQ _0lC1VgSpEeqQTZudrxSJFQ _0lC1VwSpEeqQTZudrxSJFQ _0lC1WASpEeqQTZudrxSJFQ _0lC1WgSpEeqQTZudrxSJFQ"/>
+    <lifeline xmi:id="_0lC0ngSpEeqQTZudrxSJFQ" name="Journey" coveredBy="_0lC0uASpEeqQTZudrxSJFQ _0lC1SQSpEeqQTZudrxSJFQ _0lC1ZQSpEeqQTZudrxSJFQ _0lC1eQSpEeqQTZudrxSJFQ"/>
+    <lifeline xmi:id="_0lC0nwSpEeqQTZudrxSJFQ" name="ConsumableProduct" coveredBy="_0lC0yASpEeqQTZudrxSJFQ _0lC1cwSpEeqQTZudrxSJFQ"/>
+    <lifeline xmi:id="_0lC0oASpEeqQTZudrxSJFQ" name="GeneralCategory" coveredBy="_0lC0xgSpEeqQTZudrxSJFQ _0lC1cQSpEeqQTZudrxSJFQ"/>
+    <lifeline xmi:id="_0lC0oQSpEeqQTZudrxSJFQ" name="ProductType" coveredBy="_0lC0xASpEeqQTZudrxSJFQ _0lC1bwSpEeqQTZudrxSJFQ"/>
+    <lifeline xmi:id="_0lC0ogSpEeqQTZudrxSJFQ" name="Journey" coveredBy="_0lC1SwSpEeqQTZudrxSJFQ _0lC1gQSpEeqQTZudrxSJFQ"/>
+    <lifeline xmi:id="_0lC0owSpEeqQTZudrxSJFQ" name="ProductType" coveredBy="_0lC06wSpEeqQTZudrxSJFQ _0lC1aQSpEeqQTZudrxSJFQ"/>
+    <lifeline xmi:id="_0lC0pASpEeqQTZudrxSJFQ" name="GeneralCategory" coveredBy="_0lC07QSpEeqQTZudrxSJFQ _0lC1awSpEeqQTZudrxSJFQ"/>
+    <lifeline xmi:id="_0lC0pQSpEeqQTZudrxSJFQ" name="ConsumableProduct" coveredBy="_0lC07wSpEeqQTZudrxSJFQ _0lC1bQSpEeqQTZudrxSJFQ"/>
+    <lifeline xmi:id="_0lC0pgSpEeqQTZudrxSJFQ" name="LikedOrDislikedProduct" coveredBy="_0lC1KASpEeqQTZudrxSJFQ _0lC1LwSpEeqQTZudrxSJFQ"/>
+    <lifeline xmi:id="_0lC0pwSpEeqQTZudrxSJFQ" name="Journey" coveredBy="_0lC02ASpEeqQTZudrxSJFQ _0lC1RASpEeqQTZudrxSJFQ _0lC1YASpEeqQTZudrxSJFQ _0lC1fwSpEeqQTZudrxSJFQ"/>
+    <lifeline xmi:id="_0lC0qASpEeqQTZudrxSJFQ" name="LikedOrDislikedProduct" coveredBy="_0lC1CQSpEeqQTZudrxSJFQ _0lC1MQSpEeqQTZudrxSJFQ"/>
+    <lifeline xmi:id="_0lC0qQSpEeqQTZudrxSJFQ" name="LikedOrDislikedProduct" coveredBy="_0lC09wSpEeqQTZudrxSJFQ _0lC1ZwSpEeqQTZudrxSJFQ"/>
+    <lifeline xmi:id="_0lC0qgSpEeqQTZudrxSJFQ" name="ProductType" coveredBy="_0lC1HASpEeqQTZudrxSJFQ _0lC1MwSpEeqQTZudrxSJFQ"/>
+    <lifeline xmi:id="_0lC0qwSpEeqQTZudrxSJFQ" name="GeneralCategory" coveredBy="_0lC1HgSpEeqQTZudrxSJFQ _0lC1NQSpEeqQTZudrxSJFQ"/>
+    <lifeline xmi:id="_0lC0rASpEeqQTZudrxSJFQ" name="ConsumableProduct" coveredBy="_0lC1IASpEeqQTZudrxSJFQ _0lC1NwSpEeqQTZudrxSJFQ"/>
+    <fragment xmi:type="uml:ExecutionOccurrenceSpecification" xmi:id="_0lC0rQSpEeqQTZudrxSJFQ" covered="_0lC0nASpEeqQTZudrxSJFQ"/>
+    <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="_0lC0rgSpEeqQTZudrxSJFQ" covered="_0lC0nASpEeqQTZudrxSJFQ" start="_0lC0rQSpEeqQTZudrxSJFQ" finish="_0lC1ggSpEeqQTZudrxSJFQ"/>
+    <fragment xmi:type="uml:ExecutionOccurrenceSpecification" xmi:id="_0lC0rwSpEeqQTZudrxSJFQ" covered="_0lC0nQSpEeqQTZudrxSJFQ"/>
+    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_0lC0sASpEeqQTZudrxSJFQ" covered="_0lC0nASpEeqQTZudrxSJFQ" message="_0lC1gwSpEeqQTZudrxSJFQ"/>
+    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_0lC0sQSpEeqQTZudrxSJFQ" covered="_0lC0nQSpEeqQTZudrxSJFQ" message="_0lC1gwSpEeqQTZudrxSJFQ"/>
+    <fragment xmi:type="uml:CombinedFragment" xmi:id="_0lC0sgSpEeqQTZudrxSJFQ" name="CombinedFragment">
+      <operand xmi:id="_0lC0swSpEeqQTZudrxSJFQ">
+        <guard xmi:id="_0lC0tASpEeqQTZudrxSJFQ">
+          <specification xmi:type="uml:LiteralString" xmi:id="_0lC0tQSpEeqQTZudrxSJFQ" value="For every Journey of User"/>
+        </guard>
+        <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="_0lC0tgSpEeqQTZudrxSJFQ" covered="_0lC0nQSpEeqQTZudrxSJFQ" start="_0lC0rwSpEeqQTZudrxSJFQ" finish="_0lC0uQSpEeqQTZudrxSJFQ"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_0lC0twSpEeqQTZudrxSJFQ" covered="_0lC0nQSpEeqQTZudrxSJFQ" message="_0lC1hASpEeqQTZudrxSJFQ"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_0lC0uASpEeqQTZudrxSJFQ" covered="_0lC0ngSpEeqQTZudrxSJFQ" message="_0lC1hASpEeqQTZudrxSJFQ"/>
+      </operand>
+    </fragment>
+    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_0lC0uQSpEeqQTZudrxSJFQ" covered="_0lC0nQSpEeqQTZudrxSJFQ" message="_0lC1hQSpEeqQTZudrxSJFQ"/>
+    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_0lC0ugSpEeqQTZudrxSJFQ" covered="_0lC0nASpEeqQTZudrxSJFQ" message="_0lC1hQSpEeqQTZudrxSJFQ"/>
+    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_0lC0uwSpEeqQTZudrxSJFQ" covered="_0lC0nASpEeqQTZudrxSJFQ" message="_0lC1hgSpEeqQTZudrxSJFQ"/>
+    <fragment xmi:type="uml:ExecutionOccurrenceSpecification" xmi:id="_0lC0vASpEeqQTZudrxSJFQ" covered="_0lC0nQSpEeqQTZudrxSJFQ"/>
+    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_0lC0vQSpEeqQTZudrxSJFQ" covered="_0lC0nQSpEeqQTZudrxSJFQ" message="_0lC1hgSpEeqQTZudrxSJFQ"/>
+    <fragment xmi:type="uml:CombinedFragment" xmi:id="_0lC0vgSpEeqQTZudrxSJFQ" name="CombinedFragment">
+      <operand xmi:id="_0lC0vwSpEeqQTZudrxSJFQ">
+        <guard xmi:id="_0lC0wASpEeqQTZudrxSJFQ">
+          <specification xmi:type="uml:LiteralString" xmi:id="_0lC0wQSpEeqQTZudrxSJFQ" value="For every entry in the array given as an argument"/>
+        </guard>
+        <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="_0lC0wgSpEeqQTZudrxSJFQ" covered="_0lC0nQSpEeqQTZudrxSJFQ" start="_0lC0vASpEeqQTZudrxSJFQ" finish="_0lC0yQSpEeqQTZudrxSJFQ"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_0lC0wwSpEeqQTZudrxSJFQ" covered="_0lC0nQSpEeqQTZudrxSJFQ" message="_0lC1hwSpEeqQTZudrxSJFQ"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_0lC0xASpEeqQTZudrxSJFQ" covered="_0lC0oQSpEeqQTZudrxSJFQ" message="_0lC1hwSpEeqQTZudrxSJFQ"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_0lC0xQSpEeqQTZudrxSJFQ" covered="_0lC0nQSpEeqQTZudrxSJFQ" message="_0lC1iASpEeqQTZudrxSJFQ"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_0lC0xgSpEeqQTZudrxSJFQ" covered="_0lC0oASpEeqQTZudrxSJFQ" message="_0lC1iASpEeqQTZudrxSJFQ"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_0lC0xwSpEeqQTZudrxSJFQ" covered="_0lC0nQSpEeqQTZudrxSJFQ" message="_0lC1iQSpEeqQTZudrxSJFQ"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_0lC0yASpEeqQTZudrxSJFQ" covered="_0lC0nwSpEeqQTZudrxSJFQ" message="_0lC1iQSpEeqQTZudrxSJFQ"/>
+      </operand>
+    </fragment>
+    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_0lC0yQSpEeqQTZudrxSJFQ" covered="_0lC0nQSpEeqQTZudrxSJFQ" message="_0lC1igSpEeqQTZudrxSJFQ"/>
+    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_0lC0ygSpEeqQTZudrxSJFQ" covered="_0lC0nASpEeqQTZudrxSJFQ" message="_0lC1igSpEeqQTZudrxSJFQ"/>
+    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_0lC0ywSpEeqQTZudrxSJFQ" covered="_0lC0nASpEeqQTZudrxSJFQ" message="_0lC1iwSpEeqQTZudrxSJFQ"/>
+    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_0lC0zASpEeqQTZudrxSJFQ" covered="_0lC0nQSpEeqQTZudrxSJFQ" message="_0lC1iwSpEeqQTZudrxSJFQ"/>
+    <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="_0lC0zQSpEeqQTZudrxSJFQ" covered="_0lC0nQSpEeqQTZudrxSJFQ" start="_0lC0zASpEeqQTZudrxSJFQ" finish="_0lC0zgSpEeqQTZudrxSJFQ"/>
+    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_0lC0zgSpEeqQTZudrxSJFQ" covered="_0lC0nQSpEeqQTZudrxSJFQ" message="_0lC1jASpEeqQTZudrxSJFQ"/>
+    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_0lC0zwSpEeqQTZudrxSJFQ" covered="_0lC0nASpEeqQTZudrxSJFQ" message="_0lC1jASpEeqQTZudrxSJFQ"/>
+    <fragment xmi:type="uml:CombinedFragment" xmi:id="_0lC00ASpEeqQTZudrxSJFQ" name="CombinedFragment" interactionOperator="opt">
+      <operand xmi:id="_0lC00QSpEeqQTZudrxSJFQ">
+        <guard xmi:id="_0lC00gSpEeqQTZudrxSJFQ">
+          <specification xmi:type="uml:LiteralString" xmi:id="_0lC00wSpEeqQTZudrxSJFQ" value="If the newJourneyID is not a negative number - That is if it was created succesfully"/>
+        </guard>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_0lC01ASpEeqQTZudrxSJFQ" covered="_0lC0nASpEeqQTZudrxSJFQ" message="_0lC1jQSpEeqQTZudrxSJFQ"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_0lC01QSpEeqQTZudrxSJFQ" covered="_0lC0nQSpEeqQTZudrxSJFQ" message="_0lC1jQSpEeqQTZudrxSJFQ"/>
+        <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="_0lC01gSpEeqQTZudrxSJFQ" covered="_0lC0nQSpEeqQTZudrxSJFQ" start="_0lC01QSpEeqQTZudrxSJFQ" finish="_0lC02QSpEeqQTZudrxSJFQ"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_0lC01wSpEeqQTZudrxSJFQ" covered="_0lC0nQSpEeqQTZudrxSJFQ" message="_0lC1jgSpEeqQTZudrxSJFQ"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_0lC02ASpEeqQTZudrxSJFQ" covered="_0lC0pwSpEeqQTZudrxSJFQ" message="_0lC1jgSpEeqQTZudrxSJFQ"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_0lC02QSpEeqQTZudrxSJFQ" covered="_0lC0nQSpEeqQTZudrxSJFQ" message="_0lC1jwSpEeqQTZudrxSJFQ"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_0lC02gSpEeqQTZudrxSJFQ" covered="_0lC0nASpEeqQTZudrxSJFQ" message="_0lC1jwSpEeqQTZudrxSJFQ"/>
+      </operand>
+    </fragment>
+    <fragment xmi:type="uml:CombinedFragment" xmi:id="_0lC02wSpEeqQTZudrxSJFQ" name="CombinedFragment" interactionOperator="opt">
+      <operand xmi:id="_0lC03ASpEeqQTZudrxSJFQ">
+        <guard xmi:id="_0lC03QSpEeqQTZudrxSJFQ">
+          <specification xmi:type="uml:LiteralString" xmi:id="_0lC03gSpEeqQTZudrxSJFQ" value="If the user wants to view and/or modify one of His Journeys"/>
+        </guard>
+        <fragment xmi:type="uml:CombinedFragment" xmi:id="_0lC03wSpEeqQTZudrxSJFQ" name="CombinedFragment" interactionOperator="loop">
+          <operand xmi:id="_0lC04ASpEeqQTZudrxSJFQ">
+            <guard xmi:id="_0lC04QSpEeqQTZudrxSJFQ">
+              <specification xmi:type="uml:LiteralString" xmi:id="_0lC04gSpEeqQTZudrxSJFQ" value="While user adds/removes or just views his/herproducts from the journey"/>
+            </guard>
+            <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_0lC04wSpEeqQTZudrxSJFQ" covered="_0lC0nASpEeqQTZudrxSJFQ" message="_0lC1kASpEeqQTZudrxSJFQ"/>
+            <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_0lC05ASpEeqQTZudrxSJFQ" covered="_0lC0nQSpEeqQTZudrxSJFQ" message="_0lC1kASpEeqQTZudrxSJFQ"/>
+            <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="_0lC05QSpEeqQTZudrxSJFQ" covered="_0lC0nQSpEeqQTZudrxSJFQ" start="_0lC05ASpEeqQTZudrxSJFQ" finish="_0lC08ASpEeqQTZudrxSJFQ"/>
+            <fragment xmi:type="uml:CombinedFragment" xmi:id="_0lC05gSpEeqQTZudrxSJFQ" name="CombinedFragment">
+              <operand xmi:id="_0lC05wSpEeqQTZudrxSJFQ">
+                <guard xmi:id="_0lC06ASpEeqQTZudrxSJFQ">
+                  <specification xmi:type="uml:LiteralString" xmi:id="_0lC06QSpEeqQTZudrxSJFQ" value="For every entry in the array passed as an argument in this method"/>
+                </guard>
+                <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_0lC06gSpEeqQTZudrxSJFQ" covered="_0lC0nQSpEeqQTZudrxSJFQ" message="_0lC1kQSpEeqQTZudrxSJFQ"/>
+                <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_0lC06wSpEeqQTZudrxSJFQ" covered="_0lC0owSpEeqQTZudrxSJFQ" message="_0lC1kQSpEeqQTZudrxSJFQ"/>
+                <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_0lC07ASpEeqQTZudrxSJFQ" covered="_0lC0nQSpEeqQTZudrxSJFQ" message="_0lC1kgSpEeqQTZudrxSJFQ"/>
+                <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_0lC07QSpEeqQTZudrxSJFQ" covered="_0lC0pASpEeqQTZudrxSJFQ" message="_0lC1kgSpEeqQTZudrxSJFQ"/>
+                <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_0lC07gSpEeqQTZudrxSJFQ" covered="_0lC0nQSpEeqQTZudrxSJFQ" message="_0lC1kwSpEeqQTZudrxSJFQ"/>
+                <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_0lC07wSpEeqQTZudrxSJFQ" covered="_0lC0pQSpEeqQTZudrxSJFQ" message="_0lC1kwSpEeqQTZudrxSJFQ"/>
+              </operand>
+            </fragment>
+            <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_0lC08ASpEeqQTZudrxSJFQ" covered="_0lC0nQSpEeqQTZudrxSJFQ" message="_0lC1lASpEeqQTZudrxSJFQ"/>
+            <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_0lC08QSpEeqQTZudrxSJFQ" covered="_0lC0nASpEeqQTZudrxSJFQ" message="_0lC1lASpEeqQTZudrxSJFQ"/>
+            <fragment xmi:type="uml:CombinedFragment" xmi:id="_0lC08gSpEeqQTZudrxSJFQ" name="CombinedFragment" interactionOperator="opt">
+              <operand xmi:id="_0lC08wSpEeqQTZudrxSJFQ">
+                <guard xmi:id="_0lC09ASpEeqQTZudrxSJFQ">
+                  <specification xmi:type="uml:LiteralString" xmi:id="_0lC09QSpEeqQTZudrxSJFQ" value="If the user wants to add a like or dislike for a consumable product which is added to his/her journey"/>
+                </guard>
+                <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_0lC09gSpEeqQTZudrxSJFQ" covered="_0lC0nASpEeqQTZudrxSJFQ" message="_0lC1lQSpEeqQTZudrxSJFQ"/>
+                <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_0lC09wSpEeqQTZudrxSJFQ" covered="_0lC0qQSpEeqQTZudrxSJFQ" message="_0lC1lQSpEeqQTZudrxSJFQ"/>
+                <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_0lC0-ASpEeqQTZudrxSJFQ" covered="_0lC0nASpEeqQTZudrxSJFQ" message="_0lC1lgSpEeqQTZudrxSJFQ"/>
+                <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_0lC0-QSpEeqQTZudrxSJFQ" covered="_0lC0nQSpEeqQTZudrxSJFQ" message="_0lC1lgSpEeqQTZudrxSJFQ"/>
+                <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="_0lC0-gSpEeqQTZudrxSJFQ" covered="_0lC0nQSpEeqQTZudrxSJFQ" start="_0lC0-QSpEeqQTZudrxSJFQ" finish="_0lC0-wSpEeqQTZudrxSJFQ"/>
+                <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_0lC0-wSpEeqQTZudrxSJFQ" covered="_0lC0nQSpEeqQTZudrxSJFQ" message="_0lC1lwSpEeqQTZudrxSJFQ"/>
+                <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_0lC0_ASpEeqQTZudrxSJFQ" covered="_0lC0nASpEeqQTZudrxSJFQ" message="_0lC1lwSpEeqQTZudrxSJFQ"/>
+              </operand>
+            </fragment>
+          </operand>
+        </fragment>
+      </operand>
+    </fragment>
+    <fragment xmi:type="uml:CombinedFragment" xmi:id="_0lC0_QSpEeqQTZudrxSJFQ" name="CombinedFragment" interactionOperator="alt">
+      <operand xmi:id="_0lC0_gSpEeqQTZudrxSJFQ" name="InteractionOperand">
+        <guard xmi:id="_0lC0_wSpEeqQTZudrxSJFQ">
+          <specification xmi:type="uml:LiteralString" xmi:id="_0lC1AASpEeqQTZudrxSJFQ" value="If the user wants from the create of Journey step to jump to add Likes/Dislikes section"/>
+        </guard>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_0lC1AQSpEeqQTZudrxSJFQ" covered="_0lC0nASpEeqQTZudrxSJFQ" message="_0lC1mASpEeqQTZudrxSJFQ"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_0lC1AgSpEeqQTZudrxSJFQ" covered="_0lC0nQSpEeqQTZudrxSJFQ" message="_0lC1mASpEeqQTZudrxSJFQ"/>
+        <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="_0lC1AwSpEeqQTZudrxSJFQ" covered="_0lC0nQSpEeqQTZudrxSJFQ" start="_0lC1AgSpEeqQTZudrxSJFQ" finish="_0lC1CgSpEeqQTZudrxSJFQ"/>
+        <fragment xmi:type="uml:CombinedFragment" xmi:id="_0lC1BASpEeqQTZudrxSJFQ" name="CombinedFragment" interactionOperator="loop">
+          <operand xmi:id="_0lC1BQSpEeqQTZudrxSJFQ">
+            <guard xmi:id="_0lC1BgSpEeqQTZudrxSJFQ">
+              <specification xmi:type="uml:LiteralString" xmi:id="_0lC1BwSpEeqQTZudrxSJFQ" value="For all the liked and didliked products of user"/>
+            </guard>
+            <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_0lC1CASpEeqQTZudrxSJFQ" covered="_0lC0nQSpEeqQTZudrxSJFQ" message="_0lC1mQSpEeqQTZudrxSJFQ"/>
+            <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_0lC1CQSpEeqQTZudrxSJFQ" covered="_0lC0qASpEeqQTZudrxSJFQ" message="_0lC1mQSpEeqQTZudrxSJFQ"/>
+          </operand>
+        </fragment>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_0lC1CgSpEeqQTZudrxSJFQ" covered="_0lC0nQSpEeqQTZudrxSJFQ" message="_0lC1mgSpEeqQTZudrxSJFQ"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_0lC1CwSpEeqQTZudrxSJFQ" covered="_0lC0nASpEeqQTZudrxSJFQ" message="_0lC1mgSpEeqQTZudrxSJFQ"/>
+        <fragment xmi:type="uml:CombinedFragment" xmi:id="_0lC1DASpEeqQTZudrxSJFQ" name="CombinedFragment" interactionOperator="loop">
+          <operand xmi:id="_0lC1DQSpEeqQTZudrxSJFQ">
+            <guard xmi:id="_0lC1DgSpEeqQTZudrxSJFQ">
+              <specification xmi:type="uml:LiteralString" xmi:id="_0lC1DwSpEeqQTZudrxSJFQ" value="While User makes likes or dislikes"/>
+            </guard>
+            <fragment xmi:type="uml:CombinedFragment" xmi:id="_0lC1EASpEeqQTZudrxSJFQ" name="CombinedFragment" interactionOperator="opt">
+              <operand xmi:id="_0lC1EQSpEeqQTZudrxSJFQ">
+                <guard xmi:id="_0lC1EgSpEeqQTZudrxSJFQ">
+                  <specification xmi:type="uml:LiteralString" xmi:id="_0lC1EwSpEeqQTZudrxSJFQ" value="If there is need to load more products"/>
+                </guard>
+                <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_0lC1FASpEeqQTZudrxSJFQ" covered="_0lC0nASpEeqQTZudrxSJFQ" message="_0lC1mwSpEeqQTZudrxSJFQ"/>
+                <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_0lC1FQSpEeqQTZudrxSJFQ" covered="_0lC0nQSpEeqQTZudrxSJFQ" message="_0lC1mwSpEeqQTZudrxSJFQ"/>
+                <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="_0lC1FgSpEeqQTZudrxSJFQ" covered="_0lC0nQSpEeqQTZudrxSJFQ" start="_0lC1FQSpEeqQTZudrxSJFQ" finish="_0lC1IQSpEeqQTZudrxSJFQ"/>
+                <fragment xmi:type="uml:CombinedFragment" xmi:id="_0lC1FwSpEeqQTZudrxSJFQ" name="CombinedFragment" interactionOperator="loop">
+                  <operand xmi:id="_0lC1GASpEeqQTZudrxSJFQ">
+                    <guard xmi:id="_0lC1GQSpEeqQTZudrxSJFQ">
+                      <specification xmi:type="uml:LiteralString" xmi:id="_0lC1GgSpEeqQTZudrxSJFQ" value="For every entry in the array passed as an argument in this method"/>
+                    </guard>
+                    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_0lC1GwSpEeqQTZudrxSJFQ" covered="_0lC0nQSpEeqQTZudrxSJFQ" message="_0lC1nASpEeqQTZudrxSJFQ"/>
+                    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_0lC1HASpEeqQTZudrxSJFQ" covered="_0lC0qgSpEeqQTZudrxSJFQ" message="_0lC1nASpEeqQTZudrxSJFQ"/>
+                    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_0lC1HQSpEeqQTZudrxSJFQ" covered="_0lC0nQSpEeqQTZudrxSJFQ" message="_0lC1nQSpEeqQTZudrxSJFQ"/>
+                    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_0lC1HgSpEeqQTZudrxSJFQ" covered="_0lC0qwSpEeqQTZudrxSJFQ" message="_0lC1nQSpEeqQTZudrxSJFQ"/>
+                    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_0lC1HwSpEeqQTZudrxSJFQ" covered="_0lC0nQSpEeqQTZudrxSJFQ" message="_0lC1ngSpEeqQTZudrxSJFQ"/>
+                    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_0lC1IASpEeqQTZudrxSJFQ" covered="_0lC0rASpEeqQTZudrxSJFQ" message="_0lC1ngSpEeqQTZudrxSJFQ"/>
+                  </operand>
+                </fragment>
+                <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_0lC1IQSpEeqQTZudrxSJFQ" covered="_0lC0nQSpEeqQTZudrxSJFQ" message="_0lC1nwSpEeqQTZudrxSJFQ"/>
+                <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_0lC1IgSpEeqQTZudrxSJFQ" covered="_0lC0nASpEeqQTZudrxSJFQ" message="_0lC1nwSpEeqQTZudrxSJFQ"/>
+              </operand>
+            </fragment>
+            <fragment xmi:type="uml:CombinedFragment" xmi:id="_0lC1IwSpEeqQTZudrxSJFQ" name="CombinedFragment" interactionOperator="opt">
+              <operand xmi:id="_0lC1JASpEeqQTZudrxSJFQ">
+                <guard xmi:id="_0lC1JQSpEeqQTZudrxSJFQ">
+                  <specification xmi:type="uml:LiteralString" xmi:id="_0lC1JgSpEeqQTZudrxSJFQ" value="If the user wants to add a new like or Dislike product"/>
+                </guard>
+                <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_0lC1JwSpEeqQTZudrxSJFQ" covered="_0lC0nASpEeqQTZudrxSJFQ" message="_0lC1oASpEeqQTZudrxSJFQ"/>
+                <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_0lC1KASpEeqQTZudrxSJFQ" covered="_0lC0pgSpEeqQTZudrxSJFQ" message="_0lC1oASpEeqQTZudrxSJFQ"/>
+                <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_0lC1KQSpEeqQTZudrxSJFQ" covered="_0lC0nASpEeqQTZudrxSJFQ" message="_0lC1oQSpEeqQTZudrxSJFQ"/>
+                <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_0lC1KgSpEeqQTZudrxSJFQ" covered="_0lC0nQSpEeqQTZudrxSJFQ" message="_0lC1oQSpEeqQTZudrxSJFQ"/>
+                <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="_0lC1KwSpEeqQTZudrxSJFQ" covered="_0lC0nQSpEeqQTZudrxSJFQ" start="_0lC1KgSpEeqQTZudrxSJFQ" finish="_0lC1LASpEeqQTZudrxSJFQ"/>
+                <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_0lC1LASpEeqQTZudrxSJFQ" covered="_0lC0nQSpEeqQTZudrxSJFQ" message="_0lC1ogSpEeqQTZudrxSJFQ"/>
+                <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_0lC1LQSpEeqQTZudrxSJFQ" covered="_0lC0nASpEeqQTZudrxSJFQ" message="_0lC1ogSpEeqQTZudrxSJFQ"/>
+              </operand>
+            </fragment>
+          </operand>
+        </fragment>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_0lC1LgSpEeqQTZudrxSJFQ" covered="_0lC0nASpEeqQTZudrxSJFQ" message="_0lC1owSpEeqQTZudrxSJFQ"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_0lC1LwSpEeqQTZudrxSJFQ" covered="_0lC0pgSpEeqQTZudrxSJFQ" message="_0lC1owSpEeqQTZudrxSJFQ"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_0lC1MASpEeqQTZudrxSJFQ" covered="_0lC0nASpEeqQTZudrxSJFQ" message="_0lC1pASpEeqQTZudrxSJFQ"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_0lC1MQSpEeqQTZudrxSJFQ" covered="_0lC0qASpEeqQTZudrxSJFQ" message="_0lC1pASpEeqQTZudrxSJFQ"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_0lC1MgSpEeqQTZudrxSJFQ" covered="_0lC0nASpEeqQTZudrxSJFQ" message="_0lC1pQSpEeqQTZudrxSJFQ"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_0lC1MwSpEeqQTZudrxSJFQ" covered="_0lC0qgSpEeqQTZudrxSJFQ" message="_0lC1pQSpEeqQTZudrxSJFQ"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_0lC1NASpEeqQTZudrxSJFQ" covered="_0lC0nASpEeqQTZudrxSJFQ" message="_0lC1pgSpEeqQTZudrxSJFQ"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_0lC1NQSpEeqQTZudrxSJFQ" covered="_0lC0qwSpEeqQTZudrxSJFQ" message="_0lC1pgSpEeqQTZudrxSJFQ"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_0lC1NgSpEeqQTZudrxSJFQ" covered="_0lC0nASpEeqQTZudrxSJFQ" message="_0lC1pwSpEeqQTZudrxSJFQ"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_0lC1NwSpEeqQTZudrxSJFQ" covered="_0lC0rASpEeqQTZudrxSJFQ" message="_0lC1pwSpEeqQTZudrxSJFQ"/>
+      </operand>
+      <operand xmi:id="_0lC1OASpEeqQTZudrxSJFQ">
+        <guard xmi:id="_0lC1OQSpEeqQTZudrxSJFQ">
+          <specification xmi:type="uml:LiteralString" xmi:id="_0lC1OgSpEeqQTZudrxSJFQ" value="If the user instead of moving to the likes dislikes section wants to save the changes he /she did in his/her Journey or delete a Journey"/>
+        </guard>
+        <fragment xmi:type="uml:CombinedFragment" xmi:id="_0lC1OwSpEeqQTZudrxSJFQ" name="CombinedFragment" interactionOperator="opt">
+          <operand xmi:id="_0lC1PASpEeqQTZudrxSJFQ">
+            <guard xmi:id="_0lC1PQSpEeqQTZudrxSJFQ">
+              <specification xmi:type="uml:LiteralString" xmi:id="_0lC1PgSpEeqQTZudrxSJFQ" value="If the user wants to save the changes in his/her Journey"/>
+            </guard>
+            <fragment xmi:type="uml:CombinedFragment" xmi:id="_0lC1PwSpEeqQTZudrxSJFQ" name="CombinedFragment" interactionOperator="alt">
+              <operand xmi:id="_0lC1QASpEeqQTZudrxSJFQ" name="InteractionOperand">
+                <guard xmi:id="_0lC1QQSpEeqQTZudrxSJFQ">
+                  <specification xmi:type="uml:LiteralString" xmi:id="_0lC1QgSpEeqQTZudrxSJFQ" value="If the new Journey was created succesfully previous and the updates were made on the new created Journey Object"/>
+                </guard>
+                <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_0lC1QwSpEeqQTZudrxSJFQ" covered="_0lC0nASpEeqQTZudrxSJFQ" message="_0lC1qASpEeqQTZudrxSJFQ"/>
+                <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_0lC1RASpEeqQTZudrxSJFQ" covered="_0lC0pwSpEeqQTZudrxSJFQ" message="_0lC1qASpEeqQTZudrxSJFQ"/>
+              </operand>
+              <operand xmi:id="_0lC1RQSpEeqQTZudrxSJFQ">
+                <guard xmi:id="_0lC1RgSpEeqQTZudrxSJFQ">
+                  <specification xmi:type="uml:LiteralString" xmi:id="_0lC1RwSpEeqQTZudrxSJFQ" value="If the updated Journey is an existing Journey of the user, then we destroy the old one and create a new one "/>
+                </guard>
+                <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_0lC1SASpEeqQTZudrxSJFQ" covered="_0lC0nASpEeqQTZudrxSJFQ" message="_0lC1qQSpEeqQTZudrxSJFQ"/>
+                <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_0lC1SQSpEeqQTZudrxSJFQ" covered="_0lC0ngSpEeqQTZudrxSJFQ" message="_0lC1qQSpEeqQTZudrxSJFQ"/>
+              </operand>
+            </fragment>
+            <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_0lC1SgSpEeqQTZudrxSJFQ" covered="_0lC0nASpEeqQTZudrxSJFQ" message="_0lC1qgSpEeqQTZudrxSJFQ"/>
+            <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_0lC1SwSpEeqQTZudrxSJFQ" covered="_0lC0ogSpEeqQTZudrxSJFQ" message="_0lC1qgSpEeqQTZudrxSJFQ"/>
+            <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_0lC1TASpEeqQTZudrxSJFQ" covered="_0lC0nASpEeqQTZudrxSJFQ" message="_0lC1qwSpEeqQTZudrxSJFQ"/>
+            <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_0lC1TQSpEeqQTZudrxSJFQ" covered="_0lC0nQSpEeqQTZudrxSJFQ" message="_0lC1qwSpEeqQTZudrxSJFQ"/>
+            <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="_0lC1TgSpEeqQTZudrxSJFQ" covered="_0lC0nQSpEeqQTZudrxSJFQ" start="_0lC1TQSpEeqQTZudrxSJFQ" finish="_0lC1TwSpEeqQTZudrxSJFQ"/>
+            <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_0lC1TwSpEeqQTZudrxSJFQ" covered="_0lC0nQSpEeqQTZudrxSJFQ" message="_0lC1rASpEeqQTZudrxSJFQ"/>
+            <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_0lC1UASpEeqQTZudrxSJFQ" covered="_0lC0nASpEeqQTZudrxSJFQ" message="_0lC1rASpEeqQTZudrxSJFQ"/>
+          </operand>
+        </fragment>
+        <fragment xmi:type="uml:CombinedFragment" xmi:id="_0lC1UQSpEeqQTZudrxSJFQ" name="CombinedFragment">
+          <operand xmi:id="_0lC1UgSpEeqQTZudrxSJFQ">
+            <guard xmi:id="_0lC1UwSpEeqQTZudrxSJFQ">
+              <specification xmi:type="uml:LiteralString" xmi:id="_0lC1VASpEeqQTZudrxSJFQ" value="If user wants to delete his/her Journey"/>
+            </guard>
+            <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_0lC1VQSpEeqQTZudrxSJFQ" covered="_0lC0nASpEeqQTZudrxSJFQ" message="_0lC1rQSpEeqQTZudrxSJFQ"/>
+            <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_0lC1VgSpEeqQTZudrxSJFQ" covered="_0lC0nQSpEeqQTZudrxSJFQ" message="_0lC1rQSpEeqQTZudrxSJFQ"/>
+            <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="_0lC1VwSpEeqQTZudrxSJFQ" covered="_0lC0nQSpEeqQTZudrxSJFQ" start="_0lC1VgSpEeqQTZudrxSJFQ" finish="_0lC1WgSpEeqQTZudrxSJFQ"/>
+            <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_0lC1WASpEeqQTZudrxSJFQ" covered="_0lC0nQSpEeqQTZudrxSJFQ" message="_0lC1rgSpEeqQTZudrxSJFQ"/>
+            <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_0lC1WQSpEeqQTZudrxSJFQ" covered="_0lC0nASpEeqQTZudrxSJFQ" message="_0lC1rgSpEeqQTZudrxSJFQ"/>
+            <fragment xmi:type="uml:ExecutionOccurrenceSpecification" xmi:id="_0lC1WgSpEeqQTZudrxSJFQ" covered="_0lC0nQSpEeqQTZudrxSJFQ"/>
+            <fragment xmi:type="uml:CombinedFragment" xmi:id="_0lC1WwSpEeqQTZudrxSJFQ" name="CombinedFragment">
+              <operand xmi:id="_0lC1XASpEeqQTZudrxSJFQ" name="InteractionOperand">
+                <guard xmi:id="_0lC1XQSpEeqQTZudrxSJFQ">
+                  <specification xmi:type="uml:LiteralString" xmi:id="_0lC1XgSpEeqQTZudrxSJFQ" value="If the deleted object was the new created "/>
+                </guard>
+                <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_0lC1XwSpEeqQTZudrxSJFQ" covered="_0lC0nASpEeqQTZudrxSJFQ" message="_0lC1rwSpEeqQTZudrxSJFQ"/>
+                <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_0lC1YASpEeqQTZudrxSJFQ" covered="_0lC0pwSpEeqQTZudrxSJFQ" message="_0lC1rwSpEeqQTZudrxSJFQ"/>
+              </operand>
+              <operand xmi:id="_0lC1YQSpEeqQTZudrxSJFQ">
+                <guard xmi:id="_0lC1YgSpEeqQTZudrxSJFQ">
+                  <specification xmi:type="uml:LiteralString" xmi:id="_0lC1YwSpEeqQTZudrxSJFQ" value="If the deleted Object was one of the existing Journeys of user"/>
+                </guard>
+                <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_0lC1ZASpEeqQTZudrxSJFQ" covered="_0lC0nASpEeqQTZudrxSJFQ" message="_0lC1sASpEeqQTZudrxSJFQ"/>
+                <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_0lC1ZQSpEeqQTZudrxSJFQ" covered="_0lC0ngSpEeqQTZudrxSJFQ" message="_0lC1sASpEeqQTZudrxSJFQ"/>
+              </operand>
+            </fragment>
+          </operand>
+        </fragment>
+      </operand>
+    </fragment>
+    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_0lC1ZgSpEeqQTZudrxSJFQ" covered="_0lC0nASpEeqQTZudrxSJFQ" message="_0lC1sQSpEeqQTZudrxSJFQ"/>
+    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_0lC1ZwSpEeqQTZudrxSJFQ" covered="_0lC0qQSpEeqQTZudrxSJFQ" message="_0lC1sQSpEeqQTZudrxSJFQ"/>
+    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_0lC1aASpEeqQTZudrxSJFQ" covered="_0lC0nASpEeqQTZudrxSJFQ" message="_0lC1sgSpEeqQTZudrxSJFQ"/>
+    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_0lC1aQSpEeqQTZudrxSJFQ" covered="_0lC0owSpEeqQTZudrxSJFQ" message="_0lC1sgSpEeqQTZudrxSJFQ"/>
+    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_0lC1agSpEeqQTZudrxSJFQ" covered="_0lC0nASpEeqQTZudrxSJFQ" message="_0lC1swSpEeqQTZudrxSJFQ"/>
+    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_0lC1awSpEeqQTZudrxSJFQ" covered="_0lC0pASpEeqQTZudrxSJFQ" message="_0lC1swSpEeqQTZudrxSJFQ"/>
+    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_0lC1bASpEeqQTZudrxSJFQ" covered="_0lC0nASpEeqQTZudrxSJFQ" message="_0lC1tASpEeqQTZudrxSJFQ"/>
+    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_0lC1bQSpEeqQTZudrxSJFQ" covered="_0lC0pQSpEeqQTZudrxSJFQ" message="_0lC1tASpEeqQTZudrxSJFQ"/>
+    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_0lC1bgSpEeqQTZudrxSJFQ" covered="_0lC0nASpEeqQTZudrxSJFQ" message="_0lC1tQSpEeqQTZudrxSJFQ"/>
+    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_0lC1bwSpEeqQTZudrxSJFQ" covered="_0lC0oQSpEeqQTZudrxSJFQ" message="_0lC1tQSpEeqQTZudrxSJFQ"/>
+    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_0lC1cASpEeqQTZudrxSJFQ" covered="_0lC0nASpEeqQTZudrxSJFQ" message="_0lC1tgSpEeqQTZudrxSJFQ"/>
+    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_0lC1cQSpEeqQTZudrxSJFQ" covered="_0lC0oASpEeqQTZudrxSJFQ" message="_0lC1tgSpEeqQTZudrxSJFQ"/>
+    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_0lC1cgSpEeqQTZudrxSJFQ" covered="_0lC0nASpEeqQTZudrxSJFQ" message="_0lC1twSpEeqQTZudrxSJFQ"/>
+    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_0lC1cwSpEeqQTZudrxSJFQ" covered="_0lC0nwSpEeqQTZudrxSJFQ" message="_0lC1twSpEeqQTZudrxSJFQ"/>
+    <fragment xmi:type="uml:CombinedFragment" xmi:id="_0lC1dASpEeqQTZudrxSJFQ" name="CombinedFragment" interactionOperator="opt">
+      <operand xmi:id="_0lC1dQSpEeqQTZudrxSJFQ">
+        <guard xmi:id="_0lC1dgSpEeqQTZudrxSJFQ">
+          <specification xmi:type="uml:LiteralString" xmi:id="_0lC1dwSpEeqQTZudrxSJFQ" value="If it wasn't destroyed s far garbage collector will take care of it"/>
+        </guard>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_0lC1eASpEeqQTZudrxSJFQ" covered="_0lC0nASpEeqQTZudrxSJFQ" message="_0lC1uASpEeqQTZudrxSJFQ"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_0lC1eQSpEeqQTZudrxSJFQ" covered="_0lC0ngSpEeqQTZudrxSJFQ" message="_0lC1uASpEeqQTZudrxSJFQ"/>
+      </operand>
+    </fragment>
+    <fragment xmi:type="uml:CombinedFragment" xmi:id="_0lC1egSpEeqQTZudrxSJFQ" name="CombinedFragment">
+      <operand xmi:id="_0lC1ewSpEeqQTZudrxSJFQ">
+        <guard xmi:id="_0lC1fASpEeqQTZudrxSJFQ">
+          <specification xmi:type="uml:LiteralString" xmi:id="_0lC1fQSpEeqQTZudrxSJFQ" value="If it wasn't destroyed s far garbage collector will take care of it"/>
+        </guard>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_0lC1fgSpEeqQTZudrxSJFQ" covered="_0lC0nASpEeqQTZudrxSJFQ" message="_0lC1uQSpEeqQTZudrxSJFQ"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_0lC1fwSpEeqQTZudrxSJFQ" covered="_0lC0pwSpEeqQTZudrxSJFQ" message="_0lC1uQSpEeqQTZudrxSJFQ"/>
+      </operand>
+    </fragment>
+    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_0lC1gASpEeqQTZudrxSJFQ" covered="_0lC0nASpEeqQTZudrxSJFQ" message="_0lC1ugSpEeqQTZudrxSJFQ"/>
+    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_0lC1gQSpEeqQTZudrxSJFQ" covered="_0lC0ogSpEeqQTZudrxSJFQ" message="_0lC1ugSpEeqQTZudrxSJFQ"/>
+    <fragment xmi:type="uml:ExecutionOccurrenceSpecification" xmi:id="_0lC1ggSpEeqQTZudrxSJFQ" covered="_0lC0nASpEeqQTZudrxSJFQ"/>
+    <message xmi:id="_0lC1gwSpEeqQTZudrxSJFQ" name="getUserJourneys(integer userSystemID)" messageSort="asynchCall" receiveEvent="_0lC0sQSpEeqQTZudrxSJFQ" sendEvent="_0lC0sASpEeqQTZudrxSJFQ"/>
+    <message xmi:id="_0lC1hASpEeqQTZudrxSJFQ" name="create Journey Object" messageSort="createMessage" receiveEvent="_0lC0uASpEeqQTZudrxSJFQ" sendEvent="_0lC0twSpEeqQTZudrxSJFQ"/>
+    <message xmi:id="_0lC1hQSpEeqQTZudrxSJFQ" name="Journey userJourneys[]" messageSort="reply" receiveEvent="_0lC0ugSpEeqQTZudrxSJFQ" sendEvent="_0lC0uQSpEeqQTZudrxSJFQ"/>
+    <message xmi:id="_0lC1hgSpEeqQTZudrxSJFQ" name="getConsumableProducts(integer consumableProductsIDs[])" messageSort="asynchCall" receiveEvent="_0lC0vQSpEeqQTZudrxSJFQ" sendEvent="_0lC0uwSpEeqQTZudrxSJFQ"/>
+    <message xmi:id="_0lC1hwSpEeqQTZudrxSJFQ" name="create ProductType Object" messageSort="createMessage" receiveEvent="_0lC0xASpEeqQTZudrxSJFQ" sendEvent="_0lC0wwSpEeqQTZudrxSJFQ"/>
+    <message xmi:id="_0lC1iASpEeqQTZudrxSJFQ" name="create  GeneralCategory Object" messageSort="createMessage" receiveEvent="_0lC0xgSpEeqQTZudrxSJFQ" sendEvent="_0lC0xQSpEeqQTZudrxSJFQ"/>
+    <message xmi:id="_0lC1iQSpEeqQTZudrxSJFQ" name="create ConsumableProduct Object" messageSort="createMessage" receiveEvent="_0lC0yASpEeqQTZudrxSJFQ" sendEvent="_0lC0xwSpEeqQTZudrxSJFQ"/>
+    <message xmi:id="_0lC1igSpEeqQTZudrxSJFQ" name="ConsumableProducts consumeProducts[]" messageSort="reply" receiveEvent="_0lC0ygSpEeqQTZudrxSJFQ" sendEvent="_0lC0yQSpEeqQTZudrxSJFQ"/>
+    <message xmi:id="_0lC1iwSpEeqQTZudrxSJFQ" name="createNewJourneyForUser(integer userSystemID)" messageSort="asynchCall" receiveEvent="_0lC0zASpEeqQTZudrxSJFQ" sendEvent="_0lC0ywSpEeqQTZudrxSJFQ"/>
+    <message xmi:id="_0lC1jASpEeqQTZudrxSJFQ" name="integer newJourneyID" messageSort="reply" receiveEvent="_0lC0zwSpEeqQTZudrxSJFQ" sendEvent="_0lC0zgSpEeqQTZudrxSJFQ"/>
+    <message xmi:id="_0lC1jQSpEeqQTZudrxSJFQ" name="getJourneysOfUser(integer JourneyID[],integer userSystemID)" messageSort="asynchCall" receiveEvent="_0lC01QSpEeqQTZudrxSJFQ" sendEvent="_0lC01ASpEeqQTZudrxSJFQ"/>
+    <message xmi:id="_0lC1jgSpEeqQTZudrxSJFQ" name="create Journey Object for the Journeys in the array" messageSort="createMessage" receiveEvent="_0lC02ASpEeqQTZudrxSJFQ" sendEvent="_0lC01wSpEeqQTZudrxSJFQ"/>
+    <message xmi:id="_0lC1jwSpEeqQTZudrxSJFQ" name="Journey newJourneys[]" messageSort="reply" receiveEvent="_0lC02gSpEeqQTZudrxSJFQ" sendEvent="_0lC02QSpEeqQTZudrxSJFQ"/>
+    <message xmi:id="_0lC1kASpEeqQTZudrxSJFQ" name="getConsumableProducts(integer consumableProductsIDs[])" messageSort="asynchCall" receiveEvent="_0lC05ASpEeqQTZudrxSJFQ" sendEvent="_0lC04wSpEeqQTZudrxSJFQ"/>
+    <message xmi:id="_0lC1kQSpEeqQTZudrxSJFQ" name="create ProductType Object" messageSort="createMessage" receiveEvent="_0lC06wSpEeqQTZudrxSJFQ" sendEvent="_0lC06gSpEeqQTZudrxSJFQ"/>
+    <message xmi:id="_0lC1kgSpEeqQTZudrxSJFQ" name="create  GeneralCategory Object" messageSort="createMessage" receiveEvent="_0lC07QSpEeqQTZudrxSJFQ" sendEvent="_0lC07ASpEeqQTZudrxSJFQ"/>
+    <message xmi:id="_0lC1kwSpEeqQTZudrxSJFQ" name="create ConsumableProduct Object" messageSort="createMessage" receiveEvent="_0lC07wSpEeqQTZudrxSJFQ" sendEvent="_0lC07gSpEeqQTZudrxSJFQ"/>
+    <message xmi:id="_0lC1lASpEeqQTZudrxSJFQ" name="ConsumableProducts consumeProductsToAddToJourney[]" messageSort="reply" receiveEvent="_0lC08QSpEeqQTZudrxSJFQ" sendEvent="_0lC08ASpEeqQTZudrxSJFQ"/>
+    <message xmi:id="_0lC1lQSpEeqQTZudrxSJFQ" name="create new LikedDislikedProduct " messageSort="createMessage" receiveEvent="_0lC09wSpEeqQTZudrxSJFQ" sendEvent="_0lC09gSpEeqQTZudrxSJFQ"/>
+    <message xmi:id="_0lC1lgSpEeqQTZudrxSJFQ" name="If the user wants to add a new like or Dislike product" messageSort="asynchCall" receiveEvent="_0lC0-QSpEeqQTZudrxSJFQ" sendEvent="_0lC0-ASpEeqQTZudrxSJFQ"/>
+    <message xmi:id="_0lC1lwSpEeqQTZudrxSJFQ" name="update status" messageSort="reply" receiveEvent="_0lC0_ASpEeqQTZudrxSJFQ" sendEvent="_0lC0-wSpEeqQTZudrxSJFQ"/>
+    <message xmi:id="_0lC1mASpEeqQTZudrxSJFQ" name="getLikeDislikeEntries(integer userSystemID)" messageSort="asynchCall" receiveEvent="_0lC1AgSpEeqQTZudrxSJFQ" sendEvent="_0lC1AQSpEeqQTZudrxSJFQ"/>
+    <message xmi:id="_0lC1mQSpEeqQTZudrxSJFQ" name="create LikedOrDislikedProduct Object" messageSort="createMessage" receiveEvent="_0lC1CQSpEeqQTZudrxSJFQ" sendEvent="_0lC1CASpEeqQTZudrxSJFQ"/>
+    <message xmi:id="_0lC1mgSpEeqQTZudrxSJFQ" name="LikedOrDislikedProducts likedDislikedPr[]" messageSort="reply" receiveEvent="_0lC1CwSpEeqQTZudrxSJFQ" sendEvent="_0lC1CgSpEeqQTZudrxSJFQ"/>
+    <message xmi:id="_0lC1mwSpEeqQTZudrxSJFQ" name="getConsumableProducts(integer consumableProductsIDs[])" messageSort="asynchCall" receiveEvent="_0lC1FQSpEeqQTZudrxSJFQ" sendEvent="_0lC1FASpEeqQTZudrxSJFQ"/>
+    <message xmi:id="_0lC1nASpEeqQTZudrxSJFQ" name="create ProductType" messageSort="createMessage" receiveEvent="_0lC1HASpEeqQTZudrxSJFQ" sendEvent="_0lC1GwSpEeqQTZudrxSJFQ"/>
+    <message xmi:id="_0lC1nQSpEeqQTZudrxSJFQ" name="create GeneralCategory Object" messageSort="createMessage" receiveEvent="_0lC1HgSpEeqQTZudrxSJFQ" sendEvent="_0lC1HQSpEeqQTZudrxSJFQ"/>
+    <message xmi:id="_0lC1ngSpEeqQTZudrxSJFQ" name="create ConsumableProducts consumeProductsToAddToJourney[] Object" messageSort="createMessage" receiveEvent="_0lC1IASpEeqQTZudrxSJFQ" sendEvent="_0lC1HwSpEeqQTZudrxSJFQ"/>
+    <message xmi:id="_0lC1nwSpEeqQTZudrxSJFQ" name="ConsumableProducts consumeProductsToAddToJourney2[]" messageSort="reply" receiveEvent="_0lC1IgSpEeqQTZudrxSJFQ" sendEvent="_0lC1IQSpEeqQTZudrxSJFQ"/>
+    <message xmi:id="_0lC1oASpEeqQTZudrxSJFQ" name="create LikedOrDislikedProduct Object" messageSort="createMessage" receiveEvent="_0lC1KASpEeqQTZudrxSJFQ" sendEvent="_0lC1JwSpEeqQTZudrxSJFQ"/>
+    <message xmi:id="_0lC1oQSpEeqQTZudrxSJFQ" name="updateLikeOrDislike(LikedOrDislikedProduct like_DislikeEntry,integer userSystemID)" messageSort="asynchCall" receiveEvent="_0lC1KgSpEeqQTZudrxSJFQ" sendEvent="_0lC1KQSpEeqQTZudrxSJFQ"/>
+    <message xmi:id="_0lC1ogSpEeqQTZudrxSJFQ" name="update status" messageSort="reply" receiveEvent="_0lC1LQSpEeqQTZudrxSJFQ" sendEvent="_0lC1LASpEeqQTZudrxSJFQ"/>
+    <message xmi:id="_0lC1owSpEeqQTZudrxSJFQ" name="destructor called __del__ (LikedOrDislikedProduct Objects)" messageSort="deleteMessage" receiveEvent="_0lC1LwSpEeqQTZudrxSJFQ" sendEvent="_0lC1LgSpEeqQTZudrxSJFQ"/>
+    <message xmi:id="_0lC1pASpEeqQTZudrxSJFQ" name="destructor called __del__ (LikedOrDislikedProduct Objects)" messageSort="deleteMessage" receiveEvent="_0lC1MQSpEeqQTZudrxSJFQ" sendEvent="_0lC1MASpEeqQTZudrxSJFQ"/>
+    <message xmi:id="_0lC1pQSpEeqQTZudrxSJFQ" name="destructor called __del__ (ProductTypes Objects)" messageSort="deleteMessage" receiveEvent="_0lC1MwSpEeqQTZudrxSJFQ" sendEvent="_0lC1MgSpEeqQTZudrxSJFQ"/>
+    <message xmi:id="_0lC1pgSpEeqQTZudrxSJFQ" name="destructor called __del__ (GeneralCategory Objects)" messageSort="deleteMessage" receiveEvent="_0lC1NQSpEeqQTZudrxSJFQ" sendEvent="_0lC1NASpEeqQTZudrxSJFQ"/>
+    <message xmi:id="_0lC1pwSpEeqQTZudrxSJFQ" name="destructor called __del__ (Consumableproduct Objects)" messageSort="deleteMessage" receiveEvent="_0lC1NwSpEeqQTZudrxSJFQ" sendEvent="_0lC1NgSpEeqQTZudrxSJFQ"/>
+    <message xmi:id="_0lC1qASpEeqQTZudrxSJFQ" name="destructor called __del__ (Journey Object)" messageSort="deleteMessage" receiveEvent="_0lC1RASpEeqQTZudrxSJFQ" sendEvent="_0lC1QwSpEeqQTZudrxSJFQ"/>
+    <message xmi:id="_0lC1qQSpEeqQTZudrxSJFQ" name="destructor called __del__ (Journey Object)" messageSort="deleteMessage" receiveEvent="_0lC1SQSpEeqQTZudrxSJFQ" sendEvent="_0lC1SASpEeqQTZudrxSJFQ"/>
+    <message xmi:id="_0lC1qgSpEeqQTZudrxSJFQ" name="create Journey Object" messageSort="createMessage" receiveEvent="_0lC1SwSpEeqQTZudrxSJFQ" sendEvent="_0lC1SgSpEeqQTZudrxSJFQ"/>
+    <message xmi:id="_0lC1qwSpEeqQTZudrxSJFQ" name="updateJourneyOfUserInDatabase(Journey aJourney,integet userSystemID)" messageSort="asynchCall" receiveEvent="_0lC1TQSpEeqQTZudrxSJFQ" sendEvent="_0lC1TASpEeqQTZudrxSJFQ"/>
+    <message xmi:id="_0lC1rASpEeqQTZudrxSJFQ" name="update status" messageSort="reply" receiveEvent="_0lC1UASpEeqQTZudrxSJFQ" sendEvent="_0lC1TwSpEeqQTZudrxSJFQ"/>
+    <message xmi:id="_0lC1rQSpEeqQTZudrxSJFQ" name="deleteJourney(integer journeyID,integer userSystemID)" messageSort="asynchCall" receiveEvent="_0lC1VgSpEeqQTZudrxSJFQ" sendEvent="_0lC1VQSpEeqQTZudrxSJFQ"/>
+    <message xmi:id="_0lC1rgSpEeqQTZudrxSJFQ" name="deletion staus" messageSort="reply" receiveEvent="_0lC1WQSpEeqQTZudrxSJFQ" sendEvent="_0lC1WASpEeqQTZudrxSJFQ"/>
+    <message xmi:id="_0lC1rwSpEeqQTZudrxSJFQ" name="destructor called __del__ (Journey Object)" messageSort="deleteMessage" receiveEvent="_0lC1YASpEeqQTZudrxSJFQ" sendEvent="_0lC1XwSpEeqQTZudrxSJFQ"/>
+    <message xmi:id="_0lC1sASpEeqQTZudrxSJFQ" name="destructor called __del__ (Journey Object)" messageSort="deleteMessage" receiveEvent="_0lC1ZQSpEeqQTZudrxSJFQ" sendEvent="_0lC1ZASpEeqQTZudrxSJFQ"/>
+    <message xmi:id="_0lC1sQSpEeqQTZudrxSJFQ" name="destructor called __del__ (LikedOrDislikedProduct) -- Not explicitly but with the help of Garbage Collector in Python" messageSort="deleteMessage" receiveEvent="_0lC1ZwSpEeqQTZudrxSJFQ" sendEvent="_0lC1ZgSpEeqQTZudrxSJFQ"/>
+    <message xmi:id="_0lC1sgSpEeqQTZudrxSJFQ" name="destructor called __del__ (ProductType Objects)-- Not explicitly but with the help of Garbage Collector in Python" messageSort="deleteMessage" receiveEvent="_0lC1aQSpEeqQTZudrxSJFQ" sendEvent="_0lC1aASpEeqQTZudrxSJFQ"/>
+    <message xmi:id="_0lC1swSpEeqQTZudrxSJFQ" name="destructor called __del__ (GeneralCategory Objects)-- Not explicitly but with the help of Garbage Collector in Python" messageSort="deleteMessage" receiveEvent="_0lC1awSpEeqQTZudrxSJFQ" sendEvent="_0lC1agSpEeqQTZudrxSJFQ"/>
+    <message xmi:id="_0lC1tASpEeqQTZudrxSJFQ" name="destructor called __del__ (ConsumableProduct Objects)-- Not explicitly but with the help of Garbage Collector in Python" messageSort="deleteMessage" receiveEvent="_0lC1bQSpEeqQTZudrxSJFQ" sendEvent="_0lC1bASpEeqQTZudrxSJFQ"/>
+    <message xmi:id="_0lC1tQSpEeqQTZudrxSJFQ" name="destructor called __del__ (Product Type Objects)-- Not explicitly but with the help of Garbage Collector in Python" messageSort="deleteMessage" receiveEvent="_0lC1bwSpEeqQTZudrxSJFQ" sendEvent="_0lC1bgSpEeqQTZudrxSJFQ"/>
+    <message xmi:id="_0lC1tgSpEeqQTZudrxSJFQ" name="destructor called __del__ (GeneralCategory Objects)-- Not explicitly but with the help of Garbage Collector in Python" messageSort="deleteMessage" receiveEvent="_0lC1cQSpEeqQTZudrxSJFQ" sendEvent="_0lC1cASpEeqQTZudrxSJFQ"/>
+    <message xmi:id="_0lC1twSpEeqQTZudrxSJFQ" name="destructor called __del__ (ConsumableProduct Objects)-- Not explicitly but with the help of Garbage Collector in Python" messageSort="deleteMessage" receiveEvent="_0lC1cwSpEeqQTZudrxSJFQ" sendEvent="_0lC1cgSpEeqQTZudrxSJFQ"/>
+    <message xmi:id="_0lC1uASpEeqQTZudrxSJFQ" name="destructor called __del__ (Journey Object)-- Not explicitly but with the help of Garbage Collector in Python" messageSort="deleteMessage" receiveEvent="_0lC1eQSpEeqQTZudrxSJFQ" sendEvent="_0lC1eASpEeqQTZudrxSJFQ"/>
+    <message xmi:id="_0lC1uQSpEeqQTZudrxSJFQ" name="destructor called __del__ (Journey Object)-- Not explicitly but with the help of Garbage Collector in Python" messageSort="deleteMessage" receiveEvent="_0lC1fwSpEeqQTZudrxSJFQ" sendEvent="_0lC1fgSpEeqQTZudrxSJFQ"/>
+    <message xmi:id="_0lC1ugSpEeqQTZudrxSJFQ" name="destructor called __del__ (Journey Objects)-- Not explicitly but with the help of Garbage Collector in Python" messageSort="deleteMessage" receiveEvent="_0lC1gQSpEeqQTZudrxSJFQ" sendEvent="_0lC1gASpEeqQTZudrxSJFQ"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:StateMachine" xmi:id="_0lC1uwSpEeqQTZudrxSJFQ" name="State Machine">
+    <region xmi:id="_0lC1vASpEeqQTZudrxSJFQ">
+      <subvertex xmi:type="uml:State" xmi:id="_0lC1vQSpEeqQTZudrxSJFQ" name="WaitingUntilTimeForRecommendationAlgorithmExecution"/>
+      <subvertex xmi:type="uml:Pseudostate" xmi:id="_0lC1vgSpEeqQTZudrxSJFQ" name="Initial State"/>
+      <subvertex xmi:type="uml:State" xmi:id="_0lC1vwSpEeqQTZudrxSJFQ" name="ExecutingRecommendationAlgorithmOnly"/>
+      <subvertex xmi:type="uml:State" xmi:id="_0lC1wASpEeqQTZudrxSJFQ" name="CalculatingAttributesForSpecificUserOnly"/>
+      <subvertex xmi:type="uml:State" xmi:id="_0lC1wQSpEeqQTZudrxSJFQ" name="PredictingUserPreferencesOnRestaurantsWhileExecutingRecommendationAlgorithm"/>
+      <subvertex xmi:type="uml:State" xmi:id="_0lC1wgSpEeqQTZudrxSJFQ" name="PredictingUserPreferencesOnConsumableProductsWhileWaitingUntilTimeForRecommendationAlgorithmExecution"/>
+      <subvertex xmi:type="uml:State" xmi:id="_0lC1wwSpEeqQTZudrxSJFQ" name="PredictingUserPreferencesOnRestaurantsWhileWaitingUntilTimeForRecommendationAlgorithmExecution"/>
+      <subvertex xmi:type="uml:State" xmi:id="_0lC1xASpEeqQTZudrxSJFQ" name="PredictingUserPreferencesOnConsumableProductsWhileExecutingRecommendationAlgorithm"/>
+      <subvertex xmi:type="uml:State" xmi:id="_0lC1xQSpEeqQTZudrxSJFQ" name="PredictingUserPreferencesOnConsumableProductsWhileCalculatingAttributesForSpecificUser"/>
+      <subvertex xmi:type="uml:State" xmi:id="_0lC1xgSpEeqQTZudrxSJFQ" name="PredictingUserPreferencesRestaurantsWhileCalculatingAttributesForSpecificUser"/>
+      <transition xmi:id="_0lC1xwSpEeqQTZudrxSJFQ" source="_0lC1vQSpEeqQTZudrxSJFQ" target="_0lC1vwSpEeqQTZudrxSJFQ">
+        <ownedComment xmi:id="_0lC1yASpEeqQTZudrxSJFQ">
+          <body>&lt;Enter note text here></body>
+        </ownedComment>
+        <effect xmi:type="uml:OpaqueBehavior" xmi:id="_0lC1yQSpEeqQTZudrxSJFQ" specification="_0k-jDgSpEeqQTZudrxSJFQ"/>
+      </transition>
+      <transition xmi:id="_0lC1ygSpEeqQTZudrxSJFQ" name="Transition1" source="_0lC1vQSpEeqQTZudrxSJFQ" target="_0lC1wwSpEeqQTZudrxSJFQ">
+        <ownedComment xmi:id="_0lC1ywSpEeqQTZudrxSJFQ">
+          <body></body>
+        </ownedComment>
+      </transition>
+      <transition xmi:id="_0lC1zASpEeqQTZudrxSJFQ" name="Transition2" source="_0lC1vQSpEeqQTZudrxSJFQ" target="_0lC1wgSpEeqQTZudrxSJFQ">
+        <ownedComment xmi:id="_0lC1zQSpEeqQTZudrxSJFQ">
+          <body>&lt;Enter note text here>
+</body>
+        </ownedComment>
+      </transition>
+      <transition xmi:id="_0lC1zgSpEeqQTZudrxSJFQ" name="Transition" source="_0lC1vgSpEeqQTZudrxSJFQ" target="_0lC1vQSpEeqQTZudrxSJFQ"/>
+      <transition xmi:id="_0lC1zwSpEeqQTZudrxSJFQ" name="Transition2" source="_0lC1vwSpEeqQTZudrxSJFQ" target="_0lC1wQSpEeqQTZudrxSJFQ"/>
+      <transition xmi:id="_0lC10ASpEeqQTZudrxSJFQ" name="Transition3" source="_0lC1vwSpEeqQTZudrxSJFQ" target="_0lC1wASpEeqQTZudrxSJFQ">
+        <ownedComment xmi:id="_0lC10QSpEeqQTZudrxSJFQ">
+          <body>&lt;Enter note text here></body>
+        </ownedComment>
+      </transition>
+      <transition xmi:id="_0lC10gSpEeqQTZudrxSJFQ" name="Transition4" source="_0lC1vwSpEeqQTZudrxSJFQ" target="_0lC1xASpEeqQTZudrxSJFQ"/>
+      <transition xmi:id="_0lC10wSpEeqQTZudrxSJFQ" name="Transition" source="_0lC1vwSpEeqQTZudrxSJFQ" target="_0lC1vQSpEeqQTZudrxSJFQ">
+        <ownedComment xmi:id="_0lC11ASpEeqQTZudrxSJFQ">
+          <body>&lt;Enter note text here></body>
+        </ownedComment>
+      </transition>
+      <transition xmi:id="_0lC11QSpEeqQTZudrxSJFQ" name="Transition" source="_0lC1wASpEeqQTZudrxSJFQ" target="_0lC1xgSpEeqQTZudrxSJFQ"/>
+      <transition xmi:id="_0lC11gSpEeqQTZudrxSJFQ" name="Transition1" source="_0lC1wASpEeqQTZudrxSJFQ" target="_0lC1xQSpEeqQTZudrxSJFQ"/>
+      <transition xmi:id="_0lC11wSpEeqQTZudrxSJFQ" name="Transition2" source="_0lC1wASpEeqQTZudrxSJFQ" target="_0lC1vwSpEeqQTZudrxSJFQ"/>
+      <transition xmi:id="_0lC12ASpEeqQTZudrxSJFQ" name="Transition" source="_0lC1wQSpEeqQTZudrxSJFQ" target="_0lC1vwSpEeqQTZudrxSJFQ"/>
+      <transition xmi:id="_0lC12QSpEeqQTZudrxSJFQ" name="execution of the Recommendation Algorithm has finished" source="_0lC1wQSpEeqQTZudrxSJFQ" target="_0lC1wwSpEeqQTZudrxSJFQ"/>
+      <transition xmi:id="_0lC12gSpEeqQTZudrxSJFQ" name="Transition2" source="_0lC1wQSpEeqQTZudrxSJFQ" target="_0lC1xgSpEeqQTZudrxSJFQ"/>
+      <transition xmi:id="_0lC12wSpEeqQTZudrxSJFQ" name="Transition" source="_0lC1wgSpEeqQTZudrxSJFQ" target="_0lC1xASpEeqQTZudrxSJFQ">
+        <effect xmi:type="uml:OpaqueBehavior" xmi:id="_0lC13ASpEeqQTZudrxSJFQ">
+          <body>updateUsersRecommendationAttributes()</body>
+        </effect>
+      </transition>
+      <transition xmi:id="_0lC13QSpEeqQTZudrxSJFQ" source="_0lC1wgSpEeqQTZudrxSJFQ" target="_0lC1vQSpEeqQTZudrxSJFQ"/>
+      <transition xmi:id="_0lC13gSpEeqQTZudrxSJFQ" source="_0lC1wwSpEeqQTZudrxSJFQ" target="_0lC1wQSpEeqQTZudrxSJFQ">
+        <effect xmi:type="uml:OpaqueBehavior" xmi:id="_0lC13wSpEeqQTZudrxSJFQ" specification="_0k-jDgSpEeqQTZudrxSJFQ"/>
+      </transition>
+      <transition xmi:id="_0lC14ASpEeqQTZudrxSJFQ" name="Transition1" source="_0lC1wwSpEeqQTZudrxSJFQ" target="_0lC1vQSpEeqQTZudrxSJFQ"/>
+      <transition xmi:id="_0lC14QSpEeqQTZudrxSJFQ" name="Transition" source="_0lC1xASpEeqQTZudrxSJFQ" target="_0lC1vwSpEeqQTZudrxSJFQ">
+        <ownedComment xmi:id="_0lC14gSpEeqQTZudrxSJFQ">
+          <body>&lt;Enter note text here></body>
+        </ownedComment>
+      </transition>
+      <transition xmi:id="_0lC14wSpEeqQTZudrxSJFQ" name="Transition1" source="_0lC1xASpEeqQTZudrxSJFQ" target="_0lC1xQSpEeqQTZudrxSJFQ"/>
+      <transition xmi:id="_0lC15ASpEeqQTZudrxSJFQ" name="Transition2" source="_0lC1xASpEeqQTZudrxSJFQ" target="_0lC1wgSpEeqQTZudrxSJFQ">
+        <ownedComment xmi:id="_0lC15QSpEeqQTZudrxSJFQ">
+          <body>&lt;Enter note text here></body>
+        </ownedComment>
+      </transition>
+      <transition xmi:id="_0lC15gSpEeqQTZudrxSJFQ" name="Transition" source="_0lC1xQSpEeqQTZudrxSJFQ" target="_0lC1wASpEeqQTZudrxSJFQ"/>
+      <transition xmi:id="_0lC15wSpEeqQTZudrxSJFQ" name="Transition1" source="_0lC1xQSpEeqQTZudrxSJFQ" target="_0lC1xASpEeqQTZudrxSJFQ"/>
+      <transition xmi:id="_0lC16ASpEeqQTZudrxSJFQ" name="Transition" source="_0lC1xgSpEeqQTZudrxSJFQ" target="_0lC1wASpEeqQTZudrxSJFQ"/>
+      <transition xmi:id="_0lC16QSpEeqQTZudrxSJFQ" name="Transition1" source="_0lC1xgSpEeqQTZudrxSJFQ" target="_0lC1wQSpEeqQTZudrxSJFQ"/>
+    </region>
+  </packagedElement>
+</uml:Model>

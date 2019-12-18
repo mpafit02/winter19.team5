@@ -1,0 +1,2376 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML" xmi:id="_iQ8VgPOTEemufas-XlTWhA" name="epl343project">
+  <eAnnotations xmi:id="_iQ8VgfOTEemufas-XlTWhA" source="Objing">
+    <contents xmi:type="uml:Property" xmi:id="_iQ8VgvOTEemufas-XlTWhA" name="exporterVersion">
+      <defaultValue xmi:type="uml:LiteralString" xmi:id="_iQ8Vg_OTEemufas-XlTWhA" value="3.0.0"/>
+    </contents>
+    <contents xmi:type="uml:Property" xmi:id="_iQ8VhPOTEemufas-XlTWhA" name="isRoundTrip"/>
+    <contents xmi:type="uml:Property" xmi:id="_iQ8VhfOTEemufas-XlTWhA" name="Visibility">
+      <defaultValue xmi:type="uml:LiteralString" xmi:id="_iQ8VhvOTEemufas-XlTWhA" value="0"/>
+    </contents>
+  </eAnnotations>
+  <packagedElement xmi:type="uml:Class" xmi:id="_iQ8Vh_OTEemufas-XlTWhA" name="DatabaseAPI" clientDependency="_iQ8Xh_OTEemufas-XlTWhA _iQ8XiPOTEemufas-XlTWhA _iQ8XifOTEemufas-XlTWhA _iQ8XivOTEemufas-XlTWhA _iQ8Xi_OTEemufas-XlTWhA _iQ8XjPOTEemufas-XlTWhA">
+    <eAnnotations xmi:id="_iQ8ViPOTEemufas-XlTWhA" source="Objing">
+      <contents xmi:type="uml:Property" xmi:id="_iQ8VifOTEemufas-XlTWhA" name="Visibility">
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_iQ8VivOTEemufas-XlTWhA" value="0"/>
+      </contents>
+    </eAnnotations>
+    <ownedOperation xmi:id="_iQ8Vi_OTEemufas-XlTWhA" name="addConsumableProductInDatabase" visibility="public">
+      <eAnnotations xmi:id="_iQ8VjPOTEemufas-XlTWhA" source="Objing">
+        <contents xmi:type="uml:Property" xmi:id="_iQ8VjfOTEemufas-XlTWhA" name="Visibility">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_iQ8VjvOTEemufas-XlTWhA" value="0"/>
+        </contents>
+      </eAnnotations>
+      <ownedParameter xmi:id="_iQ8Vj_OTEemufas-XlTWhA" name="product" type="_iQ8YPfOTEemufas-XlTWhA" isUnique="false">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_iQ8VkPOTEemufas-XlTWhA" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_iQ8VkfOTEemufas-XlTWhA" value="1"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_iQ8VkvOTEemufas-XlTWhA" value=""/>
+      </ownedParameter>
+      <ownedParameter xmi:id="_iQ8Vk_OTEemufas-XlTWhA" isUnique="false" direction="return">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_iQ8VlPOTEemufas-XlTWhA" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_iQ8VlfOTEemufas-XlTWhA" value="1"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_iQ8VlvOTEemufas-XlTWhA" value=""/>
+      </ownedParameter>
+    </ownedOperation>
+    <ownedOperation xmi:id="_iQ8Vl_OTEemufas-XlTWhA" name="getConsumableProducts" visibility="public">
+      <eAnnotations xmi:id="_iQ8VmPOTEemufas-XlTWhA" source="Objing">
+        <contents xmi:type="uml:Property" xmi:id="_iQ8VmfOTEemufas-XlTWhA" name="Visibility">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_iQ8VmvOTEemufas-XlTWhA" value="0"/>
+        </contents>
+      </eAnnotations>
+      <ownedParameter xmi:id="_iQ8Vm_OTEemufas-XlTWhA" name="consumableProductsIDs" isUnique="false">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_iQ8VnPOTEemufas-XlTWhA" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_iQ8VnfOTEemufas-XlTWhA"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_iQ8VnvOTEemufas-XlTWhA" value=""/>
+      </ownedParameter>
+      <ownedParameter xmi:id="_iQ8Vn_OTEemufas-XlTWhA" type="_iQ8YPfOTEemufas-XlTWhA" isUnique="false" direction="return">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_iQ8VoPOTEemufas-XlTWhA" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_iQ8VofOTEemufas-XlTWhA"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_iQ8VovOTEemufas-XlTWhA" value=""/>
+      </ownedParameter>
+    </ownedOperation>
+    <ownedOperation xmi:id="_iQ8Vo_OTEemufas-XlTWhA" name="getProductTypes" visibility="public">
+      <eAnnotations xmi:id="_iQ8VpPOTEemufas-XlTWhA" source="Objing">
+        <contents xmi:type="uml:Property" xmi:id="_iQ8VpfOTEemufas-XlTWhA" name="Visibility">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_iQ8VpvOTEemufas-XlTWhA" value="0"/>
+        </contents>
+      </eAnnotations>
+      <ownedParameter xmi:id="_iQ8Vp_OTEemufas-XlTWhA" name="productTypesIDs" isUnique="false">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_iQ8VqPOTEemufas-XlTWhA" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_iQ8VqfOTEemufas-XlTWhA"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_iQ8VqvOTEemufas-XlTWhA" value=""/>
+      </ownedParameter>
+      <ownedParameter xmi:id="_iQ8Vq_OTEemufas-XlTWhA" type="_iQ8abfOTEemufas-XlTWhA" isUnique="false" direction="return">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_iQ8VrPOTEemufas-XlTWhA" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_iQ8VrfOTEemufas-XlTWhA"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_iQ8VrvOTEemufas-XlTWhA" value=""/>
+      </ownedParameter>
+    </ownedOperation>
+    <ownedOperation xmi:id="_iQ8Vr_OTEemufas-XlTWhA" name="getProductGeneralCategories" visibility="public">
+      <eAnnotations xmi:id="_iQ8VsPOTEemufas-XlTWhA" source="Objing">
+        <contents xmi:type="uml:Property" xmi:id="_iQ8VsfOTEemufas-XlTWhA" name="Visibility">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_iQ8VsvOTEemufas-XlTWhA" value="0"/>
+        </contents>
+      </eAnnotations>
+      <ownedComment xmi:id="_iQ8Vs_OTEemufas-XlTWhA">
+        <eAnnotations xmi:id="_iQ8VtPOTEemufas-XlTWhA" source="Objing">
+          <contents xmi:type="uml:Property" xmi:id="_iQ8VtfOTEemufas-XlTWhA" name="NoteType_Name">
+            <defaultValue xmi:type="uml:LiteralString" xmi:id="_iQ8VtvOTEemufas-XlTWhA" value="description"/>
+          </contents>
+        </eAnnotations>
+        <body>&lt;Enter note text here></body>
+      </ownedComment>
+      <ownedParameter xmi:id="_iQ8Vt_OTEemufas-XlTWhA" name="generalCategoriesIDs" isUnique="false">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_iQ8VuPOTEemufas-XlTWhA" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_iQ8VufOTEemufas-XlTWhA"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_iQ8VuvOTEemufas-XlTWhA" value=""/>
+      </ownedParameter>
+      <ownedParameter xmi:id="_iQ8Vu_OTEemufas-XlTWhA" type="_iQ8ap_OTEemufas-XlTWhA" isUnique="false" direction="return">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_iQ8VvPOTEemufas-XlTWhA" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_iQ8VvfOTEemufas-XlTWhA"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_iQ8VvvOTEemufas-XlTWhA" value=""/>
+      </ownedParameter>
+    </ownedOperation>
+    <ownedOperation xmi:id="_iQ8Vv_OTEemufas-XlTWhA" name="addNewUser" visibility="public">
+      <eAnnotations xmi:id="_iQ8VwPOTEemufas-XlTWhA" source="Objing">
+        <contents xmi:type="uml:Property" xmi:id="_iQ8VwfOTEemufas-XlTWhA" name="Visibility">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_iQ8VwvOTEemufas-XlTWhA" value="0"/>
+        </contents>
+      </eAnnotations>
+      <ownedParameter xmi:id="_iQ8Vw_OTEemufas-XlTWhA" name="newUserID" isUnique="false">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_iQ8VxPOTEemufas-XlTWhA" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_iQ8VxfOTEemufas-XlTWhA" value="1"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_iQ8VxvOTEemufas-XlTWhA" value=""/>
+      </ownedParameter>
+      <ownedParameter xmi:id="_iQ8Vx_OTEemufas-XlTWhA" isUnique="false" direction="return">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_iQ8VyPOTEemufas-XlTWhA" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_iQ8VyfOTEemufas-XlTWhA" value="1"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_iQ8VyvOTEemufas-XlTWhA" value=""/>
+      </ownedParameter>
+    </ownedOperation>
+    <ownedOperation xmi:id="_iQ8Vy_OTEemufas-XlTWhA" name="deleteUserInformationCompletelyFromDatabase" visibility="public">
+      <eAnnotations xmi:id="_iQ8VzPOTEemufas-XlTWhA" source="Objing">
+        <contents xmi:type="uml:Property" xmi:id="_iQ8VzfOTEemufas-XlTWhA" name="Visibility">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_iQ8VzvOTEemufas-XlTWhA" value="0"/>
+        </contents>
+      </eAnnotations>
+      <ownedParameter xmi:id="_iQ8Vz_OTEemufas-XlTWhA" name="userID" isUnique="false">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_iQ8V0POTEemufas-XlTWhA" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_iQ8V0fOTEemufas-XlTWhA" value="1"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_iQ8V0vOTEemufas-XlTWhA" value=""/>
+      </ownedParameter>
+      <ownedParameter xmi:id="_iQ8V0_OTEemufas-XlTWhA" isUnique="false" direction="return">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_iQ8V1POTEemufas-XlTWhA" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_iQ8V1fOTEemufas-XlTWhA" value="1"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_iQ8V1vOTEemufas-XlTWhA" value=""/>
+      </ownedParameter>
+    </ownedOperation>
+    <ownedOperation xmi:id="_iQ8V1_OTEemufas-XlTWhA" name="getGeneralInformationUsers" visibility="public">
+      <eAnnotations xmi:id="_iQ8V2POTEemufas-XlTWhA" source="Objing">
+        <contents xmi:type="uml:Property" xmi:id="_iQ8V2fOTEemufas-XlTWhA" name="Visibility">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_iQ8V2vOTEemufas-XlTWhA" value="0"/>
+        </contents>
+      </eAnnotations>
+      <ownedComment xmi:id="_iQ8V2_OTEemufas-XlTWhA">
+        <eAnnotations xmi:id="_iQ8V3POTEemufas-XlTWhA" source="Objing">
+          <contents xmi:type="uml:Property" xmi:id="_iQ8V3fOTEemufas-XlTWhA" name="NoteType_Name">
+            <defaultValue xmi:type="uml:LiteralString" xmi:id="_iQ8V3vOTEemufas-XlTWhA" value="description"/>
+          </contents>
+        </eAnnotations>
+        <body>&lt;Enter note text here></body>
+      </ownedComment>
+      <ownedParameter xmi:id="_iQ8V3_OTEemufas-XlTWhA" name="fromUserID" isUnique="false">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_iQ8V4POTEemufas-XlTWhA" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_iQ8V4fOTEemufas-XlTWhA" value="1"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_iQ8V4vOTEemufas-XlTWhA" value=""/>
+      </ownedParameter>
+      <ownedParameter xmi:id="_iQ8V4_OTEemufas-XlTWhA" name="untilUserID" isUnique="false">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_iQ8V5POTEemufas-XlTWhA" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_iQ8V5fOTEemufas-XlTWhA" value="1"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_iQ8V5vOTEemufas-XlTWhA" value=""/>
+      </ownedParameter>
+      <ownedParameter xmi:id="_iQ8V5_OTEemufas-XlTWhA" type="_iQ8YzfOTEemufas-XlTWhA" isUnique="false" direction="return">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_iQ8V6POTEemufas-XlTWhA" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_iQ8V6fOTEemufas-XlTWhA"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_iQ8V6vOTEemufas-XlTWhA" value=""/>
+      </ownedParameter>
+    </ownedOperation>
+    <ownedOperation xmi:id="_iQ8V6_OTEemufas-XlTWhA" name="countNumberOfUsers" visibility="public">
+      <eAnnotations xmi:id="_iQ8V7POTEemufas-XlTWhA" source="Objing">
+        <contents xmi:type="uml:Property" xmi:id="_iQ8V7fOTEemufas-XlTWhA" name="Visibility">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_iQ8V7vOTEemufas-XlTWhA" value="0"/>
+        </contents>
+      </eAnnotations>
+      <ownedParameter xmi:id="_iQ8V7_OTEemufas-XlTWhA" name="fromUserID" isUnique="false">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_iQ8V8POTEemufas-XlTWhA" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_iQ8V8fOTEemufas-XlTWhA" value="1"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_iQ8V8vOTEemufas-XlTWhA" value=""/>
+      </ownedParameter>
+      <ownedParameter xmi:id="_iQ8V8_OTEemufas-XlTWhA" name="untilUserID" isUnique="false">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_iQ8V9POTEemufas-XlTWhA" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_iQ8V9fOTEemufas-XlTWhA" value="1"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_iQ8V9vOTEemufas-XlTWhA" value=""/>
+      </ownedParameter>
+      <ownedParameter xmi:id="_iQ8V9_OTEemufas-XlTWhA" isUnique="false" direction="return">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_iQ8V-POTEemufas-XlTWhA" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_iQ8V-fOTEemufas-XlTWhA" value="1"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_iQ8V-vOTEemufas-XlTWhA" value=""/>
+      </ownedParameter>
+    </ownedOperation>
+    <ownedOperation xmi:id="_iQ8V-_OTEemufas-XlTWhA" name="getConsumableProducts" visibility="public">
+      <eAnnotations xmi:id="_iQ8V_POTEemufas-XlTWhA" source="Objing">
+        <contents xmi:type="uml:Property" xmi:id="_iQ8V_fOTEemufas-XlTWhA" name="Visibility">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_iQ8V_vOTEemufas-XlTWhA" value="0"/>
+        </contents>
+      </eAnnotations>
+      <ownedComment xmi:id="_iQ8V__OTEemufas-XlTWhA">
+        <eAnnotations xmi:id="_iQ8WAPOTEemufas-XlTWhA" source="Objing">
+          <contents xmi:type="uml:Property" xmi:id="_iQ8WAfOTEemufas-XlTWhA" name="NoteType_Name">
+            <defaultValue xmi:type="uml:LiteralString" xmi:id="_iQ8WAvOTEemufas-XlTWhA" value="description"/>
+          </contents>
+        </eAnnotations>
+        <body>&lt;Enter note text here></body>
+      </ownedComment>
+      <ownedParameter xmi:id="_iQ8WA_OTEemufas-XlTWhA" name="fromConsumableID" isUnique="false">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_iQ8WBPOTEemufas-XlTWhA" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_iQ8WBfOTEemufas-XlTWhA" value="1"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_iQ8WBvOTEemufas-XlTWhA" value=""/>
+      </ownedParameter>
+      <ownedParameter xmi:id="_iQ8WB_OTEemufas-XlTWhA" name="untilConsumableProduct" isUnique="false">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_iQ8WCPOTEemufas-XlTWhA" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_iQ8WCfOTEemufas-XlTWhA" value="1"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_iQ8WCvOTEemufas-XlTWhA" value=""/>
+      </ownedParameter>
+      <ownedParameter xmi:id="_iQ8WC_OTEemufas-XlTWhA" type="_iQ8YPfOTEemufas-XlTWhA" isUnique="false" direction="return">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_iQ8WDPOTEemufas-XlTWhA" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_iQ8WDfOTEemufas-XlTWhA"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_iQ8WDvOTEemufas-XlTWhA" value=""/>
+      </ownedParameter>
+    </ownedOperation>
+    <ownedOperation xmi:id="_iQ8WD_OTEemufas-XlTWhA" name="countNumberOfConsumableProducts" visibility="public">
+      <eAnnotations xmi:id="_iQ8WEPOTEemufas-XlTWhA" source="Objing">
+        <contents xmi:type="uml:Property" xmi:id="_iQ8WEfOTEemufas-XlTWhA" name="Visibility">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_iQ8WEvOTEemufas-XlTWhA" value="0"/>
+        </contents>
+      </eAnnotations>
+      <ownedParameter xmi:id="_iQ8WE_OTEemufas-XlTWhA" name="fromConsumableID" isUnique="false">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_iQ8WFPOTEemufas-XlTWhA" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_iQ8WFfOTEemufas-XlTWhA" value="1"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_iQ8WFvOTEemufas-XlTWhA" value=""/>
+      </ownedParameter>
+      <ownedParameter xmi:id="_iQ8WF_OTEemufas-XlTWhA" name="untilConsumableID" isUnique="false">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_iQ8WGPOTEemufas-XlTWhA" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_iQ8WGfOTEemufas-XlTWhA" value="1"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_iQ8WGvOTEemufas-XlTWhA" value=""/>
+      </ownedParameter>
+      <ownedParameter xmi:id="_iQ8WG_OTEemufas-XlTWhA" isUnique="false" direction="return">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_iQ8WHPOTEemufas-XlTWhA" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_iQ8WHfOTEemufas-XlTWhA" value="1"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_iQ8WHvOTEemufas-XlTWhA" value=""/>
+      </ownedParameter>
+    </ownedOperation>
+    <ownedOperation xmi:id="_iQ8WH_OTEemufas-XlTWhA" name="getProductTypes" visibility="public">
+      <eAnnotations xmi:id="_iQ8WIPOTEemufas-XlTWhA" source="Objing">
+        <contents xmi:type="uml:Property" xmi:id="_iQ8WIfOTEemufas-XlTWhA" name="Visibility">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_iQ8WIvOTEemufas-XlTWhA" value="0"/>
+        </contents>
+      </eAnnotations>
+      <ownedParameter xmi:id="_iQ8WI_OTEemufas-XlTWhA" name="fromProductTypeID" isUnique="false">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_iQ8WJPOTEemufas-XlTWhA" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_iQ8WJfOTEemufas-XlTWhA" value="1"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_iQ8WJvOTEemufas-XlTWhA" value=""/>
+      </ownedParameter>
+      <ownedParameter xmi:id="_iQ8WJ_OTEemufas-XlTWhA" name="untilProductTypeID" isUnique="false">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_iQ8WKPOTEemufas-XlTWhA" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_iQ8WKfOTEemufas-XlTWhA" value="1"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_iQ8WKvOTEemufas-XlTWhA" value=""/>
+      </ownedParameter>
+      <ownedParameter xmi:id="_iQ8WK_OTEemufas-XlTWhA" type="_iQ8abfOTEemufas-XlTWhA" isUnique="false" direction="return">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_iQ8WLPOTEemufas-XlTWhA" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_iQ8WLfOTEemufas-XlTWhA"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_iQ8WLvOTEemufas-XlTWhA" value=""/>
+      </ownedParameter>
+    </ownedOperation>
+    <ownedOperation xmi:id="_iQ8WL_OTEemufas-XlTWhA" name="countProductTypes" visibility="public">
+      <eAnnotations xmi:id="_iQ8WMPOTEemufas-XlTWhA" source="Objing">
+        <contents xmi:type="uml:Property" xmi:id="_iQ8WMfOTEemufas-XlTWhA" name="Visibility">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_iQ8WMvOTEemufas-XlTWhA" value="0"/>
+        </contents>
+      </eAnnotations>
+      <ownedParameter xmi:id="_iQ8WM_OTEemufas-XlTWhA" name="fromProductTypeID" isUnique="false">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_iQ8WNPOTEemufas-XlTWhA" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_iQ8WNfOTEemufas-XlTWhA" value="1"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_iQ8WNvOTEemufas-XlTWhA" value=""/>
+      </ownedParameter>
+      <ownedParameter xmi:id="_iQ8WN_OTEemufas-XlTWhA" name="untilProductTypeID" isUnique="false">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_iQ8WOPOTEemufas-XlTWhA" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_iQ8WOfOTEemufas-XlTWhA" value="1"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_iQ8WOvOTEemufas-XlTWhA" value=""/>
+      </ownedParameter>
+      <ownedParameter xmi:id="_iQ8WO_OTEemufas-XlTWhA" isUnique="false" direction="return">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_iQ8WPPOTEemufas-XlTWhA" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_iQ8WPfOTEemufas-XlTWhA" value="1"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_iQ8WPvOTEemufas-XlTWhA" value=""/>
+      </ownedParameter>
+    </ownedOperation>
+    <ownedOperation xmi:id="_iQ8WP_OTEemufas-XlTWhA" name="getGeneralCategories" visibility="public">
+      <eAnnotations xmi:id="_iQ8WQPOTEemufas-XlTWhA" source="Objing">
+        <contents xmi:type="uml:Property" xmi:id="_iQ8WQfOTEemufas-XlTWhA" name="Visibility">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_iQ8WQvOTEemufas-XlTWhA" value="0"/>
+        </contents>
+      </eAnnotations>
+      <ownedParameter xmi:id="_iQ8WQ_OTEemufas-XlTWhA" name="fromGeneralCategoryID" isUnique="false">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_iQ8WRPOTEemufas-XlTWhA" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_iQ8WRfOTEemufas-XlTWhA" value="1"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_iQ8WRvOTEemufas-XlTWhA" value=""/>
+      </ownedParameter>
+      <ownedParameter xmi:id="_iQ8WR_OTEemufas-XlTWhA" name="untilGeneralCategoryID" isUnique="false">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_iQ8WSPOTEemufas-XlTWhA" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_iQ8WSfOTEemufas-XlTWhA" value="1"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_iQ8WSvOTEemufas-XlTWhA" value=""/>
+      </ownedParameter>
+      <ownedParameter xmi:id="_iQ8WS_OTEemufas-XlTWhA" type="_iQ8ap_OTEemufas-XlTWhA" isUnique="false" direction="return">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_iQ8WTPOTEemufas-XlTWhA" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_iQ8WTfOTEemufas-XlTWhA"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_iQ8WTvOTEemufas-XlTWhA" value=""/>
+      </ownedParameter>
+    </ownedOperation>
+    <ownedOperation xmi:id="_iQ8WT_OTEemufas-XlTWhA" name="countGeneralCategories" visibility="public">
+      <eAnnotations xmi:id="_iQ8WUPOTEemufas-XlTWhA" source="Objing">
+        <contents xmi:type="uml:Property" xmi:id="_iQ8WUfOTEemufas-XlTWhA" name="Visibility">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_iQ8WUvOTEemufas-XlTWhA" value="0"/>
+        </contents>
+      </eAnnotations>
+      <ownedComment xmi:id="_iQ8WU_OTEemufas-XlTWhA">
+        <eAnnotations xmi:id="_iQ8WVPOTEemufas-XlTWhA" source="Objing">
+          <contents xmi:type="uml:Property" xmi:id="_iQ8WVfOTEemufas-XlTWhA" name="NoteType_Name">
+            <defaultValue xmi:type="uml:LiteralString" xmi:id="_iQ8WVvOTEemufas-XlTWhA" value="description"/>
+          </contents>
+        </eAnnotations>
+        <body>&lt;Enter note text here></body>
+      </ownedComment>
+      <ownedParameter xmi:id="_iQ8WV_OTEemufas-XlTWhA" name="fromGeneralCategoryID" isUnique="false">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_iQ8WWPOTEemufas-XlTWhA" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_iQ8WWfOTEemufas-XlTWhA" value="1"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_iQ8WWvOTEemufas-XlTWhA" value=""/>
+      </ownedParameter>
+      <ownedParameter xmi:id="_iQ8WW_OTEemufas-XlTWhA" name="untilGeneralCategoryID" isUnique="false">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_iQ8WXPOTEemufas-XlTWhA" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_iQ8WXfOTEemufas-XlTWhA" value="1"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_iQ8WXvOTEemufas-XlTWhA" value=""/>
+      </ownedParameter>
+      <ownedParameter xmi:id="_iQ8WX_OTEemufas-XlTWhA" isUnique="false" direction="return">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_iQ8WYPOTEemufas-XlTWhA" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_iQ8WYfOTEemufas-XlTWhA" value="1"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_iQ8WYvOTEemufas-XlTWhA" value=""/>
+      </ownedParameter>
+    </ownedOperation>
+    <ownedOperation xmi:id="_iQ8WY_OTEemufas-XlTWhA" name="getConsumableProductsFromProductType" visibility="public">
+      <eAnnotations xmi:id="_iQ8WZPOTEemufas-XlTWhA" source="Objing">
+        <contents xmi:type="uml:Property" xmi:id="_iQ8WZfOTEemufas-XlTWhA" name="Visibility">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_iQ8WZvOTEemufas-XlTWhA" value="0"/>
+        </contents>
+      </eAnnotations>
+      <ownedParameter xmi:id="_iQ8WZ_OTEemufas-XlTWhA" name="productTypeID" isUnique="false">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_iQ8WaPOTEemufas-XlTWhA" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_iQ8WafOTEemufas-XlTWhA" value="1"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_iQ8WavOTEemufas-XlTWhA" value=""/>
+      </ownedParameter>
+      <ownedParameter xmi:id="_iQ8Wa_OTEemufas-XlTWhA" type="_iQ8YPfOTEemufas-XlTWhA" isUnique="false" direction="return">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_iQ8WbPOTEemufas-XlTWhA" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_iQ8WbfOTEemufas-XlTWhA"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_iQ8WbvOTEemufas-XlTWhA" value=""/>
+      </ownedParameter>
+    </ownedOperation>
+    <ownedOperation xmi:id="_iQ8Wb_OTEemufas-XlTWhA" name="getJourneysOfUser" visibility="public">
+      <eAnnotations xmi:id="_iQ8WcPOTEemufas-XlTWhA" source="Objing">
+        <contents xmi:type="uml:Property" xmi:id="_iQ8WcfOTEemufas-XlTWhA" name="Visibility">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_iQ8WcvOTEemufas-XlTWhA" value="0"/>
+        </contents>
+      </eAnnotations>
+      <ownedParameter xmi:id="_iQ8Wc_OTEemufas-XlTWhA" name="journeyID" isUnique="false">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_iQ8WdPOTEemufas-XlTWhA" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_iQ8WdfOTEemufas-XlTWhA"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_iQ8WdvOTEemufas-XlTWhA" value=""/>
+      </ownedParameter>
+      <ownedParameter xmi:id="_iQ8Wd_OTEemufas-XlTWhA" name="userSystemID" isUnique="false">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_iQ8WePOTEemufas-XlTWhA" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_iQ8WefOTEemufas-XlTWhA" value="1"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_iQ8WevOTEemufas-XlTWhA" value=""/>
+      </ownedParameter>
+      <ownedParameter xmi:id="_iQ8We_OTEemufas-XlTWhA" type="_iQ8ZPfOTEemufas-XlTWhA" isUnique="false" direction="return">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_iQ8WfPOTEemufas-XlTWhA" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_iQ8WffOTEemufas-XlTWhA"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_iQ8WfvOTEemufas-XlTWhA" value=""/>
+      </ownedParameter>
+    </ownedOperation>
+    <ownedOperation xmi:id="_iQ8Wf_OTEemufas-XlTWhA" name="getUserJourneys" visibility="public">
+      <eAnnotations xmi:id="_iQ8WgPOTEemufas-XlTWhA" source="Objing">
+        <contents xmi:type="uml:Property" xmi:id="_iQ8WgfOTEemufas-XlTWhA" name="Visibility">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_iQ8WgvOTEemufas-XlTWhA" value="0"/>
+        </contents>
+      </eAnnotations>
+      <ownedParameter xmi:id="_iQ8Wg_OTEemufas-XlTWhA" name="userSystemID" isUnique="false">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_iQ8WhPOTEemufas-XlTWhA" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_iQ8WhfOTEemufas-XlTWhA" value="1"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_iQ8WhvOTEemufas-XlTWhA" value=""/>
+      </ownedParameter>
+      <ownedParameter xmi:id="_iQ8Wh_OTEemufas-XlTWhA" type="_iQ8ZPfOTEemufas-XlTWhA" isUnique="false" direction="return">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_iQ8WiPOTEemufas-XlTWhA" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_iQ8WifOTEemufas-XlTWhA"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_iQ8WivOTEemufas-XlTWhA" value=""/>
+      </ownedParameter>
+    </ownedOperation>
+    <ownedOperation xmi:id="_iQ8Wi_OTEemufas-XlTWhA" name="createNewJourneyForUser" visibility="public">
+      <eAnnotations xmi:id="_iQ8WjPOTEemufas-XlTWhA" source="Objing">
+        <contents xmi:type="uml:Property" xmi:id="_iQ8WjfOTEemufas-XlTWhA" name="Visibility">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_iQ8WjvOTEemufas-XlTWhA" value="0"/>
+        </contents>
+      </eAnnotations>
+      <ownedParameter xmi:id="_iQ8Wj_OTEemufas-XlTWhA" name="userSystemID" isUnique="false">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_iQ8WkPOTEemufas-XlTWhA" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_iQ8WkfOTEemufas-XlTWhA" value="1"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_iQ8WkvOTEemufas-XlTWhA" value=""/>
+      </ownedParameter>
+      <ownedParameter xmi:id="_iQ8Wk_OTEemufas-XlTWhA" isUnique="false" direction="return">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_iQ8WlPOTEemufas-XlTWhA" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_iQ8WlfOTEemufas-XlTWhA" value="1"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_iQ8WlvOTEemufas-XlTWhA" value=""/>
+      </ownedParameter>
+    </ownedOperation>
+    <ownedOperation xmi:id="_iQ8Wl_OTEemufas-XlTWhA" name="updateJourneyOfUserInDatabase" visibility="public">
+      <eAnnotations xmi:id="_iQ8WmPOTEemufas-XlTWhA" source="Objing">
+        <contents xmi:type="uml:Property" xmi:id="_iQ8WmfOTEemufas-XlTWhA" name="Visibility">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_iQ8WmvOTEemufas-XlTWhA" value="0"/>
+        </contents>
+      </eAnnotations>
+      <ownedParameter xmi:id="_iQ8Wm_OTEemufas-XlTWhA" name="aJourney" type="_iQ8ZPfOTEemufas-XlTWhA" isUnique="false">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_iQ8WnPOTEemufas-XlTWhA" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_iQ8WnfOTEemufas-XlTWhA" value="1"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_iQ8WnvOTEemufas-XlTWhA" value=""/>
+      </ownedParameter>
+      <ownedParameter xmi:id="_iQ8Wn_OTEemufas-XlTWhA" name="userSystemID" isUnique="false">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_iQ8WoPOTEemufas-XlTWhA" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_iQ8WofOTEemufas-XlTWhA" value="1"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_iQ8WovOTEemufas-XlTWhA" value=""/>
+      </ownedParameter>
+      <ownedParameter xmi:id="_iQ8Wo_OTEemufas-XlTWhA" isUnique="false" direction="return">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_iQ8WpPOTEemufas-XlTWhA" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_iQ8WpfOTEemufas-XlTWhA" value="1"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_iQ8WpvOTEemufas-XlTWhA" value=""/>
+      </ownedParameter>
+    </ownedOperation>
+    <ownedOperation xmi:id="_iQ8Wp_OTEemufas-XlTWhA" name="minConsumableProductID" visibility="public">
+      <eAnnotations xmi:id="_iQ8WqPOTEemufas-XlTWhA" source="Objing">
+        <contents xmi:type="uml:Property" xmi:id="_iQ8WqfOTEemufas-XlTWhA" name="Visibility">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_iQ8WqvOTEemufas-XlTWhA" value="0"/>
+        </contents>
+      </eAnnotations>
+      <ownedParameter xmi:id="_iQ8Wq_OTEemufas-XlTWhA" isUnique="false" direction="return">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_iQ8WrPOTEemufas-XlTWhA" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_iQ8WrfOTEemufas-XlTWhA" value="1"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_iQ8WrvOTEemufas-XlTWhA" value=""/>
+      </ownedParameter>
+    </ownedOperation>
+    <ownedOperation xmi:id="_iQ8Wr_OTEemufas-XlTWhA" name="maxConsumableProductID" visibility="public">
+      <eAnnotations xmi:id="_iQ8WsPOTEemufas-XlTWhA" source="Objing">
+        <contents xmi:type="uml:Property" xmi:id="_iQ8WsfOTEemufas-XlTWhA" name="Visibility">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_iQ8WsvOTEemufas-XlTWhA" value="0"/>
+        </contents>
+      </eAnnotations>
+      <ownedParameter xmi:id="_iQ8Ws_OTEemufas-XlTWhA" isUnique="false" direction="return">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_iQ8WtPOTEemufas-XlTWhA" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_iQ8WtfOTEemufas-XlTWhA" value="1"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_iQ8WtvOTEemufas-XlTWhA" value=""/>
+      </ownedParameter>
+    </ownedOperation>
+    <ownedOperation xmi:id="_iQ8Wt_OTEemufas-XlTWhA" name="maxProductTypeID" visibility="public">
+      <eAnnotations xmi:id="_iQ8WuPOTEemufas-XlTWhA" source="Objing">
+        <contents xmi:type="uml:Property" xmi:id="_iQ8WufOTEemufas-XlTWhA" name="Visibility">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_iQ8WuvOTEemufas-XlTWhA" value="0"/>
+        </contents>
+      </eAnnotations>
+      <ownedParameter xmi:id="_iQ8Wu_OTEemufas-XlTWhA" isUnique="false" direction="return">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_iQ8WvPOTEemufas-XlTWhA" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_iQ8WvfOTEemufas-XlTWhA" value="1"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_iQ8WvvOTEemufas-XlTWhA" value=""/>
+      </ownedParameter>
+    </ownedOperation>
+    <ownedOperation xmi:id="_iQ8Wv_OTEemufas-XlTWhA" name="minProductTypeID" visibility="public">
+      <eAnnotations xmi:id="_iQ8WwPOTEemufas-XlTWhA" source="Objing">
+        <contents xmi:type="uml:Property" xmi:id="_iQ8WwfOTEemufas-XlTWhA" name="Visibility">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_iQ8WwvOTEemufas-XlTWhA" value="0"/>
+        </contents>
+      </eAnnotations>
+      <ownedParameter xmi:id="_iQ8Ww_OTEemufas-XlTWhA" isUnique="false" direction="return">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_iQ8WxPOTEemufas-XlTWhA" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_iQ8WxfOTEemufas-XlTWhA" value="1"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_iQ8WxvOTEemufas-XlTWhA" value=""/>
+      </ownedParameter>
+    </ownedOperation>
+    <ownedOperation xmi:id="_iQ8Wx_OTEemufas-XlTWhA" name="maxGeneralCategoryID" visibility="public">
+      <eAnnotations xmi:id="_iQ8WyPOTEemufas-XlTWhA" source="Objing">
+        <contents xmi:type="uml:Property" xmi:id="_iQ8WyfOTEemufas-XlTWhA" name="Visibility">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_iQ8WyvOTEemufas-XlTWhA" value="0"/>
+        </contents>
+      </eAnnotations>
+      <ownedParameter xmi:id="_iQ8Wy_OTEemufas-XlTWhA" isUnique="false" direction="return">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_iQ8WzPOTEemufas-XlTWhA" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_iQ8WzfOTEemufas-XlTWhA" value="1"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_iQ8WzvOTEemufas-XlTWhA" value=""/>
+      </ownedParameter>
+    </ownedOperation>
+    <ownedOperation xmi:id="_iQ8Wz_OTEemufas-XlTWhA" name="minGeneralCategoryID" visibility="public">
+      <eAnnotations xmi:id="_iQ8W0POTEemufas-XlTWhA" source="Objing">
+        <contents xmi:type="uml:Property" xmi:id="_iQ8W0fOTEemufas-XlTWhA" name="Visibility">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_iQ8W0vOTEemufas-XlTWhA" value="0"/>
+        </contents>
+      </eAnnotations>
+      <ownedParameter xmi:id="_iQ8W0_OTEemufas-XlTWhA" isUnique="false" direction="return">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_iQ8W1POTEemufas-XlTWhA" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_iQ8W1fOTEemufas-XlTWhA" value="1"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_iQ8W1vOTEemufas-XlTWhA" value=""/>
+      </ownedParameter>
+    </ownedOperation>
+    <ownedOperation xmi:id="_iQ8W1_OTEemufas-XlTWhA" name="deleteJourney" visibility="public">
+      <eAnnotations xmi:id="_iQ8W2POTEemufas-XlTWhA" source="Objing">
+        <contents xmi:type="uml:Property" xmi:id="_iQ8W2fOTEemufas-XlTWhA" name="Visibility">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_iQ8W2vOTEemufas-XlTWhA" value="0"/>
+        </contents>
+      </eAnnotations>
+      <ownedParameter xmi:id="_iQ8W2_OTEemufas-XlTWhA" name="journeyID" isUnique="false">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EByte"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_iQ8W3POTEemufas-XlTWhA" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_iQ8W3fOTEemufas-XlTWhA" value="1"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_iQ8W3vOTEemufas-XlTWhA" value=""/>
+      </ownedParameter>
+      <ownedParameter xmi:id="_iQ8W3_OTEemufas-XlTWhA" name="userSystemID" isUnique="false">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_iQ8W4POTEemufas-XlTWhA" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_iQ8W4fOTEemufas-XlTWhA" value="1"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_iQ8W4vOTEemufas-XlTWhA" value=""/>
+      </ownedParameter>
+      <ownedParameter xmi:id="_iQ8W4_OTEemufas-XlTWhA" isUnique="false" direction="return">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_iQ8W5POTEemufas-XlTWhA" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_iQ8W5fOTEemufas-XlTWhA" value="1"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_iQ8W5vOTEemufas-XlTWhA" value=""/>
+      </ownedParameter>
+    </ownedOperation>
+    <ownedOperation xmi:id="_iQ8W5_OTEemufas-XlTWhA" name="updateLikeOrDislike" visibility="public">
+      <eAnnotations xmi:id="_iQ8W6POTEemufas-XlTWhA" source="Objing">
+        <contents xmi:type="uml:Property" xmi:id="_iQ8W6fOTEemufas-XlTWhA" name="Visibility">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_iQ8W6vOTEemufas-XlTWhA" value="0"/>
+        </contents>
+      </eAnnotations>
+      <ownedParameter xmi:id="_iQ8W6_OTEemufas-XlTWhA" name="like_DislikeEntry" type="_iQ8ZuPOTEemufas-XlTWhA" isUnique="false">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_iQ8W7POTEemufas-XlTWhA" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_iQ8W7fOTEemufas-XlTWhA" value="1"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_iQ8W7vOTEemufas-XlTWhA" value=""/>
+      </ownedParameter>
+      <ownedParameter xmi:id="_iQ8W7_OTEemufas-XlTWhA" name="userSystemID" isUnique="false">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_iQ8W8POTEemufas-XlTWhA" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_iQ8W8fOTEemufas-XlTWhA" value="1"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_iQ8W8vOTEemufas-XlTWhA" value=""/>
+      </ownedParameter>
+      <ownedParameter xmi:id="_iQ8W8_OTEemufas-XlTWhA" isUnique="false" direction="return">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_iQ8W9POTEemufas-XlTWhA" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_iQ8W9fOTEemufas-XlTWhA" value="1"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_iQ8W9vOTEemufas-XlTWhA" value=""/>
+      </ownedParameter>
+    </ownedOperation>
+    <ownedOperation xmi:id="_iQ8W9_OTEemufas-XlTWhA" name="deleteLikeOrDislike" visibility="public">
+      <eAnnotations xmi:id="_iQ8W-POTEemufas-XlTWhA" source="Objing">
+        <contents xmi:type="uml:Property" xmi:id="_iQ8W-fOTEemufas-XlTWhA" name="Visibility">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_iQ8W-vOTEemufas-XlTWhA" value="0"/>
+        </contents>
+      </eAnnotations>
+      <ownedParameter xmi:id="_iQ8W-_OTEemufas-XlTWhA" name="userSystemID" isUnique="false">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_iQ8W_POTEemufas-XlTWhA" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_iQ8W_fOTEemufas-XlTWhA" value="1"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_iQ8W_vOTEemufas-XlTWhA" value=""/>
+      </ownedParameter>
+      <ownedParameter xmi:id="_iQ8W__OTEemufas-XlTWhA" name="consumableProductID" isUnique="false">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_iQ8XAPOTEemufas-XlTWhA" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_iQ8XAfOTEemufas-XlTWhA" value="1"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_iQ8XAvOTEemufas-XlTWhA" value=""/>
+      </ownedParameter>
+      <ownedParameter xmi:id="_iQ8XA_OTEemufas-XlTWhA" isUnique="false" direction="return">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_iQ8XBPOTEemufas-XlTWhA" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_iQ8XBfOTEemufas-XlTWhA" value="1"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_iQ8XBvOTEemufas-XlTWhA" value=""/>
+      </ownedParameter>
+    </ownedOperation>
+    <ownedOperation xmi:id="_iQ8XB_OTEemufas-XlTWhA" name="getLikeDislikeEntries" visibility="public">
+      <eAnnotations xmi:id="_iQ8XCPOTEemufas-XlTWhA" source="Objing">
+        <contents xmi:type="uml:Property" xmi:id="_iQ8XCfOTEemufas-XlTWhA" name="Visibility">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_iQ8XCvOTEemufas-XlTWhA" value="0"/>
+        </contents>
+      </eAnnotations>
+      <ownedParameter xmi:id="_iQ8XC_OTEemufas-XlTWhA" name="userSystemID" isUnique="false">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_iQ8XDPOTEemufas-XlTWhA" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_iQ8XDfOTEemufas-XlTWhA" value="1"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_iQ8XDvOTEemufas-XlTWhA" value=""/>
+      </ownedParameter>
+      <ownedParameter xmi:id="_iQ8XD_OTEemufas-XlTWhA" type="_iQ8ZuPOTEemufas-XlTWhA" isUnique="false" direction="return">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_iQ8XEPOTEemufas-XlTWhA" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_iQ8XEfOTEemufas-XlTWhA"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_iQ8XEvOTEemufas-XlTWhA" value=""/>
+      </ownedParameter>
+    </ownedOperation>
+    <ownedOperation xmi:id="_iQ8XE_OTEemufas-XlTWhA" name="deleteGeneralCategoryOfConsumableProduct" visibility="public">
+      <eAnnotations xmi:id="_iQ8XFPOTEemufas-XlTWhA" source="Objing">
+        <contents xmi:type="uml:Property" xmi:id="_iQ8XFfOTEemufas-XlTWhA" name="Visibility">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_iQ8XFvOTEemufas-XlTWhA" value="0"/>
+        </contents>
+      </eAnnotations>
+      <ownedParameter xmi:id="_iQ8XF_OTEemufas-XlTWhA" name="generalCategoryID" isUnique="false">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_iQ8XGPOTEemufas-XlTWhA" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_iQ8XGfOTEemufas-XlTWhA" value="1"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_iQ8XGvOTEemufas-XlTWhA" value=""/>
+      </ownedParameter>
+      <ownedParameter xmi:id="_iQ8XG_OTEemufas-XlTWhA" isUnique="false" direction="return">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_iQ8XHPOTEemufas-XlTWhA" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_iQ8XHfOTEemufas-XlTWhA" value="1"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_iQ8XHvOTEemufas-XlTWhA" value=""/>
+      </ownedParameter>
+    </ownedOperation>
+    <ownedOperation xmi:id="_iQ8XH_OTEemufas-XlTWhA" name="addGeneralCategoryTypeOfConsumableProduct" visibility="public">
+      <eAnnotations xmi:id="_iQ8XIPOTEemufas-XlTWhA" source="Objing">
+        <contents xmi:type="uml:Property" xmi:id="_iQ8XIfOTEemufas-XlTWhA" name="Visibility">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_iQ8XIvOTEemufas-XlTWhA" value="0"/>
+        </contents>
+      </eAnnotations>
+      <ownedComment xmi:id="_iQ8XI_OTEemufas-XlTWhA">
+        <eAnnotations xmi:id="_iQ8XJPOTEemufas-XlTWhA" source="Objing">
+          <contents xmi:type="uml:Property" xmi:id="_iQ8XJfOTEemufas-XlTWhA" name="NoteType_Name">
+            <defaultValue xmi:type="uml:LiteralString" xmi:id="_iQ8XJvOTEemufas-XlTWhA" value="description"/>
+          </contents>
+        </eAnnotations>
+        <body>&lt;Enter note text here></body>
+      </ownedComment>
+      <ownedParameter xmi:id="_iQ8XJ_OTEemufas-XlTWhA" name="category" type="_iQ8ap_OTEemufas-XlTWhA" isUnique="false">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_iQ8XKPOTEemufas-XlTWhA" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_iQ8XKfOTEemufas-XlTWhA" value="1"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_iQ8XKvOTEemufas-XlTWhA" value=""/>
+      </ownedParameter>
+      <ownedParameter xmi:id="_iQ8XK_OTEemufas-XlTWhA" isUnique="false" direction="return">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_iQ8XLPOTEemufas-XlTWhA" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_iQ8XLfOTEemufas-XlTWhA" value="1"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_iQ8XLvOTEemufas-XlTWhA" value=""/>
+      </ownedParameter>
+    </ownedOperation>
+    <ownedOperation xmi:id="_iQ8XL_OTEemufas-XlTWhA" name="addProductType" visibility="public">
+      <eAnnotations xmi:id="_iQ8XMPOTEemufas-XlTWhA" source="Objing">
+        <contents xmi:type="uml:Property" xmi:id="_iQ8XMfOTEemufas-XlTWhA" name="Visibility">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_iQ8XMvOTEemufas-XlTWhA" value="0"/>
+        </contents>
+      </eAnnotations>
+      <ownedParameter xmi:id="_iQ8XM_OTEemufas-XlTWhA" name="newProductType" type="_iQ8abfOTEemufas-XlTWhA" isUnique="false">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_iQ8XNPOTEemufas-XlTWhA" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_iQ8XNfOTEemufas-XlTWhA" value="1"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_iQ8XNvOTEemufas-XlTWhA" value=""/>
+      </ownedParameter>
+      <ownedParameter xmi:id="_iQ8XN_OTEemufas-XlTWhA" isUnique="false" direction="return">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_iQ8XOPOTEemufas-XlTWhA" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_iQ8XOfOTEemufas-XlTWhA" value="1"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_iQ8XOvOTEemufas-XlTWhA" value=""/>
+      </ownedParameter>
+    </ownedOperation>
+    <ownedOperation xmi:id="_iQ8XO_OTEemufas-XlTWhA" name="deleteProductType" visibility="public">
+      <eAnnotations xmi:id="_iQ8XPPOTEemufas-XlTWhA" source="Objing">
+        <contents xmi:type="uml:Property" xmi:id="_iQ8XPfOTEemufas-XlTWhA" name="Visibility">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_iQ8XPvOTEemufas-XlTWhA" value="0"/>
+        </contents>
+      </eAnnotations>
+      <ownedParameter xmi:id="_iQ8XP_OTEemufas-XlTWhA" name="productTypeID" isUnique="false">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_iQ8XQPOTEemufas-XlTWhA" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_iQ8XQfOTEemufas-XlTWhA" value="1"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_iQ8XQvOTEemufas-XlTWhA" value=""/>
+      </ownedParameter>
+      <ownedParameter xmi:id="_iQ8XQ_OTEemufas-XlTWhA" isUnique="false" direction="return">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_iQ8XRPOTEemufas-XlTWhA" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_iQ8XRfOTEemufas-XlTWhA" value="1"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_iQ8XRvOTEemufas-XlTWhA" value=""/>
+      </ownedParameter>
+    </ownedOperation>
+    <ownedOperation xmi:id="_iQ8XR_OTEemufas-XlTWhA" name="deleteConsumableProduct" visibility="public">
+      <eAnnotations xmi:id="_iQ8XSPOTEemufas-XlTWhA" source="Objing">
+        <contents xmi:type="uml:Property" xmi:id="_iQ8XSfOTEemufas-XlTWhA" name="Visibility">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_iQ8XSvOTEemufas-XlTWhA" value="0"/>
+        </contents>
+      </eAnnotations>
+      <ownedParameter xmi:id="_iQ8XS_OTEemufas-XlTWhA" name="consumableProductID" isUnique="false">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_iQ8XTPOTEemufas-XlTWhA" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_iQ8XTfOTEemufas-XlTWhA" value="1"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_iQ8XTvOTEemufas-XlTWhA" value=""/>
+      </ownedParameter>
+      <ownedParameter xmi:id="_iQ8XT_OTEemufas-XlTWhA" isUnique="false" direction="return">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_iQ8XUPOTEemufas-XlTWhA" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_iQ8XUfOTEemufas-XlTWhA" value="1"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_iQ8XUvOTEemufas-XlTWhA" value=""/>
+      </ownedParameter>
+    </ownedOperation>
+    <ownedOperation xmi:id="_iQ8XU_OTEemufas-XlTWhA" name="getRecommendationAttributesOfUser" visibility="public">
+      <eAnnotations xmi:id="_iQ8XVPOTEemufas-XlTWhA" source="Objing">
+        <contents xmi:type="uml:Property" xmi:id="_iQ8XVfOTEemufas-XlTWhA" name="Visibility">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_iQ8XVvOTEemufas-XlTWhA" value="0"/>
+        </contents>
+      </eAnnotations>
+      <ownedParameter xmi:id="_iQ8XV_OTEemufas-XlTWhA" name="userSystemID" isUnique="false">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_iQ8XWPOTEemufas-XlTWhA" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_iQ8XWfOTEemufas-XlTWhA"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_iQ8XWvOTEemufas-XlTWhA" value=""/>
+      </ownedParameter>
+      <ownedParameter xmi:id="_iQ8XW_OTEemufas-XlTWhA" isUnique="false" direction="return">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EDouble"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_iQ8XXPOTEemufas-XlTWhA" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_iQ8XXfOTEemufas-XlTWhA" value="1"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_iQ8XXvOTEemufas-XlTWhA" value=""/>
+      </ownedParameter>
+    </ownedOperation>
+    <ownedOperation xmi:id="_iQ8XX_OTEemufas-XlTWhA" name="getUsersAsGeneralInformationUsers" visibility="public">
+      <eAnnotations xmi:id="_iQ8XYPOTEemufas-XlTWhA" source="Objing">
+        <contents xmi:type="uml:Property" xmi:id="_iQ8XYfOTEemufas-XlTWhA" name="Visibility">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_iQ8XYvOTEemufas-XlTWhA" value="0"/>
+        </contents>
+      </eAnnotations>
+      <ownedParameter xmi:id="_iQ8XY_OTEemufas-XlTWhA" name="udersIDs" isUnique="false">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_iQ8XZPOTEemufas-XlTWhA" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_iQ8XZfOTEemufas-XlTWhA"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_iQ8XZvOTEemufas-XlTWhA" value=""/>
+      </ownedParameter>
+      <ownedParameter xmi:id="_iQ8XZ_OTEemufas-XlTWhA" type="_iQ8YzfOTEemufas-XlTWhA" isUnique="false" direction="return">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_iQ8XaPOTEemufas-XlTWhA" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_iQ8XafOTEemufas-XlTWhA"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_iQ8XavOTEemufas-XlTWhA" value=""/>
+      </ownedParameter>
+    </ownedOperation>
+    <ownedOperation xmi:id="_iQ8Xa_OTEemufas-XlTWhA" name="getConsumableProductDescription" visibility="public">
+      <eAnnotations xmi:id="_iQ8XbPOTEemufas-XlTWhA" source="Objing">
+        <contents xmi:type="uml:Property" xmi:id="_iQ8XbfOTEemufas-XlTWhA" name="Visibility">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_iQ8XbvOTEemufas-XlTWhA" value="0"/>
+        </contents>
+      </eAnnotations>
+      <ownedParameter xmi:id="_iQ8Xb_OTEemufas-XlTWhA" name="consumableProductID" isUnique="false">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_iQ8XcPOTEemufas-XlTWhA" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_iQ8XcfOTEemufas-XlTWhA" value="1"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_iQ8XcvOTEemufas-XlTWhA" value=""/>
+      </ownedParameter>
+      <ownedParameter xmi:id="_iQ8Xc_OTEemufas-XlTWhA" isUnique="false" direction="return">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_iQ8XdPOTEemufas-XlTWhA" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_iQ8XdfOTEemufas-XlTWhA" value="1"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_iQ8XdvOTEemufas-XlTWhA" value=""/>
+      </ownedParameter>
+    </ownedOperation>
+    <ownedOperation xmi:id="_iQ8Xd_OTEemufas-XlTWhA" name="setConsumableProductDescription" visibility="public">
+      <eAnnotations xmi:id="_iQ8XePOTEemufas-XlTWhA" source="Objing">
+        <contents xmi:type="uml:Property" xmi:id="_iQ8XefOTEemufas-XlTWhA" name="Visibility">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_iQ8XevOTEemufas-XlTWhA" value="0"/>
+        </contents>
+      </eAnnotations>
+      <ownedParameter xmi:id="_iQ8Xe_OTEemufas-XlTWhA" name="consumableProductID" isUnique="false">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_iQ8XfPOTEemufas-XlTWhA" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_iQ8XffOTEemufas-XlTWhA" value="1"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_iQ8XfvOTEemufas-XlTWhA" value=""/>
+      </ownedParameter>
+      <ownedParameter xmi:id="_iQ8Xf_OTEemufas-XlTWhA" name="consumableProductDescription" isUnique="false">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_iQ8XgPOTEemufas-XlTWhA" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_iQ8XgfOTEemufas-XlTWhA" value="1"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_iQ8XgvOTEemufas-XlTWhA" value=""/>
+      </ownedParameter>
+      <ownedParameter xmi:id="_iQ8Xg_OTEemufas-XlTWhA" isUnique="false" direction="return">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_iQ8XhPOTEemufas-XlTWhA" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_iQ8XhfOTEemufas-XlTWhA" value="1"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_iQ8XhvOTEemufas-XlTWhA" value=""/>
+      </ownedParameter>
+    </ownedOperation>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Usage" xmi:id="_iQ8Xh_OTEemufas-XlTWhA" supplier="_iQ8ap_OTEemufas-XlTWhA" client="_iQ8Vh_OTEemufas-XlTWhA"/>
+  <packagedElement xmi:type="uml:Usage" xmi:id="_iQ8XiPOTEemufas-XlTWhA" supplier="_iQ8abfOTEemufas-XlTWhA" client="_iQ8Vh_OTEemufas-XlTWhA"/>
+  <packagedElement xmi:type="uml:Usage" xmi:id="_iQ8XifOTEemufas-XlTWhA" supplier="_iQ8ZPfOTEemufas-XlTWhA" client="_iQ8Vh_OTEemufas-XlTWhA"/>
+  <packagedElement xmi:type="uml:Usage" xmi:id="_iQ8XivOTEemufas-XlTWhA" supplier="_iQ8ZuPOTEemufas-XlTWhA" client="_iQ8Vh_OTEemufas-XlTWhA"/>
+  <packagedElement xmi:type="uml:Usage" xmi:id="_iQ8Xi_OTEemufas-XlTWhA" supplier="_iQ8YzfOTEemufas-XlTWhA" client="_iQ8Vh_OTEemufas-XlTWhA"/>
+  <packagedElement xmi:type="uml:Usage" xmi:id="_iQ8XjPOTEemufas-XlTWhA" supplier="_iQ8YPfOTEemufas-XlTWhA" client="_iQ8Vh_OTEemufas-XlTWhA"/>
+  <packagedElement xmi:type="uml:Class" xmi:id="_iQ8XjfOTEemufas-XlTWhA" name="RecommenderSystem" clientDependency="_iQ8X8fOTEemufas-XlTWhA _iQ8X8vOTEemufas-XlTWhA _iQ8X8_OTEemufas-XlTWhA _iQ8X9POTEemufas-XlTWhA _iQ8X9fOTEemufas-XlTWhA _iQ8X9vOTEemufas-XlTWhA _iQ8X-_OTEemufas-XlTWhA _iQ8X_POTEemufas-XlTWhA _iQ8X_fOTEemufas-XlTWhA _iQ8X_vOTEemufas-XlTWhA _iQ8X__OTEemufas-XlTWhA">
+    <eAnnotations xmi:id="_iQ8XjvOTEemufas-XlTWhA" source="Objing">
+      <contents xmi:type="uml:Property" xmi:id="_iQ8Xj_OTEemufas-XlTWhA" name="Visibility">
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_iQ8XkPOTEemufas-XlTWhA" value="0"/>
+      </contents>
+    </eAnnotations>
+    <ownedAttribute xmi:id="_iQ8XkfOTEemufas-XlTWhA" name="learningParameters" visibility="private" isUnique="false">
+      <eAnnotations xmi:id="_iQ8XkvOTEemufas-XlTWhA" source="Objing">
+        <contents xmi:type="uml:Property" xmi:id="_iQ8Xk_OTEemufas-XlTWhA" name="Visibility">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_iQ8XlPOTEemufas-XlTWhA" value="2"/>
+        </contents>
+        <contents xmi:type="uml:Property" xmi:id="_iQ8XlfOTEemufas-XlTWhA" name="MultiMin">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_iQ8XlvOTEemufas-XlTWhA" value="0"/>
+        </contents>
+        <contents xmi:type="uml:Property" xmi:id="_iQ8Xl_OTEemufas-XlTWhA" name="MultiMax">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_iQ8XmPOTEemufas-XlTWhA" value="*"/>
+        </contents>
+        <contents xmi:type="uml:Property" xmi:id="_iQ8XmfOTEemufas-XlTWhA" name="AccessMode">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_iQ8XmvOTEemufas-XlTWhA" value="read_write"/>
+        </contents>
+      </eAnnotations>
+      <ownedComment xmi:id="_iQ8Xm_OTEemufas-XlTWhA">
+        <eAnnotations xmi:id="_iQ8XnPOTEemufas-XlTWhA" source="Objing">
+          <contents xmi:type="uml:Property" xmi:id="_iQ8XnfOTEemufas-XlTWhA" name="NoteType_Name">
+            <defaultValue xmi:type="uml:LiteralString" xmi:id="_iQ8XnvOTEemufas-XlTWhA" value="description"/>
+          </contents>
+        </eAnnotations>
+        <body>&lt;Enter note text here></body>
+      </ownedComment>
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EDouble"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_iQ8Xn_OTEemufas-XlTWhA" value="*"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_iQ8XoPOTEemufas-XlTWhA"/>
+    </ownedAttribute>
+    <ownedOperation xmi:id="_iQ8XofOTEemufas-XlTWhA" name="calculateAttributes" visibility="private">
+      <eAnnotations xmi:id="_iQ8XovOTEemufas-XlTWhA" source="Objing">
+        <contents xmi:type="uml:Property" xmi:id="_iQ8Xo_OTEemufas-XlTWhA" name="Visibility">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_iQ8XpPOTEemufas-XlTWhA" value="2"/>
+        </contents>
+      </eAnnotations>
+      <ownedComment xmi:id="_iQ8XpfOTEemufas-XlTWhA">
+        <eAnnotations xmi:id="_iQ8XpvOTEemufas-XlTWhA" source="Objing">
+          <contents xmi:type="uml:Property" xmi:id="_iQ8Xp_OTEemufas-XlTWhA" name="NoteType_Name">
+            <defaultValue xmi:type="uml:LiteralString" xmi:id="_iQ8XqPOTEemufas-XlTWhA" value="description"/>
+          </contents>
+        </eAnnotations>
+        <body>&lt;Enter note text here></body>
+      </ownedComment>
+      <ownedParameter xmi:id="_iQ8XqfOTEemufas-XlTWhA" name="user" type="_iQ8ZffOTEemufas-XlTWhA" isUnique="false">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_iQ8XqvOTEemufas-XlTWhA" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_iQ8Xq_OTEemufas-XlTWhA" value="1"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_iQ8XrPOTEemufas-XlTWhA" value=""/>
+      </ownedParameter>
+      <ownedParameter xmi:id="_iQ8XrfOTEemufas-XlTWhA" isUnique="false" direction="return">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_iQ8XrvOTEemufas-XlTWhA" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_iQ8Xr_OTEemufas-XlTWhA" value="1"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_iQ8XsPOTEemufas-XlTWhA" value=""/>
+      </ownedParameter>
+    </ownedOperation>
+    <ownedOperation xmi:id="_iQ8XsfOTEemufas-XlTWhA" name="updateUsersrRecommendationAttributes" visibility="public">
+      <eAnnotations xmi:id="_iQ8XsvOTEemufas-XlTWhA" source="Objing">
+        <contents xmi:type="uml:Property" xmi:id="_iQ8Xs_OTEemufas-XlTWhA" name="Visibility">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_iQ8XtPOTEemufas-XlTWhA" value="0"/>
+        </contents>
+      </eAnnotations>
+      <ownedParameter xmi:id="_iQ8XtfOTEemufas-XlTWhA" isUnique="false" direction="return">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_iQ8XtvOTEemufas-XlTWhA" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_iQ8Xt_OTEemufas-XlTWhA" value="1"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_iQ8XuPOTEemufas-XlTWhA" value=""/>
+      </ownedParameter>
+    </ownedOperation>
+    <ownedOperation xmi:id="_iQ8XufOTEemufas-XlTWhA" name="predictUserPreferenceOnConsumableProducts" visibility="public">
+      <eAnnotations xmi:id="_iQ8XuvOTEemufas-XlTWhA" source="Objing">
+        <contents xmi:type="uml:Property" xmi:id="_iQ8Xu_OTEemufas-XlTWhA" name="Visibility">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_iQ8XvPOTEemufas-XlTWhA" value="0"/>
+        </contents>
+      </eAnnotations>
+      <ownedParameter xmi:id="_iQ8XvfOTEemufas-XlTWhA" name="userRecommendationAttributes" isUnique="false">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EDouble"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_iQ8XvvOTEemufas-XlTWhA" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_iQ8Xv_OTEemufas-XlTWhA"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_iQ8XwPOTEemufas-XlTWhA" value=""/>
+      </ownedParameter>
+      <ownedParameter xmi:id="_iQ8XwfOTEemufas-XlTWhA" name="consumableProducts" type="_iQ8YPfOTEemufas-XlTWhA" isUnique="false">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_iQ8XwvOTEemufas-XlTWhA" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_iQ8Xw_OTEemufas-XlTWhA"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_iQ8XxPOTEemufas-XlTWhA" value=""/>
+      </ownedParameter>
+      <ownedParameter xmi:id="_iQ8XxfOTEemufas-XlTWhA" isUnique="false" direction="return">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EDouble"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_iQ8XxvOTEemufas-XlTWhA" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_iQ8Xx_OTEemufas-XlTWhA"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_iQ8XyPOTEemufas-XlTWhA" value=""/>
+      </ownedParameter>
+    </ownedOperation>
+    <ownedOperation xmi:id="_iQ8XyfOTEemufas-XlTWhA" name="changeLearningParameters" visibility="public">
+      <eAnnotations xmi:id="_iQ8XyvOTEemufas-XlTWhA" source="Objing">
+        <contents xmi:type="uml:Property" xmi:id="_iQ8Xy_OTEemufas-XlTWhA" name="Visibility">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_iQ8XzPOTEemufas-XlTWhA" value="0"/>
+        </contents>
+      </eAnnotations>
+      <ownedParameter xmi:id="_iQ8XzfOTEemufas-XlTWhA" name="newLearningParameters" isUnique="false">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EDouble"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_iQ8XzvOTEemufas-XlTWhA" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_iQ8Xz_OTEemufas-XlTWhA"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_iQ8X0POTEemufas-XlTWhA" value=""/>
+      </ownedParameter>
+      <ownedParameter xmi:id="_iQ8X0fOTEemufas-XlTWhA" isUnique="false" direction="return">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_iQ8X0vOTEemufas-XlTWhA" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_iQ8X0_OTEemufas-XlTWhA" value="1"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_iQ8X1POTEemufas-XlTWhA" value=""/>
+      </ownedParameter>
+    </ownedOperation>
+    <ownedOperation xmi:id="_iQ8X1fOTEemufas-XlTWhA" name="main" visibility="public" isStatic="true">
+      <eAnnotations xmi:id="_iQ8X1vOTEemufas-XlTWhA" source="Objing">
+        <contents xmi:type="uml:Property" xmi:id="_iQ8X1_OTEemufas-XlTWhA" name="Visibility">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_iQ8X2POTEemufas-XlTWhA" value="0"/>
+        </contents>
+      </eAnnotations>
+      <ownedParameter xmi:id="_iQ8X2fOTEemufas-XlTWhA" name="args" isUnique="false">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_iQ8X2vOTEemufas-XlTWhA" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_iQ8X2_OTEemufas-XlTWhA"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_iQ8X3POTEemufas-XlTWhA" value=""/>
+      </ownedParameter>
+      <ownedParameter xmi:id="_iQ8X3fOTEemufas-XlTWhA" isUnique="false" direction="return">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_iQ8X3vOTEemufas-XlTWhA" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_iQ8X3_OTEemufas-XlTWhA" value="1"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_iQ8X4POTEemufas-XlTWhA" value=""/>
+      </ownedParameter>
+    </ownedOperation>
+    <ownedOperation xmi:id="_iQ8X4fOTEemufas-XlTWhA" name="predictUserPreferenceOnRestaurants" visibility="public">
+      <eAnnotations xmi:id="_iQ8X4vOTEemufas-XlTWhA" source="Objing">
+        <contents xmi:type="uml:Property" xmi:id="_iQ8X4_OTEemufas-XlTWhA" name="Visibility">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_iQ8X5POTEemufas-XlTWhA" value="0"/>
+        </contents>
+      </eAnnotations>
+      <ownedParameter xmi:id="_iQ8X5fOTEemufas-XlTWhA" name="restaurants" type="_iQ8a6fOTEemufas-XlTWhA" isUnique="false">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_iQ8X5vOTEemufas-XlTWhA" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_iQ8X5_OTEemufas-XlTWhA"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_iQ8X6POTEemufas-XlTWhA" value=""/>
+      </ownedParameter>
+      <ownedParameter xmi:id="_iQ8X6fOTEemufas-XlTWhA" name="userRecommendationAttributes" isUnique="false">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EDouble"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_iQ8X6vOTEemufas-XlTWhA" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_iQ8X6_OTEemufas-XlTWhA" value="1"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_iQ8X7POTEemufas-XlTWhA" value=""/>
+      </ownedParameter>
+      <ownedParameter xmi:id="_iQ8X7fOTEemufas-XlTWhA" isUnique="false" direction="return">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EDouble"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_iQ8X7vOTEemufas-XlTWhA" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_iQ8X7_OTEemufas-XlTWhA"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_iQ8X8POTEemufas-XlTWhA" value=""/>
+      </ownedParameter>
+    </ownedOperation>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Usage" xmi:id="_iQ8X8fOTEemufas-XlTWhA" supplier="_iQ8aWPOTEemufas-XlTWhA" client="_iQ8XjfOTEemufas-XlTWhA"/>
+  <packagedElement xmi:type="uml:Usage" xmi:id="_iQ8X8vOTEemufas-XlTWhA" supplier="_iQ8YPfOTEemufas-XlTWhA" client="_iQ8XjfOTEemufas-XlTWhA"/>
+  <packagedElement xmi:type="uml:Usage" xmi:id="_iQ8X8_OTEemufas-XlTWhA" supplier="_iQ8ap_OTEemufas-XlTWhA" client="_iQ8XjfOTEemufas-XlTWhA"/>
+  <packagedElement xmi:type="uml:Usage" xmi:id="_iQ8X9POTEemufas-XlTWhA" supplier="_iQ8abfOTEemufas-XlTWhA" client="_iQ8XjfOTEemufas-XlTWhA"/>
+  <packagedElement xmi:type="uml:Usage" xmi:id="_iQ8X9fOTEemufas-XlTWhA" supplier="_iQ8Z7POTEemufas-XlTWhA" client="_iQ8XjfOTEemufas-XlTWhA"/>
+  <packagedElement xmi:type="uml:Usage" xmi:id="_iQ8X9vOTEemufas-XlTWhA" supplier="_iQ8aGPOTEemufas-XlTWhA" client="_iQ8XjfOTEemufas-XlTWhA">
+    <ownedComment xmi:id="_iQ8X9_OTEemufas-XlTWhA">
+      <eAnnotations xmi:id="_iQ8X-POTEemufas-XlTWhA" source="Objing">
+        <contents xmi:type="uml:Property" xmi:id="_iQ8X-fOTEemufas-XlTWhA" name="NoteType_Name">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_iQ8X-vOTEemufas-XlTWhA" value="description"/>
+        </contents>
+      </eAnnotations>
+      <body>&lt;Enter note text here></body>
+    </ownedComment>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Usage" xmi:id="_iQ8X-_OTEemufas-XlTWhA" supplier="_iQ8ZffOTEemufas-XlTWhA" client="_iQ8XjfOTEemufas-XlTWhA"/>
+  <packagedElement xmi:type="uml:Usage" xmi:id="_iQ8X_POTEemufas-XlTWhA" supplier="_iQ8ZPfOTEemufas-XlTWhA" client="_iQ8XjfOTEemufas-XlTWhA"/>
+  <packagedElement xmi:type="uml:Usage" xmi:id="_iQ8X_fOTEemufas-XlTWhA" supplier="_iQ8a6fOTEemufas-XlTWhA" client="_iQ8XjfOTEemufas-XlTWhA"/>
+  <packagedElement xmi:type="uml:Usage" xmi:id="_iQ8X_vOTEemufas-XlTWhA" supplier="_iQ8YAPOTEemufas-XlTWhA" client="_iQ8XjfOTEemufas-XlTWhA"/>
+  <packagedElement xmi:type="uml:Usage" xmi:id="_iQ8X__OTEemufas-XlTWhA" supplier="_iQ8ZuPOTEemufas-XlTWhA" client="_iQ8XjfOTEemufas-XlTWhA"/>
+  <packagedElement xmi:type="uml:Class" xmi:id="_iQ8YAPOTEemufas-XlTWhA" name="InputControllerFromFoodyOrderSystem" clientDependency="_iQ8YOPOTEemufas-XlTWhA _iQ8YOfOTEemufas-XlTWhA _iQ8YOvOTEemufas-XlTWhA _iQ8YO_OTEemufas-XlTWhA _iQ8YPPOTEemufas-XlTWhA">
+    <eAnnotations xmi:id="_iQ8YAfOTEemufas-XlTWhA" source="Objing">
+      <contents xmi:type="uml:Property" xmi:id="_iQ8YAvOTEemufas-XlTWhA" name="Visibility">
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_iQ8YA_OTEemufas-XlTWhA" value="0"/>
+      </contents>
+    </eAnnotations>
+    <ownedOperation xmi:id="_iQ8YBPOTEemufas-XlTWhA" name="getCompleteDataForUsers" visibility="public">
+      <eAnnotations xmi:id="_iQ8YBfOTEemufas-XlTWhA" source="Objing">
+        <contents xmi:type="uml:Property" xmi:id="_iQ8YBvOTEemufas-XlTWhA" name="Visibility">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_iQ8YB_OTEemufas-XlTWhA" value="0"/>
+        </contents>
+      </eAnnotations>
+      <ownedParameter xmi:id="_iQ8YCPOTEemufas-XlTWhA" name="users" type="_iQ8YzfOTEemufas-XlTWhA" isUnique="false">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_iQ8YCfOTEemufas-XlTWhA" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_iQ8YCvOTEemufas-XlTWhA"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_iQ8YC_OTEemufas-XlTWhA" value=""/>
+      </ownedParameter>
+      <ownedParameter xmi:id="_iQ8YDPOTEemufas-XlTWhA" type="_iQ8ZffOTEemufas-XlTWhA" isUnique="false" direction="return">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_iQ8YDfOTEemufas-XlTWhA" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_iQ8YDvOTEemufas-XlTWhA"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_iQ8YD_OTEemufas-XlTWhA" value=""/>
+      </ownedParameter>
+    </ownedOperation>
+    <ownedOperation xmi:id="_iQ8YEPOTEemufas-XlTWhA" name="getUserHistoryOrders" visibility="public">
+      <eAnnotations xmi:id="_iQ8YEfOTEemufas-XlTWhA" source="Objing">
+        <contents xmi:type="uml:Property" xmi:id="_iQ8YEvOTEemufas-XlTWhA" name="Visibility">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_iQ8YE_OTEemufas-XlTWhA" value="0"/>
+        </contents>
+      </eAnnotations>
+      <ownedParameter xmi:id="_iQ8YFPOTEemufas-XlTWhA" name="userSystemID" isUnique="false">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_iQ8YFfOTEemufas-XlTWhA" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_iQ8YFvOTEemufas-XlTWhA" value="1"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_iQ8YF_OTEemufas-XlTWhA" value=""/>
+      </ownedParameter>
+      <ownedParameter xmi:id="_iQ8YGPOTEemufas-XlTWhA" name="numberOfLastOrdersRequested" isUnique="false">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_iQ8YGfOTEemufas-XlTWhA" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_iQ8YGvOTEemufas-XlTWhA" value="1"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_iQ8YG_OTEemufas-XlTWhA" value=""/>
+      </ownedParameter>
+      <ownedParameter xmi:id="_iQ8YHPOTEemufas-XlTWhA" type="_iQ8aGPOTEemufas-XlTWhA" isUnique="false" direction="return">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_iQ8YHfOTEemufas-XlTWhA" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_iQ8YHvOTEemufas-XlTWhA"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_iQ8YH_OTEemufas-XlTWhA" value=""/>
+      </ownedParameter>
+    </ownedOperation>
+    <ownedOperation xmi:id="_iQ8YIPOTEemufas-XlTWhA" name="getUserRatings" visibility="public">
+      <eAnnotations xmi:id="_iQ8YIfOTEemufas-XlTWhA" source="Objing">
+        <contents xmi:type="uml:Property" xmi:id="_iQ8YIvOTEemufas-XlTWhA" name="Visibility">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_iQ8YI_OTEemufas-XlTWhA" value="0"/>
+        </contents>
+      </eAnnotations>
+      <ownedParameter xmi:id="_iQ8YJPOTEemufas-XlTWhA" name="userSystemID" isUnique="false">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_iQ8YJfOTEemufas-XlTWhA" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_iQ8YJvOTEemufas-XlTWhA" value="1"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_iQ8YJ_OTEemufas-XlTWhA" value=""/>
+      </ownedParameter>
+      <ownedParameter xmi:id="_iQ8YKPOTEemufas-XlTWhA" type="_iQ8Z7POTEemufas-XlTWhA" isUnique="false" direction="return">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_iQ8YKfOTEemufas-XlTWhA" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_iQ8YKvOTEemufas-XlTWhA"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_iQ8YK_OTEemufas-XlTWhA" value=""/>
+      </ownedParameter>
+    </ownedOperation>
+    <ownedOperation xmi:id="_iQ8YLPOTEemufas-XlTWhA" name="getRestaurantInformation" visibility="public">
+      <eAnnotations xmi:id="_iQ8YLfOTEemufas-XlTWhA" source="Objing">
+        <contents xmi:type="uml:Property" xmi:id="_iQ8YLvOTEemufas-XlTWhA" name="Visibility">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_iQ8YL_OTEemufas-XlTWhA" value="0"/>
+        </contents>
+      </eAnnotations>
+      <ownedParameter xmi:id="_iQ8YMPOTEemufas-XlTWhA" name="restaurantsIDs" isUnique="false">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_iQ8YMfOTEemufas-XlTWhA" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_iQ8YMvOTEemufas-XlTWhA"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_iQ8YM_OTEemufas-XlTWhA" value=""/>
+      </ownedParameter>
+      <ownedParameter xmi:id="_iQ8YNPOTEemufas-XlTWhA" type="_iQ8a6fOTEemufas-XlTWhA" isUnique="false" direction="return">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_iQ8YNfOTEemufas-XlTWhA" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_iQ8YNvOTEemufas-XlTWhA"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_iQ8YN_OTEemufas-XlTWhA" value=""/>
+      </ownedParameter>
+    </ownedOperation>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Usage" xmi:id="_iQ8YOPOTEemufas-XlTWhA" supplier="_iQ8a6fOTEemufas-XlTWhA" client="_iQ8YAPOTEemufas-XlTWhA"/>
+  <packagedElement xmi:type="uml:Usage" xmi:id="_iQ8YOfOTEemufas-XlTWhA" supplier="_iQ8YzfOTEemufas-XlTWhA" client="_iQ8YAPOTEemufas-XlTWhA"/>
+  <packagedElement xmi:type="uml:Usage" xmi:id="_iQ8YOvOTEemufas-XlTWhA" supplier="_iQ8ZffOTEemufas-XlTWhA" client="_iQ8YAPOTEemufas-XlTWhA"/>
+  <packagedElement xmi:type="uml:Usage" xmi:id="_iQ8YO_OTEemufas-XlTWhA" supplier="_iQ8aGPOTEemufas-XlTWhA" client="_iQ8YAPOTEemufas-XlTWhA"/>
+  <packagedElement xmi:type="uml:Usage" xmi:id="_iQ8YPPOTEemufas-XlTWhA" supplier="_iQ8Z7POTEemufas-XlTWhA" client="_iQ8YAPOTEemufas-XlTWhA"/>
+  <packagedElement xmi:type="uml:Class" xmi:id="_iQ8YPfOTEemufas-XlTWhA" name="ConsumableProduct">
+    <eAnnotations xmi:id="_iQ8YPvOTEemufas-XlTWhA" source="Objing">
+      <contents xmi:type="uml:Property" xmi:id="_iQ8YP_OTEemufas-XlTWhA" name="Visibility">
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_iQ8YQPOTEemufas-XlTWhA" value="0"/>
+      </contents>
+    </eAnnotations>
+    <ownedAttribute xmi:id="_iQ8YQfOTEemufas-XlTWhA" name="productType" visibility="public" type="_iQ8abfOTEemufas-XlTWhA" aggregation="shared" association="_iQ8YtfOTEemufas-XlTWhA">
+      <eAnnotations xmi:id="_iQ8YQvOTEemufas-XlTWhA" source="Objing">
+        <contents xmi:type="uml:Property" xmi:id="_iQ8YQ_OTEemufas-XlTWhA" name="Visibility">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_iQ8YRPOTEemufas-XlTWhA" value="0"/>
+        </contents>
+        <contents xmi:type="uml:Property" xmi:id="_iQ8YRfOTEemufas-XlTWhA" name="MultiMin">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_iQ8YRvOTEemufas-XlTWhA" value="1"/>
+        </contents>
+        <contents xmi:type="uml:Property" xmi:id="_iQ8YR_OTEemufas-XlTWhA" name="MultiMax">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_iQ8YSPOTEemufas-XlTWhA" value="1"/>
+        </contents>
+        <contents xmi:type="uml:Property" xmi:id="_iQ8YSfOTEemufas-XlTWhA" name="AccessMode">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_iQ8YSvOTEemufas-XlTWhA" value="read_write"/>
+        </contents>
+      </eAnnotations>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_iQ8YS_OTEemufas-XlTWhA" name="generalCategory" visibility="public" type="_iQ8ap_OTEemufas-XlTWhA" aggregation="shared" association="_iQ8YwfOTEemufas-XlTWhA">
+      <eAnnotations xmi:id="_iQ8YTPOTEemufas-XlTWhA" source="Objing">
+        <contents xmi:type="uml:Property" xmi:id="_iQ8YTfOTEemufas-XlTWhA" name="Visibility">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_iQ8YTvOTEemufas-XlTWhA" value="0"/>
+        </contents>
+        <contents xmi:type="uml:Property" xmi:id="_iQ8YT_OTEemufas-XlTWhA" name="MultiMin">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_iQ8YUPOTEemufas-XlTWhA" value="1"/>
+        </contents>
+        <contents xmi:type="uml:Property" xmi:id="_iQ8YUfOTEemufas-XlTWhA" name="MultiMax">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_iQ8YUvOTEemufas-XlTWhA" value="1"/>
+        </contents>
+        <contents xmi:type="uml:Property" xmi:id="_iQ8YU_OTEemufas-XlTWhA" name="AccessMode">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_iQ8YVPOTEemufas-XlTWhA" value="read_write"/>
+        </contents>
+      </eAnnotations>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_iQ8YVfOTEemufas-XlTWhA" name="productID" visibility="private" isUnique="false">
+      <eAnnotations xmi:id="_iQ8YVvOTEemufas-XlTWhA" source="Objing">
+        <contents xmi:type="uml:Property" xmi:id="_iQ8YV_OTEemufas-XlTWhA" name="Visibility">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_iQ8YWPOTEemufas-XlTWhA" value="2"/>
+        </contents>
+        <contents xmi:type="uml:Property" xmi:id="_iQ8YWfOTEemufas-XlTWhA" name="MultiMin">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_iQ8YWvOTEemufas-XlTWhA" value="1"/>
+        </contents>
+        <contents xmi:type="uml:Property" xmi:id="_iQ8YW_OTEemufas-XlTWhA" name="MultiMax">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_iQ8YXPOTEemufas-XlTWhA" value="1"/>
+        </contents>
+        <contents xmi:type="uml:Property" xmi:id="_iQ8YXfOTEemufas-XlTWhA" name="AccessMode">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_iQ8YXvOTEemufas-XlTWhA" value="read_write"/>
+        </contents>
+      </eAnnotations>
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_iQ8YX_OTEemufas-XlTWhA" name="title" visibility="private" isUnique="false">
+      <eAnnotations xmi:id="_iQ8YYPOTEemufas-XlTWhA" source="Objing">
+        <contents xmi:type="uml:Property" xmi:id="_iQ8YYfOTEemufas-XlTWhA" name="Visibility">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_iQ8YYvOTEemufas-XlTWhA" value="2"/>
+        </contents>
+        <contents xmi:type="uml:Property" xmi:id="_iQ8YY_OTEemufas-XlTWhA" name="MultiMin">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_iQ8YZPOTEemufas-XlTWhA" value="1"/>
+        </contents>
+        <contents xmi:type="uml:Property" xmi:id="_iQ8YZfOTEemufas-XlTWhA" name="MultiMax">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_iQ8YZvOTEemufas-XlTWhA" value="1"/>
+        </contents>
+        <contents xmi:type="uml:Property" xmi:id="_iQ8YZ_OTEemufas-XlTWhA" name="AccessMode">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_iQ8YaPOTEemufas-XlTWhA" value="read_write"/>
+        </contents>
+      </eAnnotations>
+      <ownedComment xmi:id="_iQ8YafOTEemufas-XlTWhA">
+        <eAnnotations xmi:id="_iQ8YavOTEemufas-XlTWhA" source="Objing">
+          <contents xmi:type="uml:Property" xmi:id="_iQ8Ya_OTEemufas-XlTWhA" name="NoteType_Name">
+            <defaultValue xmi:type="uml:LiteralString" xmi:id="_iQ8YbPOTEemufas-XlTWhA" value="description"/>
+          </contents>
+        </eAnnotations>
+        <body>&lt;Enter note text here></body>
+      </ownedComment>
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_iQ8YbfOTEemufas-XlTWhA" name="consumableProductImagePath" visibility="private" isUnique="false">
+      <eAnnotations xmi:id="_iQ8YbvOTEemufas-XlTWhA" source="Objing">
+        <contents xmi:type="uml:Property" xmi:id="_iQ8Yb_OTEemufas-XlTWhA" name="Visibility">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_iQ8YcPOTEemufas-XlTWhA" value="2"/>
+        </contents>
+        <contents xmi:type="uml:Property" xmi:id="_iQ8YcfOTEemufas-XlTWhA" name="MultiMin">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_iQ8YcvOTEemufas-XlTWhA" value="1"/>
+        </contents>
+        <contents xmi:type="uml:Property" xmi:id="_iQ8Yc_OTEemufas-XlTWhA" name="MultiMax">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_iQ8YdPOTEemufas-XlTWhA" value="1"/>
+        </contents>
+        <contents xmi:type="uml:Property" xmi:id="_iQ8YdfOTEemufas-XlTWhA" name="AccessMode">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_iQ8YdvOTEemufas-XlTWhA" value="read_write"/>
+        </contents>
+      </eAnnotations>
+      <ownedComment xmi:id="_iQ8Yd_OTEemufas-XlTWhA">
+        <eAnnotations xmi:id="_iQ8YePOTEemufas-XlTWhA" source="Objing">
+          <contents xmi:type="uml:Property" xmi:id="_iQ8YefOTEemufas-XlTWhA" name="NoteType_Name">
+            <defaultValue xmi:type="uml:LiteralString" xmi:id="_iQ8YevOTEemufas-XlTWhA" value="description"/>
+          </contents>
+        </eAnnotations>
+        <body>&lt;Enter note text here></body>
+      </ownedComment>
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_iQ8Ye_OTEemufas-XlTWhA" name="isFoodOrDrink" visibility="private" isUnique="false">
+      <eAnnotations xmi:id="_iQ8YfPOTEemufas-XlTWhA" source="Objing">
+        <contents xmi:type="uml:Property" xmi:id="_iQ8YffOTEemufas-XlTWhA" name="Visibility">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_iQ8YfvOTEemufas-XlTWhA" value="2"/>
+        </contents>
+        <contents xmi:type="uml:Property" xmi:id="_iQ8Yf_OTEemufas-XlTWhA" name="MultiMin">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_iQ8YgPOTEemufas-XlTWhA" value="1"/>
+        </contents>
+        <contents xmi:type="uml:Property" xmi:id="_iQ8YgfOTEemufas-XlTWhA" name="MultiMax">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_iQ8YgvOTEemufas-XlTWhA" value="1"/>
+        </contents>
+        <contents xmi:type="uml:Property" xmi:id="_iQ8Yg_OTEemufas-XlTWhA" name="AccessMode">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_iQ8YhPOTEemufas-XlTWhA" value="read_write"/>
+        </contents>
+      </eAnnotations>
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+    </ownedAttribute>
+    <ownedOperation xmi:id="_iQ8YhfOTEemufas-XlTWhA" name="getConsumableProductImagePath" visibility="public">
+      <eAnnotations xmi:id="_iQ8YhvOTEemufas-XlTWhA" source="Objing">
+        <contents xmi:type="uml:Property" xmi:id="_iQ8Yh_OTEemufas-XlTWhA" name="Visibility">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_iQ8YiPOTEemufas-XlTWhA" value="0"/>
+        </contents>
+      </eAnnotations>
+      <ownedComment xmi:id="_iQ8YifOTEemufas-XlTWhA">
+        <eAnnotations xmi:id="_iQ8YivOTEemufas-XlTWhA" source="Objing">
+          <contents xmi:type="uml:Property" xmi:id="_iQ8Yi_OTEemufas-XlTWhA" name="NoteType_Name">
+            <defaultValue xmi:type="uml:LiteralString" xmi:id="_iQ8YjPOTEemufas-XlTWhA" value="description"/>
+          </contents>
+        </eAnnotations>
+        <body>&lt;Enter note text here></body>
+      </ownedComment>
+      <ownedParameter xmi:id="_iQ8YjfOTEemufas-XlTWhA" isUnique="false" direction="return">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_iQ8YjvOTEemufas-XlTWhA" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_iQ8Yj_OTEemufas-XlTWhA" value="1"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_iQ8YkPOTEemufas-XlTWhA" value=""/>
+      </ownedParameter>
+    </ownedOperation>
+    <ownedOperation xmi:id="_iQ8YkfOTEemufas-XlTWhA" name="getTitle" visibility="public">
+      <eAnnotations xmi:id="_iQ8YkvOTEemufas-XlTWhA" source="Objing">
+        <contents xmi:type="uml:Property" xmi:id="_iQ8Yk_OTEemufas-XlTWhA" name="Visibility">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_iQ8YlPOTEemufas-XlTWhA" value="0"/>
+        </contents>
+      </eAnnotations>
+      <ownedParameter xmi:id="_iQ8YlfOTEemufas-XlTWhA" isUnique="false" direction="return">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_iQ8YlvOTEemufas-XlTWhA" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_iQ8Yl_OTEemufas-XlTWhA" value="1"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_iQ8YmPOTEemufas-XlTWhA" value=""/>
+      </ownedParameter>
+    </ownedOperation>
+    <ownedOperation xmi:id="_iQ8YmfOTEemufas-XlTWhA" name="getIdentificationCode" visibility="public">
+      <eAnnotations xmi:id="_iQ8YmvOTEemufas-XlTWhA" source="Objing">
+        <contents xmi:type="uml:Property" xmi:id="_iQ8Ym_OTEemufas-XlTWhA" name="Visibility">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_iQ8YnPOTEemufas-XlTWhA" value="0"/>
+        </contents>
+      </eAnnotations>
+      <ownedParameter xmi:id="_iQ8YnfOTEemufas-XlTWhA" isUnique="false" direction="return">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_iQ8YnvOTEemufas-XlTWhA" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_iQ8Yn_OTEemufas-XlTWhA" value="1"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_iQ8YoPOTEemufas-XlTWhA" value=""/>
+      </ownedParameter>
+    </ownedOperation>
+    <ownedOperation xmi:id="_iQ8YofOTEemufas-XlTWhA" name="isFood" visibility="public">
+      <eAnnotations xmi:id="_iQ8YovOTEemufas-XlTWhA" source="Objing">
+        <contents xmi:type="uml:Property" xmi:id="_iQ8Yo_OTEemufas-XlTWhA" name="Visibility">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_iQ8YpPOTEemufas-XlTWhA" value="0"/>
+        </contents>
+      </eAnnotations>
+      <ownedComment xmi:id="_iQ8YpfOTEemufas-XlTWhA">
+        <eAnnotations xmi:id="_iQ8YpvOTEemufas-XlTWhA" source="Objing">
+          <contents xmi:type="uml:Property" xmi:id="_iQ8Yp_OTEemufas-XlTWhA" name="NoteType_Name">
+            <defaultValue xmi:type="uml:LiteralString" xmi:id="_iQ8YqPOTEemufas-XlTWhA" value="description"/>
+          </contents>
+        </eAnnotations>
+        <body>&lt;Enter note text here></body>
+      </ownedComment>
+      <ownedParameter xmi:id="_iQ8YqfOTEemufas-XlTWhA" isUnique="false" direction="return">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_iQ8YqvOTEemufas-XlTWhA" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_iQ8Yq_OTEemufas-XlTWhA" value="1"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_iQ8YrPOTEemufas-XlTWhA" value=""/>
+      </ownedParameter>
+    </ownedOperation>
+    <ownedOperation xmi:id="_iQ8YrfOTEemufas-XlTWhA" name="isDrink" visibility="public">
+      <eAnnotations xmi:id="_iQ8YrvOTEemufas-XlTWhA" source="Objing">
+        <contents xmi:type="uml:Property" xmi:id="_iQ8Yr_OTEemufas-XlTWhA" name="Visibility">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_iQ8YsPOTEemufas-XlTWhA" value="0"/>
+        </contents>
+      </eAnnotations>
+      <ownedParameter xmi:id="_iQ8YsfOTEemufas-XlTWhA" isUnique="false" direction="return">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_iQ8YsvOTEemufas-XlTWhA" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_iQ8Ys_OTEemufas-XlTWhA" value="1"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_iQ8YtPOTEemufas-XlTWhA" value=""/>
+      </ownedParameter>
+    </ownedOperation>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_iQ8YtfOTEemufas-XlTWhA" memberEnd="_iQ8YQfOTEemufas-XlTWhA _iQ8YtvOTEemufas-XlTWhA">
+    <ownedEnd xmi:id="_iQ8YtvOTEemufas-XlTWhA" visibility="public" type="_iQ8YPfOTEemufas-XlTWhA" association="_iQ8YtfOTEemufas-XlTWhA">
+      <eAnnotations xmi:id="_iQ8Yt_OTEemufas-XlTWhA" source="Objing">
+        <contents xmi:type="uml:Property" xmi:id="_iQ8YuPOTEemufas-XlTWhA" name="Visibility">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_iQ8YufOTEemufas-XlTWhA" value="0"/>
+        </contents>
+        <contents xmi:type="uml:Property" xmi:id="_iQ8YuvOTEemufas-XlTWhA" name="MultiMin">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_iQ8Yu_OTEemufas-XlTWhA" value="0"/>
+        </contents>
+        <contents xmi:type="uml:Property" xmi:id="_iQ8YvPOTEemufas-XlTWhA" name="MultiMax">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_iQ8YvfOTEemufas-XlTWhA" value="1"/>
+        </contents>
+        <contents xmi:type="uml:Property" xmi:id="_iQ8YvvOTEemufas-XlTWhA" name="AccessMode">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_iQ8Yv_OTEemufas-XlTWhA" value="read_write"/>
+        </contents>
+      </eAnnotations>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_iQ8YwPOTEemufas-XlTWhA"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_iQ8YwfOTEemufas-XlTWhA" memberEnd="_iQ8YS_OTEemufas-XlTWhA _iQ8YwvOTEemufas-XlTWhA">
+    <ownedEnd xmi:id="_iQ8YwvOTEemufas-XlTWhA" visibility="public" type="_iQ8YPfOTEemufas-XlTWhA" association="_iQ8YwfOTEemufas-XlTWhA">
+      <eAnnotations xmi:id="_iQ8Yw_OTEemufas-XlTWhA" source="Objing">
+        <contents xmi:type="uml:Property" xmi:id="_iQ8YxPOTEemufas-XlTWhA" name="Visibility">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_iQ8YxfOTEemufas-XlTWhA" value="0"/>
+        </contents>
+        <contents xmi:type="uml:Property" xmi:id="_iQ8YxvOTEemufas-XlTWhA" name="MultiMin">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_iQ8Yx_OTEemufas-XlTWhA" value="0"/>
+        </contents>
+        <contents xmi:type="uml:Property" xmi:id="_iQ8YyPOTEemufas-XlTWhA" name="MultiMax">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_iQ8YyfOTEemufas-XlTWhA" value="1"/>
+        </contents>
+        <contents xmi:type="uml:Property" xmi:id="_iQ8YyvOTEemufas-XlTWhA" name="AccessMode">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_iQ8Yy_OTEemufas-XlTWhA" value="read_write"/>
+        </contents>
+      </eAnnotations>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_iQ8YzPOTEemufas-XlTWhA"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_iQ8YzfOTEemufas-XlTWhA" name="GeneralInformationUser">
+    <eAnnotations xmi:id="_iQ8YzvOTEemufas-XlTWhA" source="Objing">
+      <contents xmi:type="uml:Property" xmi:id="_iQ8Yz_OTEemufas-XlTWhA" name="Visibility">
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_iQ8Y0POTEemufas-XlTWhA" value="0"/>
+      </contents>
+    </eAnnotations>
+    <ownedAttribute xmi:id="_iQ8Y0fOTEemufas-XlTWhA" name="journey" visibility="public" type="_iQ8ZPfOTEemufas-XlTWhA" aggregation="composite" association="_iQ8ZJ_OTEemufas-XlTWhA">
+      <eAnnotations xmi:id="_iQ8Y0vOTEemufas-XlTWhA" source="Objing">
+        <contents xmi:type="uml:Property" xmi:id="_iQ8Y0_OTEemufas-XlTWhA" name="Visibility">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_iQ8Y1POTEemufas-XlTWhA" value="0"/>
+        </contents>
+        <contents xmi:type="uml:Property" xmi:id="_iQ8Y1fOTEemufas-XlTWhA" name="MultiMin">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_iQ8Y1vOTEemufas-XlTWhA" value="0"/>
+        </contents>
+        <contents xmi:type="uml:Property" xmi:id="_iQ8Y1_OTEemufas-XlTWhA" name="MultiMax">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_iQ8Y2POTEemufas-XlTWhA" value="25"/>
+        </contents>
+        <contents xmi:type="uml:Property" xmi:id="_iQ8Y2fOTEemufas-XlTWhA" name="AccessMode">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_iQ8Y2vOTEemufas-XlTWhA" value="read_write"/>
+        </contents>
+      </eAnnotations>
+      <ownedComment xmi:id="_iQ8Y2_OTEemufas-XlTWhA">
+        <eAnnotations xmi:id="_iQ8Y3POTEemufas-XlTWhA" source="Objing">
+          <contents xmi:type="uml:Property" xmi:id="_iQ8Y3fOTEemufas-XlTWhA" name="NoteType_Name">
+            <defaultValue xmi:type="uml:LiteralString" xmi:id="_iQ8Y3vOTEemufas-XlTWhA" value="description"/>
+          </contents>
+        </eAnnotations>
+        <body>&lt;Enter note text here></body>
+      </ownedComment>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_iQ8Y3_OTEemufas-XlTWhA" value="25"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_iQ8Y4POTEemufas-XlTWhA"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_iQ8Y4fOTEemufas-XlTWhA" name="likedOrDislikedProduct" visibility="public" type="_iQ8ZuPOTEemufas-XlTWhA" aggregation="shared" association="_iQ8ZMvOTEemufas-XlTWhA">
+      <eAnnotations xmi:id="_iQ8Y4vOTEemufas-XlTWhA" source="Objing">
+        <contents xmi:type="uml:Property" xmi:id="_iQ8Y4_OTEemufas-XlTWhA" name="Visibility">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_iQ8Y5POTEemufas-XlTWhA" value="0"/>
+        </contents>
+        <contents xmi:type="uml:Property" xmi:id="_iQ8Y5fOTEemufas-XlTWhA" name="MultiMin">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_iQ8Y5vOTEemufas-XlTWhA" value="0"/>
+        </contents>
+        <contents xmi:type="uml:Property" xmi:id="_iQ8Y5_OTEemufas-XlTWhA" name="MultiMax">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_iQ8Y6POTEemufas-XlTWhA" value="*"/>
+        </contents>
+        <contents xmi:type="uml:Property" xmi:id="_iQ8Y6fOTEemufas-XlTWhA" name="AccessMode">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_iQ8Y6vOTEemufas-XlTWhA" value="read_write"/>
+        </contents>
+      </eAnnotations>
+      <ownedComment xmi:id="_iQ8Y6_OTEemufas-XlTWhA">
+        <eAnnotations xmi:id="_iQ8Y7POTEemufas-XlTWhA" source="Objing">
+          <contents xmi:type="uml:Property" xmi:id="_iQ8Y7fOTEemufas-XlTWhA" name="NoteType_Name">
+            <defaultValue xmi:type="uml:LiteralString" xmi:id="_iQ8Y7vOTEemufas-XlTWhA" value="description"/>
+          </contents>
+        </eAnnotations>
+        <body>&lt;Enter note text here></body>
+      </ownedComment>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_iQ8Y7_OTEemufas-XlTWhA" value="*"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_iQ8Y8POTEemufas-XlTWhA"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_iQ8Y8fOTEemufas-XlTWhA" name="userSystemID" visibility="private" isUnique="false">
+      <eAnnotations xmi:id="_iQ8Y8vOTEemufas-XlTWhA" source="Objing">
+        <contents xmi:type="uml:Property" xmi:id="_iQ8Y8_OTEemufas-XlTWhA" name="Visibility">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_iQ8Y9POTEemufas-XlTWhA" value="2"/>
+        </contents>
+        <contents xmi:type="uml:Property" xmi:id="_iQ8Y9fOTEemufas-XlTWhA" name="MultiMin">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_iQ8Y9vOTEemufas-XlTWhA" value="1"/>
+        </contents>
+        <contents xmi:type="uml:Property" xmi:id="_iQ8Y9_OTEemufas-XlTWhA" name="MultiMax">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_iQ8Y-POTEemufas-XlTWhA" value="1"/>
+        </contents>
+        <contents xmi:type="uml:Property" xmi:id="_iQ8Y-fOTEemufas-XlTWhA" name="AccessMode">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_iQ8Y-vOTEemufas-XlTWhA" value="read_write"/>
+        </contents>
+      </eAnnotations>
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_iQ8Y-_OTEemufas-XlTWhA" name="userRecommendationAttributes" visibility="private" isUnique="false">
+      <eAnnotations xmi:id="_iQ8Y_POTEemufas-XlTWhA" source="Objing">
+        <contents xmi:type="uml:Property" xmi:id="_iQ8Y_fOTEemufas-XlTWhA" name="Visibility">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_iQ8Y_vOTEemufas-XlTWhA" value="2"/>
+        </contents>
+        <contents xmi:type="uml:Property" xmi:id="_iQ8Y__OTEemufas-XlTWhA" name="MultiMin">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_iQ8ZAPOTEemufas-XlTWhA" value="0"/>
+        </contents>
+        <contents xmi:type="uml:Property" xmi:id="_iQ8ZAfOTEemufas-XlTWhA" name="MultiMax">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_iQ8ZAvOTEemufas-XlTWhA" value="*"/>
+        </contents>
+        <contents xmi:type="uml:Property" xmi:id="_iQ8ZA_OTEemufas-XlTWhA" name="AccessMode">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_iQ8ZBPOTEemufas-XlTWhA" value="read_write"/>
+        </contents>
+      </eAnnotations>
+      <ownedComment xmi:id="_iQ8ZBfOTEemufas-XlTWhA">
+        <eAnnotations xmi:id="_iQ8ZBvOTEemufas-XlTWhA" source="Objing">
+          <contents xmi:type="uml:Property" xmi:id="_iQ8ZB_OTEemufas-XlTWhA" name="NoteType_Name">
+            <defaultValue xmi:type="uml:LiteralString" xmi:id="_iQ8ZCPOTEemufas-XlTWhA" value="description"/>
+          </contents>
+        </eAnnotations>
+        <body>&lt;Enter note text here></body>
+      </ownedComment>
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EDouble"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_iQ8ZCfOTEemufas-XlTWhA" value="*"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_iQ8ZCvOTEemufas-XlTWhA"/>
+    </ownedAttribute>
+    <ownedOperation xmi:id="_iQ8ZC_OTEemufas-XlTWhA" name="getUserSystemID" visibility="public">
+      <eAnnotations xmi:id="_iQ8ZDPOTEemufas-XlTWhA" source="Objing">
+        <contents xmi:type="uml:Property" xmi:id="_iQ8ZDfOTEemufas-XlTWhA" name="Visibility">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_iQ8ZDvOTEemufas-XlTWhA" value="0"/>
+        </contents>
+      </eAnnotations>
+      <ownedParameter xmi:id="_iQ8ZD_OTEemufas-XlTWhA" isUnique="false" direction="return">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_iQ8ZEPOTEemufas-XlTWhA" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_iQ8ZEfOTEemufas-XlTWhA" value="1"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_iQ8ZEvOTEemufas-XlTWhA" value=""/>
+      </ownedParameter>
+    </ownedOperation>
+    <ownedOperation xmi:id="_iQ8ZE_OTEemufas-XlTWhA" name="setUserRecommendationAttributes" visibility="public" isLeaf="true">
+      <eAnnotations xmi:id="_iQ8ZFPOTEemufas-XlTWhA" source="Objing">
+        <contents xmi:type="uml:Property" xmi:id="_iQ8ZFfOTEemufas-XlTWhA" name="Visibility">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_iQ8ZFvOTEemufas-XlTWhA" value="0"/>
+        </contents>
+      </eAnnotations>
+      <ownedParameter xmi:id="_iQ8ZF_OTEemufas-XlTWhA" name="newUserRecommendationAttributes" isUnique="false">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EDouble"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_iQ8ZGPOTEemufas-XlTWhA" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_iQ8ZGfOTEemufas-XlTWhA"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_iQ8ZGvOTEemufas-XlTWhA" value=""/>
+      </ownedParameter>
+      <ownedParameter xmi:id="_iQ8ZG_OTEemufas-XlTWhA" isUnique="false" direction="return">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_iQ8ZHPOTEemufas-XlTWhA" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_iQ8ZHfOTEemufas-XlTWhA" value="1"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_iQ8ZHvOTEemufas-XlTWhA" value=""/>
+      </ownedParameter>
+    </ownedOperation>
+    <ownedOperation xmi:id="_iQ8ZH_OTEemufas-XlTWhA" name="getUserRecommendationAttributes" visibility="public">
+      <eAnnotations xmi:id="_iQ8ZIPOTEemufas-XlTWhA" source="Objing">
+        <contents xmi:type="uml:Property" xmi:id="_iQ8ZIfOTEemufas-XlTWhA" name="Visibility">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_iQ8ZIvOTEemufas-XlTWhA" value="0"/>
+        </contents>
+      </eAnnotations>
+      <ownedParameter xmi:id="_iQ8ZI_OTEemufas-XlTWhA" isUnique="false" direction="return">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EDouble"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_iQ8ZJPOTEemufas-XlTWhA" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_iQ8ZJfOTEemufas-XlTWhA"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_iQ8ZJvOTEemufas-XlTWhA" value=""/>
+      </ownedParameter>
+    </ownedOperation>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_iQ8ZJ_OTEemufas-XlTWhA" memberEnd="_iQ8Y0fOTEemufas-XlTWhA _iQ8ZKPOTEemufas-XlTWhA">
+    <ownedEnd xmi:id="_iQ8ZKPOTEemufas-XlTWhA" visibility="public" type="_iQ8YzfOTEemufas-XlTWhA" association="_iQ8ZJ_OTEemufas-XlTWhA">
+      <eAnnotations xmi:id="_iQ8ZKfOTEemufas-XlTWhA" source="Objing">
+        <contents xmi:type="uml:Property" xmi:id="_iQ8ZKvOTEemufas-XlTWhA" name="Visibility">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_iQ8ZK_OTEemufas-XlTWhA" value="0"/>
+        </contents>
+        <contents xmi:type="uml:Property" xmi:id="_iQ8ZLPOTEemufas-XlTWhA" name="MultiMin">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_iQ8ZLfOTEemufas-XlTWhA" value="1"/>
+        </contents>
+        <contents xmi:type="uml:Property" xmi:id="_iQ8ZLvOTEemufas-XlTWhA" name="MultiMax">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_iQ8ZL_OTEemufas-XlTWhA" value="1"/>
+        </contents>
+        <contents xmi:type="uml:Property" xmi:id="_iQ8ZMPOTEemufas-XlTWhA" name="AccessMode">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_iQ8ZMfOTEemufas-XlTWhA" value="read_write"/>
+        </contents>
+      </eAnnotations>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_iQ8ZMvOTEemufas-XlTWhA" memberEnd="_iQ8Y4fOTEemufas-XlTWhA _iQ8ZM_OTEemufas-XlTWhA">
+    <ownedEnd xmi:id="_iQ8ZM_OTEemufas-XlTWhA" visibility="public" type="_iQ8YzfOTEemufas-XlTWhA" association="_iQ8ZMvOTEemufas-XlTWhA">
+      <eAnnotations xmi:id="_iQ8ZNPOTEemufas-XlTWhA" source="Objing">
+        <contents xmi:type="uml:Property" xmi:id="_iQ8ZNfOTEemufas-XlTWhA" name="Visibility">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_iQ8ZNvOTEemufas-XlTWhA" value="0"/>
+        </contents>
+        <contents xmi:type="uml:Property" xmi:id="_iQ8ZN_OTEemufas-XlTWhA" name="MultiMin">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_iQ8ZOPOTEemufas-XlTWhA" value="1"/>
+        </contents>
+        <contents xmi:type="uml:Property" xmi:id="_iQ8ZOfOTEemufas-XlTWhA" name="MultiMax">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_iQ8ZOvOTEemufas-XlTWhA" value="1"/>
+        </contents>
+        <contents xmi:type="uml:Property" xmi:id="_iQ8ZO_OTEemufas-XlTWhA" name="AccessMode">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_iQ8ZPPOTEemufas-XlTWhA" value="read_write"/>
+        </contents>
+      </eAnnotations>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_iQ8ZPfOTEemufas-XlTWhA" name="Journey">
+    <eAnnotations xmi:id="_iQ8ZPvOTEemufas-XlTWhA" source="Objing">
+      <contents xmi:type="uml:Property" xmi:id="_iQ8ZP_OTEemufas-XlTWhA" name="Visibility">
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_iQ8ZQPOTEemufas-XlTWhA" value="0"/>
+      </contents>
+    </eAnnotations>
+    <ownedAttribute xmi:id="_iQ8ZQfOTEemufas-XlTWhA" name="journeyID" visibility="private" isUnique="false">
+      <eAnnotations xmi:id="_iQ8ZQvOTEemufas-XlTWhA" source="Objing">
+        <contents xmi:type="uml:Property" xmi:id="_iQ8ZQ_OTEemufas-XlTWhA" name="Visibility">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_iQ8ZRPOTEemufas-XlTWhA" value="2"/>
+        </contents>
+        <contents xmi:type="uml:Property" xmi:id="_iQ8ZRfOTEemufas-XlTWhA" name="MultiMin">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_iQ8ZRvOTEemufas-XlTWhA" value="1"/>
+        </contents>
+        <contents xmi:type="uml:Property" xmi:id="_iQ8ZR_OTEemufas-XlTWhA" name="MultiMax">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_iQ8ZSPOTEemufas-XlTWhA" value="1"/>
+        </contents>
+        <contents xmi:type="uml:Property" xmi:id="_iQ8ZSfOTEemufas-XlTWhA" name="AccessMode">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_iQ8ZSvOTEemufas-XlTWhA" value="read_write"/>
+        </contents>
+      </eAnnotations>
+      <ownedComment xmi:id="_iQ8ZS_OTEemufas-XlTWhA">
+        <eAnnotations xmi:id="_iQ8ZTPOTEemufas-XlTWhA" source="Objing">
+          <contents xmi:type="uml:Property" xmi:id="_iQ8ZTfOTEemufas-XlTWhA" name="NoteType_Name">
+            <defaultValue xmi:type="uml:LiteralString" xmi:id="_iQ8ZTvOTEemufas-XlTWhA" value="description"/>
+          </contents>
+        </eAnnotations>
+        <body>&lt;Enter note text here></body>
+      </ownedComment>
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_iQ8ZT_OTEemufas-XlTWhA" name="journeyName" visibility="private" isUnique="false">
+      <eAnnotations xmi:id="_iQ8ZUPOTEemufas-XlTWhA" source="Objing">
+        <contents xmi:type="uml:Property" xmi:id="_iQ8ZUfOTEemufas-XlTWhA" name="Visibility">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_iQ8ZUvOTEemufas-XlTWhA" value="2"/>
+        </contents>
+        <contents xmi:type="uml:Property" xmi:id="_iQ8ZU_OTEemufas-XlTWhA" name="MultiMin">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_iQ8ZVPOTEemufas-XlTWhA" value="1"/>
+        </contents>
+        <contents xmi:type="uml:Property" xmi:id="_iQ8ZVfOTEemufas-XlTWhA" name="MultiMax">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_iQ8ZVvOTEemufas-XlTWhA" value="1"/>
+        </contents>
+        <contents xmi:type="uml:Property" xmi:id="_iQ8ZV_OTEemufas-XlTWhA" name="AccessMode">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_iQ8ZWPOTEemufas-XlTWhA" value="read_write"/>
+        </contents>
+      </eAnnotations>
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_iQ8ZWfOTEemufas-XlTWhA" name="consumableProductsIDs" visibility="private" isUnique="false">
+      <eAnnotations xmi:id="_iQ8ZWvOTEemufas-XlTWhA" source="Objing">
+        <contents xmi:type="uml:Property" xmi:id="_iQ8ZW_OTEemufas-XlTWhA" name="Visibility">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_iQ8ZXPOTEemufas-XlTWhA" value="2"/>
+        </contents>
+        <contents xmi:type="uml:Property" xmi:id="_iQ8ZXfOTEemufas-XlTWhA" name="MultiMin">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_iQ8ZXvOTEemufas-XlTWhA" value="0"/>
+        </contents>
+        <contents xmi:type="uml:Property" xmi:id="_iQ8ZX_OTEemufas-XlTWhA" name="MultiMax">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_iQ8ZYPOTEemufas-XlTWhA" value="*"/>
+        </contents>
+        <contents xmi:type="uml:Property" xmi:id="_iQ8ZYfOTEemufas-XlTWhA" name="AccessMode">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_iQ8ZYvOTEemufas-XlTWhA" value="read_write"/>
+        </contents>
+      </eAnnotations>
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_iQ8ZY_OTEemufas-XlTWhA" value="*"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_iQ8ZZPOTEemufas-XlTWhA"/>
+    </ownedAttribute>
+    <ownedOperation xmi:id="_iQ8ZZfOTEemufas-XlTWhA" name="getJourneyID" visibility="public">
+      <eAnnotations xmi:id="_iQ8ZZvOTEemufas-XlTWhA" source="Objing">
+        <contents xmi:type="uml:Property" xmi:id="_iQ8ZZ_OTEemufas-XlTWhA" name="Visibility">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_iQ8ZaPOTEemufas-XlTWhA" value="0"/>
+        </contents>
+      </eAnnotations>
+      <ownedParameter xmi:id="_iQ8ZafOTEemufas-XlTWhA" isUnique="false" direction="return">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_iQ8ZavOTEemufas-XlTWhA" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_iQ8Za_OTEemufas-XlTWhA" value="1"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_iQ8ZbPOTEemufas-XlTWhA" value=""/>
+      </ownedParameter>
+    </ownedOperation>
+    <ownedOperation xmi:id="_iQ8ZbfOTEemufas-XlTWhA" name="getJourneyName" visibility="public">
+      <eAnnotations xmi:id="_iQ8ZbvOTEemufas-XlTWhA" source="Objing">
+        <contents xmi:type="uml:Property" xmi:id="_iQ8Zb_OTEemufas-XlTWhA" name="Visibility">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_iQ8ZcPOTEemufas-XlTWhA" value="0"/>
+        </contents>
+      </eAnnotations>
+      <ownedParameter xmi:id="_iQ8ZcfOTEemufas-XlTWhA" isUnique="false" direction="return">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_iQ8ZcvOTEemufas-XlTWhA" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_iQ8Zc_OTEemufas-XlTWhA" value="1"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_iQ8ZdPOTEemufas-XlTWhA" value=""/>
+      </ownedParameter>
+    </ownedOperation>
+    <ownedOperation xmi:id="_iQ8ZdfOTEemufas-XlTWhA" name="getConsumableProductIDs" visibility="public">
+      <eAnnotations xmi:id="_iQ8ZdvOTEemufas-XlTWhA" source="Objing">
+        <contents xmi:type="uml:Property" xmi:id="_iQ8Zd_OTEemufas-XlTWhA" name="Visibility">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_iQ8ZePOTEemufas-XlTWhA" value="0"/>
+        </contents>
+      </eAnnotations>
+      <ownedParameter xmi:id="_iQ8ZefOTEemufas-XlTWhA" isUnique="false" direction="return">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_iQ8ZevOTEemufas-XlTWhA" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_iQ8Ze_OTEemufas-XlTWhA"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_iQ8ZfPOTEemufas-XlTWhA" value=""/>
+      </ownedParameter>
+    </ownedOperation>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_iQ8ZffOTEemufas-XlTWhA" name="CompleteInformationUser">
+    <eAnnotations xmi:id="_iQ8ZfvOTEemufas-XlTWhA" source="Objing">
+      <contents xmi:type="uml:Property" xmi:id="_iQ8Zf_OTEemufas-XlTWhA" name="Visibility">
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_iQ8ZgPOTEemufas-XlTWhA" value="0"/>
+      </contents>
+    </eAnnotations>
+    <generalization xmi:id="_iQ8ZgfOTEemufas-XlTWhA" general="_iQ8YzfOTEemufas-XlTWhA"/>
+    <ownedAttribute xmi:id="_iQ8ZgvOTEemufas-XlTWhA" name="restaurantRating" visibility="public" type="_iQ8Z7POTEemufas-XlTWhA" aggregation="composite" association="_iQ8ZovOTEemufas-XlTWhA">
+      <eAnnotations xmi:id="_iQ8Zg_OTEemufas-XlTWhA" source="Objing">
+        <contents xmi:type="uml:Property" xmi:id="_iQ8ZhPOTEemufas-XlTWhA" name="Visibility">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_iQ8ZhfOTEemufas-XlTWhA" value="0"/>
+        </contents>
+        <contents xmi:type="uml:Property" xmi:id="_iQ8ZhvOTEemufas-XlTWhA" name="MultiMin">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_iQ8Zh_OTEemufas-XlTWhA" value="0"/>
+        </contents>
+        <contents xmi:type="uml:Property" xmi:id="_iQ8ZiPOTEemufas-XlTWhA" name="MultiMax">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_iQ8ZifOTEemufas-XlTWhA" value="*"/>
+        </contents>
+        <contents xmi:type="uml:Property" xmi:id="_iQ8ZivOTEemufas-XlTWhA" name="AccessMode">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_iQ8Zi_OTEemufas-XlTWhA" value="read_write"/>
+        </contents>
+      </eAnnotations>
+      <ownedComment xmi:id="_iQ8ZjPOTEemufas-XlTWhA">
+        <eAnnotations xmi:id="_iQ8ZjfOTEemufas-XlTWhA" source="Objing">
+          <contents xmi:type="uml:Property" xmi:id="_iQ8ZjvOTEemufas-XlTWhA" name="NoteType_Name">
+            <defaultValue xmi:type="uml:LiteralString" xmi:id="_iQ8Zj_OTEemufas-XlTWhA" value="description"/>
+          </contents>
+        </eAnnotations>
+        <body>&lt;Enter note text here></body>
+      </ownedComment>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_iQ8ZkPOTEemufas-XlTWhA" value="*"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_iQ8ZkfOTEemufas-XlTWhA"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_iQ8ZkvOTEemufas-XlTWhA" name="order" visibility="public" type="_iQ8aGPOTEemufas-XlTWhA" aggregation="composite" association="_iQ8ZrfOTEemufas-XlTWhA">
+      <eAnnotations xmi:id="_iQ8Zk_OTEemufas-XlTWhA" source="Objing">
+        <contents xmi:type="uml:Property" xmi:id="_iQ8ZlPOTEemufas-XlTWhA" name="Visibility">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_iQ8ZlfOTEemufas-XlTWhA" value="0"/>
+        </contents>
+        <contents xmi:type="uml:Property" xmi:id="_iQ8ZlvOTEemufas-XlTWhA" name="MultiMin">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_iQ8Zl_OTEemufas-XlTWhA" value="0"/>
+        </contents>
+        <contents xmi:type="uml:Property" xmi:id="_iQ8ZmPOTEemufas-XlTWhA" name="MultiMax">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_iQ8ZmfOTEemufas-XlTWhA" value="100"/>
+        </contents>
+        <contents xmi:type="uml:Property" xmi:id="_iQ8ZmvOTEemufas-XlTWhA" name="AccessMode">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_iQ8Zm_OTEemufas-XlTWhA" value="read_write"/>
+        </contents>
+      </eAnnotations>
+      <ownedComment xmi:id="_iQ8ZnPOTEemufas-XlTWhA">
+        <eAnnotations xmi:id="_iQ8ZnfOTEemufas-XlTWhA" source="Objing">
+          <contents xmi:type="uml:Property" xmi:id="_iQ8ZnvOTEemufas-XlTWhA" name="NoteType_Name">
+            <defaultValue xmi:type="uml:LiteralString" xmi:id="_iQ8Zn_OTEemufas-XlTWhA" value="description"/>
+          </contents>
+        </eAnnotations>
+        <body>&lt;Enter note text here></body>
+      </ownedComment>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_iQ8ZoPOTEemufas-XlTWhA" value="100"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_iQ8ZofOTEemufas-XlTWhA"/>
+    </ownedAttribute>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_iQ8ZovOTEemufas-XlTWhA" memberEnd="_iQ8ZgvOTEemufas-XlTWhA _iQ8Zo_OTEemufas-XlTWhA">
+    <ownedEnd xmi:id="_iQ8Zo_OTEemufas-XlTWhA" visibility="public" type="_iQ8ZffOTEemufas-XlTWhA" association="_iQ8ZovOTEemufas-XlTWhA">
+      <eAnnotations xmi:id="_iQ8ZpPOTEemufas-XlTWhA" source="Objing">
+        <contents xmi:type="uml:Property" xmi:id="_iQ8ZpfOTEemufas-XlTWhA" name="Visibility">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_iQ8ZpvOTEemufas-XlTWhA" value="0"/>
+        </contents>
+        <contents xmi:type="uml:Property" xmi:id="_iQ8Zp_OTEemufas-XlTWhA" name="MultiMin">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_iQ8ZqPOTEemufas-XlTWhA" value="1"/>
+        </contents>
+        <contents xmi:type="uml:Property" xmi:id="_iQ8ZqfOTEemufas-XlTWhA" name="MultiMax">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_iQ8ZqvOTEemufas-XlTWhA" value="1"/>
+        </contents>
+        <contents xmi:type="uml:Property" xmi:id="_iQ8Zq_OTEemufas-XlTWhA" name="AccessMode">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_iQ8ZrPOTEemufas-XlTWhA" value="read_write"/>
+        </contents>
+      </eAnnotations>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_iQ8ZrfOTEemufas-XlTWhA" memberEnd="_iQ8ZkvOTEemufas-XlTWhA _iQ8ZrvOTEemufas-XlTWhA">
+    <ownedEnd xmi:id="_iQ8ZrvOTEemufas-XlTWhA" visibility="public" type="_iQ8ZffOTEemufas-XlTWhA" association="_iQ8ZrfOTEemufas-XlTWhA">
+      <eAnnotations xmi:id="_iQ8Zr_OTEemufas-XlTWhA" source="Objing">
+        <contents xmi:type="uml:Property" xmi:id="_iQ8ZsPOTEemufas-XlTWhA" name="Visibility">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_iQ8ZsfOTEemufas-XlTWhA" value="0"/>
+        </contents>
+        <contents xmi:type="uml:Property" xmi:id="_iQ8ZsvOTEemufas-XlTWhA" name="MultiMin">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_iQ8Zs_OTEemufas-XlTWhA" value="1"/>
+        </contents>
+        <contents xmi:type="uml:Property" xmi:id="_iQ8ZtPOTEemufas-XlTWhA" name="MultiMax">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_iQ8ZtfOTEemufas-XlTWhA" value="1"/>
+        </contents>
+        <contents xmi:type="uml:Property" xmi:id="_iQ8ZtvOTEemufas-XlTWhA" name="AccessMode">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_iQ8Zt_OTEemufas-XlTWhA" value="read_write"/>
+        </contents>
+      </eAnnotations>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_iQ8ZuPOTEemufas-XlTWhA" name="LikedOrDislikedProduct">
+    <eAnnotations xmi:id="_iQ8ZufOTEemufas-XlTWhA" source="Objing">
+      <contents xmi:type="uml:Property" xmi:id="_iQ8ZuvOTEemufas-XlTWhA" name="Visibility">
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_iQ8Zu_OTEemufas-XlTWhA" value="0"/>
+      </contents>
+    </eAnnotations>
+    <ownedAttribute xmi:id="_iQ8ZvPOTEemufas-XlTWhA" name="isLiked" visibility="private" isUnique="false">
+      <eAnnotations xmi:id="_iQ8ZvfOTEemufas-XlTWhA" source="Objing">
+        <contents xmi:type="uml:Property" xmi:id="_iQ8ZvvOTEemufas-XlTWhA" name="Visibility">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_iQ8Zv_OTEemufas-XlTWhA" value="2"/>
+        </contents>
+        <contents xmi:type="uml:Property" xmi:id="_iQ8ZwPOTEemufas-XlTWhA" name="MultiMin">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_iQ8ZwfOTEemufas-XlTWhA" value="1"/>
+        </contents>
+        <contents xmi:type="uml:Property" xmi:id="_iQ8ZwvOTEemufas-XlTWhA" name="MultiMax">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_iQ8Zw_OTEemufas-XlTWhA" value="1"/>
+        </contents>
+        <contents xmi:type="uml:Property" xmi:id="_iQ8ZxPOTEemufas-XlTWhA" name="AccessMode">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_iQ8ZxfOTEemufas-XlTWhA" value="read_write"/>
+        </contents>
+      </eAnnotations>
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_iQ8ZxvOTEemufas-XlTWhA" name="consumableProductID" visibility="private" isUnique="false">
+      <eAnnotations xmi:id="_iQ8Zx_OTEemufas-XlTWhA" source="Objing">
+        <contents xmi:type="uml:Property" xmi:id="_iQ8ZyPOTEemufas-XlTWhA" name="Visibility">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_iQ8ZyfOTEemufas-XlTWhA" value="2"/>
+        </contents>
+        <contents xmi:type="uml:Property" xmi:id="_iQ8ZyvOTEemufas-XlTWhA" name="MultiMin">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_iQ8Zy_OTEemufas-XlTWhA" value="1"/>
+        </contents>
+        <contents xmi:type="uml:Property" xmi:id="_iQ8ZzPOTEemufas-XlTWhA" name="MultiMax">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_iQ8ZzfOTEemufas-XlTWhA" value="1"/>
+        </contents>
+        <contents xmi:type="uml:Property" xmi:id="_iQ8ZzvOTEemufas-XlTWhA" name="AccessMode">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_iQ8Zz_OTEemufas-XlTWhA" value="read_write"/>
+        </contents>
+      </eAnnotations>
+      <ownedComment xmi:id="_iQ8Z0POTEemufas-XlTWhA">
+        <eAnnotations xmi:id="_iQ8Z0fOTEemufas-XlTWhA" source="Objing">
+          <contents xmi:type="uml:Property" xmi:id="_iQ8Z0vOTEemufas-XlTWhA" name="NoteType_Name">
+            <defaultValue xmi:type="uml:LiteralString" xmi:id="_iQ8Z0_OTEemufas-XlTWhA" value="description"/>
+          </contents>
+        </eAnnotations>
+        <body>&lt;Enter note text here></body>
+      </ownedComment>
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+    </ownedAttribute>
+    <ownedOperation xmi:id="_iQ8Z1POTEemufas-XlTWhA" name="isLiked" visibility="public">
+      <eAnnotations xmi:id="_iQ8Z1fOTEemufas-XlTWhA" source="Objing">
+        <contents xmi:type="uml:Property" xmi:id="_iQ8Z1vOTEemufas-XlTWhA" name="Visibility">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_iQ8Z1_OTEemufas-XlTWhA" value="0"/>
+        </contents>
+      </eAnnotations>
+      <ownedParameter xmi:id="_iQ8Z2POTEemufas-XlTWhA" isUnique="false" direction="return">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_iQ8Z2fOTEemufas-XlTWhA" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_iQ8Z2vOTEemufas-XlTWhA" value="1"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_iQ8Z2_OTEemufas-XlTWhA" value=""/>
+      </ownedParameter>
+    </ownedOperation>
+    <ownedOperation xmi:id="_iQ8Z3POTEemufas-XlTWhA" name="isDisliked" visibility="public" isLeaf="true">
+      <eAnnotations xmi:id="_iQ8Z3fOTEemufas-XlTWhA" source="Objing">
+        <contents xmi:type="uml:Property" xmi:id="_iQ8Z3vOTEemufas-XlTWhA" name="Visibility">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_iQ8Z3_OTEemufas-XlTWhA" value="0"/>
+        </contents>
+      </eAnnotations>
+      <ownedParameter xmi:id="_iQ8Z4POTEemufas-XlTWhA" isUnique="false" direction="return">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_iQ8Z4fOTEemufas-XlTWhA" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_iQ8Z4vOTEemufas-XlTWhA" value="1"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_iQ8Z4_OTEemufas-XlTWhA" value=""/>
+      </ownedParameter>
+    </ownedOperation>
+    <ownedOperation xmi:id="_iQ8Z5POTEemufas-XlTWhA" name="getConsumableProductID" visibility="public">
+      <eAnnotations xmi:id="_iQ8Z5fOTEemufas-XlTWhA" source="Objing">
+        <contents xmi:type="uml:Property" xmi:id="_iQ8Z5vOTEemufas-XlTWhA" name="Visibility">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_iQ8Z5_OTEemufas-XlTWhA" value="0"/>
+        </contents>
+      </eAnnotations>
+      <ownedParameter xmi:id="_iQ8Z6POTEemufas-XlTWhA" isUnique="false" direction="return">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_iQ8Z6fOTEemufas-XlTWhA" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_iQ8Z6vOTEemufas-XlTWhA" value="1"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_iQ8Z6_OTEemufas-XlTWhA" value=""/>
+      </ownedParameter>
+    </ownedOperation>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_iQ8Z7POTEemufas-XlTWhA" name="RestaurantRating">
+    <eAnnotations xmi:id="_iQ8Z7fOTEemufas-XlTWhA" source="Objing">
+      <contents xmi:type="uml:Property" xmi:id="_iQ8Z7vOTEemufas-XlTWhA" name="Visibility">
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_iQ8Z7_OTEemufas-XlTWhA" value="0"/>
+      </contents>
+    </eAnnotations>
+    <ownedAttribute xmi:id="_iQ8Z8POTEemufas-XlTWhA" name="restaurantID" visibility="private" isUnique="false">
+      <eAnnotations xmi:id="_iQ8Z8fOTEemufas-XlTWhA" source="Objing">
+        <contents xmi:type="uml:Property" xmi:id="_iQ8Z8vOTEemufas-XlTWhA" name="Visibility">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_iQ8Z8_OTEemufas-XlTWhA" value="2"/>
+        </contents>
+        <contents xmi:type="uml:Property" xmi:id="_iQ8Z9POTEemufas-XlTWhA" name="MultiMin">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_iQ8Z9fOTEemufas-XlTWhA" value="1"/>
+        </contents>
+        <contents xmi:type="uml:Property" xmi:id="_iQ8Z9vOTEemufas-XlTWhA" name="MultiMax">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_iQ8Z9_OTEemufas-XlTWhA" value="1"/>
+        </contents>
+        <contents xmi:type="uml:Property" xmi:id="_iQ8Z-POTEemufas-XlTWhA" name="AccessMode">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_iQ8Z-fOTEemufas-XlTWhA" value="read_write"/>
+        </contents>
+      </eAnnotations>
+      <ownedComment xmi:id="_iQ8Z-vOTEemufas-XlTWhA">
+        <eAnnotations xmi:id="_iQ8Z-_OTEemufas-XlTWhA" source="Objing">
+          <contents xmi:type="uml:Property" xmi:id="_iQ8Z_POTEemufas-XlTWhA" name="NoteType_Name">
+            <defaultValue xmi:type="uml:LiteralString" xmi:id="_iQ8Z_fOTEemufas-XlTWhA" value="description"/>
+          </contents>
+        </eAnnotations>
+        <body>&lt;Enter note text here></body>
+      </ownedComment>
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_iQ8Z_vOTEemufas-XlTWhA" name="rating" visibility="private" isUnique="false">
+      <eAnnotations xmi:id="_iQ8Z__OTEemufas-XlTWhA" source="Objing">
+        <contents xmi:type="uml:Property" xmi:id="_iQ8aAPOTEemufas-XlTWhA" name="Visibility">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_iQ8aAfOTEemufas-XlTWhA" value="2"/>
+        </contents>
+        <contents xmi:type="uml:Property" xmi:id="_iQ8aAvOTEemufas-XlTWhA" name="MultiMin">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_iQ8aA_OTEemufas-XlTWhA" value="1"/>
+        </contents>
+        <contents xmi:type="uml:Property" xmi:id="_iQ8aBPOTEemufas-XlTWhA" name="MultiMax">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_iQ8aBfOTEemufas-XlTWhA" value="1"/>
+        </contents>
+        <contents xmi:type="uml:Property" xmi:id="_iQ8aBvOTEemufas-XlTWhA" name="AccessMode">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_iQ8aB_OTEemufas-XlTWhA" value="read_write"/>
+        </contents>
+      </eAnnotations>
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EByte"/>
+    </ownedAttribute>
+    <ownedOperation xmi:id="_iQ8aCPOTEemufas-XlTWhA" name="getRatedRestaurantID" visibility="public">
+      <eAnnotations xmi:id="_iQ8aCfOTEemufas-XlTWhA" source="Objing">
+        <contents xmi:type="uml:Property" xmi:id="_iQ8aCvOTEemufas-XlTWhA" name="Visibility">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_iQ8aC_OTEemufas-XlTWhA" value="0"/>
+        </contents>
+      </eAnnotations>
+      <ownedParameter xmi:id="_iQ8aDPOTEemufas-XlTWhA" isUnique="false" direction="return">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_iQ8aDfOTEemufas-XlTWhA" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_iQ8aDvOTEemufas-XlTWhA" value="1"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_iQ8aD_OTEemufas-XlTWhA" value=""/>
+      </ownedParameter>
+    </ownedOperation>
+    <ownedOperation xmi:id="_iQ8aEPOTEemufas-XlTWhA" name="getRating" visibility="public">
+      <eAnnotations xmi:id="_iQ8aEfOTEemufas-XlTWhA" source="Objing">
+        <contents xmi:type="uml:Property" xmi:id="_iQ8aEvOTEemufas-XlTWhA" name="Visibility">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_iQ8aE_OTEemufas-XlTWhA" value="0"/>
+        </contents>
+      </eAnnotations>
+      <ownedParameter xmi:id="_iQ8aFPOTEemufas-XlTWhA" isUnique="false" direction="return">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EByte"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_iQ8aFfOTEemufas-XlTWhA" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_iQ8aFvOTEemufas-XlTWhA" value="1"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_iQ8aF_OTEemufas-XlTWhA" value=""/>
+      </ownedParameter>
+    </ownedOperation>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_iQ8aGPOTEemufas-XlTWhA" name="Order">
+    <eAnnotations xmi:id="_iQ8aGfOTEemufas-XlTWhA" source="Objing">
+      <contents xmi:type="uml:Property" xmi:id="_iQ8aGvOTEemufas-XlTWhA" name="Visibility">
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_iQ8aG_OTEemufas-XlTWhA" value="0"/>
+      </contents>
+    </eAnnotations>
+    <ownedAttribute xmi:id="_iQ8aHPOTEemufas-XlTWhA" name="orderID" visibility="private" isUnique="false">
+      <eAnnotations xmi:id="_iQ8aHfOTEemufas-XlTWhA" source="Objing">
+        <contents xmi:type="uml:Property" xmi:id="_iQ8aHvOTEemufas-XlTWhA" name="Visibility">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_iQ8aH_OTEemufas-XlTWhA" value="2"/>
+        </contents>
+        <contents xmi:type="uml:Property" xmi:id="_iQ8aIPOTEemufas-XlTWhA" name="MultiMin">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_iQ8aIfOTEemufas-XlTWhA" value="1"/>
+        </contents>
+        <contents xmi:type="uml:Property" xmi:id="_iQ8aIvOTEemufas-XlTWhA" name="MultiMax">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_iQ8aI_OTEemufas-XlTWhA" value="1"/>
+        </contents>
+        <contents xmi:type="uml:Property" xmi:id="_iQ8aJPOTEemufas-XlTWhA" name="AccessMode">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_iQ8aJfOTEemufas-XlTWhA" value="read_write"/>
+        </contents>
+      </eAnnotations>
+      <ownedComment xmi:id="_iQ8aJvOTEemufas-XlTWhA">
+        <eAnnotations xmi:id="_iQ8aJ_OTEemufas-XlTWhA" source="Objing">
+          <contents xmi:type="uml:Property" xmi:id="_iQ8aKPOTEemufas-XlTWhA" name="NoteType_Name">
+            <defaultValue xmi:type="uml:LiteralString" xmi:id="_iQ8aKfOTEemufas-XlTWhA" value="description"/>
+          </contents>
+        </eAnnotations>
+        <body>&lt;Enter note text here></body>
+      </ownedComment>
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_iQ8aKvOTEemufas-XlTWhA" name="restaurantID" visibility="private" isUnique="false">
+      <eAnnotations xmi:id="_iQ8aK_OTEemufas-XlTWhA" source="Objing">
+        <contents xmi:type="uml:Property" xmi:id="_iQ8aLPOTEemufas-XlTWhA" name="Visibility">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_iQ8aLfOTEemufas-XlTWhA" value="2"/>
+        </contents>
+        <contents xmi:type="uml:Property" xmi:id="_iQ8aLvOTEemufas-XlTWhA" name="MultiMin">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_iQ8aL_OTEemufas-XlTWhA" value="1"/>
+        </contents>
+        <contents xmi:type="uml:Property" xmi:id="_iQ8aMPOTEemufas-XlTWhA" name="MultiMax">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_iQ8aMfOTEemufas-XlTWhA" value="1"/>
+        </contents>
+        <contents xmi:type="uml:Property" xmi:id="_iQ8aMvOTEemufas-XlTWhA" name="AccessMode">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_iQ8aM_OTEemufas-XlTWhA" value="read_write"/>
+        </contents>
+      </eAnnotations>
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_iQ8aNPOTEemufas-XlTWhA" name="consumableProductsIDs" visibility="private" isUnique="false">
+      <eAnnotations xmi:id="_iQ8aNfOTEemufas-XlTWhA" source="Objing">
+        <contents xmi:type="uml:Property" xmi:id="_iQ8aNvOTEemufas-XlTWhA" name="Visibility">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_iQ8aN_OTEemufas-XlTWhA" value="2"/>
+        </contents>
+        <contents xmi:type="uml:Property" xmi:id="_iQ8aOPOTEemufas-XlTWhA" name="MultiMin">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_iQ8aOfOTEemufas-XlTWhA" value="0"/>
+        </contents>
+        <contents xmi:type="uml:Property" xmi:id="_iQ8aOvOTEemufas-XlTWhA" name="MultiMax">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_iQ8aO_OTEemufas-XlTWhA" value="*"/>
+        </contents>
+        <contents xmi:type="uml:Property" xmi:id="_iQ8aPPOTEemufas-XlTWhA" name="AccessMode">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_iQ8aPfOTEemufas-XlTWhA" value="read_write"/>
+        </contents>
+      </eAnnotations>
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_iQ8aPvOTEemufas-XlTWhA" value="*"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_iQ8aP_OTEemufas-XlTWhA"/>
+    </ownedAttribute>
+    <ownedOperation xmi:id="_iQ8aQPOTEemufas-XlTWhA" name="getOrderID" visibility="public">
+      <eAnnotations xmi:id="_iQ8aQfOTEemufas-XlTWhA" source="Objing">
+        <contents xmi:type="uml:Property" xmi:id="_iQ8aQvOTEemufas-XlTWhA" name="Visibility">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_iQ8aQ_OTEemufas-XlTWhA" value="0"/>
+        </contents>
+      </eAnnotations>
+      <ownedParameter xmi:id="_iQ8aRPOTEemufas-XlTWhA" isUnique="false" direction="return">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_iQ8aRfOTEemufas-XlTWhA" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_iQ8aRvOTEemufas-XlTWhA" value="1"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_iQ8aR_OTEemufas-XlTWhA" value=""/>
+      </ownedParameter>
+    </ownedOperation>
+    <ownedOperation xmi:id="_iQ8aSPOTEemufas-XlTWhA" name="getRestaurantIDOfOrder" visibility="public">
+      <eAnnotations xmi:id="_iQ8aSfOTEemufas-XlTWhA" source="Objing">
+        <contents xmi:type="uml:Property" xmi:id="_iQ8aSvOTEemufas-XlTWhA" name="Visibility">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_iQ8aS_OTEemufas-XlTWhA" value="0"/>
+        </contents>
+      </eAnnotations>
+      <ownedParameter xmi:id="_iQ8aTPOTEemufas-XlTWhA" isUnique="false" direction="return">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_iQ8aTfOTEemufas-XlTWhA" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_iQ8aTvOTEemufas-XlTWhA" value="1"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_iQ8aT_OTEemufas-XlTWhA" value=""/>
+      </ownedParameter>
+    </ownedOperation>
+    <ownedOperation xmi:id="_iQ8aUPOTEemufas-XlTWhA" name="getConsumableProductIDsOfOrder" visibility="public">
+      <eAnnotations xmi:id="_iQ8aUfOTEemufas-XlTWhA" source="Objing">
+        <contents xmi:type="uml:Property" xmi:id="_iQ8aUvOTEemufas-XlTWhA" name="Visibility">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_iQ8aU_OTEemufas-XlTWhA" value="0"/>
+        </contents>
+      </eAnnotations>
+      <ownedParameter xmi:id="_iQ8aVPOTEemufas-XlTWhA" isUnique="false" direction="return">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_iQ8aVfOTEemufas-XlTWhA" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_iQ8aVvOTEemufas-XlTWhA"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_iQ8aV_OTEemufas-XlTWhA" value=""/>
+      </ownedParameter>
+    </ownedOperation>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_iQ8aWPOTEemufas-XlTWhA" name="ExtendedDatabaseAPI">
+    <eAnnotations xmi:id="_iQ8aWfOTEemufas-XlTWhA" source="Objing">
+      <contents xmi:type="uml:Property" xmi:id="_iQ8aWvOTEemufas-XlTWhA" name="Visibility">
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_iQ8aW_OTEemufas-XlTWhA" value="0"/>
+      </contents>
+    </eAnnotations>
+    <generalization xmi:id="_iQ8aXPOTEemufas-XlTWhA" general="_iQ8Vh_OTEemufas-XlTWhA"/>
+    <ownedOperation xmi:id="_iQ8aXfOTEemufas-XlTWhA" name="updateUserAttributes" visibility="public">
+      <eAnnotations xmi:id="_iQ8aXvOTEemufas-XlTWhA" source="Objing">
+        <contents xmi:type="uml:Property" xmi:id="_iQ8aX_OTEemufas-XlTWhA" name="Visibility">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_iQ8aYPOTEemufas-XlTWhA" value="0"/>
+        </contents>
+      </eAnnotations>
+      <ownedParameter xmi:id="_iQ8aYfOTEemufas-XlTWhA" name="userSystemID" isUnique="false">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_iQ8aYvOTEemufas-XlTWhA" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_iQ8aY_OTEemufas-XlTWhA" value="1"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_iQ8aZPOTEemufas-XlTWhA" value=""/>
+      </ownedParameter>
+      <ownedParameter xmi:id="_iQ8aZfOTEemufas-XlTWhA" name="userNewRecommendationAttributes" isUnique="false">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EDouble"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_iQ8aZvOTEemufas-XlTWhA" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_iQ8aZ_OTEemufas-XlTWhA"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_iQ8aaPOTEemufas-XlTWhA" value=""/>
+      </ownedParameter>
+      <ownedParameter xmi:id="_iQ8aafOTEemufas-XlTWhA" isUnique="false" direction="return">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_iQ8aavOTEemufas-XlTWhA" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_iQ8aa_OTEemufas-XlTWhA" value="1"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_iQ8abPOTEemufas-XlTWhA" value=""/>
+      </ownedParameter>
+    </ownedOperation>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_iQ8abfOTEemufas-XlTWhA" name="ProductType">
+    <eAnnotations xmi:id="_iQ8abvOTEemufas-XlTWhA" source="Objing">
+      <contents xmi:type="uml:Property" xmi:id="_iQ8ab_OTEemufas-XlTWhA" name="Visibility">
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_iQ8acPOTEemufas-XlTWhA" value="0"/>
+      </contents>
+    </eAnnotations>
+    <ownedAttribute xmi:id="_iQ8acfOTEemufas-XlTWhA" name="productTypeID" visibility="private" isUnique="false">
+      <eAnnotations xmi:id="_iQ8acvOTEemufas-XlTWhA" source="Objing">
+        <contents xmi:type="uml:Property" xmi:id="_iQ8ac_OTEemufas-XlTWhA" name="Visibility">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_iQ8adPOTEemufas-XlTWhA" value="2"/>
+        </contents>
+        <contents xmi:type="uml:Property" xmi:id="_iQ8adfOTEemufas-XlTWhA" name="MultiMin">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_iQ8advOTEemufas-XlTWhA" value="1"/>
+        </contents>
+        <contents xmi:type="uml:Property" xmi:id="_iQ8ad_OTEemufas-XlTWhA" name="MultiMax">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_iQ8aePOTEemufas-XlTWhA" value="1"/>
+        </contents>
+        <contents xmi:type="uml:Property" xmi:id="_iQ8aefOTEemufas-XlTWhA" name="AccessMode">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_iQ8aevOTEemufas-XlTWhA" value="read_write"/>
+        </contents>
+      </eAnnotations>
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_iQ8ae_OTEemufas-XlTWhA" name="productTypeName" visibility="private" isUnique="false">
+      <eAnnotations xmi:id="_iQ8afPOTEemufas-XlTWhA" source="Objing">
+        <contents xmi:type="uml:Property" xmi:id="_iQ8affOTEemufas-XlTWhA" name="Visibility">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_iQ8afvOTEemufas-XlTWhA" value="2"/>
+        </contents>
+        <contents xmi:type="uml:Property" xmi:id="_iQ8af_OTEemufas-XlTWhA" name="MultiMin">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_iQ8agPOTEemufas-XlTWhA" value="1"/>
+        </contents>
+        <contents xmi:type="uml:Property" xmi:id="_iQ8agfOTEemufas-XlTWhA" name="MultiMax">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_iQ8agvOTEemufas-XlTWhA" value="1"/>
+        </contents>
+        <contents xmi:type="uml:Property" xmi:id="_iQ8ag_OTEemufas-XlTWhA" name="AccessMode">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_iQ8ahPOTEemufas-XlTWhA" value="read_write"/>
+        </contents>
+      </eAnnotations>
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_iQ8ahfOTEemufas-XlTWhA" name="productTypeFolderImagesPath" visibility="private" isUnique="false">
+      <eAnnotations xmi:id="_iQ8ahvOTEemufas-XlTWhA" source="Objing">
+        <contents xmi:type="uml:Property" xmi:id="_iQ8ah_OTEemufas-XlTWhA" name="Visibility">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_iQ8aiPOTEemufas-XlTWhA" value="2"/>
+        </contents>
+        <contents xmi:type="uml:Property" xmi:id="_iQ8aifOTEemufas-XlTWhA" name="MultiMin">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_iQ8aivOTEemufas-XlTWhA" value="1"/>
+        </contents>
+        <contents xmi:type="uml:Property" xmi:id="_iQ8ai_OTEemufas-XlTWhA" name="MultiMax">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_iQ8ajPOTEemufas-XlTWhA" value="1"/>
+        </contents>
+        <contents xmi:type="uml:Property" xmi:id="_iQ8ajfOTEemufas-XlTWhA" name="AccessMode">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_iQ8ajvOTEemufas-XlTWhA" value="read_write"/>
+        </contents>
+      </eAnnotations>
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedAttribute>
+    <ownedOperation xmi:id="_iQ8aj_OTEemufas-XlTWhA" name="getProductTypeID" visibility="public">
+      <eAnnotations xmi:id="_iQ8akPOTEemufas-XlTWhA" source="Objing">
+        <contents xmi:type="uml:Property" xmi:id="_iQ8akfOTEemufas-XlTWhA" name="Visibility">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_iQ8akvOTEemufas-XlTWhA" value="0"/>
+        </contents>
+      </eAnnotations>
+      <ownedParameter xmi:id="_iQ8ak_OTEemufas-XlTWhA" isUnique="false" direction="return">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_iQ8alPOTEemufas-XlTWhA" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_iQ8alfOTEemufas-XlTWhA" value="1"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_iQ8alvOTEemufas-XlTWhA" value=""/>
+      </ownedParameter>
+    </ownedOperation>
+    <ownedOperation xmi:id="_iQ8al_OTEemufas-XlTWhA" name="getProductTypeName" visibility="public">
+      <eAnnotations xmi:id="_iQ8amPOTEemufas-XlTWhA" source="Objing">
+        <contents xmi:type="uml:Property" xmi:id="_iQ8amfOTEemufas-XlTWhA" name="Visibility">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_iQ8amvOTEemufas-XlTWhA" value="0"/>
+        </contents>
+      </eAnnotations>
+      <ownedParameter xmi:id="_iQ8am_OTEemufas-XlTWhA" isUnique="false" direction="return">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_iQ8anPOTEemufas-XlTWhA" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_iQ8anfOTEemufas-XlTWhA" value="1"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_iQ8anvOTEemufas-XlTWhA" value=""/>
+      </ownedParameter>
+    </ownedOperation>
+    <ownedOperation xmi:id="_iQ8an_OTEemufas-XlTWhA" name="getPoductTypeFolderImagesPath" visibility="public">
+      <eAnnotations xmi:id="_iQ8aoPOTEemufas-XlTWhA" source="Objing">
+        <contents xmi:type="uml:Property" xmi:id="_iQ8aofOTEemufas-XlTWhA" name="Visibility">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_iQ8aovOTEemufas-XlTWhA" value="0"/>
+        </contents>
+      </eAnnotations>
+      <ownedParameter xmi:id="_iQ8ao_OTEemufas-XlTWhA" isUnique="false" direction="return">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_iQ8apPOTEemufas-XlTWhA" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_iQ8apfOTEemufas-XlTWhA" value="1"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_iQ8apvOTEemufas-XlTWhA" value=""/>
+      </ownedParameter>
+    </ownedOperation>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_iQ8ap_OTEemufas-XlTWhA" name="GeneralCategory">
+    <eAnnotations xmi:id="_iQ8aqPOTEemufas-XlTWhA" source="Objing">
+      <contents xmi:type="uml:Property" xmi:id="_iQ8aqfOTEemufas-XlTWhA" name="Visibility">
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_iQ8aqvOTEemufas-XlTWhA" value="0"/>
+      </contents>
+    </eAnnotations>
+    <ownedAttribute xmi:id="_iQ8aq_OTEemufas-XlTWhA" name="categoryName" visibility="private" isUnique="false">
+      <eAnnotations xmi:id="_iQ8arPOTEemufas-XlTWhA" source="Objing">
+        <contents xmi:type="uml:Property" xmi:id="_iQ8arfOTEemufas-XlTWhA" name="Visibility">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_iQ8arvOTEemufas-XlTWhA" value="2"/>
+        </contents>
+        <contents xmi:type="uml:Property" xmi:id="_iQ8ar_OTEemufas-XlTWhA" name="MultiMin">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_iQ8asPOTEemufas-XlTWhA" value="1"/>
+        </contents>
+        <contents xmi:type="uml:Property" xmi:id="_iQ8asfOTEemufas-XlTWhA" name="MultiMax">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_iQ8asvOTEemufas-XlTWhA" value="1"/>
+        </contents>
+        <contents xmi:type="uml:Property" xmi:id="_iQ8as_OTEemufas-XlTWhA" name="AccessMode">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_iQ8atPOTEemufas-XlTWhA" value="read_write"/>
+        </contents>
+      </eAnnotations>
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_iQ8atfOTEemufas-XlTWhA" name="categoryID" visibility="private" isUnique="false">
+      <eAnnotations xmi:id="_iQ8atvOTEemufas-XlTWhA" source="Objing">
+        <contents xmi:type="uml:Property" xmi:id="_iQ8at_OTEemufas-XlTWhA" name="Visibility">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_iQ8auPOTEemufas-XlTWhA" value="2"/>
+        </contents>
+        <contents xmi:type="uml:Property" xmi:id="_iQ8aufOTEemufas-XlTWhA" name="MultiMin">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_iQ8auvOTEemufas-XlTWhA" value="1"/>
+        </contents>
+        <contents xmi:type="uml:Property" xmi:id="_iQ8au_OTEemufas-XlTWhA" name="MultiMax">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_iQ8avPOTEemufas-XlTWhA" value="1"/>
+        </contents>
+        <contents xmi:type="uml:Property" xmi:id="_iQ8avfOTEemufas-XlTWhA" name="AccessMode">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_iQ8avvOTEemufas-XlTWhA" value="read_write"/>
+        </contents>
+      </eAnnotations>
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_iQ8av_OTEemufas-XlTWhA" name="categoryFolderImagesPath" visibility="private" isUnique="false">
+      <eAnnotations xmi:id="_iQ8awPOTEemufas-XlTWhA" source="Objing">
+        <contents xmi:type="uml:Property" xmi:id="_iQ8awfOTEemufas-XlTWhA" name="Visibility">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_iQ8awvOTEemufas-XlTWhA" value="2"/>
+        </contents>
+        <contents xmi:type="uml:Property" xmi:id="_iQ8aw_OTEemufas-XlTWhA" name="MultiMin">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_iQ8axPOTEemufas-XlTWhA" value="1"/>
+        </contents>
+        <contents xmi:type="uml:Property" xmi:id="_iQ8axfOTEemufas-XlTWhA" name="MultiMax">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_iQ8axvOTEemufas-XlTWhA" value="1"/>
+        </contents>
+        <contents xmi:type="uml:Property" xmi:id="_iQ8ax_OTEemufas-XlTWhA" name="AccessMode">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_iQ8ayPOTEemufas-XlTWhA" value="read_write"/>
+        </contents>
+      </eAnnotations>
+      <ownedComment xmi:id="_iQ8ayfOTEemufas-XlTWhA">
+        <eAnnotations xmi:id="_iQ8ayvOTEemufas-XlTWhA" source="Objing">
+          <contents xmi:type="uml:Property" xmi:id="_iQ8ay_OTEemufas-XlTWhA" name="NoteType_Name">
+            <defaultValue xmi:type="uml:LiteralString" xmi:id="_iQ8azPOTEemufas-XlTWhA" value="description"/>
+          </contents>
+        </eAnnotations>
+        <body>&lt;Enter note text here></body>
+      </ownedComment>
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedAttribute>
+    <ownedOperation xmi:id="_iQ8azfOTEemufas-XlTWhA" name="getCategoryName" visibility="public">
+      <eAnnotations xmi:id="_iQ8azvOTEemufas-XlTWhA" source="Objing">
+        <contents xmi:type="uml:Property" xmi:id="_iQ8az_OTEemufas-XlTWhA" name="Visibility">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_iQ8a0POTEemufas-XlTWhA" value="0"/>
+        </contents>
+      </eAnnotations>
+      <ownedParameter xmi:id="_iQ8a0fOTEemufas-XlTWhA" isUnique="false" direction="return">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_iQ8a0vOTEemufas-XlTWhA" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_iQ8a0_OTEemufas-XlTWhA" value="1"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_iQ8a1POTEemufas-XlTWhA" value=""/>
+      </ownedParameter>
+    </ownedOperation>
+    <ownedOperation xmi:id="_iQ8a1fOTEemufas-XlTWhA" name="getCategoryID" visibility="public">
+      <eAnnotations xmi:id="_iQ8a1vOTEemufas-XlTWhA" source="Objing">
+        <contents xmi:type="uml:Property" xmi:id="_iQ8a1_OTEemufas-XlTWhA" name="Visibility">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_iQ8a2POTEemufas-XlTWhA" value="0"/>
+        </contents>
+      </eAnnotations>
+      <ownedParameter xmi:id="_iQ8a2fOTEemufas-XlTWhA" isUnique="false" direction="return">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_iQ8a2vOTEemufas-XlTWhA" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_iQ8a2_OTEemufas-XlTWhA" value="1"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_iQ8a3POTEemufas-XlTWhA" value=""/>
+      </ownedParameter>
+    </ownedOperation>
+    <ownedOperation xmi:id="_iQ8a3fOTEemufas-XlTWhA" name="getCategoryFolderImagesPath" visibility="public">
+      <eAnnotations xmi:id="_iQ8a3vOTEemufas-XlTWhA" source="Objing">
+        <contents xmi:type="uml:Property" xmi:id="_iQ8a3_OTEemufas-XlTWhA" name="Visibility">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_iQ8a4POTEemufas-XlTWhA" value="0"/>
+        </contents>
+      </eAnnotations>
+      <ownedComment xmi:id="_iQ8a4fOTEemufas-XlTWhA">
+        <eAnnotations xmi:id="_iQ8a4vOTEemufas-XlTWhA" source="Objing">
+          <contents xmi:type="uml:Property" xmi:id="_iQ8a4_OTEemufas-XlTWhA" name="NoteType_Name">
+            <defaultValue xmi:type="uml:LiteralString" xmi:id="_iQ8a5POTEemufas-XlTWhA" value="description"/>
+          </contents>
+        </eAnnotations>
+        <body>&lt;Enter note text here></body>
+      </ownedComment>
+      <ownedParameter xmi:id="_iQ8a5fOTEemufas-XlTWhA" isUnique="false" direction="return">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_iQ8a5vOTEemufas-XlTWhA" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_iQ8a5_OTEemufas-XlTWhA" value="1"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_iQ8a6POTEemufas-XlTWhA" value=""/>
+      </ownedParameter>
+    </ownedOperation>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_iQ8a6fOTEemufas-XlTWhA" name="Restaurant">
+    <eAnnotations xmi:id="_iQ8a6vOTEemufas-XlTWhA" source="Objing">
+      <contents xmi:type="uml:Property" xmi:id="_iQ8a6_OTEemufas-XlTWhA" name="Visibility">
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_iQ8a7POTEemufas-XlTWhA" value="0"/>
+      </contents>
+    </eAnnotations>
+    <ownedAttribute xmi:id="_iQ8a7fOTEemufas-XlTWhA" name="restaurantAttributes" visibility="private" isUnique="false">
+      <eAnnotations xmi:id="_iQ8a7vOTEemufas-XlTWhA" source="Objing">
+        <contents xmi:type="uml:Property" xmi:id="_iQ8a7_OTEemufas-XlTWhA" name="Visibility">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_iQ8a8POTEemufas-XlTWhA" value="2"/>
+        </contents>
+        <contents xmi:type="uml:Property" xmi:id="_iQ8a8fOTEemufas-XlTWhA" name="MultiMin">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_iQ8a8vOTEemufas-XlTWhA" value="0"/>
+        </contents>
+        <contents xmi:type="uml:Property" xmi:id="_iQ8a8_OTEemufas-XlTWhA" name="MultiMax">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_iQ8a9POTEemufas-XlTWhA" value="*"/>
+        </contents>
+        <contents xmi:type="uml:Property" xmi:id="_iQ8a9fOTEemufas-XlTWhA" name="AccessMode">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_iQ8a9vOTEemufas-XlTWhA" value="read_write"/>
+        </contents>
+      </eAnnotations>
+      <ownedComment xmi:id="_iQ8a9_OTEemufas-XlTWhA">
+        <eAnnotations xmi:id="_iQ8a-POTEemufas-XlTWhA" source="Objing">
+          <contents xmi:type="uml:Property" xmi:id="_iQ8a-fOTEemufas-XlTWhA" name="NoteType_Name">
+            <defaultValue xmi:type="uml:LiteralString" xmi:id="_iQ8a-vOTEemufas-XlTWhA" value="description"/>
+          </contents>
+        </eAnnotations>
+        <body>&lt;Enter note text here></body>
+      </ownedComment>
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EDouble"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_iQ8a-_OTEemufas-XlTWhA" value="*"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_iQ8a_POTEemufas-XlTWhA"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_iQ8a_fOTEemufas-XlTWhA" name="restaurantID" visibility="private" isUnique="false">
+      <eAnnotations xmi:id="_iQ8a_vOTEemufas-XlTWhA" source="Objing">
+        <contents xmi:type="uml:Property" xmi:id="_iQ8a__OTEemufas-XlTWhA" name="Visibility">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_iQ8bAPOTEemufas-XlTWhA" value="2"/>
+        </contents>
+        <contents xmi:type="uml:Property" xmi:id="_iQ8bAfOTEemufas-XlTWhA" name="MultiMin">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_iQ8bAvOTEemufas-XlTWhA" value="1"/>
+        </contents>
+        <contents xmi:type="uml:Property" xmi:id="_iQ8bA_OTEemufas-XlTWhA" name="MultiMax">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_iQ8bBPOTEemufas-XlTWhA" value="1"/>
+        </contents>
+        <contents xmi:type="uml:Property" xmi:id="_iQ8bBfOTEemufas-XlTWhA" name="AccessMode">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_iQ8bBvOTEemufas-XlTWhA" value="read_write"/>
+        </contents>
+      </eAnnotations>
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+    </ownedAttribute>
+    <ownedOperation xmi:id="_iQ8bB_OTEemufas-XlTWhA" name="getReastaurantID" visibility="public">
+      <eAnnotations xmi:id="_iQ8bCPOTEemufas-XlTWhA" source="Objing">
+        <contents xmi:type="uml:Property" xmi:id="_iQ8bCfOTEemufas-XlTWhA" name="Visibility">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_iQ8bCvOTEemufas-XlTWhA" value="0"/>
+        </contents>
+      </eAnnotations>
+      <ownedParameter xmi:id="_iQ8bC_OTEemufas-XlTWhA" isUnique="false" direction="return">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_iQ8bDPOTEemufas-XlTWhA" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_iQ8bDfOTEemufas-XlTWhA" value="1"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_iQ8bDvOTEemufas-XlTWhA" value=""/>
+      </ownedParameter>
+    </ownedOperation>
+    <ownedOperation xmi:id="_iQ8bD_OTEemufas-XlTWhA" name="getRestaurantName" visibility="public">
+      <eAnnotations xmi:id="_iQ8bEPOTEemufas-XlTWhA" source="Objing">
+        <contents xmi:type="uml:Property" xmi:id="_iQ8bEfOTEemufas-XlTWhA" name="Visibility">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_iQ8bEvOTEemufas-XlTWhA" value="0"/>
+        </contents>
+      </eAnnotations>
+      <ownedParameter xmi:id="_iQ8bE_OTEemufas-XlTWhA" isUnique="false" direction="return">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_iQ8bFPOTEemufas-XlTWhA" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_iQ8bFfOTEemufas-XlTWhA" value="1"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_iQ8bFvOTEemufas-XlTWhA" value=""/>
+      </ownedParameter>
+    </ownedOperation>
+    <ownedOperation xmi:id="_iQ8bF_OTEemufas-XlTWhA" name="getRestarauntAttributes" visibility="public">
+      <eAnnotations xmi:id="_iQ8bGPOTEemufas-XlTWhA" source="Objing">
+        <contents xmi:type="uml:Property" xmi:id="_iQ8bGfOTEemufas-XlTWhA" name="Visibility">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_iQ8bGvOTEemufas-XlTWhA" value="0"/>
+        </contents>
+      </eAnnotations>
+      <ownedParameter xmi:id="_iQ8bG_OTEemufas-XlTWhA" isUnique="false" direction="return">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EDouble"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_iQ8bHPOTEemufas-XlTWhA" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_iQ8bHfOTEemufas-XlTWhA"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_iQ8bHvOTEemufas-XlTWhA" value=""/>
+      </ownedParameter>
+    </ownedOperation>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_iQ8bH_OTEemufas-XlTWhA" name="Recommendendations" clientDependency="_iQ8bQ_OTEemufas-XlTWhA _iQ8bRPOTEemufas-XlTWhA _iQ8bRfOTEemufas-XlTWhA _iQ8bRvOTEemufas-XlTWhA">
+    <eAnnotations xmi:id="_iQ8bIPOTEemufas-XlTWhA" source="Objing">
+      <contents xmi:type="uml:Property" xmi:id="_iQ8bIfOTEemufas-XlTWhA" name="Visibility">
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_iQ8bIvOTEemufas-XlTWhA" value="0"/>
+      </contents>
+    </eAnnotations>
+    <ownedOperation xmi:id="_iQ8bI_OTEemufas-XlTWhA" name="preferenceOfUserOnConsumableProductsInPercentage" visibility="public">
+      <eAnnotations xmi:id="_iQ8bJPOTEemufas-XlTWhA" source="Objing">
+        <contents xmi:type="uml:Property" xmi:id="_iQ8bJfOTEemufas-XlTWhA" name="Visibility">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_iQ8bJvOTEemufas-XlTWhA" value="0"/>
+        </contents>
+      </eAnnotations>
+      <ownedParameter xmi:id="_iQ8bJ_OTEemufas-XlTWhA" name="userSystemID" isUnique="false">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_iQ8bKPOTEemufas-XlTWhA" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_iQ8bKfOTEemufas-XlTWhA" value="1"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_iQ8bKvOTEemufas-XlTWhA" value=""/>
+      </ownedParameter>
+      <ownedParameter xmi:id="_iQ8bK_OTEemufas-XlTWhA" name="consumableIDs" isUnique="false">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_iQ8bLPOTEemufas-XlTWhA" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_iQ8bLfOTEemufas-XlTWhA"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_iQ8bLvOTEemufas-XlTWhA" value=""/>
+      </ownedParameter>
+      <ownedParameter xmi:id="_iQ8bL_OTEemufas-XlTWhA" isUnique="false" direction="return">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EDouble"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_iQ8bMPOTEemufas-XlTWhA" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_iQ8bMfOTEemufas-XlTWhA"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_iQ8bMvOTEemufas-XlTWhA" value=""/>
+      </ownedParameter>
+    </ownedOperation>
+    <ownedOperation xmi:id="_iQ8bM_OTEemufas-XlTWhA" name="preferenceOfUserOnReastaurantsInPercentage" visibility="public">
+      <eAnnotations xmi:id="_iQ8bNPOTEemufas-XlTWhA" source="Objing">
+        <contents xmi:type="uml:Property" xmi:id="_iQ8bNfOTEemufas-XlTWhA" name="Visibility">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_iQ8bNvOTEemufas-XlTWhA" value="0"/>
+        </contents>
+      </eAnnotations>
+      <ownedParameter xmi:id="_iQ8bN_OTEemufas-XlTWhA" name="restaurants" type="_iQ8a6fOTEemufas-XlTWhA" isUnique="false">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_iQ8bOPOTEemufas-XlTWhA" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_iQ8bOfOTEemufas-XlTWhA"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_iQ8bOvOTEemufas-XlTWhA" value=""/>
+      </ownedParameter>
+      <ownedParameter xmi:id="_iQ8bO_OTEemufas-XlTWhA" name="userSystemID" isUnique="false">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_iQ8bPPOTEemufas-XlTWhA" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_iQ8bPfOTEemufas-XlTWhA" value="1"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_iQ8bPvOTEemufas-XlTWhA" value=""/>
+      </ownedParameter>
+      <ownedParameter xmi:id="_iQ8bP_OTEemufas-XlTWhA" isUnique="false" direction="return">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EDouble"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_iQ8bQPOTEemufas-XlTWhA" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_iQ8bQfOTEemufas-XlTWhA"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_iQ8bQvOTEemufas-XlTWhA" value=""/>
+      </ownedParameter>
+    </ownedOperation>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Usage" xmi:id="_iQ8bQ_OTEemufas-XlTWhA" supplier="_iQ8Vh_OTEemufas-XlTWhA" client="_iQ8bH_OTEemufas-XlTWhA"/>
+  <packagedElement xmi:type="uml:Usage" xmi:id="_iQ8bRPOTEemufas-XlTWhA" supplier="_iQ8YAPOTEemufas-XlTWhA" client="_iQ8bH_OTEemufas-XlTWhA"/>
+  <packagedElement xmi:type="uml:Usage" xmi:id="_iQ8bRfOTEemufas-XlTWhA" supplier="_iQ8XjfOTEemufas-XlTWhA" client="_iQ8bH_OTEemufas-XlTWhA"/>
+  <packagedElement xmi:type="uml:Usage" xmi:id="_iQ8bRvOTEemufas-XlTWhA" supplier="_iQ8a6fOTEemufas-XlTWhA" client="_iQ8bH_OTEemufas-XlTWhA"/>
+</uml:Model>
